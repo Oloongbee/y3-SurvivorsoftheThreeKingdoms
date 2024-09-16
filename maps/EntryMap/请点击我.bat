@@ -1,0 +1,1 @@
+start /D "H:/y3/games/2.0/game/Engine/Binaries/Win64/../../../LocalData/Patch\ExternalResource/repair_map" repair_map.exe "H:/y3/games/2.0/game/Engine/Binaries/Win64/../../../LocalData\MapBackUp\三国\城外\EntryMap_backup_2024-09-16-17-40-45\repair_config.json"
