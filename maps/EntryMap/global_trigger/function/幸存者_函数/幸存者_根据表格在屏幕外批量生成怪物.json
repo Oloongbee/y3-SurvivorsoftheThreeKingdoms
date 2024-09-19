@@ -926,7 +926,7 @@
                                                                                                                 {
                                                                                                                     "arg_type": 100009, 
                                                                                                                     "args_list": [
-                                                                                                                        10000
+                                                                                                                        10001
                                                                                                                     ], 
                                                                                                                     "sub_type": 1
                                                                                                                 }
@@ -1233,35 +1233,82 @@
                 {
                     "args_list": [
                         {
-                            "arg_type": 100001, 
+                            "arg_type": 100021, 
                             "args_list": [
                                 {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "BOOLEAN", 
-                                        "是否继续生成"
-                                    ]
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100001, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "BOOLEAN", 
+                                                        "是否继续生成"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": "VARIABLE"
+                                        }, 
+                                        {
+                                            "arg_type": 100035, 
+                                            "args_list": [
+                                                "=="
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100001, 
+                                            "args_list": [
+                                                true
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "condition_type": "BOOL_COMPARE", 
+                                    "element_id": 821973026000027, 
+                                    "enable": true
+                                }, 
+                                {
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100001, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "BOOLEAN", 
+                                                        "是否在战斗区域"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": "VARIABLE"
+                                        }, 
+                                        {
+                                            "arg_type": 100035, 
+                                            "args_list": [
+                                                "=="
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100001, 
+                                            "args_list": [
+                                                true
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "condition_type": "BOOL_COMPARE", 
+                                    "element_id": 821973026000040, 
+                                    "enable": true
                                 }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100035, 
-                            "args_list": [
-                                "=="
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                true
                             ], 
                             "sub_type": 1
                         }
                     ], 
-                    "condition_type": "BOOL_COMPARE", 
-                    "element_id": 821973026000027, 
+                    "condition_type": "AND", 
+                    "element_id": 821973026000035, 
                     "enable": true
                 }
             ], 
