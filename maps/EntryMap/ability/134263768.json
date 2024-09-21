@@ -1,40 +1,17 @@
 {
-    "local_variable": {}, 
+    "local_variable": {
+        "30425090": {
+            "variable_dict": {}, 
+            "variable_length_dict": {}
+        }, 
+        "309878785": {
+            "variable_dict": {}, 
+            "variable_length_dict": {}
+        }
+    }, 
     "trigger_dict": {
         "30425090": {
-            "action": [
-                {
-                    "action_type": "STOP_ANIMATION", 
-                    "args_list": [
-                        {
-                            "arg_type": 100006, 
-                            "args_list": [], 
-                            "sub_type": "ABILITY_OWNER"
-                        }, 
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                {
-                                    "arg_type": 100006, 
-                                    "args_list": [], 
-                                    "sub_type": "ABILITY_OWNER"
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "\u65ad\u6d6a\u65a9"
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "sub_type": "GET_STRING_KV"
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 30425090000008, 
-                    "enable": true
-                }
-            ], 
+            "action": [], 
             "call_enabled": true, 
             "condition": [], 
             "enabled": true, 
@@ -116,7 +93,7 @@
                         {
                             "arg_type": 100001, 
                             "args_list": [
-                                false
+                                true
                             ], 
                             "sub_type": 1
                         }
@@ -124,6 +101,58 @@
                     "bp": false, 
                     "element_id": 309878785000006, 
                     "enable": true
+                }, 
+                {
+                    "action_type": "CREATE_SFX_ON_POINT", 
+                    "args_list": [
+                        {
+                            "arg_type": 100066, 
+                            "args_list": [
+                                100492
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100004, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100006, 
+                                    "args_list": [], 
+                                    "sub_type": "ABILITY_OWNER"
+                                }
+                            ], 
+                            "sub_type": "UNIT_ENTITY_POINT"
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 309878785000093, 
+                    "enable": true, 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                0.5
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                true
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        true, 
+                        false
+                    ]
                 }, 
                 {
                     "action_type": "PICK_UNIT_DO_ACTION", 
