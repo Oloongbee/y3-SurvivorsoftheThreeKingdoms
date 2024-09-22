@@ -5295,848 +5295,11 @@
             ]
         }, 
         [
-            1926926344, 
-            "城内生成(弃用)", 
-            673726506, 
-            "action_type"
-        ], 
-        {
-            "action_type": "IF_THEN_ELSE", 
-            "args_list": [
-                {
-                    "arg_type": 100021, 
-                    "args_list": [
-                        {
-                            "args_list": [
-                                {
-                                    "arg_type": 100021, 
-                                    "args_list": [
-                                        {
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        [
-                                                            "INTEGER", 
-                                                            "关卡阶段"
-                                                        ]
-                                                    ], 
-                                                    "sub_type": 6
-                                                }, 
-                                                {
-                                                    "arg_type": 100015, 
-                                                    "args_list": [
-                                                        "=="
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        1
-                                                    ], 
-                                                    "sub_type": 1
-                                                }
-                                            ], 
-                                            "condition_type": "FLOAT_COMPARE", 
-                                            "element_id": 673726506992652, 
-                                            "enable": true
-                                        }, 
-                                        {
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100004, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "POINT", 
-                                                                "上判定点", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 19
-                                                }, 
-                                                {
-                                                    "arg_type": 100009, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "RECTANGLE", 
-                                                                "生成区域", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 7
-                                                }
-                                            ], 
-                                            "condition_type": "WHETHER_POINT_IN_AREA", 
-                                            "element_id": 673726506992531, 
-                                            "enable": true
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "condition_type": "AND", 
-                            "element_id": 673726506992527, 
-                            "enable": true
-                        }
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100022, 
-                    "args_list": [
-                        {
-                            "action_type": "SET_VARIABLE", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100030, 
-                                    "args_list": [
-                                        {
-                                            "__tuple__": true, 
-                                            "items": [
-                                                "FLOAT", 
-                                                "区域长度", 
-                                                "local"
-                                            ]
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100000, 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100000, 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100009, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "RECTANGLE", 
-                                                                "生成区域", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 7
-                                                }
-                                            ], 
-                                            "sub_type": "GET_RECT_AREA_MAX_X"
-                                        }, 
-                                        {
-                                            "arg_type": 100017, 
-                                            "args_list": [
-                                                "-"
-                                            ], 
-                                            "sub_type": 1
-                                        }, 
-                                        {
-                                            "arg_type": 100000, 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100009, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "RECTANGLE", 
-                                                                "生成区域", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 7
-                                                }
-                                            ], 
-                                            "sub_type": "GET_RECT_AREA_MIN_X"
-                                        }
-                                    ], 
-                                    "sub_type": "ARITHMETIC_OPERATION"
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 673726506992660, 
-                            "enable": true
-                        }, 
-                        {
-                            "action_type": "SET_VARIABLE", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100030, 
-                                    "args_list": [
-                                        {
-                                            "__tuple__": true, 
-                                            "items": [
-                                                "INTEGER", 
-                                                "数组索引计数", 
-                                                "local"
-                                            ]
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100002, 
-                                            "args_list": [
-                                                {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "INTEGER", 
-                                                        "数组索引计数", 
-                                                        "local"
-                                                    ]
-                                                }
-                                            ], 
-                                            "sub_type": 6
-                                        }
-                                    ], 
-                                    "sub_type": "INT_PLUS_ONE"
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 673726506992545, 
-                            "enable": true
-                        }, 
-                        {
-                            "action_type": "SET_VARIABLE", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100028, 
-                                    "args_list": [
-                                        {
-                                            "__tuple__": true, 
-                                            "items": [
-                                                "RECTANGLE", 
-                                                "areas", 
-                                                "local"
-                                            ]
-                                        }, 
-                                        {
-                                            "arg_type": 100002, 
-                                            "args_list": [
-                                                {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "INTEGER", 
-                                                        "数组索引计数", 
-                                                        "local"
-                                                    ]
-                                                }
-                                            ], 
-                                            "sub_type": 6
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100009, 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100004, 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100004, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "POINT", 
-                                                                "屏幕中心点", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 19
-                                                }, 
-                                                {
-                                                    "arg_type": 100225, 
-                                                    "args_list": [
-                                                        180.0
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100000, 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100000, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "FLOAT", 
-                                                                        "屏幕上边到中心距离", 
-                                                                        "local"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": 2
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100017, 
-                                                            "args_list": [
-                                                                "+"
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100000, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "FLOAT", 
-                                                                        "区域范围", 
-                                                                        "local"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": 2
-                                                        }
-                                                    ], 
-                                                    "sub_type": "ARITHMETIC_OPERATION"
-                                                }
-                                            ], 
-                                            "sub_type": "POINT_OFFSET_VECTOR_POINT"
-                                        }, 
-                                        {
-                                            "arg_type": 100000, 
-                                            "args_list": [
-                                                {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "FLOAT", 
-                                                        "区域长度", 
-                                                        "local"
-                                                    ]
-                                                }
-                                            ], 
-                                            "sub_type": 2
-                                        }, 
-                                        {
-                                            "arg_type": 100000, 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100000, 
-                                                    "args_list": [
-                                                        2.0
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100017, 
-                                                    "args_list": [
-                                                        "*"
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100000, 
-                                                    "args_list": [
-                                                        [
-                                                            "FLOAT", 
-                                                            "区域范围", 
-                                                            "local"
-                                                        ]
-                                                    ], 
-                                                    "sub_type": 2
-                                                }
-                                            ], 
-                                            "sub_type": "ARITHMETIC_OPERATION"
-                                        }
-                                    ], 
-                                    "sub_type": "CREATE_REC_AREA"
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 673726506992678, 
-                            "enable": true
-                        }
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100022, 
-                    "args_list": [], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 673726506992523, 
-            "enable": true, 
-            "fake_op": [
-                2
-            ]
-        }, 
-        {
-            "action_type": "IF_THEN_ELSE", 
-            "args_list": [
-                {
-                    "arg_type": 100021, 
-                    "args_list": [
-                        {
-                            "args_list": [
-                                {
-                                    "arg_type": 100021, 
-                                    "args_list": [
-                                        {
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        [
-                                                            "INTEGER", 
-                                                            "关卡阶段"
-                                                        ]
-                                                    ], 
-                                                    "sub_type": 6
-                                                }, 
-                                                {
-                                                    "arg_type": 100015, 
-                                                    "args_list": [
-                                                        "=="
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        1
-                                                    ], 
-                                                    "sub_type": 1
-                                                }
-                                            ], 
-                                            "condition_type": "FLOAT_COMPARE", 
-                                            "element_id": 673726506992983, 
-                                            "enable": true
-                                        }, 
-                                        {
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100004, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "POINT", 
-                                                                "下判定点", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 19
-                                                }, 
-                                                {
-                                                    "arg_type": 100009, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "RECTANGLE", 
-                                                                "生成区域", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 7
-                                                }
-                                            ], 
-                                            "condition_type": "WHETHER_POINT_IN_AREA", 
-                                            "element_id": 673726506992991, 
-                                            "enable": true
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "condition_type": "AND", 
-                            "element_id": 673726506992979, 
-                            "enable": true
-                        }
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100022, 
-                    "args_list": [
-                        {
-                            "action_type": "SET_VARIABLE", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100030, 
-                                    "args_list": [
-                                        {
-                                            "__tuple__": true, 
-                                            "items": [
-                                                "FLOAT", 
-                                                "区域长度", 
-                                                "local"
-                                            ]
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100000, 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100000, 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100009, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "RECTANGLE", 
-                                                                "生成区域", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 7
-                                                }
-                                            ], 
-                                            "sub_type": "GET_RECT_AREA_MAX_X"
-                                        }, 
-                                        {
-                                            "arg_type": 100017, 
-                                            "args_list": [
-                                                "-"
-                                            ], 
-                                            "sub_type": 1
-                                        }, 
-                                        {
-                                            "arg_type": 100000, 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100009, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "RECTANGLE", 
-                                                                "生成区域", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 7
-                                                }
-                                            ], 
-                                            "sub_type": "GET_RECT_AREA_MIN_X"
-                                        }
-                                    ], 
-                                    "sub_type": "ARITHMETIC_OPERATION"
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 673726506992999, 
-                            "enable": true
-                        }, 
-                        {
-                            "action_type": "SET_VARIABLE", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100030, 
-                                    "args_list": [
-                                        {
-                                            "__tuple__": true, 
-                                            "items": [
-                                                "INTEGER", 
-                                                "数组索引计数", 
-                                                "local"
-                                            ]
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100002, 
-                                            "args_list": [
-                                                {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "INTEGER", 
-                                                        "数组索引计数", 
-                                                        "local"
-                                                    ]
-                                                }
-                                            ], 
-                                            "sub_type": 6
-                                        }
-                                    ], 
-                                    "sub_type": "INT_PLUS_ONE"
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 673726506993015, 
-                            "enable": true
-                        }, 
-                        {
-                            "action_type": "IF_THEN_ELSE", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100021, 
-                                    "args_list": [], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100022, 
-                                    "args_list": [], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100022, 
-                                    "args_list": [], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 673726506993083, 
-                            "enable": true, 
-                            "fake_op": [
-                                2
-                            ]
-                        }, 
-                        {
-                            "action_type": "SET_VARIABLE", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100028, 
-                                    "args_list": [
-                                        {
-                                            "__tuple__": true, 
-                                            "items": [
-                                                "RECTANGLE", 
-                                                "areas", 
-                                                "local"
-                                            ]
-                                        }, 
-                                        {
-                                            "arg_type": 100002, 
-                                            "args_list": [
-                                                {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "INTEGER", 
-                                                        "数组索引计数", 
-                                                        "local"
-                                                    ]
-                                                }
-                                            ], 
-                                            "sub_type": 6
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100009, 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100004, 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100004, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "POINT", 
-                                                                "屏幕中心点", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 19
-                                                }, 
-                                                {
-                                                    "arg_type": 100225, 
-                                                    "args_list": [
-                                                        0.0
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100000, 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100000, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "FLOAT", 
-                                                                        "屏幕下边到中心距离", 
-                                                                        "local"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": 2
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100017, 
-                                                            "args_list": [
-                                                                "+"
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100000, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "FLOAT", 
-                                                                        "区域范围", 
-                                                                        "local"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": 2
-                                                        }
-                                                    ], 
-                                                    "sub_type": "ARITHMETIC_OPERATION"
-                                                }
-                                            ], 
-                                            "sub_type": "POINT_OFFSET_VECTOR_POINT"
-                                        }, 
-                                        {
-                                            "arg_type": 100000, 
-                                            "args_list": [
-                                                {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "FLOAT", 
-                                                        "区域长度", 
-                                                        "local"
-                                                    ]
-                                                }
-                                            ], 
-                                            "sub_type": 2
-                                        }, 
-                                        {
-                                            "arg_type": 100000, 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100000, 
-                                                    "args_list": [
-                                                        2.0
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100017, 
-                                                    "args_list": [
-                                                        "*"
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100000, 
-                                                    "args_list": [
-                                                        [
-                                                            "FLOAT", 
-                                                            "区域范围", 
-                                                            "local"
-                                                        ]
-                                                    ], 
-                                                    "sub_type": 2
-                                                }
-                                            ], 
-                                            "sub_type": "ARITHMETIC_OPERATION"
-                                        }
-                                    ], 
-                                    "sub_type": "CREATE_REC_AREA"
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 673726506993023, 
-                            "enable": true
-                        }
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100022, 
-                    "args_list": [], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 673726506992975, 
-            "enable": true, 
-            "fake_op": [
-                2
-            ]
-        }, 
-        [
             1914065664, 
             "如果玩家完全脱离怪物生成区域,就返回（0，0，0）", 
             673726506, 
             "action_type"
         ], 
-        {
-            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
-            "args_list": [
-                {
-                    "arg_type": 100175, 
-                    "args_list": [
-                        2
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100003, 
-                    "args_list": [
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "INTEGER", 
-                                        "数组索引计数", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 6
-                        }
-                    ], 
-                    "op_arg": [
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                0
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "op_arg_enable": [
-                        false
-                    ], 
-                    "sub_type": "INT_TO_STR"
-                }
-            ], 
-            "bp": false, 
-            "element_id": 673726506992511, 
-            "enable": true
-        }, 
         {
             "action_type": "IF_THEN_ELSE", 
             "args_list": [
@@ -6380,52 +5543,235 @@
                             "element_id": 673726506000569, 
                             "enable": true
                         }, 
+                        [
+                            1491082922, 
+                            "如果敌人生成到了会碰撞的点，那就重新选点，最多选五次", 
+                            673726506, 
+                            "action_type"
+                        ], 
                         {
-                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                            "action_type": "FOR_INT_DO_ACTION_NEW", 
                             "args_list": [
                                 {
-                                    "arg_type": 100175, 
+                                    "arg_type": 100002, 
                                     "args_list": [
-                                        2
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "i", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 6
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        0
                                     ], 
                                     "sub_type": 1
                                 }, 
                                 {
-                                    "arg_type": 100003, 
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        4
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
                                     "args_list": [
                                         {
-                                            "arg_type": 100002, 
+                                            "action_type": "IF_THEN_ELSE", 
                                             "args_list": [
                                                 {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "INTEGER", 
-                                                        "index", 
-                                                        "local"
-                                                    ]
+                                                    "arg_type": 100021, 
+                                                    "args_list": [
+                                                        {
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100006, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "UNIT_ENTITY", 
+                                                                                "幸存者_主控单位"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 11
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100004, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "POINT", 
+                                                                                "随机点", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 19
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100000, 
+                                                                    "args_list": [
+                                                                        30.0
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "condition_type": "UNIT_CAN_COLLIDE_WITH_POINT", 
+                                                            "element_id": 673726506993108, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "SET_VARIABLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100030, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "index", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                1
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "INTEGER", 
+                                                                                        "数组索引计数", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": 6
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "RANDOM_INT"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 673726506993118, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_VARIABLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100030, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "POINT", 
+                                                                                "随机点", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100004, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100009, 
+                                                                            "args_list": [
+                                                                                [
+                                                                                    "RECTANGLE", 
+                                                                                    "areas", 
+                                                                                    "local"
+                                                                                ], 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        [
+                                                                                            "INTEGER", 
+                                                                                            "index", 
+                                                                                            "local"
+                                                                                        ]
+                                                                                    ], 
+                                                                                    "sub_type": 6
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": 7
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "RECTANGLE_RANDOM_POINT"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 673726506993129, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "BREAK_LOOP", 
+                                                            "args_list": [], 
+                                                            "bp": false, 
+                                                            "element_id": 673726506993139, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
                                                 }
                                             ], 
-                                            "sub_type": 6
+                                            "bp": false, 
+                                            "element_id": 673726506993097, 
+                                            "enable": true, 
+                                            "fake_op": [
+                                                2
+                                            ]
                                         }
                                     ], 
-                                    "op_arg": [
-                                        {
-                                            "arg_type": 100002, 
-                                            "args_list": [
-                                                0
-                                            ], 
-                                            "sub_type": 1
-                                        }
-                                    ], 
-                                    "op_arg_enable": [
-                                        false
-                                    ], 
-                                    "sub_type": "INT_TO_STR"
+                                    "sub_type": 1
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 673726506000597, 
-                            "enable": true
+                            "element_id": 673726506993086, 
+                            "enable": true, 
+                            "op_arg": [
+                                null
+                            ], 
+                            "op_arg_enable": [
+                                false
+                            ]
                         }
                     ], 
                     "sub_type": 1
@@ -6469,7 +5815,7 @@
     "func_comment": "", 
     "func_des": "幸存者_在屏幕边缘获取随机点，屏幕中心为{屏幕中心点}，范围大小为{区域范围}，生成敌人的区域为{生成区域}", 
     "func_id": "e9f6116074ee11ef900bd14583f81583", 
-    "func_name": "幸存者_在屏幕边缘获取在生成区域范围内的点", 
+    "func_name": "在屏幕边缘获取在生成区域范围内的点", 
     "func_param_list": [
         {
             "__tuple__": true, 
@@ -6508,7 +5854,7 @@
     "is_official_func": false, 
     "p_trigger_id": null, 
     "trigger_id": 673726506, 
-    "trigger_name": "幸存者_在屏幕边缘获取在生成区域范围内的点", 
+    "trigger_name": "在屏幕边缘获取在生成区域范围内的点", 
     "valid": true, 
     "var_data": [
         {
@@ -6521,6 +5867,7 @@
                 "屏幕左边到中心距离": 0.0
             }, 
             "INTEGER": {
+                "i": 0, 
                 "index": 0, 
                 "数组索引计数": 0
             }, 
@@ -6663,6 +6010,7 @@
         }, 
         {
             "areas": 10, 
+            "i": 0, 
             "index": 0, 
             "上判定点": 0, 
             "上判定点(右)": 0, 
@@ -6715,7 +6063,8 @@
             "右判定点(下)", 
             "上判定点", 
             "区域长度", 
-            "阶段二水平中心点"
+            "阶段二水平中心点", 
+            "i"
         ]
     ]
 }
