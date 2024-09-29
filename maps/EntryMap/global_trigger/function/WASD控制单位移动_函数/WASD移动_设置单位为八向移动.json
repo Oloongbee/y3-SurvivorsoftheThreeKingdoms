@@ -363,7 +363,7 @@
                                                     "sub_type": 11
                                                 }
                                             ], 
-                                            "sub_type": "IS_UNIT_ALIVE"
+                                            "sub_type": "TYPE_IS_EXIST"
                                         }, 
                                         {
                                             "arg_type": 100035, 
@@ -381,7 +381,7 @@
                                         }
                                     ], 
                                     "condition_type": "BOOL_COMPARE", 
-                                    "element_id": 1113378884000002, 
+                                    "element_id": 388616225000047, 
                                     "enable": true
                                 }
                             ], 
@@ -417,74 +417,77 @@
                         }, 
                         {
                             "arg_type": 100022, 
-                            "args_list": [], 
+                            "args_list": [
+                                {
+                                    "action_type": "CALL_TRIGGER_FUNC", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100177, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100006, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "UNIT_ENTITY", 
+                                                                "控制单位", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 11
+                                                }, 
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [
+                                                        [
+                                                            "PLAYER", 
+                                                            "玩家", 
+                                                            "local"
+                                                        ]
+                                                    ], 
+                                                    "sub_type": "VARIABLE"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "idle1"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "walk"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "op_arg": [
+                                                null
+                                            ], 
+                                            "op_arg_enable": [
+                                                false
+                                            ], 
+                                            "sub_type": "32fc2eb04e1d11ee86f930d042e90e85"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "call_rt_arg_idxes": [], 
+                                    "element_id": 388616225000002, 
+                                    "enable": true
+                                }
+                            ], 
                             "sub_type": 1
                         }
                     ], 
                     "bp": false, 
                     "element_id": 388616225000008, 
                     "enable": true, 
-                    "fake_op": []
-                }, 
-                {
-                    "action_type": "CALL_TRIGGER_FUNC", 
-                    "args_list": [
-                        {
-                            "arg_type": 100177, 
-                            "args_list": [
-                                {
-                                    "arg_type": 100006, 
-                                    "args_list": [
-                                        {
-                                            "__tuple__": true, 
-                                            "items": [
-                                                "UNIT_ENTITY", 
-                                                "控制单位", 
-                                                "local"
-                                            ]
-                                        }
-                                    ], 
-                                    "sub_type": 11
-                                }, 
-                                {
-                                    "arg_type": 100025, 
-                                    "args_list": [
-                                        [
-                                            "PLAYER", 
-                                            "玩家", 
-                                            "local"
-                                        ]
-                                    ], 
-                                    "sub_type": "VARIABLE"
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "idle1"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "walk"
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "op_arg": [
-                                null
-                            ], 
-                            "op_arg_enable": [
-                                false
-                            ], 
-                            "sub_type": "32fc2eb04e1d11ee86f930d042e90e85"
-                        }
-                    ], 
-                    "bp": false, 
-                    "call_rt_arg_idxes": [], 
-                    "element_id": 388616225000002, 
-                    "enable": true
+                    "fake_op": [
+                        2
+                    ]
                 }
             ], 
             "call_enabled": true, 
@@ -541,7 +544,7 @@
                     }
                 ], 
                 "bp": false, 
-                "element_id": 1898565664000014, 
+                "element_id": 1898565664000015, 
                 "enable": true
             }, 
             "trigger_id": 388616225, 

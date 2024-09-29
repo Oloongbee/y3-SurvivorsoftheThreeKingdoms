@@ -1344,7 +1344,7 @@
                                                             "enable": true
                                                         }, 
                                                         {
-                                                            "action_type": "NEW_CAMERA_SET_MOVE_NOT_ENABLE", 
+                                                            "action_type": "NEW_CAMERA_SET_FOLLOW_UNIT", 
                                                             "args_list": [
                                                                 {
                                                                     "arg_type": 100025, 
@@ -1359,13 +1359,36 @@
                                                                         }
                                                                     ], 
                                                                     "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100006, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "UNIT_ENTITY", 
+                                                                                "玩家控制单位", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 11
                                                                 }
                                                             ], 
                                                             "bp": false, 
-                                                            "element_id": 406798397997652, 
-                                                            "enable": true
+                                                            "element_id": 1966854147999060, 
+                                                            "enable": true, 
+                                                            "op_arg": [
+                                                                null, 
+                                                                null, 
+                                                                null
+                                                            ], 
+                                                            "op_arg_enable": [
+                                                                false, 
+                                                                false, 
+                                                                false
+                                                            ]
                                                         }, 
-                                                        1113378884, 
                                                         [
                                                             1954945720, 
                                                             "赋予主武器", 
@@ -5988,221 +6011,6 @@
     "is_func": true, 
     "is_official_func": false, 
     "p_trigger_id": null, 
-    "sub_trigger": {
-        "1113378884": {
-            "action": [
-                [
-                    1225786282, 
-                    "如果该单位不存在，注销镜头跟随的触发器", 
-                    1113378884, 
-                    "action_type"
-                ], 
-                {
-                    "action_type": "IF_THEN_ELSE", 
-                    "args_list": [
-                        {
-                            "arg_type": 100021, 
-                            "args_list": [
-                                {
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100001, 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100006, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "UNIT_ENTITY", 
-                                                                "玩家控制单位", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 11
-                                                }
-                                            ], 
-                                            "sub_type": "IS_UNIT_ALIVE"
-                                        }, 
-                                        {
-                                            "arg_type": 100035, 
-                                            "args_list": [
-                                                "=="
-                                            ], 
-                                            "sub_type": 1
-                                        }, 
-                                        {
-                                            "arg_type": 100001, 
-                                            "args_list": [
-                                                false
-                                            ], 
-                                            "sub_type": 1
-                                        }
-                                    ], 
-                                    "condition_type": "BOOL_COMPARE", 
-                                    "element_id": 1113378884000002, 
-                                    "enable": true
-                                }
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100022, 
-                            "args_list": [
-                                {
-                                    "action_type": "UNREG_TRIGGER", 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100178, 
-                                            "args_list": [
-                                                {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "DYNAMIC_TRIGGER_INSTANCE", 
-                                                        "镜头触发器", 
-                                                        "local"
-                                                    ]
-                                                }
-                                            ], 
-                                            "sub_type": "VARIABLE"
-                                        }
-                                    ], 
-                                    "bp": false, 
-                                    "element_id": 1113378884000003, 
-                                    "enable": true
-                                }
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100022, 
-                            "args_list": [], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 1113378884000004, 
-                    "enable": true, 
-                    "fake_op": []
-                }, 
-                {
-                    "action_type": "NEW_CAMERA_LINEAR_MOVE_TIME", 
-                    "args_list": [
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                1
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100004, 
-                            "args_list": [
-                                {
-                                    "arg_type": 100006, 
-                                    "args_list": [
-                                        {
-                                            "__tuple__": true, 
-                                            "items": [
-                                                "UNIT_ENTITY", 
-                                                "玩家控制单位", 
-                                                "local"
-                                            ]
-                                        }
-                                    ], 
-                                    "sub_type": 11
-                                }
-                            ], 
-                            "sub_type": "UNIT_ENTITY_POINT"
-                        }, 
-                        {
-                            "arg_type": 100000, 
-                            "args_list": [
-                                0.6
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100217, 
-                            "args_list": [
-                                2
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 1113378884000005, 
-                    "enable": true
-                }
-            ], 
-            "call_enabled": true, 
-            "condition": [], 
-            "enabled": false, 
-            "event": [
-                {
-                    "args_list": [
-                        {
-                            "arg_type": 100000, 
-                            "args_list": [
-                                0.0333
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "element_id": 1113378884000001, 
-                    "enable": true, 
-                    "event_type": "GAME_ELAPSE_REPEAT"
-                }
-            ], 
-            "group_id": 0, 
-            "is_conf": true, 
-            "p_trigger_id": 406798397, 
-            "sub_trigger_owner_set_var_action": {
-                "action_type": "SET_VARIABLE", 
-                "args_list": [
-                    {
-                        "arg_type": 100178, 
-                        "args_list": [
-                            {
-                                "__tuple__": true, 
-                                "items": [
-                                    "DYNAMIC_TRIGGER_INSTANCE", 
-                                    "镜头触发器", 
-                                    "local"
-                                ]
-                            }
-                        ], 
-                        "sub_type": "VARIABLE"
-                    }, 
-                    {
-                        "arg_type": 100178, 
-                        "args_list": [
-                            {
-                                "arg_type": 100019, 
-                                "args_list": [
-                                    1113378884
-                                ], 
-                                "sub_type": 1
-                            }
-                        ], 
-                        "sub_type": "REG_TRIGGER"
-                    }
-                ], 
-                "bp": false, 
-                "element_id": 406798397998910, 
-                "enable": true
-            }, 
-            "trigger_id": 1113378884, 
-            "trigger_name": "镜头随玩家移动", 
-            "valid": true, 
-            "var_data": [
-                {}, 
-                {}, 
-                []
-            ]
-        }
-    }, 
     "trigger_id": 406798397, 
     "trigger_name": "创建贪吃蛇", 
     "valid": true, 
@@ -6232,6 +6040,7 @@
             }, 
             "NEW_TIMER": {}, 
             "PLAYER": {
+                "所属玩家": 0, 
                 "玩家": 0
             }, 
             "POINT": {
@@ -6273,6 +6082,7 @@
             "当前武将单位": 0, 
             "当前武将单位类型": 0, 
             "当前玩家ID": 0, 
+            "所属玩家": 0, 
             "玩家": 0, 
             "玩家控制单位": 0, 
             "玩家阵容信息对应表": 0, 
@@ -6306,7 +6116,8 @@
             "镜头触发器", 
             "玩家阵容信息对应表", 
             "表中有物", 
-            "全单位数组计数器"
+            "全单位数组计数器", 
+            "所属玩家"
         ]
     ]
 }
