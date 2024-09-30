@@ -1,23 +1,36 @@
 {
     "action": [
-        1088987250, 
-        233369715, 
-        753500276, 
-        1995034741, 
+        2006974587, 
+        211812476, 
+        950009981, 
+        1117782142, 
         [
             1616846248, 
             "如果没有购买，那么放回", 
-            1978118257, 
+            1537212538, 
             "action_type"
         ], 
-        854331510, 
-        535711863, 
-        686727288, 
-        1492054137, 
+        1369440383, 
+        1872756864, 
+        60817537, 
+        1151336578, 
+        [
+            1106426860, 
+            "武器购买", 
+            1537212538, 
+            "action_type"
+        ], 
+        [
+            1008734536, 
+            "触发武器购买控件事件，并且检测触发该控件的控件在的位置", 
+            1537212538, 
+            "action_type"
+        ], 
+        1689641091, 
         [
             1066061204, 
-            "#######", 
-            1978118257, 
+            "武器购买", 
+            1537212538, 
             "action_type"
         ]
     ], 
@@ -27,7 +40,7 @@
     "event": [], 
     "func_category": "t_function", 
     "func_comment": "", 
-    "func_des": "函数描述{当前玩家}", 
+    "func_des": "函数描述{当前玩家}{当前玩家索引}{当前玩家阵容表}", 
     "func_id": "7e97a1de7d9011ef97395148d5b47005", 
     "func_name": "武器购买（未完成）", 
     "func_param_list": [
@@ -37,361 +50,28 @@
                 "当前玩家", 
                 true
             ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "当前玩家索引", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "当前玩家阵容表", 
+                true
+            ]
         }
     ], 
-    "group_id": "Rs9HbH1vEe+bQVFI1bRwBU", 
+    "group_id": "pXL0Mn4JEe+PAgkAZymxpr", 
     "is_func": true, 
     "is_official_func": false, 
     "p_trigger_id": null, 
     "sub_trigger": {
-        "233369715": {
-            "action": [
-                {
-                    "action_type": "SET_VARIABLE", 
-                    "args_list": [
-                        {
-                            "arg_type": 100028, 
-                            "args_list": [
-                                [
-                                    "BOOLEAN", 
-                                    "武器i是否被拖拽", 
-                                    "local"
-                                ], 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        2
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                true
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 233369715000002, 
-                    "enable": true
-                }, 
-                {
-                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
-                    "args_list": [
-                        {
-                            "arg_type": 100175, 
-                            "args_list": [
-                                3
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "购买武器：当前被拖拽的是"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "2"
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "op_arg": [
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null
-                            ], 
-                            "op_arg_enable": [
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false
-                            ], 
-                            "sub_type": "STR_JOIN"
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 1088987250000002, 
-                    "enable": true
-                }
-            ], 
-            "call_enabled": true, 
-            "condition": [], 
-            "enabled": false, 
-            "event": [
-                {
-                    "args_list": [
-                        {
-                            "arg_type": 100067, 
-                            "args_list": [
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "武器拖拽2"
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "sub_type": "STR_TO_UI_EVENT"
-                        }
-                    ], 
-                    "element_id": 233369715000001, 
-                    "enable": true, 
-                    "event_type": "TRIGGER_COMPONENT_EVENT"
-                }
-            ], 
-            "group_id": 0, 
-            "is_conf": true, 
-            "p_trigger_id": 1978118257, 
-            "trigger_id": 233369715, 
-            "trigger_name": "子触发器_40", 
-            "valid": true, 
-            "var_data": [
-                {}, 
-                {}, 
-                []
-            ]
-        }, 
-        "535711863": {
-            "action": [
-                {
-                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
-                    "args_list": [
-                        {
-                            "arg_type": 100175, 
-                            "args_list": [
-                                3
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "购买武器：当前被放回的武器是"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "2"
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "op_arg": [
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null
-                            ], 
-                            "op_arg_enable": [
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false
-                            ], 
-                            "sub_type": "STR_JOIN"
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 1088987250000002, 
-                    "enable": true
-                }, 
-                {
-                    "action_type": "SET_VARIABLE", 
-                    "args_list": [
-                        {
-                            "arg_type": 100028, 
-                            "args_list": [
-                                [
-                                    "BOOLEAN", 
-                                    "武器i是否被拖拽", 
-                                    "local"
-                                ], 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        2
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                false
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 535711863000003, 
-                    "enable": true
-                }, 
-                {
-                    "action_type": "SET_UI_COMP_POSITION_NO_TRANS", 
-                    "args_list": [
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "PLAYER", 
-                                        "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100070, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "UI_COMP", 
-                                        "待购买武器图片"
-                                    ]
-                                }, 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        2
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100000, 
-                            "args_list": [
-                                -80.0
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100000, 
-                            "args_list": [
-                                -309.0
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 535711863000004, 
-                    "enable": true
-                }
-            ], 
-            "call_enabled": true, 
-            "condition": [
-                {
-                    "args_list": [
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "BOOLEAN", 
-                                        "武器是否移出"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100035, 
-                            "args_list": [
-                                "=="
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                false
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "condition_type": "BOOL_COMPARE", 
-                    "element_id": 535711863000002, 
-                    "enable": true
-                }
-            ], 
-            "enabled": false, 
-            "event": [
-                {
-                    "args_list": [
-                        {
-                            "arg_type": 100067, 
-                            "args_list": [
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "武器移出2"
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "sub_type": "STR_TO_UI_EVENT"
-                        }
-                    ], 
-                    "element_id": 535711863000001, 
-                    "enable": true, 
-                    "event_type": "TRIGGER_COMPONENT_EVENT"
-                }
-            ], 
-            "group_id": 0, 
-            "is_conf": true, 
-            "p_trigger_id": 1978118257, 
-            "trigger_id": 535711863, 
-            "trigger_name": "子触发器_44", 
-            "valid": true, 
-            "var_data": [
-                {}, 
-                {}, 
-                []
-            ]
-        }, 
-        "686727288": {
+        "60817537": {
             "action": [
                 {
                     "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
@@ -445,7 +125,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1088987250000002, 
+                    "element_id": 60817537000003, 
                     "enable": true
                 }, 
                 {
@@ -478,7 +158,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 686727288000003, 
+                    "element_id": 60817537000004, 
                     "enable": true
                 }, 
                 {
@@ -534,7 +214,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 686727288000004, 
+                    "element_id": 60817537000005, 
                     "enable": true
                 }
             ], 
@@ -571,7 +251,7 @@
                         }
                     ], 
                     "condition_type": "BOOL_COMPARE", 
-                    "element_id": 686727288000002, 
+                    "element_id": 60817537000002, 
                     "enable": true
                 }
             ], 
@@ -593,15 +273,15 @@
                             "sub_type": "STR_TO_UI_EVENT"
                         }
                     ], 
-                    "element_id": 686727288000001, 
+                    "element_id": 60817537000001, 
                     "enable": true, 
                     "event_type": "TRIGGER_COMPONENT_EVENT"
                 }
             ], 
             "group_id": 0, 
             "is_conf": true, 
-            "p_trigger_id": 1978118257, 
-            "trigger_id": 686727288, 
+            "p_trigger_id": 1537212538, 
+            "trigger_id": 60817537, 
             "trigger_name": "子触发器_45", 
             "valid": true, 
             "var_data": [
@@ -610,7 +290,135 @@
                 []
             ]
         }, 
-        "753500276": {
+        "211812476": {
+            "action": [
+                {
+                    "action_type": "SET_VARIABLE", 
+                    "args_list": [
+                        {
+                            "arg_type": 100028, 
+                            "args_list": [
+                                [
+                                    "BOOLEAN", 
+                                    "武器i是否被拖拽", 
+                                    "local"
+                                ], 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        2
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                true
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 211812476000002, 
+                    "enable": true
+                }, 
+                {
+                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                    "args_list": [
+                        {
+                            "arg_type": 100175, 
+                            "args_list": [
+                                3
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "购买武器：当前被拖拽的是"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "2"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "op_arg": [
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null
+                            ], 
+                            "op_arg_enable": [
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false
+                            ], 
+                            "sub_type": "STR_JOIN"
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 211812476000003, 
+                    "enable": true
+                }
+            ], 
+            "call_enabled": true, 
+            "condition": [], 
+            "enabled": false, 
+            "event": [
+                {
+                    "args_list": [
+                        {
+                            "arg_type": 100067, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "武器拖拽2"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": "STR_TO_UI_EVENT"
+                        }
+                    ], 
+                    "element_id": 211812476000001, 
+                    "enable": true, 
+                    "event_type": "TRIGGER_COMPONENT_EVENT"
+                }
+            ], 
+            "group_id": 0, 
+            "is_conf": true, 
+            "p_trigger_id": 1537212538, 
+            "trigger_id": 211812476, 
+            "trigger_name": "子触发器_40", 
+            "valid": true, 
+            "var_data": [
+                {}, 
+                {}, 
+                []
+            ]
+        }, 
+        "950009981": {
             "action": [
                 {
                     "action_type": "SET_VARIABLE", 
@@ -642,7 +450,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 753500276000002, 
+                    "element_id": 950009981000002, 
                     "enable": true
                 }, 
                 {
@@ -697,7 +505,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1088987250000002, 
+                    "element_id": 950009981000003, 
                     "enable": true
                 }
             ], 
@@ -721,15 +529,15 @@
                             "sub_type": "STR_TO_UI_EVENT"
                         }
                     ], 
-                    "element_id": 753500276000001, 
+                    "element_id": 950009981000001, 
                     "enable": true, 
                     "event_type": "TRIGGER_COMPONENT_EVENT"
                 }
             ], 
             "group_id": 0, 
             "is_conf": true, 
-            "p_trigger_id": 1978118257, 
-            "trigger_id": 753500276, 
+            "p_trigger_id": 1537212538, 
+            "trigger_id": 950009981, 
             "trigger_name": "子触发器_41", 
             "valid": true, 
             "var_data": [
@@ -738,63 +546,8 @@
                 []
             ]
         }, 
-        "854331510": {
+        "1117782142": {
             "action": [
-                {
-                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
-                    "args_list": [
-                        {
-                            "arg_type": 100175, 
-                            "args_list": [
-                                3
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "购买武器：当前被放回的武器是"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "1"
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "op_arg": [
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null, 
-                                null
-                            ], 
-                            "op_arg_enable": [
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false, 
-                                false
-                            ], 
-                            "sub_type": "STR_JOIN"
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 1088987250000002, 
-                    "enable": true
-                }, 
                 {
                     "action_type": "SET_VARIABLE", 
                     "args_list": [
@@ -809,7 +562,7 @@
                                 {
                                     "arg_type": 100002, 
                                     "args_list": [
-                                        1
+                                        4
                                     ], 
                                     "sub_type": 1
                                 }
@@ -819,146 +572,15 @@
                         {
                             "arg_type": 100001, 
                             "args_list": [
-                                false
+                                true
                             ], 
                             "sub_type": 1
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 854331510000003, 
+                    "element_id": 1117782142000002, 
                     "enable": true
                 }, 
-                {
-                    "action_type": "SET_UI_COMP_POSITION_NO_TRANS", 
-                    "args_list": [
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "PLAYER", 
-                                        "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100070, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "UI_COMP", 
-                                        "待购买武器图片"
-                                    ]
-                                }, 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        1
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100000, 
-                            "args_list": [
-                                -200.0
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100000, 
-                            "args_list": [
-                                -309.0
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 854331510000004, 
-                    "enable": true
-                }
-            ], 
-            "call_enabled": true, 
-            "condition": [
-                {
-                    "args_list": [
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "BOOLEAN", 
-                                        "武器是否移出"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100035, 
-                            "args_list": [
-                                "=="
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                false
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "condition_type": "BOOL_COMPARE", 
-                    "element_id": 854331510000002, 
-                    "enable": true
-                }
-            ], 
-            "enabled": false, 
-            "event": [
-                {
-                    "args_list": [
-                        {
-                            "arg_type": 100067, 
-                            "args_list": [
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "武器移出1"
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "sub_type": "STR_TO_UI_EVENT"
-                        }
-                    ], 
-                    "element_id": 854331510000001, 
-                    "enable": true, 
-                    "event_type": "TRIGGER_COMPONENT_EVENT"
-                }
-            ], 
-            "group_id": 0, 
-            "is_conf": true, 
-            "p_trigger_id": 1978118257, 
-            "trigger_id": 854331510, 
-            "trigger_name": "子触发器_43", 
-            "valid": true, 
-            "var_data": [
-                {}, 
-                {}, 
-                []
-            ]
-        }, 
-        "1088987250": {
-            "action": [
                 {
                     "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
                     "args_list": [
@@ -982,7 +604,7 @@
                                 {
                                     "arg_type": 100003, 
                                     "args_list": [
-                                        "1"
+                                        "4"
                                     ], 
                                     "sub_type": 1
                                 }
@@ -1011,40 +633,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1088987250000002, 
-                    "enable": true
-                }, 
-                {
-                    "action_type": "SET_VARIABLE", 
-                    "args_list": [
-                        {
-                            "arg_type": 100028, 
-                            "args_list": [
-                                [
-                                    "BOOLEAN", 
-                                    "武器i是否被拖拽", 
-                                    "local"
-                                ], 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        1
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                true
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 1088987250000003, 
+                    "element_id": 1117782142000003, 
                     "enable": true
                 }
             ], 
@@ -1060,7 +649,7 @@
                                 {
                                     "arg_type": 100003, 
                                     "args_list": [
-                                        "武器拖拽1"
+                                        "武器拖拽4"
                                     ], 
                                     "sub_type": 1
                                 }
@@ -1068,16 +657,16 @@
                             "sub_type": "STR_TO_UI_EVENT"
                         }
                     ], 
-                    "element_id": 1088987250000001, 
+                    "element_id": 1117782142000001, 
                     "enable": true, 
                     "event_type": "TRIGGER_COMPONENT_EVENT"
                 }
             ], 
             "group_id": 0, 
             "is_conf": true, 
-            "p_trigger_id": 1978118257, 
-            "trigger_id": 1088987250, 
-            "trigger_name": "子触发器_39", 
+            "p_trigger_id": 1537212538, 
+            "trigger_id": 1117782142, 
+            "trigger_name": "子触发器_42", 
             "valid": true, 
             "var_data": [
                 {}, 
@@ -1085,7 +674,7 @@
                 []
             ]
         }, 
-        "1492054137": {
+        "1151336578": {
             "action": [
                 {
                     "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
@@ -1139,7 +728,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1088987250000002, 
+                    "element_id": 1151336578000003, 
                     "enable": true
                 }, 
                 {
@@ -1172,7 +761,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1492054137000003, 
+                    "element_id": 1151336578000004, 
                     "enable": true
                 }, 
                 {
@@ -1228,7 +817,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1492054137000004, 
+                    "element_id": 1151336578000005, 
                     "enable": true
                 }
             ], 
@@ -1265,7 +854,7 @@
                         }
                     ], 
                     "condition_type": "BOOL_COMPARE", 
-                    "element_id": 1492054137000002, 
+                    "element_id": 1151336578000002, 
                     "enable": true
                 }
             ], 
@@ -1287,15 +876,15 @@
                             "sub_type": "STR_TO_UI_EVENT"
                         }
                     ], 
-                    "element_id": 1492054137000001, 
+                    "element_id": 1151336578000001, 
                     "enable": true, 
                     "event_type": "TRIGGER_COMPONENT_EVENT"
                 }
             ], 
             "group_id": 0, 
             "is_conf": true, 
-            "p_trigger_id": 1978118257, 
-            "trigger_id": 1492054137, 
+            "p_trigger_id": 1537212538, 
+            "trigger_id": 1151336578, 
             "trigger_name": "子触发器_46", 
             "valid": true, 
             "var_data": [
@@ -1304,41 +893,8 @@
                 []
             ]
         }, 
-        "1995034741": {
+        "1369440383": {
             "action": [
-                {
-                    "action_type": "SET_VARIABLE", 
-                    "args_list": [
-                        {
-                            "arg_type": 100028, 
-                            "args_list": [
-                                [
-                                    "BOOLEAN", 
-                                    "武器i是否被拖拽", 
-                                    "local"
-                                ], 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        4
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                true
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 1995034741000002, 
-                    "enable": true
-                }, 
                 {
                     "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
                     "args_list": [
@@ -1355,14 +911,14 @@
                                 {
                                     "arg_type": 100003, 
                                     "args_list": [
-                                        "购买武器：当前被拖拽的是"
+                                        "购买武器：当前被放回的武器是"
                                     ], 
                                     "sub_type": 1
                                 }, 
                                 {
                                     "arg_type": 100003, 
                                     "args_list": [
-                                        "4"
+                                        "1"
                                     ], 
                                     "sub_type": 1
                                 }
@@ -1391,7 +947,1852 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1088987250000002, 
+                    "element_id": 1369440383000003, 
+                    "enable": true
+                }, 
+                {
+                    "action_type": "SET_VARIABLE", 
+                    "args_list": [
+                        {
+                            "arg_type": 100028, 
+                            "args_list": [
+                                [
+                                    "BOOLEAN", 
+                                    "武器i是否被拖拽", 
+                                    "local"
+                                ], 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        1
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                false
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1369440383000004, 
+                    "enable": true
+                }, 
+                {
+                    "action_type": "SET_UI_COMP_POSITION_NO_TRANS", 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100070, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "UI_COMP", 
+                                        "待购买武器图片"
+                                    ]
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        1
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                -200.0
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                -309.0
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1369440383000005, 
+                    "enable": true
+                }
+            ], 
+            "call_enabled": true, 
+            "condition": [
+                {
+                    "args_list": [
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "BOOLEAN", 
+                                        "武器是否移出"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100035, 
+                            "args_list": [
+                                "=="
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                false
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "condition_type": "BOOL_COMPARE", 
+                    "element_id": 1369440383000002, 
+                    "enable": true
+                }
+            ], 
+            "enabled": false, 
+            "event": [
+                {
+                    "args_list": [
+                        {
+                            "arg_type": 100067, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "武器移出1"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": "STR_TO_UI_EVENT"
+                        }
+                    ], 
+                    "element_id": 1369440383000001, 
+                    "enable": true, 
+                    "event_type": "TRIGGER_COMPONENT_EVENT"
+                }
+            ], 
+            "group_id": 0, 
+            "is_conf": true, 
+            "p_trigger_id": 1537212538, 
+            "trigger_id": 1369440383, 
+            "trigger_name": "子触发器_43", 
+            "valid": true, 
+            "var_data": [
+                {}, 
+                {}, 
+                []
+            ]
+        }, 
+        "1689641091": {
+            "action": [
+                [
+                    1480613358, 
+                    "遍历获得当前控件获得控件索引", 
+                    1689641091, 
+                    "action_type"
+                ], 
+                {
+                    "action_type": "FOR_INT_DO_ACTION_NEW", 
+                    "args_list": [
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "i", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                1
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                10
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100022, 
+                            "args_list": [
+                                {
+                                    "action_type": "IF_THEN_ELSE", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100021, 
+                                            "args_list": [
+                                                {
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [], 
+                                                            "sub_type": "GET_UI_COMP_FROM_EVENT"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100035, 
+                                                            "args_list": [
+                                                                "=="
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100011, 
+                                                                    "args_list": [
+                                                                        "6bb91d1b-60b0-4f2d-9aa0-dddac7bec70d"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "i", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "商店已拥有武器控件"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
+                                                        }
+                                                    ], 
+                                                    "condition_type": "ANY_COMPARE", 
+                                                    "element_id": 1689641091000034, 
+                                                    "enable": true
+                                                }
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100022, 
+                                            "args_list": [
+                                                {
+                                                    "action_type": "SET_VARIABLE", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100030, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "当前控件索引", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "i", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 1689641091000050, 
+                                                    "enable": true
+                                                }
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100022, 
+                                            "args_list": [], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1689641091000020, 
+                                    "enable": true, 
+                                    "fake_op": []
+                                }
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1689641091000008, 
+                    "enable": true, 
+                    "op_arg": [
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false
+                    ]
+                }, 
+                [
+                    1065477729, 
+                    "遍历获得当前正在拖动的武器：当前武器拖拽索引", 
+                    1689641091, 
+                    "action_type"
+                ], 
+                {
+                    "action_type": "FOR_INT_DO_ACTION_NEW", 
+                    "args_list": [
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "i", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                1
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                4
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100022, 
+                            "args_list": [
+                                {
+                                    "action_type": "IF_THEN_ELSE", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100021, 
+                                            "args_list": [
+                                                {
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100001, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "BOOLEAN", 
+                                                                        "武器i是否被拖拽", 
+                                                                        "local"
+                                                                    ]
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "i", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100035, 
+                                                            "args_list": [
+                                                                "=="
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100001, 
+                                                            "args_list": [
+                                                                true
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "condition_type": "BOOL_COMPARE", 
+                                                    "element_id": 1689641091000081, 
+                                                    "enable": true
+                                                }
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100022, 
+                                            "args_list": [
+                                                {
+                                                    "action_type": "SET_VARIABLE", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100030, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "当前武器拖拽索引", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "i", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 1689641091000094, 
+                                                    "enable": true
+                                                }
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100022, 
+                                            "args_list": [], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1689641091000071, 
+                                    "enable": true, 
+                                    "fake_op": []
+                                }
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1689641091000059, 
+                    "enable": true, 
+                    "op_arg": [
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false
+                    ]
+                }, 
+                [
+                    1964093222, 
+                    "根据控件判断主副武器", 
+                    1689641091, 
+                    "action_type"
+                ], 
+                {
+                    "action_type": "IF_THEN_ELSE", 
+                    "args_list": [
+                        {
+                            "arg_type": 100021, 
+                            "args_list": [
+                                {
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前控件索引", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100016, 
+                                                    "args_list": [
+                                                        "%"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        2
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "sub_type": "MATH_OPERATION"
+                                        }, 
+                                        {
+                                            "arg_type": 100015, 
+                                            "args_list": [
+                                                "=="
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                1
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "condition_type": "FLOAT_COMPARE", 
+                                    "element_id": 1689641091000270, 
+                                    "enable": true
+                                }
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100022, 
+                            "args_list": [
+                                [
+                                    2038773207, 
+                                    "获得当前武将索引", 
+                                    1689641091, 
+                                    "action_type"
+                                ], 
+                                {
+                                    "action_type": "SET_VARIABLE", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100030, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "当前武将索引", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "当前武将索引", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100016, 
+                                                            "args_list": [
+                                                                "+"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                1
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "MATH_OPERATION"
+                                                }, 
+                                                {
+                                                    "arg_type": 100016, 
+                                                    "args_list": [
+                                                        "/"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        2
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "sub_type": "MATH_OPERATION"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1689641091000327, 
+                                    "enable": true
+                                }, 
+                                [
+                                    1860781315, 
+                                    "如果是主武器", 
+                                    1689641091, 
+                                    "action_type"
+                                ], 
+                                {
+                                    "action_type": "IF_THEN_ELSE", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100021, 
+                                            "args_list": [
+                                                {
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100021, 
+                                                            "args_list": [
+                                                                {
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100011, 
+                                                                                    "args_list": [
+                                                                                        "0b49572b-6cff-4699-9a57-e3425b37012d"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "INTEGER", 
+                                                                                                "当前玩家索引", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 6
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        "银币"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100015, 
+                                                                            "args_list": [
+                                                                                ">="
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                10
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "condition_type": "FLOAT_COMPARE", 
+                                                                    "element_id": 1689641091000306, 
+                                                                    "enable": true
+                                                                }, 
+                                                                [
+                                                                    1812250586, 
+                                                                    "判断是否拥有对应的武将", 
+                                                                    1689641091, 
+                                                                    "condition_type"
+                                                                ], 
+                                                                {
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100011, 
+                                                                                    "args_list": [
+                                                                                        "0b49572b-6cff-4699-9a57-e3425b37012d"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "INTEGER", 
+                                                                                                "当前玩家索引", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 6
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        "拥有武将数量"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100015, 
+                                                                            "args_list": [
+                                                                                ">"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "INTEGER", 
+                                                                                        "当前武将索引", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": 6
+                                                                        }
+                                                                    ], 
+                                                                    "condition_type": "FLOAT_COMPARE", 
+                                                                    "element_id": 1689641091000351, 
+                                                                    "enable": true
+                                                                }, 
+                                                                [
+                                                                    2064960434, 
+                                                                    "格子是否开启", 
+                                                                    1689641091, 
+                                                                    "condition_type"
+                                                                ], 
+                                                                {
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100011, 
+                                                                                    "args_list": [
+                                                                                        "0b49572b-6cff-4699-9a57-e3425b37012d"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "INTEGER", 
+                                                                                                "当前玩家索引", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 6
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "武将"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "INTEGER", 
+                                                                                                                "当前武将索引", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 6
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                                                        }
+                                                                                    ], 
+                                                                                    "op_arg": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "武器格子开启数"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null
+                                                                                    ], 
+                                                                                    "op_arg_enable": [
+                                                                                        true, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false
+                                                                                    ], 
+                                                                                    "sub_type": "STR_JOIN"
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100015, 
+                                                                            "args_list": [
+                                                                                ">="
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                1
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "condition_type": "FLOAT_COMPARE", 
+                                                                    "element_id": 1689641091883102, 
+                                                                    "enable": true
+                                                                }, 
+                                                                [
+                                                                    1303682754, 
+                                                                    "#######", 
+                                                                    1689641091, 
+                                                                    "condition_type"
+                                                                ]
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "condition_type": "AND", 
+                                                    "element_id": 1689641091000301, 
+                                                    "enable": true
+                                                }
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100022, 
+                                            "args_list": [
+                                                [
+                                                    1385647941, 
+                                                    "添加主武器进入表格", 
+                                                    1689641091, 
+                                                    "action_type"
+                                                ], 
+                                                {
+                                                    "action_type": "SET_TABLE_VALUE_ND", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100011, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "TABLE", 
+                                                                        "当前玩家阵容表", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "当前武将索引", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "武将主武器"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100039, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100011, 
+                                                                    "args_list": [
+                                                                        "ed7b7278-de9e-4e4b-822c-654c1f16be50"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "幸存者_商店武器选择集合"
+                                                                            ]
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "INTEGER", 
+                                                                                        "当前武器拖拽索引", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": 6
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "技能类型"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_ABILITY_NAME_TABLE_VAR_ND"
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 1689641091883145, 
+                                                    "enable": true
+                                                }, 
+                                                [
+                                                    1627655180, 
+                                                    "减少银币", 
+                                                    1689641091, 
+                                                    "action_type"
+                                                ], 
+                                                {
+                                                    "action_type": "SET_TABLE_VALUE_ND", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100011, 
+                                                            "args_list": [
+                                                                "0b49572b-6cff-4699-9a57-e3425b37012d"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "当前玩家索引", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "银币"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100011, 
+                                                                            "args_list": [
+                                                                                "0b49572b-6cff-4699-9a57-e3425b37012d"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "INTEGER", 
+                                                                                        "当前玩家索引", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": 6
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100003, 
+                                                                            "args_list": [
+                                                                                "银币"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100016, 
+                                                                    "args_list": [
+                                                                        "-"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        10
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "MATH_OPERATION"
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 2068689018000020, 
+                                                    "enable": true
+                                                }, 
+                                                [
+                                                    1629654171, 
+                                                    "创建新图片到目标位置", 
+                                                    1689641091, 
+                                                    "action_type"
+                                                ], 
+                                                {
+                                                    "action_type": "SET_UI_COMP_SIZE", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "PLAYER", 
+                                                                        "当前玩家", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "UI_COMP", 
+                                                                        "已拥有武器控件图片显示"
+                                                                    ]
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "当前控件索引", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                105.0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                105.0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 2068689018000027, 
+                                                    "enable": true
+                                                }, 
+                                                {
+                                                    "action_type": "SET_UI_COMP_IMAGE_NEW", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "PLAYER", 
+                                                                        "当前玩家", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "UI_COMP", 
+                                                                        "已拥有武器控件图片显示"
+                                                                    ]
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "当前控件索引", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100115, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100039, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100011, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "TABLE", 
+                                                                                        "当前玩家阵容表", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "VARIABLE"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "INTEGER", 
+                                                                                        "当前武将索引", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": 6
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100003, 
+                                                                            "args_list": [
+                                                                                "武将主武器"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_ABILITY_NAME_TABLE_VAR_ND"
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_ICON_BY_ABILITY_TYPE"
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 2068689018000028, 
+                                                    "enable": true
+                                                }, 
+                                                [
+                                                    1294658568, 
+                                                    "删除原商店武器图片", 
+                                                    1689641091, 
+                                                    "action_type"
+                                                ], 
+                                                {
+                                                    "action_type": "DEL_UI_COMP", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "PLAYER", 
+                                                                        "当前玩家", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "UI_COMP", 
+                                                                        "待购买武器图片"
+                                                                    ]
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "当前控件索引", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 2068689018000033, 
+                                                    "enable": true
+                                                }, 
+                                                [
+                                                    2106558593, 
+                                                    "将武器图片是否被拖", 
+                                                    1689641091, 
+                                                    "action_type"
+                                                ], 
+                                                {
+                                                    "action_type": "SET_VARIABLE", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100028, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "BOOLEAN", 
+                                                                        "武器i是否被拖拽", 
+                                                                        "local"
+                                                                    ]
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "当前武器拖拽索引", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100001, 
+                                                            "args_list": [
+                                                                false
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 2068689018000032, 
+                                                    "enable": true
+                                                }, 
+                                                [
+                                                    1594365674, 
+                                                    "", 
+                                                    1689641091, 
+                                                    "action_type"
+                                                ], 
+                                                [
+                                                    1154984618, 
+                                                    "#######", 
+                                                    1689641091, 
+                                                    "action_type"
+                                                ]
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100022, 
+                                            "args_list": [], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1689641091000289, 
+                                    "enable": true, 
+                                    "fake_op": []
+                                }
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100022, 
+                            "args_list": [
+                                [
+                                    1506475681, 
+                                    "如果不是主武器", 
+                                    1689641091, 
+                                    "action_type"
+                                ], 
+                                {
+                                    "action_type": "SET_VARIABLE", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100030, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "当前武将索引", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前武将索引", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100016, 
+                                                    "args_list": [
+                                                        "/"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        2
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "sub_type": "MATH_OPERATION"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1689641091883269, 
+                                    "enable": true
+                                }
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1689641091000242, 
+                    "enable": true, 
+                    "fake_op": [
+                        2
+                    ]
+                }, 
+                [
+                    1262883092, 
+                    "#######", 
+                    1689641091, 
+                    "action_type"
+                ], 
+                [
+                    2033476026, 
+                    "#######", 
+                    1689641091, 
+                    "action_type"
+                ]
+            ], 
+            "call_enabled": true, 
+            "condition": [], 
+            "enabled": false, 
+            "event": [
+                {
+                    "args_list": [
+                        {
+                            "arg_type": 100067, 
+                            "args_list": [
+                                "武器购买"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "element_id": 1689641091000002, 
+                    "enable": true, 
+                    "event_type": "TRIGGER_COMPONENT_EVENT"
+                }
+            ], 
+            "group_id": 0, 
+            "is_conf": true, 
+            "p_trigger_id": 1537212538, 
+            "trigger_id": 1689641091, 
+            "trigger_name": "子触发器_58", 
+            "valid": true, 
+            "var_data": [
+                {}, 
+                {}, 
+                []
+            ]
+        }, 
+        "1872756864": {
+            "action": [
+                {
+                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                    "args_list": [
+                        {
+                            "arg_type": 100175, 
+                            "args_list": [
+                                3
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "购买武器：当前被放回的武器是"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "2"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "op_arg": [
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null
+                            ], 
+                            "op_arg_enable": [
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false
+                            ], 
+                            "sub_type": "STR_JOIN"
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1872756864000003, 
+                    "enable": true
+                }, 
+                {
+                    "action_type": "SET_VARIABLE", 
+                    "args_list": [
+                        {
+                            "arg_type": 100028, 
+                            "args_list": [
+                                [
+                                    "BOOLEAN", 
+                                    "武器i是否被拖拽", 
+                                    "local"
+                                ], 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        2
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                false
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1872756864000004, 
+                    "enable": true
+                }, 
+                {
+                    "action_type": "SET_UI_COMP_POSITION_NO_TRANS", 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100070, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "UI_COMP", 
+                                        "待购买武器图片"
+                                    ]
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        2
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                -80.0
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                -309.0
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1872756864000005, 
+                    "enable": true
+                }
+            ], 
+            "call_enabled": true, 
+            "condition": [
+                {
+                    "args_list": [
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "BOOLEAN", 
+                                        "武器是否移出"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100035, 
+                            "args_list": [
+                                "=="
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                false
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "condition_type": "BOOL_COMPARE", 
+                    "element_id": 1872756864000002, 
+                    "enable": true
+                }
+            ], 
+            "enabled": false, 
+            "event": [
+                {
+                    "args_list": [
+                        {
+                            "arg_type": 100067, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "武器移出2"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": "STR_TO_UI_EVENT"
+                        }
+                    ], 
+                    "element_id": 1872756864000001, 
+                    "enable": true, 
+                    "event_type": "TRIGGER_COMPONENT_EVENT"
+                }
+            ], 
+            "group_id": 0, 
+            "is_conf": true, 
+            "p_trigger_id": 1537212538, 
+            "trigger_id": 1872756864, 
+            "trigger_name": "子触发器_44", 
+            "valid": true, 
+            "var_data": [
+                {}, 
+                {}, 
+                []
+            ]
+        }, 
+        "2006974587": {
+            "action": [
+                {
+                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                    "args_list": [
+                        {
+                            "arg_type": 100175, 
+                            "args_list": [
+                                3
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "购买武器：当前被拖拽的是"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "1"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "op_arg": [
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null
+                            ], 
+                            "op_arg_enable": [
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false
+                            ], 
+                            "sub_type": "STR_JOIN"
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 2006974587000002, 
+                    "enable": true
+                }, 
+                {
+                    "action_type": "SET_VARIABLE", 
+                    "args_list": [
+                        {
+                            "arg_type": 100028, 
+                            "args_list": [
+                                [
+                                    "BOOLEAN", 
+                                    "武器i是否被拖拽", 
+                                    "local"
+                                ], 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        1
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                true
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 2006974587000003, 
                     "enable": true
                 }
             ], 
@@ -1407,7 +2808,7 @@
                                 {
                                     "arg_type": 100003, 
                                     "args_list": [
-                                        "武器拖拽4"
+                                        "武器拖拽1"
                                     ], 
                                     "sub_type": 1
                                 }
@@ -1415,16 +2816,16 @@
                             "sub_type": "STR_TO_UI_EVENT"
                         }
                     ], 
-                    "element_id": 1995034741000001, 
+                    "element_id": 2006974587000001, 
                     "enable": true, 
                     "event_type": "TRIGGER_COMPONENT_EVENT"
                 }
             ], 
             "group_id": 0, 
             "is_conf": true, 
-            "p_trigger_id": 1978118257, 
-            "trigger_id": 1995034741, 
-            "trigger_name": "子触发器_42", 
+            "p_trigger_id": 1537212538, 
+            "trigger_id": 2006974587, 
+            "trigger_name": "子触发器_39", 
             "valid": true, 
             "var_data": [
                 {}, 
@@ -1433,25 +2834,56 @@
             ]
         }
     }, 
-    "trigger_id": 1978118257, 
+    "trigger_id": 1537212538, 
     "trigger_name": "武器购买（未完成）", 
     "valid": true, 
     "var_data": [
         {
             "BOOLEAN": {
-                "武器i是否被拖拽": false
+                "武器i是否被拖拽": false, 
+                "武将i是否被拖拽": false, 
+                "武将是否需要升星": false
+            }, 
+            "INTEGER": {
+                "i": 0, 
+                "当前控件索引": 0, 
+                "当前武器拖拽索引": 0, 
+                "当前武将索引": 0, 
+                "当前玩家索引": 0, 
+                "拥有武将数量": 0
             }, 
             "PLAYER": {
                 "当前玩家": 0
+            }, 
+            "TABLE": {
+                "当前玩家阵容表": null
             }
         }, 
         {
+            "i": 0, 
+            "当前控件索引": 0, 
+            "当前武器拖拽索引": 0, 
+            "当前武将索引": 0, 
             "当前玩家": 0, 
-            "武器i是否被拖拽": 10
+            "当前玩家索引": 0, 
+            "当前玩家阵容表": 0, 
+            "拥有武将数量": 0, 
+            "武器i是否被拖拽": 10, 
+            "武将i是否被拖拽": 10, 
+            "武将是否需要升星": 0
         }, 
         [
             "武器i是否被拖拽", 
-            "当前玩家"
+            "当前玩家", 
+            "当前玩家索引", 
+            "当前玩家阵容表", 
+            "武将是否需要升星", 
+            "拥有武将数量", 
+            "i", 
+            "武将i是否被拖拽", 
+            "当前控件索引", 
+            "当前武器拖拽索引", 
+            "当前武将索引"
         ]
     ]
 }
