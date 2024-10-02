@@ -1,0 +1,2496 @@
+{
+    "trigger_folder_info": [
+        {
+            "_trigger_group_": true,
+            "group": [
+                [
+                    2075914251,
+                    "技能模板_生成沿直线发射的子弹"
+                ],
+                [
+                    1673261069,
+                    "技能模板_获取最近的敌方单位"
+                ]
+            ],
+            "is_sub_folder": false,
+            "key": "NJPVoH7rEe+pu1P2HwZ5By",
+            "name": "技能模板_函数",
+            "_function_": true
+        },
+        {
+            "_trigger_group_": true,
+            "group": [
+                [
+                    1757155378,
+                    "幸存者_敌人死亡"
+                ],
+                [
+                    1329238037,
+                    "幸存者_获得经验"
+                ]
+            ],
+            "is_sub_folder": false,
+            "key": "NJdHH37rEe+1QVP2HwZ5B7",
+            "name": "幸存者_函数",
+            "_function_": true
+        }
+    ],
+    "serialized_data": [
+        [
+            [
+                {
+                    "trigger_id": 1757155378,
+                    "trigger_name": "幸存者_敌人死亡",
+                    "enabled": true,
+                    "call_enabled": true,
+                    "valid": true,
+                    "event": [],
+                    "condition": [],
+                    "action": [
+                        [
+                            2094312319,
+                            "为优化性能，当地图上未拾取的经验道具数大于2000时，玩家直接获得经验",
+                            1757155378,
+                            "action_type"
+                        ],
+                        {
+                            "action_type": "IF_THEN_ELSE",
+                            "args_list": [
+                                {
+                                    "arg_type": 100021,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        {
+                                            "condition_type": "FLOAT_COMPARE",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002,
+                                                    "sub_type": 6,
+                                                    "args_list": [
+                                                        [
+                                                            "INTEGER",
+                                                            "幸存者_经验道具数量"
+                                                        ]
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100015,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        "<"
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100000,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        1000.0
+                                                    ]
+                                                }
+                                            ],
+                                            "element_id": 1757155378000036,
+                                            "enable": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100022,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        {
+                                            "action_type": "FOR_INT_DO_ACTION",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002,
+                                                    "sub_type": 6,
+                                                    "args_list": [
+                                                        [
+                                                            "INTEGER",
+                                                            "i",
+                                                            "local"
+                                                        ]
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100002,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        1
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100002,
+                                                    "sub_type": 6,
+                                                    "args_list": [
+                                                        [
+                                                            "INTEGER",
+                                                            "掉落经验数",
+                                                            "local"
+                                                        ]
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100022,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "SET_VARIABLE",
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100077,
+                                                                    "sub_type": "VARIABLE",
+                                                                    "args_list": [
+                                                                        [
+                                                                            "PROJECTILE_ENTITY",
+                                                                            "经验",
+                                                                            "local"
+                                                                        ]
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "arg_type": 100077,
+                                                                    "sub_type": "CREATE_PROJECTILE_NEW",
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100062,
+                                                                            "sub_type": 1,
+                                                                            "args_list": [
+                                                                                134243926
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "arg_type": 100004,
+                                                                            "sub_type": "GET_RANDOM_POINT_IN_CIRCULAR",
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100004,
+                                                                                    "sub_type": "UNIT_ENTITY_POINT",
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100006,
+                                                                                            "sub_type": 11,
+                                                                                            "args_list": [
+                                                                                                [
+                                                                                                    "UNIT_ENTITY",
+                                                                                                    "敌人",
+                                                                                                    "local"
+                                                                                                ]
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "arg_type": 100000,
+                                                                                    "sub_type": "ARITHMETIC_OPERATION",
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100000,
+                                                                                            "sub_type": 1,
+                                                                                            "args_list": [
+                                                                                                25.0
+                                                                                            ]
+                                                                                        },
+                                                                                        {
+                                                                                            "arg_type": 100017,
+                                                                                            "sub_type": 1,
+                                                                                            "args_list": [
+                                                                                                "*"
+                                                                                            ]
+                                                                                        },
+                                                                                        {
+                                                                                            "arg_type": 100002,
+                                                                                            "sub_type": 6,
+                                                                                            "args_list": [
+                                                                                                [
+                                                                                                    "INTEGER",
+                                                                                                    "掉落经验数",
+                                                                                                    "local"
+                                                                                                ]
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "arg_type": 100025,
+                                                                            "sub_type": 1,
+                                                                            "args_list": [
+                                                                                31
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "op_arg": [
+                                                                        null,
+                                                                        null,
+                                                                        {
+                                                                            "arg_type": 100000,
+                                                                            "sub_type": 1,
+                                                                            "args_list": [
+                                                                                999999999.0
+                                                                            ]
+                                                                        },
+                                                                        null,
+                                                                        null,
+                                                                        {
+                                                                            "arg_type": 100001,
+                                                                            "sub_type": 1,
+                                                                            "args_list": [
+                                                                                true
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "op_arg_enable": [
+                                                                        false,
+                                                                        false,
+                                                                        true,
+                                                                        false,
+                                                                        false,
+                                                                        false
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "element_id": 1757155378000015,
+                                                            "enable": true,
+                                                            "bp": false
+                                                        },
+                                                        {
+                                                            "action_type": "SET_VARIABLE",
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100030,
+                                                                    "sub_type": 1,
+                                                                    "args_list": [
+                                                                        [
+                                                                            "INTEGER",
+                                                                            "幸存者_经验道具数量"
+                                                                        ]
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "arg_type": 100002,
+                                                                    "sub_type": "INT_PLUS_ONE",
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002,
+                                                                            "sub_type": 6,
+                                                                            "args_list": [
+                                                                                [
+                                                                                    "INTEGER",
+                                                                                    "幸存者_经验道具数量"
+                                                                                ]
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "element_id": 1757155378000018,
+                                                            "enable": true,
+                                                            "bp": false
+                                                        },
+                                                        {
+                                                            "action_type": "SET_PROJECTILE_ANIMATION_SPEED",
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100077,
+                                                                    "sub_type": "VARIABLE",
+                                                                    "args_list": [
+                                                                        [
+                                                                            "PROJECTILE_ENTITY",
+                                                                            "经验",
+                                                                            "local"
+                                                                        ]
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "arg_type": 100000,
+                                                                    "sub_type": 1,
+                                                                    "args_list": [
+                                                                        0.0
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "element_id": 1757155378949524,
+                                                            "enable": true,
+                                                            "bp": false
+                                                        },
+                                                        [
+                                                            1924613358,
+                                                            "根据概率生成钱币",
+                                                            1757155378,
+                                                            "action_type"
+                                                        ],
+                                                        {
+                                                            "action_type": "SET_VARIABLE",
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100030,
+                                                                    "sub_type": 1,
+                                                                    "args_list": [
+                                                                        [
+                                                                            "INTEGER",
+                                                                            "随机数",
+                                                                            "local"
+                                                                        ]
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "arg_type": 100002,
+                                                                    "sub_type": "RANDOM_INT",
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002,
+                                                                            "sub_type": 1,
+                                                                            "args_list": [
+                                                                                1
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "arg_type": 100002,
+                                                                            "sub_type": 1,
+                                                                            "args_list": [
+                                                                                100
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "element_id": 1757155378949526,
+                                                            "enable": true,
+                                                            "bp": false
+                                                        },
+                                                        {
+                                                            "action_type": "IF_THEN_ELSE",
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100021,
+                                                                    "sub_type": 1,
+                                                                    "args_list": [
+                                                                        {
+                                                                            "condition_type": "FLOAT_COMPARE",
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100002,
+                                                                                    "sub_type": 6,
+                                                                                    "args_list": [
+                                                                                        [
+                                                                                            "INTEGER",
+                                                                                            "随机数",
+                                                                                            "local"
+                                                                                        ]
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "arg_type": 100015,
+                                                                                    "sub_type": 1,
+                                                                                    "args_list": [
+                                                                                        "<"
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "arg_type": 100002,
+                                                                                    "sub_type": 6,
+                                                                                    "args_list": [
+                                                                                        [
+                                                                                            "INTEGER",
+                                                                                            "掉落钱币概率"
+                                                                                        ]
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "element_id": 1757155378949552,
+                                                                            "enable": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "arg_type": 100022,
+                                                                    "sub_type": 1,
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "SET_VARIABLE",
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100030,
+                                                                                    "sub_type": 1,
+                                                                                    "args_list": [
+                                                                                        [
+                                                                                            "INTEGER",
+                                                                                            "随机数",
+                                                                                            "local"
+                                                                                        ]
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "arg_type": 100002,
+                                                                                    "sub_type": "RANDOM_INT",
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100002,
+                                                                                            "sub_type": 1,
+                                                                                            "args_list": [
+                                                                                                1
+                                                                                            ]
+                                                                                        },
+                                                                                        {
+                                                                                            "arg_type": 100002,
+                                                                                            "sub_type": 1,
+                                                                                            "args_list": [
+                                                                                                100
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "element_id": 1757155378949651,
+                                                                            "enable": true,
+                                                                            "bp": false
+                                                                        },
+                                                                        {
+                                                                            "action_type": "IF_THEN_ELSE",
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100021,
+                                                                                    "sub_type": 1,
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "condition_type": "FLOAT_COMPARE",
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100002,
+                                                                                                    "sub_type": 6,
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "INTEGER",
+                                                                                                            "随机数",
+                                                                                                            "local"
+                                                                                                        ]
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "arg_type": 100015,
+                                                                                                    "sub_type": 1,
+                                                                                                    "args_list": [
+                                                                                                        "<"
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "arg_type": 100002,
+                                                                                                    "sub_type": 6,
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "INTEGER",
+                                                                                                            "掉落金币概率"
+                                                                                                        ]
+                                                                                                    ]
+                                                                                                }
+                                                                                            ],
+                                                                                            "element_id": 1757155378949603,
+                                                                                            "enable": true
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "arg_type": 100022,
+                                                                                    "sub_type": 1,
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "action_type": "SET_VARIABLE",
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100077,
+                                                                                                    "sub_type": "VARIABLE",
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "PROJECTILE_ENTITY",
+                                                                                                            "钱币",
+                                                                                                            "local"
+                                                                                                        ]
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "arg_type": 100077,
+                                                                                                    "sub_type": "CREATE_PROJECTILE_NEW",
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100062,
+                                                                                                            "sub_type": 1,
+                                                                                                            "args_list": [
+                                                                                                                134266830
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "arg_type": 100004,
+                                                                                                            "sub_type": "GET_RANDOM_POINT_IN_CIRCULAR",
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "arg_type": 100004,
+                                                                                                                    "sub_type": "UNIT_ENTITY_POINT",
+                                                                                                                    "args_list": [
+                                                                                                                        {
+                                                                                                                            "arg_type": 100006,
+                                                                                                                            "sub_type": 11,
+                                                                                                                            "args_list": [
+                                                                                                                                [
+                                                                                                                                    "UNIT_ENTITY",
+                                                                                                                                    "敌人",
+                                                                                                                                    "local"
+                                                                                                                                ]
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "arg_type": 100000,
+                                                                                                                    "sub_type": "ARITHMETIC_OPERATION",
+                                                                                                                    "args_list": [
+                                                                                                                        {
+                                                                                                                            "arg_type": 100000,
+                                                                                                                            "sub_type": 1,
+                                                                                                                            "args_list": [
+                                                                                                                                50.0
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "arg_type": 100017,
+                                                                                                                            "sub_type": 1,
+                                                                                                                            "args_list": [
+                                                                                                                                "*"
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "arg_type": 100002,
+                                                                                                                            "sub_type": 6,
+                                                                                                                            "args_list": [
+                                                                                                                                [
+                                                                                                                                    "INTEGER",
+                                                                                                                                    "掉落经验数",
+                                                                                                                                    "local"
+                                                                                                                                ]
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "arg_type": 100025,
+                                                                                                            "sub_type": 1,
+                                                                                                            "args_list": [
+                                                                                                                31
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "op_arg": [
+                                                                                                        null,
+                                                                                                        null,
+                                                                                                        {
+                                                                                                            "arg_type": 100000,
+                                                                                                            "sub_type": 1,
+                                                                                                            "args_list": [
+                                                                                                                999999999.0
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        null,
+                                                                                                        null,
+                                                                                                        {
+                                                                                                            "arg_type": 100001,
+                                                                                                            "sub_type": 1,
+                                                                                                            "args_list": [
+                                                                                                                true
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "op_arg_enable": [
+                                                                                                        false,
+                                                                                                        false,
+                                                                                                        true,
+                                                                                                        false,
+                                                                                                        false,
+                                                                                                        false
+                                                                                                    ]
+                                                                                                }
+                                                                                            ],
+                                                                                            "element_id": 1757155378949613,
+                                                                                            "enable": true,
+                                                                                            "bp": false
+                                                                                        },
+                                                                                        {
+                                                                                            "action_type": "SET_PROJECTILE_ANIMATION_SPEED",
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100077,
+                                                                                                    "sub_type": "VARIABLE",
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "PROJECTILE_ENTITY",
+                                                                                                            "钱币",
+                                                                                                            "local"
+                                                                                                        ]
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "arg_type": 100000,
+                                                                                                    "sub_type": 1,
+                                                                                                    "args_list": [
+                                                                                                        0.0
+                                                                                                    ]
+                                                                                                }
+                                                                                            ],
+                                                                                            "element_id": 1757155378949677,
+                                                                                            "enable": true,
+                                                                                            "bp": false
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "arg_type": 100022,
+                                                                                    "sub_type": 1,
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "action_type": "SET_VARIABLE",
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100077,
+                                                                                                    "sub_type": "VARIABLE",
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "PROJECTILE_ENTITY",
+                                                                                                            "钱币",
+                                                                                                            "local"
+                                                                                                        ]
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "arg_type": 100077,
+                                                                                                    "sub_type": "CREATE_PROJECTILE_NEW",
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100062,
+                                                                                                            "sub_type": 1,
+                                                                                                            "args_list": [
+                                                                                                                134235391
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "arg_type": 100004,
+                                                                                                            "sub_type": "GET_RANDOM_POINT_IN_CIRCULAR",
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "arg_type": 100004,
+                                                                                                                    "sub_type": "UNIT_ENTITY_POINT",
+                                                                                                                    "args_list": [
+                                                                                                                        {
+                                                                                                                            "arg_type": 100006,
+                                                                                                                            "sub_type": 11,
+                                                                                                                            "args_list": [
+                                                                                                                                [
+                                                                                                                                    "UNIT_ENTITY",
+                                                                                                                                    "敌人",
+                                                                                                                                    "local"
+                                                                                                                                ]
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "arg_type": 100000,
+                                                                                                                    "sub_type": "ARITHMETIC_OPERATION",
+                                                                                                                    "args_list": [
+                                                                                                                        {
+                                                                                                                            "arg_type": 100000,
+                                                                                                                            "sub_type": 1,
+                                                                                                                            "args_list": [
+                                                                                                                                50.0
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "arg_type": 100017,
+                                                                                                                            "sub_type": 1,
+                                                                                                                            "args_list": [
+                                                                                                                                "*"
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "arg_type": 100002,
+                                                                                                                            "sub_type": 6,
+                                                                                                                            "args_list": [
+                                                                                                                                [
+                                                                                                                                    "INTEGER",
+                                                                                                                                    "掉落经验数",
+                                                                                                                                    "local"
+                                                                                                                                ]
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "arg_type": 100025,
+                                                                                                            "sub_type": 1,
+                                                                                                            "args_list": [
+                                                                                                                31
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "op_arg": [
+                                                                                                        null,
+                                                                                                        null,
+                                                                                                        {
+                                                                                                            "arg_type": 100000,
+                                                                                                            "sub_type": 1,
+                                                                                                            "args_list": [
+                                                                                                                999999999.0
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        null,
+                                                                                                        null,
+                                                                                                        {
+                                                                                                            "arg_type": 100001,
+                                                                                                            "sub_type": 1,
+                                                                                                            "args_list": [
+                                                                                                                true
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "op_arg_enable": [
+                                                                                                        false,
+                                                                                                        false,
+                                                                                                        true,
+                                                                                                        false,
+                                                                                                        false,
+                                                                                                        false
+                                                                                                    ]
+                                                                                                }
+                                                                                            ],
+                                                                                            "element_id": 1757155378949563,
+                                                                                            "enable": true,
+                                                                                            "bp": false
+                                                                                        },
+                                                                                        {
+                                                                                            "action_type": "SET_PROJECTILE_ANIMATION_SPEED",
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100077,
+                                                                                                    "sub_type": "VARIABLE",
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "PROJECTILE_ENTITY",
+                                                                                                            "钱币",
+                                                                                                            "local"
+                                                                                                        ]
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "arg_type": 100000,
+                                                                                                    "sub_type": 1,
+                                                                                                    "args_list": [
+                                                                                                        0.0
+                                                                                                    ]
+                                                                                                }
+                                                                                            ],
+                                                                                            "element_id": 1757155378949684,
+                                                                                            "enable": true,
+                                                                                            "bp": false
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "element_id": 1757155378949599,
+                                                                            "enable": true,
+                                                                            "bp": false,
+                                                                            "fake_op": [
+                                                                                2
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "arg_type": 100022,
+                                                                    "sub_type": 1,
+                                                                    "args_list": []
+                                                                }
+                                                            ],
+                                                            "element_id": 1757155378949543,
+                                                            "enable": true,
+                                                            "bp": false,
+                                                            "fake_op": [
+                                                                2
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "element_id": 1757155378000004,
+                                            "enable": true,
+                                            "bp": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100022,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        {
+                                            "action_type": "CALL_TRIGGER_FUNC",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100177,
+                                                    "sub_type": "c767e3b040ca11ee9f1930d042e90e85",
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100002,
+                                                            "sub_type": 6,
+                                                            "args_list": [
+                                                                [
+                                                                    "INTEGER",
+                                                                    "掉落经验数",
+                                                                    "local"
+                                                                ]
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "op_arg": [],
+                                                    "op_arg_enable": []
+                                                }
+                                            ],
+                                            "element_id": 609304604949493,
+                                            "enable": true,
+                                            "bp": false,
+                                            "call_rt_arg_idxes": []
+                                        }
+                                    ]
+                                }
+                            ],
+                            "element_id": 1757155378000027,
+                            "enable": true,
+                            "bp": false,
+                            "fake_op": [
+                                2
+                            ]
+                        },
+                        [
+                            1692427961,
+                            "敌人死亡删除时加上延迟，避免影响运动器及特效逻辑",
+                            1757155378,
+                            "action_type"
+                        ],
+                        {
+                            "action_type": "RUN_ONCE_TIMER_NO_SAVE",
+                            "args_list": [
+                                {
+                                    "arg_type": 100000,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        0.5
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100022,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        {
+                                            "action_type": "DELETE_UNIT",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100006,
+                                                    "sub_type": 11,
+                                                    "args_list": [
+                                                        [
+                                                            "UNIT_ENTITY",
+                                                            "敌人",
+                                                            "local"
+                                                        ]
+                                                    ]
+                                                }
+                                            ],
+                                            "element_id": 1075290114000030,
+                                            "enable": true,
+                                            "bp": false
+                                        }
+                                    ]
+                                }
+                            ],
+                            "element_id": 1075290114000022,
+                            "enable": true,
+                            "bp": false,
+                            "local_var": [
+                                {},
+                                {}
+                            ]
+                        }
+                    ],
+                    "p_trigger_id": null,
+                    "is_func": true,
+                    "func_id": "c6678180792f11ee938630d042e90e85",
+                    "is_official_func": false,
+                    "func_param_list": [
+                        [
+                            "掉落经验数",
+                            true
+                        ],
+                        [
+                            "敌人",
+                            true
+                        ]
+                    ],
+                    "func_name": "幸存者_敌人死亡",
+                    "func_des": "敌人{敌人}死亡，掉落经验{掉落经验数}",
+                    "func_comment": "",
+                    "func_category": "t_function",
+                    "group_id": "wtBeIXSnEe6eGjDQQukOhe",
+                    "var_data": [
+                        {
+                            "INTEGER": {
+                                "i": 0,
+                                "掉落经验数": 0,
+                                "随机数": 0
+                            },
+                            "NEW_TIMER": {},
+                            "PROJECTILE_ENTITY": {
+                                "经验": 0,
+                                "钱币": 0
+                            },
+                            "ROUND_AREA": {
+                                "掉落区域": 0
+                            },
+                            "UNIT_ENTITY": {
+                                "敌人": 0
+                            }
+                        },
+                        {
+                            "i": 0,
+                            "掉落区域": 0,
+                            "掉落经验数": 0,
+                            "敌人": 0,
+                            "经验": 0,
+                            "钱币": 0,
+                            "随机数": 0
+                        },
+                        [
+                            "i",
+                            "掉落区域",
+                            "掉落经验数",
+                            "随机数",
+                            "敌人",
+                            "经验",
+                            "钱币"
+                        ]
+                    ]
+                }
+            ],
+            [
+                [
+                    [
+                        "local0",
+                        "ROUND_AREA",
+                        "掉落区域",
+                        false,
+                        null
+                    ],
+                    [
+                        "global",
+                        "INTEGER",
+                        "掉落钱币概率",
+                        false,
+                        50
+                    ],
+                    [
+                        "local0",
+                        "INTEGER",
+                        "i",
+                        false,
+                        0
+                    ],
+                    [
+                        "local0",
+                        "PROJECTILE_ENTITY",
+                        "经验",
+                        false,
+                        null
+                    ],
+                    [
+                        "local0",
+                        "UNIT_ENTITY",
+                        "敌人",
+                        false,
+                        null
+                    ],
+                    [
+                        "param0",
+                        "UNIT_ENTITY",
+                        "敌人",
+                        false,
+                        null,
+                        true
+                    ],
+                    [
+                        "param0",
+                        "INTEGER",
+                        "掉落经验数",
+                        false,
+                        0,
+                        true
+                    ],
+                    [
+                        "global",
+                        "INTEGER",
+                        "幸存者_经验道具数量",
+                        false,
+                        0
+                    ],
+                    [
+                        "local0",
+                        "INTEGER",
+                        "掉落经验数",
+                        false,
+                        0
+                    ],
+                    [
+                        "global",
+                        "INTEGER",
+                        "掉落金币概率",
+                        false,
+                        30
+                    ],
+                    [
+                        "local0",
+                        "INTEGER",
+                        "随机数",
+                        false,
+                        0
+                    ],
+                    [
+                        "local0",
+                        "PROJECTILE_ENTITY",
+                        "钱币",
+                        false,
+                        null
+                    ]
+                ]
+            ],
+            []
+        ],
+        [
+            [
+                {
+                    "trigger_id": 2075914251,
+                    "trigger_name": "技能模板_生成沿直线发射的子弹",
+                    "enabled": true,
+                    "call_enabled": true,
+                    "valid": true,
+                    "event": [],
+                    "condition": [],
+                    "action": [
+                        {
+                            "action_type": "SET_VARIABLE",
+                            "args_list": [
+                                {
+                                    "arg_type": 100077,
+                                    "sub_type": "VARIABLE",
+                                    "args_list": [
+                                        [
+                                            "PROJECTILE_ENTITY",
+                                            "bullet",
+                                            "local"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100077,
+                                    "sub_type": "CREATE_PROJECTILE_NEW",
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100062,
+                                            "sub_type": "VARIABLE",
+                                            "args_list": [
+                                                [
+                                                    "PROJECTILE",
+                                                    "弹药类型",
+                                                    "local"
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            "arg_type": 100004,
+                                            "sub_type": 19,
+                                            "args_list": [
+                                                [
+                                                    "POINT",
+                                                    "起始位置",
+                                                    "local"
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            "arg_type": 100006,
+                                            "sub_type": 11,
+                                            "args_list": [
+                                                [
+                                                    "UNIT_ENTITY",
+                                                    "所属单位",
+                                                    "local"
+                                                ]
+                                            ]
+                                        }
+                                    ],
+                                    "op_arg": [
+                                        null,
+                                        null,
+                                        null,
+                                        {
+                                            "arg_type": 100000,
+                                            "sub_type": 2,
+                                            "args_list": [
+                                                [
+                                                    "FLOAT",
+                                                    "高度",
+                                                    "local"
+                                                ]
+                                            ]
+                                        },
+                                        null,
+                                        {
+                                            "arg_type": 100001,
+                                            "sub_type": 1,
+                                            "args_list": [
+                                                true
+                                            ]
+                                        }
+                                    ],
+                                    "op_arg_enable": [
+                                        false,
+                                        false,
+                                        false,
+                                        true,
+                                        false,
+                                        false
+                                    ]
+                                }
+                            ],
+                            "element_id": 2075914251000001,
+                            "enable": true,
+                            "bp": false
+                        },
+                        {
+                            "action_type": "SET_PROJECTILE_SCALE_XYZ",
+                            "args_list": [
+                                {
+                                    "arg_type": 100077,
+                                    "sub_type": "VARIABLE",
+                                    "args_list": [
+                                        [
+                                            "PROJECTILE_ENTITY",
+                                            "bullet",
+                                            "local"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100000,
+                                    "sub_type": 2,
+                                    "args_list": [
+                                        [
+                                            "FLOAT",
+                                            "缩放",
+                                            "local"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100000,
+                                    "sub_type": 2,
+                                    "args_list": [
+                                        [
+                                            "FLOAT",
+                                            "缩放",
+                                            "local"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100000,
+                                    "sub_type": 2,
+                                    "args_list": [
+                                        [
+                                            "FLOAT",
+                                            "缩放",
+                                            "local"
+                                        ]
+                                    ]
+                                }
+                            ],
+                            "element_id": 2075914251000002,
+                            "enable": true,
+                            "bp": false
+                        },
+                        {
+                            "action_type": "CREATE_STRAIGHT_MOVER",
+                            "args_list": [
+                                {
+                                    "arg_type": 100077,
+                                    "sub_type": "VARIABLE",
+                                    "args_list": [
+                                        [
+                                            "PROJECTILE_ENTITY",
+                                            "bullet",
+                                            "local"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100225,
+                                    "sub_type": 2,
+                                    "args_list": [
+                                        [
+                                            "ANGLE",
+                                            "弹道方向",
+                                            "local"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100000,
+                                    "sub_type": 2,
+                                    "args_list": [
+                                        [
+                                            "FLOAT",
+                                            "最大距离",
+                                            "local"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100000,
+                                    "sub_type": 2,
+                                    "args_list": [
+                                        [
+                                            "FLOAT",
+                                            "速度",
+                                            "local"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100000,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        0.0
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100022,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        {
+                                            "action_type": "IF_THEN_ELSE",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100021,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        {
+                                                            "condition_type": "TYPE_IS_EXIST",
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100077,
+                                                                    "sub_type": "GET_MOVER_OWNER_PROJECTILE",
+                                                                    "args_list": []
+                                                                }
+                                                            ],
+                                                            "element_id": 2075914251000019,
+                                                            "enable": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100022,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "PROJECTILE_DELETE",
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100077,
+                                                                    "sub_type": "GET_MOVER_OWNER_PROJECTILE",
+                                                                    "args_list": []
+                                                                }
+                                                            ],
+                                                            "element_id": 2075914251000003,
+                                                            "enable": true,
+                                                            "bp": false,
+                                                            "op_arg": [
+                                                                {
+                                                                    "arg_type": 100001,
+                                                                    "sub_type": 1,
+                                                                    "args_list": [
+                                                                        true
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "op_arg_enable": [
+                                                                false
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100022,
+                                                    "sub_type": 1,
+                                                    "args_list": []
+                                                }
+                                            ],
+                                            "element_id": 2075914251000010,
+                                            "enable": true,
+                                            "bp": false,
+                                            "fake_op": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100022,
+                                    "sub_type": 1,
+                                    "args_list": []
+                                },
+                                {
+                                    "arg_type": 100022,
+                                    "sub_type": 1,
+                                    "args_list": []
+                                },
+                                {
+                                    "arg_type": 100022,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        {
+                                            "action_type": "IF_THEN_ELSE",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100021,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        {
+                                                            "condition_type": "TYPE_IS_EXIST",
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100077,
+                                                                    "sub_type": "GET_MOVER_OWNER_PROJECTILE",
+                                                                    "args_list": []
+                                                                }
+                                                            ],
+                                                            "element_id": 2075914251000029,
+                                                            "enable": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100022,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "PROJECTILE_DELETE",
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100077,
+                                                                    "sub_type": "GET_MOVER_OWNER_PROJECTILE",
+                                                                    "args_list": []
+                                                                }
+                                                            ],
+                                                            "element_id": 2075914251000035,
+                                                            "enable": true,
+                                                            "bp": false,
+                                                            "op_arg": [
+                                                                {
+                                                                    "arg_type": 100001,
+                                                                    "sub_type": 1,
+                                                                    "args_list": [
+                                                                        true
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "op_arg_enable": [
+                                                                false
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100022,
+                                                    "sub_type": 1,
+                                                    "args_list": []
+                                                }
+                                            ],
+                                            "element_id": 2075914251000025,
+                                            "enable": true,
+                                            "bp": false,
+                                            "fake_op": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100022,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        {
+                                            "action_type": "IF_THEN_ELSE",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100021,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        {
+                                                            "condition_type": "TYPE_IS_EXIST",
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100077,
+                                                                    "sub_type": "GET_MOVER_OWNER_PROJECTILE",
+                                                                    "args_list": []
+                                                                }
+                                                            ],
+                                                            "element_id": 2075914251000048,
+                                                            "enable": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100022,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "PROJECTILE_DELETE",
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100077,
+                                                                    "sub_type": "GET_MOVER_OWNER_PROJECTILE",
+                                                                    "args_list": []
+                                                                }
+                                                            ],
+                                                            "element_id": 2075914251000006,
+                                                            "enable": true,
+                                                            "bp": false,
+                                                            "op_arg": [
+                                                                {
+                                                                    "arg_type": 100001,
+                                                                    "sub_type": 1,
+                                                                    "args_list": [
+                                                                        true
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "op_arg_enable": [
+                                                                false
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100022,
+                                                    "sub_type": 1,
+                                                    "args_list": []
+                                                }
+                                            ],
+                                            "element_id": 2075914251000044,
+                                            "enable": true,
+                                            "bp": false,
+                                            "fake_op": []
+                                        },
+                                        {
+                                            "action_type": "APPLY_DAMAGE",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100006,
+                                                    "sub_type": 11,
+                                                    "args_list": [
+                                                        [
+                                                            "UNIT_ENTITY",
+                                                            "所属单位",
+                                                            "local"
+                                                        ]
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100014,
+                                                    "sub_type": 2,
+                                                    "args_list": [
+                                                        [
+                                                            "ABILITY",
+                                                            "伤害归属技能",
+                                                            "local"
+                                                        ]
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100006,
+                                                    "sub_type": "MOVER_COLLIDE_UNIT",
+                                                    "args_list": []
+                                                },
+                                                {
+                                                    "arg_type": 100064,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        0
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100000,
+                                                    "sub_type": 2,
+                                                    "args_list": [
+                                                        [
+                                                            "FLOAT",
+                                                            "伤害",
+                                                            "local"
+                                                        ]
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100001,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        true
+                                                    ]
+                                                }
+                                            ],
+                                            "element_id": 2075914251000005,
+                                            "enable": true,
+                                            "bp": false,
+                                            "op_arg": [
+                                                {
+                                                    "arg_type": 100001,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        true
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100001,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        true
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100001,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        true
+                                                    ]
+                                                },
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null,
+                                                null
+                                            ],
+                                            "op_arg_enable": [
+                                                false,
+                                                false,
+                                                false,
+                                                false,
+                                                false,
+                                                false,
+                                                false,
+                                                false,
+                                                false
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "element_id": 2075914251000007,
+                            "enable": true,
+                            "bp": false,
+                            "op_arg": [
+                                null,
+                                null,
+                                {
+                                    "arg_type": 100000,
+                                    "sub_type": 2,
+                                    "args_list": [
+                                        [
+                                            "FLOAT",
+                                            "高度",
+                                            "local"
+                                        ]
+                                    ]
+                                },
+                                null,
+                                null,
+                                {
+                                    "arg_type": 100176,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        0
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100000,
+                                    "sub_type": 2,
+                                    "args_list": [
+                                        [
+                                            "FLOAT",
+                                            "碰撞范围",
+                                            "local"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100001,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        true
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100001,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        true
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100001,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        true
+                                    ]
+                                },
+                                null,
+                                {
+                                    "arg_type": 100001,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        true
+                                    ]
+                                },
+                                null,
+                                null,
+                                null,
+                                null
+                            ],
+                            "op_arg_enable": [
+                                false,
+                                false,
+                                true,
+                                false,
+                                false,
+                                true,
+                                true,
+                                false,
+                                false,
+                                true,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false
+                            ],
+                            "fake_op": [
+                                8,
+                                9
+                            ],
+                            "local_var": [
+                                {},
+                                {}
+                            ]
+                        }
+                    ],
+                    "p_trigger_id": null,
+                    "is_func": true,
+                    "func_id": "089ea2306e5a11eea52630d042e90e85",
+                    "is_official_func": false,
+                    "func_param_list": [
+                        [
+                            "弹药类型",
+                            true
+                        ],
+                        [
+                            "起始位置",
+                            true
+                        ],
+                        [
+                            "所属单位",
+                            true
+                        ],
+                        [
+                            "高度",
+                            true
+                        ],
+                        [
+                            "碰撞范围",
+                            true
+                        ],
+                        [
+                            "伤害",
+                            true
+                        ],
+                        [
+                            "最大距离",
+                            true
+                        ],
+                        [
+                            "速度",
+                            true
+                        ],
+                        [
+                            "弹道方向",
+                            true
+                        ],
+                        [
+                            "缩放",
+                            true
+                        ],
+                        [
+                            "伤害归属技能",
+                            true
+                        ]
+                    ],
+                    "func_name": "技能模板_生成沿直线发射的子弹",
+                    "func_des": "生成沿直线发射的子弹，弹药类型{弹药类型}，起始位置{起始位置}，速度{速度}，弹道方向{弹道方向}，缩放{缩放}，碰撞范围{碰撞范围}，高度{高度}，最大距离{最大距离}，伤害{伤害}，所属单位{所属单位}，伤害所属技能{伤害归属技能}",
+                    "func_comment": "",
+                    "func_category": "t_function",
+                    "group_id": "kq-XAHSkEe6xxzDQQukOhc",
+                    "var_data": [
+                        {
+                            "ABILITY": {
+                                "伤害归属技能": null
+                            },
+                            "ANGLE": {
+                                "弹道方向": 0.0
+                            },
+                            "FLOAT": {
+                                "伤害": 0.0,
+                                "最大距离": 0.0,
+                                "碰撞范围": 0.0,
+                                "缩放": 0.0,
+                                "速度": 0.0,
+                                "高度": 0.0
+                            },
+                            "POINT": {
+                                "起始位置": [
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "PROJECTILE": {
+                                "弹药类型": 0
+                            },
+                            "PROJECTILE_ENTITY": {
+                                "bullet": 0
+                            },
+                            "UNIT_ENTITY": {
+                                "所属单位": 0
+                            }
+                        },
+                        {
+                            "bullet": 0,
+                            "伤害": 0,
+                            "伤害归属技能": 0,
+                            "弹药类型": 0,
+                            "弹道方向": 0,
+                            "所属单位": 0,
+                            "最大距离": 0,
+                            "碰撞范围": 0,
+                            "缩放": 0,
+                            "起始位置": 0,
+                            "速度": 0,
+                            "高度": 0
+                        },
+                        [
+                            "bullet",
+                            "伤害",
+                            "伤害归属技能",
+                            "弹药类型",
+                            "弹道方向",
+                            "所属单位",
+                            "最大距离",
+                            "碰撞范围",
+                            "缩放",
+                            "起始位置",
+                            "速度",
+                            "高度"
+                        ]
+                    ]
+                }
+            ],
+            [
+                [
+                    [
+                        "local0",
+                        "FLOAT",
+                        "碰撞范围",
+                        false,
+                        0.0
+                    ],
+                    [
+                        "param0",
+                        "POINT",
+                        "起始位置",
+                        false,
+                        null,
+                        true
+                    ],
+                    [
+                        "param0",
+                        "FLOAT",
+                        "高度",
+                        false,
+                        0.0,
+                        true
+                    ],
+                    [
+                        "param0",
+                        "UNIT_ENTITY",
+                        "所属单位",
+                        false,
+                        null,
+                        true
+                    ],
+                    [
+                        "local0",
+                        "UNIT_ENTITY",
+                        "所属单位",
+                        false,
+                        null
+                    ],
+                    [
+                        "param0",
+                        "FLOAT",
+                        "伤害",
+                        false,
+                        0.0,
+                        true
+                    ],
+                    [
+                        "local0",
+                        "POINT",
+                        "起始位置",
+                        false,
+                        null
+                    ],
+                    [
+                        "local0",
+                        "ANGLE",
+                        "弹道方向",
+                        false,
+                        null
+                    ],
+                    [
+                        "local0",
+                        "FLOAT",
+                        "高度",
+                        false,
+                        0.0
+                    ],
+                    [
+                        "param0",
+                        "PROJECTILE",
+                        "弹药类型",
+                        false,
+                        null,
+                        true
+                    ],
+                    [
+                        "param0",
+                        "ANGLE",
+                        "弹道方向",
+                        false,
+                        null,
+                        true
+                    ],
+                    [
+                        "local0",
+                        "FLOAT",
+                        "速度",
+                        false,
+                        0.0
+                    ],
+                    [
+                        "local0",
+                        "PROJECTILE",
+                        "弹药类型",
+                        false,
+                        null
+                    ],
+                    [
+                        "local0",
+                        "PROJECTILE_ENTITY",
+                        "bullet",
+                        false,
+                        null
+                    ],
+                    [
+                        "param0",
+                        "FLOAT",
+                        "最大距离",
+                        false,
+                        0.0,
+                        true
+                    ],
+                    [
+                        "local0",
+                        "FLOAT",
+                        "伤害",
+                        false,
+                        0.0
+                    ],
+                    [
+                        "local0",
+                        "ABILITY",
+                        "伤害归属技能",
+                        false,
+                        null
+                    ],
+                    [
+                        "param0",
+                        "FLOAT",
+                        "碰撞范围",
+                        false,
+                        0.0,
+                        true
+                    ],
+                    [
+                        "param0",
+                        "FLOAT",
+                        "速度",
+                        false,
+                        0.0,
+                        true
+                    ],
+                    [
+                        "param0",
+                        "ABILITY",
+                        "伤害归属技能",
+                        false,
+                        null,
+                        true
+                    ],
+                    [
+                        "param0",
+                        "FLOAT",
+                        "缩放",
+                        false,
+                        0.0,
+                        true
+                    ],
+                    [
+                        "local0",
+                        "FLOAT",
+                        "缩放",
+                        false,
+                        0.0
+                    ],
+                    [
+                        "local0",
+                        "FLOAT",
+                        "最大距离",
+                        false,
+                        0.0
+                    ]
+                ]
+            ],
+            []
+        ],
+        [
+            [
+                {
+                    "trigger_id": 1329238037,
+                    "trigger_name": "幸存者_获得经验",
+                    "enabled": true,
+                    "call_enabled": true,
+                    "valid": true,
+                    "event": [],
+                    "condition": [],
+                    "action": [
+                        {
+                            "action_type": "UNIT_ADD_EXP",
+                            "args_list": [
+                                {
+                                    "arg_type": 100006,
+                                    "sub_type": 11,
+                                    "args_list": [
+                                        [
+                                            "UNIT_ENTITY",
+                                            "幸存者_主控单位"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100002,
+                                    "sub_type": 6,
+                                    "args_list": [
+                                        [
+                                            "INTEGER",
+                                            "增加数",
+                                            "local"
+                                        ]
+                                    ]
+                                }
+                            ],
+                            "element_id": 1329238037000004,
+                            "enable": true,
+                            "bp": false
+                        }
+                    ],
+                    "p_trigger_id": null,
+                    "is_func": true,
+                    "func_id": "c767e3b040ca11ee9f1930d042e90e85",
+                    "is_official_func": false,
+                    "func_param_list": [
+                        [
+                            "增加数",
+                            true
+                        ]
+                    ],
+                    "func_name": "幸存者_获得经验",
+                    "func_des": "获得{增加数}经验",
+                    "func_comment": "",
+                    "func_category": "t_function",
+                    "group_id": "SZ0TcHSpEe6sITDQQukOhY",
+                    "var_data": [
+                        {
+                            "INTEGER": {
+                                "exp": 0,
+                                "增加数": 0
+                            }
+                        },
+                        {
+                            "exp": 0,
+                            "增加数": 0
+                        },
+                        [
+                            "exp",
+                            "增加数"
+                        ]
+                    ]
+                }
+            ],
+            [
+                [
+                    [
+                        "param0",
+                        "INTEGER",
+                        "增加数",
+                        false,
+                        0,
+                        true
+                    ],
+                    [
+                        "local0",
+                        "INTEGER",
+                        "增加数",
+                        false,
+                        0
+                    ],
+                    [
+                        "global",
+                        "UNIT_ENTITY",
+                        "幸存者_主控单位",
+                        false,
+                        null
+                    ],
+                    [
+                        "local0",
+                        "INTEGER",
+                        "exp",
+                        false,
+                        0
+                    ]
+                ]
+            ],
+            []
+        ],
+        [
+            [
+                {
+                    "trigger_id": 1673261069,
+                    "trigger_name": "技能模板_获取最近的敌方单位",
+                    "enabled": true,
+                    "call_enabled": true,
+                    "valid": true,
+                    "event": [],
+                    "condition": [],
+                    "action": [
+                        {
+                            "action_type": "SET_VARIABLE",
+                            "args_list": [
+                                {
+                                    "arg_type": 100030,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        [
+                                            "UNIT_GROUP",
+                                            "筛选集合",
+                                            "local"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100026,
+                                    "sub_type": "UNIT_LIST_IN_SHAPE",
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100004,
+                                            "sub_type": 19,
+                                            "args_list": [
+                                                [
+                                                    "POINT",
+                                                    "所在点",
+                                                    "local"
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            "arg_type": 100211,
+                                            "sub_type": "CONST_CIRCULAR_SHAPE",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000,
+                                                    "sub_type": 2,
+                                                    "args_list": [
+                                                        [
+                                                            "FLOAT",
+                                                            "范围",
+                                                            "local"
+                                                        ]
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "op_arg": [
+                                        {
+                                            "arg_type": 100025,
+                                            "sub_type": 1,
+                                            "args_list": [
+                                                31
+                                            ]
+                                        },
+                                        null,
+                                        null,
+                                        null,
+                                        null,
+                                        {
+                                            "arg_type": 100003,
+                                            "sub_type": 1,
+                                            "args_list": [
+                                                "追踪选中"
+                                            ]
+                                        },
+                                        null,
+                                        null,
+                                        null,
+                                        null,
+                                        null,
+                                        {
+                                            "arg_type": 100001,
+                                            "sub_type": 1,
+                                            "args_list": [
+                                                true
+                                            ]
+                                        },
+                                        null,
+                                        {
+                                            "arg_type": 100251,
+                                            "sub_type": 1,
+                                            "args_list": [
+                                                0
+                                            ]
+                                        },
+                                        null
+                                    ],
+                                    "op_arg_enable": [
+                                        true,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        false,
+                                        true,
+                                        false
+                                    ]
+                                }
+                            ],
+                            "element_id": 1673261069000001,
+                            "enable": true,
+                            "bp": false
+                        },
+                        {
+                            "action_type": "IF_THEN_ELSE",
+                            "args_list": [
+                                {
+                                    "arg_type": 100021,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        {
+                                            "condition_type": "FLOAT_COMPARE",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002,
+                                                    "sub_type": "GET_COUNT",
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100026,
+                                                            "sub_type": 14,
+                                                            "args_list": [
+                                                                [
+                                                                    "UNIT_GROUP",
+                                                                    "筛选集合",
+                                                                    "local"
+                                                                ]
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100015,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        ">"
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100002,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        0
+                                                    ]
+                                                }
+                                            ],
+                                            "element_id": 1673261069000002,
+                                            "enable": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100022,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_VARIABLE",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        [
+                                                            "UNIT_ENTITY",
+                                                            "unit",
+                                                            "local"
+                                                        ]
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100006,
+                                                    "sub_type": "GET_FIRST_UNIT_IN_GROUP",
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100026,
+                                                            "sub_type": 14,
+                                                            "args_list": [
+                                                                [
+                                                                    "UNIT_GROUP",
+                                                                    "筛选集合",
+                                                                    "local"
+                                                                ]
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "element_id": 1673261069000003,
+                                            "enable": true,
+                                            "bp": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "arg_type": 100022,
+                                    "sub_type": 1,
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_VARIABLE",
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030,
+                                                    "sub_type": 1,
+                                                    "args_list": [
+                                                        [
+                                                            "UNIT_ENTITY",
+                                                            "unit",
+                                                            "local"
+                                                        ]
+                                                    ]
+                                                },
+                                                {
+                                                    "arg_type": 100006,
+                                                    "sub_type": "NONE_UNIT",
+                                                    "args_list": []
+                                                }
+                                            ],
+                                            "element_id": 1673261069000004,
+                                            "enable": true,
+                                            "bp": false
+                                        }
+                                    ]
+                                }
+                            ],
+                            "element_id": 1673261069000005,
+                            "enable": true,
+                            "bp": false,
+                            "fake_op": [
+                                2
+                            ]
+                        },
+                        {
+                            "action_type": 400342,
+                            "args_list": [
+                                {
+                                    "arg_type": 100006,
+                                    "sub_type": 11,
+                                    "args_list": [
+                                        [
+                                            "UNIT_ENTITY",
+                                            "unit",
+                                            "local"
+                                        ]
+                                    ]
+                                }
+                            ],
+                            "element_id": 1673261069000006,
+                            "enable": true,
+                            "bp": false
+                        }
+                    ],
+                    "p_trigger_id": null,
+                    "is_func": true,
+                    "func_id": "592be6806efb11eeaa7730d042e90e85",
+                    "is_official_func": false,
+                    "func_param_list": [
+                        [
+                            "范围",
+                            true
+                        ],
+                        [
+                            "所在点",
+                            true
+                        ]
+                    ],
+                    "func_rtv_name_list": [
+                        [
+                            "选中单位",
+                            "UNIT_ENTITY"
+                        ]
+                    ],
+                    "func_return": true,
+                    "func_name": "技能模板_获取最近的敌方单位",
+                    "func_des": "获取{所在点}在范围{范围}内最近的敌方单位",
+                    "func_comment": "",
+                    "func_category": "t_function",
+                    "group_id": "kq-XAHSkEe6xxzDQQukOhc",
+                    "var_data": [
+                        {
+                            "FLOAT": {
+                                "范围": 0.0
+                            },
+                            "POINT": {
+                                "所在点": [
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "UNIT_ENTITY": {
+                                "unit": 0
+                            },
+                            "UNIT_GROUP": {
+                                "筛选集合": []
+                            }
+                        },
+                        {
+                            "unit": 0,
+                            "所在点": 0,
+                            "筛选集合": 0,
+                            "范围": 0
+                        },
+                        [
+                            "unit",
+                            "所在点",
+                            "筛选集合",
+                            "范围"
+                        ]
+                    ]
+                }
+            ],
+            [
+                [
+                    [
+                        "param0",
+                        "FLOAT",
+                        "范围",
+                        false,
+                        0.0,
+                        true
+                    ],
+                    [
+                        "local0",
+                        "UNIT_GROUP",
+                        "筛选集合",
+                        false,
+                        null
+                    ],
+                    [
+                        "param0",
+                        "POINT",
+                        "所在点",
+                        false,
+                        null,
+                        true
+                    ],
+                    [
+                        "local0",
+                        "FLOAT",
+                        "范围",
+                        false,
+                        0.0
+                    ],
+                    [
+                        "local0",
+                        "POINT",
+                        "所在点",
+                        false,
+                        null
+                    ],
+                    [
+                        "local0",
+                        "UNIT_ENTITY",
+                        "unit",
+                        false,
+                        null
+                    ]
+                ]
+            ],
+            []
+        ]
+    ],
+    "var_folder_info": [],
+    "custom_event": {
+        "conf": {},
+        "group_info": []
+    },
+    "originalData": [
+        1757155378,
+        2075914251,
+        1329238037,
+        1673261069
+    ]
+}
