@@ -497,7 +497,7 @@ end
 
 --清空聊天信息
 function ui:clear_player_chat_panel()
-    game_api.clear_player_chat_panel(self.player.base())
+    game_api.clear_player_chat_panel(self.player.base(),self.base())
 end
 
 ---@param  player player 玩家
@@ -512,9 +512,10 @@ end
 ---@param  harm_type integer 跳字类型
 ---@param  str string 文字
 ---@param  player_group player_group 玩家组
+---@param  jump_word_track integer 跳字轨迹
 --创建悬浮文字
-function ui.create_floating_text(point,harm_type,str,player_group)
-    game_api.create_harm_text(point.base(),harm_type,str,player_group.base())
+function ui.create_floating_text(point,harm_type,str,player_group,jump_word_track)
+    game_api.create_harm_text_ex(point.base(),harm_type,str,player_group.base(),jump_word_track or 0)
 end
 
 ---@param  player player 玩家
@@ -859,4 +860,16 @@ end
 ---设置图片颜色
 function ui:set_img_color(r, g, b, a)
     game_api.set_ui_image_color(r, g, b, a)
+end
+
+---@return number width  长度
+---获取控件的真实长度
+function ui:get_real_width()
+    return game_api.get_role_ui_comp_real_width()
+end
+
+---@return number width  长度
+---获取控件的真高度
+function ui:get_real_height()
+    return game_api.get_role_ui_comp_real_height()
 end

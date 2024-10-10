@@ -112,4 +112,10 @@ function y3.get_point_in_path(path,index)
     return y3.get_lua_point_from_py(py_point)
 end
 
+---@param id integer 场景ID
+---根据场景ID获取点
+function y3.get_point_by_res_id(id)
+    local py_point = game_api.get_point_by_res_id(id)
+    return y3.get_lua_point_from_py(py_point)
+end
 

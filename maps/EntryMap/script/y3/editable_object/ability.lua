@@ -598,3 +598,20 @@ function ability.get_ability_precondition(ability_key,data)
     end
     return lua_table
 end
+
+---@return number level 等级
+function ability:get_unit_upgrade_level()
+    return self.base():api_get_ability_nearest_upgradable_unit_level()
+end
+
+---@return integer id 技能id
+---获取技能全局唯一ID
+function ability:get_id()
+    return self.base():api_get_ability_global_id()
+end
+
+---@return integer id 技能id
+---当前技能是否可以自动施法
+function ability:is_autocast()
+    return self.base():api_is_autocast_enabled()
+end

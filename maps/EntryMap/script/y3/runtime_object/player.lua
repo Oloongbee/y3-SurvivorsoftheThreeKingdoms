@@ -559,7 +559,7 @@ function player:set_skill_indicator(type,key)
 end
 
 ---@param CURSOR_STATE string 鼠标样式
----@param CURSOR_STATE string 鼠标类型
+---@param CURSOR_KEY string 鼠标类型
 ---设置玩家的鼠标样式
 function player:api_set_role_cursor(CURSOR_STATE,CURSOR_KEY)
     self.base():api_set_role_cursor(CURSOR_STATE,CURSOR_KEY)
@@ -581,4 +581,67 @@ end
 ---玩家是否收藏当前地图
 function player:is_mark()
     return self.base():api_is_bookmark_current_map()
+end
+
+---@return  boolean is_mark 是否收藏
+---获取玩家鼠标真实x坐标
+function player:get_mouse_x()
+    return self.base():get_role_real_mouse_x()
+end
+
+---@return  boolean is_mark 是否收藏
+---获取玩家鼠标真实y坐标
+function player:get_mouse_y()
+    return self.base():get_role_real_mouse_y()
+end
+
+---@param index integer 存档栏位
+---@param value 值 鼠标类型
+---增加整数型参数到玩家存档栏位
+function player:add_save_data_int_value(index,value)
+    self.base():add_save_data_int_value(index,value)
+end
+
+---@param index integer 存档栏位
+---@param value 值 鼠标类型
+---增加实数型参数到玩家存档栏位
+function player:add_save_data_fixed_value(index,value)
+    self.base():add_save_data_fixed_value(index,value)
+end
+
+---@param index integer 存档栏位
+---@param value 值 鼠标类型
+---乘量实数型参数到玩家存档栏位
+function player:mult_save_data_value(index,value)
+    self.base():mult_save_data_value(index,value)
+end
+
+---@return  string UUID 玩家UUID
+---获取玩家UUID
+function player:get_uuid()
+    return self.base():get_encry_uuid(player.base())
+end
+
+---@return  integer points 玩家UUID
+---获取玩家天梯的排位积分
+function player:get_rank_points()
+    return self.base():api_get_ladder_rank_points()
+end
+
+---@return  number money 累计充值
+---获取玩家该地图累计充值
+function player:get_role_total_consume()
+    return self.base():api_get_role_total_consume()
+end
+
+---@return  boolean is_donated 是否打赏该地图
+---获取玩家是否打赏该地图
+function player:get_role_is_donated()
+    return self.base():api_get_role_is_donated()
+end
+
+---@return  string color 颜色
+---获取玩家颜色
+function player:get_color()
+    return self.base():api_get_role_color()
 end

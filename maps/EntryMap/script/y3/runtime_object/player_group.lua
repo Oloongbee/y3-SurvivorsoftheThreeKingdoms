@@ -57,7 +57,7 @@ end
 
 ---@return player_group player_group 玩家组
 ---獲取所有玩家
-function player_group:get_all_players()
+function player_group.get_all_players()
     return player_group.create_lua_player_group_from_py(game_api.get_all_role_ids())
 end
 

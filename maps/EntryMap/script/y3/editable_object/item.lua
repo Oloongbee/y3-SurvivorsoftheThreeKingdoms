@@ -643,3 +643,48 @@ end
 function item:is_visible()
     return self.base():is_visible()
 end
+
+---@param res_key string 玩家属性key
+---@return  integer count 购买资源数量
+---获取物品的购买资源数量
+function item:get_item_res_cnt(res_key)
+    return self.base():api_get_item_res_cnt(res_key)
+end
+
+---@param res_key string 物品实数属性key
+---@return  number attr 物品的实数属性
+---获取物品的实数属性
+function item:get_item_float_attr(res_key)
+    return self.base():api_get_item_float_attr(res_key)
+end
+
+---@param res_key string 物品整数属性key
+---@return  integer attr 物品的整数属性
+---获取物品的整数属性
+function item:get_item_int_attr(res_key)
+    return self.base():api_get_item_int_attr(res_key)
+end
+
+---@param itemKey integer 物编id
+---@param res_key string 玩家属性key
+---@return  integer count 购买资源数量
+---获取物品类型的购买所需资源
+function y3.get_item_key_res_cnt(itemKey,res_key)
+    return self.base():api_get_item_key_res_cnt(itemKey,res_key)
+end
+
+---@param itemKey integer 物编id
+---@param res_key string 实数属性key
+---@return  number count 购买资源数量
+---获取物品类型的实数属性
+function y3.get_item_type_float_attr(itemKey,res_key)
+    return self.base():api_get_item_type_float_attr(itemKey,res_key)
+end
+
+---@param itemKey integer 物编id
+---@param res_key string 整数属性key
+---@return  integer count 购买资源数量
+---获取物品类型的整数属性
+function y3.api_get_item_type_int_attr(itemKey,res_key)
+    return self.base():api_get_item_type_int_attr(itemKey,res_key)
+end

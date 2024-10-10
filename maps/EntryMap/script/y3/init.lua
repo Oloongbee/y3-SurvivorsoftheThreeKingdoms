@@ -1,6 +1,6 @@
 require 'python'
 Python = python
---pcall(function () require "y3.debugger":start "127.0.0.1:12306" end)
+--require "y3.debugger":start "127.0.0.1:12306"
 
 
 ---全局方法类，提供各种全局方法

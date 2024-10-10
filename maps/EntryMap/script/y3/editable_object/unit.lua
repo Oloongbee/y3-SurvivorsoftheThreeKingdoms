@@ -1503,9 +1503,58 @@ function unit.get_precondition_unit_key(data)
 end
 
 ---@param scale_x number x缩放
----@param scale_y number y缩放
+---@param scale_y number 可见性
 ---@param scale_z number z缩放
 ---设置单位三轴缩放
 function unit:set_unit_scale(scale_x, scale_y, scale_z)
     self.base():api_set_unit_scale(scale_x, scale_y, scale_z)
+end
+
+---@param node_name string 血条命名
+---@param visible boolean 可见性
+---@param player player 玩家
+---设置血条可见性
+function unit:set_hp_visible(node_name,visible,player)
+    game_api.set_billboard_visible(self.base(),node_name,visible,player and player.base() or nil)
+end
+
+---@param node_name string 血条命名
+---@param progress number 进度
+---@param player player 玩家
+---设置血条进度
+function unit:set_hp_progress(node_name,progress,player)
+    game_api.set_billboard_visible(self.base(),node_name,progress,player and player.base() or nil)
+end
+
+---@param node_name string 血条命名
+---@param image_id integer 图片id
+---@param player player 玩家
+---设置血条图片
+function unit:set_hp_pic(node_name,image_id,player)
+    game_api.set_billboard_picture(self.base(),node_name,image_id,player and player.base() or nil)
+end
+
+---@param node_name string 血条命名
+---@param text string 图片id
+---@param player player 玩家
+---@param font integer 字体
+---设置血条文本
+function unit:set_hp_text(node_name,text,player,font)
+    game_api.set_billboard_text(self.base(),node_name,text,player and player.base() or nil,font or nil)
+end
+
+---@param point1 point 起始点
+---@param point2 point 目标点
+---@return number range 寻路距离
+---获取单位从点到点的寻路距离
+function unit:get_unit_path_length_between_points(point1,point2)
+    return self.base():get_unit_path_length_between_points(point1.base(),point2.base())
+end
+
+---@param SlotType integer 槽位类型
+---@param index integer 槽位
+---@return integer id 物编id
+---获取单位持有的物品类型
+function unit:get_item_type_by_slot(SlotType,index)
+    return self.base():api_get_item_type_by_slot(SlotType,index)
 end

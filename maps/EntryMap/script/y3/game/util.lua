@@ -2641,62 +2641,146 @@ function y3.set_model_comp_camera_mod(level_id_str)
     game_api.set_model_comp_camera_mod(level_id_str)
 end
 
----@param level_id_str number  关卡ID
----切换至关卡
-function y3.switch_level(level_id_str)
-    game_api.request_switch_level(level_id_str)
+---@param enable boolean 开关
+---@param detect_range number 检测范围
+---设置镜头是否跟随地形高度浮动
+function y3.set_camera_floating_with_terrain(enable,detect_range)
+    game_api.set_camera_floating_with_terrain(enable,detect_range or 3)
 end
 
----@param level_id_str number  关卡ID
----切换至关卡
-function y3.switch_level(level_id_str)
-    game_api.request_switch_level(level_id_str)
+---调试暂停
+function y3.pause()
+    game_api.api_debug_pause()
 end
 
----@param level_id_str number  关卡ID
----切换至关卡
-function y3.switch_level(level_id_str)
-    game_api.request_switch_level(level_id_str)
+---@param is_critical boolean 是否暴击
+---设置当前是否暴击
+function y3.set_cur_damage_is_critical(is_critical)
+    game_api.set_cur_damage_is_critical(is_critical)
 end
 
----@param level_id_str number  关卡ID
----切换至关卡
-function y3.switch_level(level_id_str)
-    game_api.request_switch_level(level_id_str)
+---@param  player number 红色
+---@param  name number 透明度
+---@return string id 控件ID
+---设置图片颜色
+function y3.get_ui_id(player, name)
+    return game_api.get_ui_comp_id_by_name(player.base(), name)
 end
 
----@param level_id_str number  关卡ID
----切换至关卡
-function y3.switch_level(level_id_str)
-    game_api.request_switch_level(level_id_str)
+---@param  tab table 表
+---@return boolean is_empty 是否空表
+---是否为空表
+function y3.is_table_empty(tab)
+    return game_api.is_table_empty(tab)
 end
 
----@param level_id_str number  关卡ID
----切换至关卡
-function y3.switch_level(level_id_str)
-    game_api.request_switch_level(level_id_str)
+
+---@param  var list 数组变量
+---清空组/数组变量
+function y3.clear_group(var)
+    game_api.clear_group(var)
 end
 
----@param level_id_str number  关卡ID
----切换至关卡
-function y3.switch_level(level_id_str)
-    game_api.request_switch_level(level_id_str)
+---@param  var list 数组变量
+---@param  index integer 索引
+---删除数组条目
+function y3.remove_list_var(var,index)
+    game_api.remove_list_var_item(var,index)
 end
 
----@param level_id_str number  关卡ID
----切换至关卡
-function y3.switch_level(level_id_str)
-    game_api.request_switch_level(level_id_str)
+---@param  id integer 计时器编号
+---@param  count integer 剩余次数
+---设置计时器剩余次数
+function y3.set_left_count(id,count)
+    game_api.timer_set_left_count(id,count)
 end
 
----@param level_id_str number  关卡ID
----切换至关卡
-function y3.switch_level(level_id_str)
-    game_api.request_switch_level(level_id_str)
+---@param  id integer 计时器编号
+---@param  time number 剩余时间
+---设置计时器剩余时间
+function y3.set_left_time(id,time)
+    game_api.timer_set_left_time(id,Fix32(time))
 end
 
----@param level_id_str number  关卡ID
----切换至关卡
-function y3.switch_level(level_id_str)
-    game_api.request_switch_level(level_id_str)
+---@param  id integer 计时器编号
+---@param  time integer 间隔时间
+---设置计时器间隔时间
+function y3.set_interval_time(id,time)
+    game_api.timer_set_interval_time(id,Fix32(time))
+end
+
+---@param  id integer 计时器编号
+---@param  tick integer 间隔帧数
+---设置帧计时器间隔帧数
+function y3.set_interval_frame(id,tick)
+    game_api.timer_set_interval_frame(id,tick)
+end
+
+---@param  key integer 原始按键
+---@param  target_key integer 目标按键
+---设置本地改键
+function y3.set_local_mapping_key(key, target_key)
+    game_api.api_set_local_mapping_key(key, target_key)
+end
+
+---@param  key integer 原始按键
+---取消本地改键
+function y3.api_cancel_local_mapping_key(key)
+    game_api.api_cancel_local_mapping_key(key)
+end
+
+---清空本地改键
+function y3.clear_local_mapping_key()
+    game_api.api_clear_local_mapping_key()
+end
+
+---@param  unit unit 原始按键
+---@param  radius number 原始按键
+---获取单位指定距离内的随机单位
+function y3.get_random_unit_around(unit, radius)
+    local py_unit = game_api.cc_get_random_unit_around(unit.base(), Fix32(radius))
+    return unit.get_lua_unit_from_py(py_unit)
+end
+
+---@return integer id 场景ID
+---@param area area 区域
+---获取区域的场景ID
+function y3.get_area_resource_id(area)
+    return game_api.get_area_resource_id(area.base())
+end
+
+---@return integer id 场景ID
+---@param path path 路径
+---获取路径的场景ID
+function y3.get_road_resource_id(path)
+    return game_api.get_road_resource_id(path.base())
+end
+
+---@param item_group path 路径
+---@return item item 物品
+---物品组中随机物品
+function y3.get_random_item_in_item_group(item_group)
+    local py_item = game_api.api_get_random_item_in_item_group(item_group)
+    return y3.item.get_lua_item_from_py(py_item)
+end
+
+---@param attr_name string 属性名
+---@return number attr 实数属性
+---获取本地玩家镜头的实数属性
+function y3.get_camera_attr_real_num(attr_name)
+    return game_api.get_camera_attr_real_num(attr_name)
+end
+
+---@param attr_name string 属性名
+---@return integer attr 整数属性
+---获取本地玩家镜头的整数属性
+function y3.get_camera_attr_integer(attr_name)
+    return game_api.get_camera_attr_integer(attr_name)
+end
+
+---@param modifier modifier 魔法效果类型
+---@return string modifier_name 魔法效果类型的名称
+---获取魔法效果类型的名称
+function y3.get_modifier_name_by_type(modifier)
+    return game_api.get_modifier_name_by_type(modifier)
 end

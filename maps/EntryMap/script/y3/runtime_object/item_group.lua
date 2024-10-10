@@ -37,3 +37,15 @@ function item_group.get_all_items_in_shapes(point,shape,order_type)
     local py_item_group = game_api.get_all_items_in_shapes(point.base(),shape,order_type)
     return item_group.create_lua_item_group_from_py(py_item_group)
 end
+
+---@param item item 物品
+---添加物品到物品组
+function item_group:add(item)
+    game_api.api_add_item_to_group(item.base())
+end
+
+---@param item item 物品
+---删除物品组中某个物品
+function item_group:remove(item)
+    game_api.api_remove_item_in_group(item.base())
+end

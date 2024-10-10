@@ -188,7 +188,7 @@ end
 
 
 ---@param player player 玩家
----@param value number 高度上限
+---@param value number 高度上限/单位为m,编辑器中为cm
 ---设置镜头高度上限
 function camera.set_max_distance(player, value)
     game_api.set_camera_distance_max(player.base(), Fix32(value))
