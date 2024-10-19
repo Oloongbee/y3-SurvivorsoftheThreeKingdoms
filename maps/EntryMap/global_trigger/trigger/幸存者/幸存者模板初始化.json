@@ -164,6 +164,84 @@
             "action_type"
         ], 
         {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "STRING", 
+                                "当前区域位置", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "0b49572b-6cff-4699-9a57-e3425b37012d"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                0
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "区域位置"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_STRING_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 455516307948347, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "RECTANGLE", 
+                                "当前区域", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100009, 
+                    "args_list": [
+                        10009
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 455516307948382, 
+            "enable": true
+        }, 
+        {
             "action_type": "CALL_TRIGGER_FUNC", 
             "args_list": [
                 {
@@ -179,9 +257,16 @@
                         {
                             "arg_type": 100003, 
                             "args_list": [
-                                "(11000,6000,0)"
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "STRING", 
+                                        "当前区域位置", 
+                                        "local"
+                                    ]
+                                }
                             ], 
-                            "sub_type": 1
+                            "sub_type": 2
                         }
                     ], 
                     "op_arg": [], 
@@ -254,37 +339,6 @@
                     ], 
                     "op_arg": [], 
                     "op_arg_enable": [], 
-                    "sub_type": "d8dc4bb0794e11eeb59730d042e90e85"
-                }
-            ], 
-            "bp": false, 
-            "call_rt_arg_idxes": [], 
-            "element_id": 455516307000007, 
-            "enable": false
-        }, 
-        {
-            "action_type": "CALL_TRIGGER_FUNC", 
-            "args_list": [
-                {
-                    "arg_type": 100177, 
-                    "args_list": [
-                        {
-                            "arg_type": 100011, 
-                            "args_list": [
-                                "fd202848-eca1-419e-9372-9d7e2e70e7c9"
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100009, 
-                            "args_list": [
-                                10009
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "op_arg": [], 
-                    "op_arg_enable": [], 
                     "sub_type": "3872d4a0893a11ef8b0e0b3afaf0968d"
                 }
             ], 
@@ -327,220 +381,6 @@
             "bp": false, 
             "element_id": 455516307000008, 
             "enable": true
-        }, 
-        [
-            1196350437, 
-            "初始等级为1，提供升级选项", 
-            455516307, 
-            "action_type"
-        ], 
-        {
-            "action_type": "RUN_ONCE_TIMER_NO_SAVE", 
-            "args_list": [
-                {
-                    "arg_type": 100000, 
-                    "args_list": [
-                        1.0
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100022, 
-                    "args_list": [
-                        {
-                            "action_type": "CALL_TRIGGER_FUNC", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100177, 
-                                    "args_list": [], 
-                                    "op_arg": [], 
-                                    "op_arg_enable": [], 
-                                    "sub_type": "6152d2f078ac11eeb9cf30d042e90e85"
-                                }
-                            ], 
-                            "bp": false, 
-                            "call_rt_arg_idxes": [], 
-                            "element_id": 455516307000010, 
-                            "enable": true
-                        }
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000011, 
-            "enable": false, 
-            "local_var": {
-                "__tuple__": true, 
-                "items": [
-                    {}, 
-                    {}
-                ]
-            }
-        }, 
-        [
-            2075709673, 
-            "玩家控制设置", 
-            455516307, 
-            "action_type"
-        ], 
-        {
-            "action_type": "CALL_TRIGGER_FUNC", 
-            "args_list": [
-                {
-                    "arg_type": 100177, 
-                    "args_list": [
-                        {
-                            "arg_type": 100006, 
-                            "args_list": [
-                                [
-                                    "UNIT_ENTITY", 
-                                    "幸存者_主控单位"
-                                ]
-                            ], 
-                            "sub_type": 11
-                        }, 
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                1
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "op_arg": [], 
-                    "op_arg_enable": [], 
-                    "sub_type": "4356f39176ee11ee87f630d042e90e85"
-                }
-            ], 
-            "bp": false, 
-            "call_rt_arg_idxes": [], 
-            "element_id": 455516307000012, 
-            "enable": false
-        }, 
-        {
-            "action_type": "SELECT_UNIT", 
-            "args_list": [
-                {
-                    "arg_type": 100025, 
-                    "args_list": [
-                        1
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100006, 
-                    "args_list": [
-                        {
-                            "__tuple__": true, 
-                            "items": [
-                                "UNIT_ENTITY", 
-                                "幸存者_主控单位"
-                            ]
-                        }
-                    ], 
-                    "sub_type": 11
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000013, 
-            "enable": false
-        }, 
-        {
-            "action_type": "OPEN_OR_CLOSE_TIME_SPEED", 
-            "args_list": [
-                {
-                    "arg_type": 100001, 
-                    "args_list": [
-                        false
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000014, 
-            "enable": false
-        }, 
-        {
-            "action_type": "SET_ROLE_MOUSE_LEFT_CLICK", 
-            "args_list": [
-                {
-                    "arg_type": 100025, 
-                    "args_list": [
-                        1
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100048, 
-                    "args_list": [
-                        false
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000015, 
-            "enable": false
-        }, 
-        {
-            "action_type": "SET_ROLE_MOUSE_MOVE_SELECT", 
-            "args_list": [
-                {
-                    "arg_type": 100025, 
-                    "args_list": [
-                        1
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100048, 
-                    "args_list": [
-                        false
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000016, 
-            "enable": false
-        }, 
-        {
-            "action_type": "SET_ROLE_MOUSE_WHEEL", 
-            "args_list": [
-                {
-                    "arg_type": 100025, 
-                    "args_list": [
-                        1
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100048, 
-                    "args_list": [
-                        false
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000017, 
-            "enable": false
-        }, 
-        {
-            "action_type": "NEW_CAMERA_SET_MOVE_NOT_ENABLE", 
-            "args_list": [
-                {
-                    "arg_type": 100025, 
-                    "args_list": [
-                        1
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000018, 
-            "enable": false
         }, 
         [
             2081948097, 
@@ -1195,203 +1035,12 @@
             455516307, 
             "action_type"
         ], 
-        {
-            "action_type": "SET_VARIABLE", 
-            "args_list": [
-                {
-                    "arg_type": 100030, 
-                    "args_list": [
-                        {
-                            "__tuple__": true, 
-                            "items": [
-                                "FLOAT", 
-                                "全局_城门当前血量"
-                            ]
-                        }
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100000, 
-                    "args_list": [
-                        {
-                            "arg_type": 100011, 
-                            "args_list": [
-                                "057bebea-7485-49d3-bf2e-602f7b87c538"
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                "彭城"
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                "城门血量"
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000028, 
-            "enable": false
-        }, 
-        {
-            "action_type": "SET_VARIABLE", 
-            "args_list": [
-                {
-                    "arg_type": 100030, 
-                    "args_list": [
-                        [
-                            "STRING", 
-                            "全局_城门总血量(字符串)"
-                        ]
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100003, 
-                    "args_list": [
-                        {
-                            "arg_type": 100000, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "FLOAT", 
-                                        "全局_城门当前血量"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 2
-                        }, 
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                0
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "op_arg": [
-                        null
-                    ], 
-                    "op_arg_enable": [
-                        false
-                    ], 
-                    "sub_type": "FLOAT_TO_STR_NEW"
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000029, 
-            "enable": false
-        }, 
-        {
-            "action_type": "RUN_LOOP_TIMER_NO_SAVE", 
-            "args_list": [
-                {
-                    "arg_type": 100000, 
-                    "args_list": [
-                        0.01
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100001, 
-                    "args_list": [
-                        true
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100022, 
-                    "args_list": [
-                        {
-                            "action_type": "SET_VARIABLE", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100030, 
-                                    "args_list": [
-                                        [
-                                            "FLOAT", 
-                                            "幸存者_全局计时"
-                                        ]
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100000, 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100000, 
-                                            "args_list": [
-                                                [
-                                                    "FLOAT", 
-                                                    "幸存者_全局计时"
-                                                ]
-                                            ], 
-                                            "sub_type": 2
-                                        }, 
-                                        {
-                                            "arg_type": 100017, 
-                                            "args_list": [
-                                                "+"
-                                            ], 
-                                            "sub_type": 1
-                                        }, 
-                                        {
-                                            "arg_type": 100000, 
-                                            "args_list": [
-                                                0.01
-                                            ], 
-                                            "sub_type": 1
-                                        }
-                                    ], 
-                                    "sub_type": "ARITHMETIC_OPERATION"
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 455516307000030, 
-                            "enable": true
-                        }, 
-                        {
-                            "action_type": "CALL_TRIGGER_FUNC", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100177, 
-                                    "args_list": [], 
-                                    "op_arg": [], 
-                                    "op_arg_enable": [], 
-                                    "sub_type": "e348430775b411ef994761bfc0068241"
-                                }
-                            ], 
-                            "bp": false, 
-                            "call_rt_arg_idxes": [], 
-                            "element_id": 455516307000031, 
-                            "enable": true
-                        }
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000032, 
-            "enable": false, 
-            "local_var": {
-                "__tuple__": true, 
-                "items": [
-                    {}, 
-                    {}
-                ]
-            }
-        }, 
+        [
+            1792279837, 
+            "#######", 
+            455516307, 
+            "action_type"
+        ], 
         {
             "action_type": "SET_UI_COMP_VISIBLE", 
             "args_list": [
@@ -1420,58 +1069,6 @@
             "bp": false, 
             "element_id": 455516307000033, 
             "enable": true
-        }, 
-        {
-            "action_type": "RUN_ONCE_TIMER_NO_SAVE", 
-            "args_list": [
-                {
-                    "arg_type": 100000, 
-                    "args_list": [
-                        10.0
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100022, 
-                    "args_list": [
-                        {
-                            "action_type": "CALL_TRIGGER_FUNC", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100177, 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100025, 
-                                            "args_list": [
-                                                1
-                                            ], 
-                                            "sub_type": 1
-                                        }
-                                    ], 
-                                    "op_arg": [], 
-                                    "op_arg_enable": [], 
-                                    "sub_type": "941559f37bca11efb4aac38c4d73765e"
-                                }
-                            ], 
-                            "bp": false, 
-                            "call_rt_arg_idxes": [], 
-                            "element_id": 455516307000034, 
-                            "enable": true
-                        }
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000035, 
-            "enable": false, 
-            "local_var": {
-                "__tuple__": true, 
-                "items": [
-                    {}, 
-                    {}
-                ]
-            }
         }, 
         [
             1509939285, 
@@ -1551,498 +1148,19 @@
             "enable": false
         }, 
         {
-            "action_type": "LIST_LOOP", 
-            "args_list": [
-                {
-                    "arg_type": 100081, 
-                    "args_list": [
-                        {
-                            "__tuple__": true, 
-                            "items": [
-                                "INTEGER", 
-                                "玩家ID数组"
-                            ]
-                        }
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100022, 
-                    "args_list": [
-                        {
-                            "action_type": "IF_THEN_ELSE", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100021, 
-                                    "args_list": [
-                                        {
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "INTEGER", 
-                                                                "当前玩家ID", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 6
-                                                }, 
-                                                {
-                                                    "arg_type": 100015, 
-                                                    "args_list": [
-                                                        "=="
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "INTEGER", 
-                                                                "玩家ID数组"
-                                                            ]
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100002, 
-                                                            "args_list": [], 
-                                                            "sub_type": "GET_LOOP_LIST_INDEX"
-                                                        }
-                                                    ], 
-                                                    "sub_type": 6
-                                                }
-                                            ], 
-                                            "condition_type": "FLOAT_COMPARE", 
-                                            "element_id": 455516307000038, 
-                                            "enable": true
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100022, 
-                                    "args_list": [
-                                        {
-                                            "action_type": "SWITCH", 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [], 
-                                                    "sub_type": "GET_LOOP_LIST_INDEX"
-                                                }, 
-                                                {
-                                                    "arg_type": 100022, 
-                                                    "args_list": [
-                                                        {
-                                                            "action_type": "CASE", 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100002, 
-                                                                    "args_list": [
-                                                                        0
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100022, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "INTEGER", 
-                                                                                                "当前玩家索引", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100002, 
-                                                                                    "args_list": [
-                                                                                        0
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 455516307000039, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "TABLE", 
-                                                                                                "当前玩家阵容表", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "3a1d7d70-ac12-4a04-b0c0-d596c78e5e49"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 455516307000040, 
-                                                                            "enable": true
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }
-                                                            ], 
-                                                            "bp": false, 
-                                                            "element_id": 455516307000041, 
-                                                            "enable": true
-                                                        }, 
-                                                        {
-                                                            "action_type": "CASE", 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100002, 
-                                                                    "args_list": [
-                                                                        1
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100022, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "INTEGER", 
-                                                                                                "当前玩家索引", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100002, 
-                                                                                    "args_list": [
-                                                                                        1
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 455516307000042, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "TABLE", 
-                                                                                                "当前玩家阵容表", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "6d44f48c-65ed-4e6e-acf9-9c58b2e5eeb5"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 455516307000043, 
-                                                                            "enable": true
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }
-                                                            ], 
-                                                            "bp": false, 
-                                                            "element_id": 455516307000044, 
-                                                            "enable": true
-                                                        }, 
-                                                        {
-                                                            "action_type": "CASE", 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100002, 
-                                                                    "args_list": [
-                                                                        2
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100022, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "INTEGER", 
-                                                                                                "当前玩家索引", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100002, 
-                                                                                    "args_list": [
-                                                                                        2
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 455516307000045, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "TABLE", 
-                                                                                                "当前玩家阵容表", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "872f4f1d-b0e1-4385-94a7-48a8c4a665c2"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 455516307000046, 
-                                                                            "enable": true
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }
-                                                            ], 
-                                                            "bp": false, 
-                                                            "element_id": 455516307000047, 
-                                                            "enable": true
-                                                        }, 
-                                                        {
-                                                            "action_type": "CASE", 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100002, 
-                                                                    "args_list": [
-                                                                        3
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100022, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "INTEGER", 
-                                                                                                "当前玩家索引", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100002, 
-                                                                                    "args_list": [
-                                                                                        3
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 455516307000048, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "TABLE", 
-                                                                                                "当前玩家阵容表", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "74b66ede-5345-4578-b6c4-72e44659009a"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 455516307000049, 
-                                                                            "enable": true
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }
-                                                            ], 
-                                                            "bp": false, 
-                                                            "element_id": 455516307000050, 
-                                                            "enable": true
-                                                        }
-                                                    ], 
-                                                    "sub_type": 1
-                                                }
-                                            ], 
-                                            "bp": false, 
-                                            "element_id": 455516307000051, 
-                                            "enable": true
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100022, 
-                                    "args_list": [], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 455516307000052, 
-                            "enable": true, 
-                            "fake_op": []
-                        }
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307000053, 
-            "enable": false
-        }, 
-        {
-            "action_type": "RUN_ONCE_TIMER_NO_SAVE", 
+            "action_type": "RUN_LOOP_TIMER_NO_SAVE", 
             "args_list": [
                 {
                     "arg_type": 100000, 
                     "args_list": [
-                        5.0
+                        30.0
                     ], 
                     "sub_type": 1
                 }, 
                 {
-                    "arg_type": 100022, 
+                    "arg_type": 100001, 
                     "args_list": [
-                        {
-                            "action_type": "CALL_TRIGGER_FUNC", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100177, 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100002, 
-                                            "args_list": [
-                                                0
-                                            ], 
-                                            "sub_type": 1
-                                        }
-                                    ], 
-                                    "op_arg": [], 
-                                    "op_arg_enable": [], 
-                                    "sub_type": "6d51ae3e85dc11ef98cb5597f5fc6834"
-                                }
-                            ], 
-                            "bp": false, 
-                            "call_rt_arg_idxes": [], 
-                            "element_id": 455516307000054, 
-                            "enable": false
-                        }
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 455516307948236, 
-            "enable": false, 
-            "local_var": {
-                "__tuple__": true, 
-                "items": [
-                    {}, 
-                    {}
-                ]
-            }
-        }, 
-        {
-            "action_type": "RUN_ONCE_TIMER_NO_SAVE", 
-            "args_list": [
-                {
-                    "arg_type": 100000, 
-                    "args_list": [
-                        5.0
+                        false
                     ], 
                     "sub_type": 1
                 }, 
@@ -2061,160 +1179,211 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 455516307948241, 
+                            "element_id": 455516307948467, 
                             "enable": true
                         }, 
                         {
-                            "action_type": "SET_TABLE_VALUE_ND", 
+                            "action_type": "SET_VARIABLE", 
                             "args_list": [
                                 {
-                                    "arg_type": 100011, 
+                                    "arg_type": 100030, 
                                     "args_list": [
-                                        "fd202848-eca1-419e-9372-9d7e2e70e7c9"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "1"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "每秒刷怪数"
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "波次计数", 
+                                                "local"
+                                            ]
+                                        }
                                     ], 
                                     "sub_type": 1
                                 }, 
                                 {
                                     "arg_type": 100002, 
                                     "args_list": [
-                                        1
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "波次计数", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }, 
+                                        {
+                                            "arg_type": 100016, 
+                                            "args_list": [
+                                                "+"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                1
+                                            ], 
+                                            "sub_type": 1
+                                        }
                                     ], 
-                                    "sub_type": 1
+                                    "sub_type": "MATH_OPERATION"
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 455516307948242, 
-                            "enable": false
+                            "element_id": 455516307948468, 
+                            "enable": true
                         }, 
+                        189219005, 
                         {
-                            "action_type": "SET_TABLE_VALUE_ND", 
+                            "action_type": "IF_THEN_ELSE", 
                             "args_list": [
                                 {
-                                    "arg_type": 100011, 
+                                    "arg_type": 100021, 
                                     "args_list": [
-                                        "fd202848-eca1-419e-9372-9d7e2e70e7c9"
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "波次计数", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100015, 
+                                                    "args_list": [
+                                                        ">="
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        2
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "condition_type": "FLOAT_COMPARE", 
+                                            "element_id": 455516307948469, 
+                                            "enable": true
+                                        }
                                     ], 
                                     "sub_type": 1
                                 }, 
                                 {
-                                    "arg_type": 100003, 
+                                    "arg_type": 100022, 
                                     "args_list": [
-                                        "2"
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "STRING", 
+                                                                "当前区域位置", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100011, 
+                                                            "args_list": [
+                                                                "0b49572b-6cff-4699-9a57-e3425b37012d"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "boss区域位置"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_STRING_TABLE_VAR_ND"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 455516307948470, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "RECTANGLE", 
+                                                                "当前区域", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100009, 
+                                                    "args_list": [
+                                                        10010
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 455516307948471, 
+                                            "enable": true
+                                        }
                                     ], 
                                     "sub_type": 1
                                 }, 
                                 {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "每秒刷怪数"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        2
-                                    ], 
+                                    "arg_type": 100022, 
+                                    "args_list": [], 
                                     "sub_type": 1
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 455516307948243, 
-                            "enable": false
-                        }, 
-                        {
-                            "action_type": "SET_TABLE_VALUE_ND", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100011, 
-                                    "args_list": [
-                                        "fd202848-eca1-419e-9372-9d7e2e70e7c9"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "3"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "每秒刷怪数"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        2
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 455516307948244, 
-                            "enable": false
-                        }, 
-                        {
-                            "action_type": "SET_TABLE_VALUE_ND", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100011, 
-                                    "args_list": [
-                                        "fd202848-eca1-419e-9372-9d7e2e70e7c9"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "4"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "每秒刷怪数"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        2
-                                    ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 455516307948245, 
-                            "enable": false
-                        }, 
-                        189219005
+                            "element_id": 455516307948472, 
+                            "enable": true, 
+                            "fake_op": []
+                        }
                     ], 
                     "sub_type": 1
                 }
             ], 
             "bp": false, 
-            "element_id": 455516307948106, 
+            "element_id": 455516307948459, 
             "enable": true, 
             "local_var": {
                 "__tuple__": true, 
@@ -2351,9 +1520,16 @@
                                 {
                                     "arg_type": 100003, 
                                     "args_list": [
-                                        "(100,1500,0)"
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "STRING", 
+                                                "当前区域位置", 
+                                                "local"
+                                            ]
+                                        }
                                     ], 
-                                    "sub_type": 1
+                                    "sub_type": 2
                                 }
                             ], 
                             "op_arg": [], 
@@ -2382,40 +1558,16 @@
                                 {
                                     "arg_type": 100009, 
                                     "args_list": [
-                                        10010
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "RECTANGLE", 
+                                                "当前区域", 
+                                                "local"
+                                            ]
+                                        }
                                     ], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "op_arg": [], 
-                            "op_arg_enable": [], 
-                            "sub_type": "d8dc4bb0794e11eeb59730d042e90e85"
-                        }
-                    ], 
-                    "bp": false, 
-                    "call_rt_arg_idxes": [], 
-                    "element_id": 455516307948156, 
-                    "enable": false
-                }, 
-                {
-                    "action_type": "CALL_TRIGGER_FUNC", 
-                    "args_list": [
-                        {
-                            "arg_type": 100177, 
-                            "args_list": [
-                                {
-                                    "arg_type": 100011, 
-                                    "args_list": [
-                                        "fd202848-eca1-419e-9372-9d7e2e70e7c9"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100009, 
-                                    "args_list": [
-                                        10010
-                                    ], 
-                                    "sub_type": 1
+                                    "sub_type": 7
                                 }
                             ], 
                             "op_arg": [], 
@@ -2440,38 +1592,30 @@
                                         0
                                     ], 
                                     "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100009, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "RECTANGLE", 
+                                                "当前区域", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 7
                                 }
                             ], 
                             "op_arg": [], 
                             "op_arg_enable": [], 
-                            "sub_type": "6d51ae3e85dc11ef98cb5597f5fc6834"
+                            "sub_type": "ddf6ca1a8a1d11ef9899b74c9cacabd0"
                         }
                     ], 
                     "bp": false, 
                     "call_rt_arg_idxes": [], 
                     "element_id": 455516307000054, 
-                    "enable": true
-                }, 
-                {
-                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
-                    "args_list": [
-                        {
-                            "arg_type": 100175, 
-                            "args_list": [
-                                3
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                "进入boss房间"
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 189219005948174, 
                     "enable": true
                 }
             ], 
@@ -2525,6 +1669,7 @@
                 "当前玩家ID": 0, 
                 "当前玩家索引": 0, 
                 "武将星级数组": 0, 
+                "波次计数": 0, 
                 "玩家1ID": 0, 
                 "阵容索引数组": 0
             }, 
@@ -2534,6 +1679,12 @@
             "PROJECTILE_ENTITY": {
                 "sword": 0, 
                 "弹药": 0
+            }, 
+            "RECTANGLE": {
+                "当前区域": 0
+            }, 
+            "STRING": {
+                "当前区域位置": ""
             }, 
             "TABLE": {
                 "当前玩家阵容表": null, 
@@ -2550,11 +1701,14 @@
             "副武器索引数组": 10, 
             "实际伤害": 0, 
             "弹药": 0, 
+            "当前区域": 0, 
+            "当前区域位置": 0, 
             "当前玩家": 0, 
             "当前玩家ID": 0, 
             "当前玩家索引": 0, 
             "当前玩家阵容表": 0, 
             "武将星级数组": 10, 
+            "波次计数": 0, 
             "测试表": 0, 
             "玩家1ID": 0, 
             "阵容索引数组": 10
@@ -2576,7 +1730,10 @@
             "当前玩家", 
             "当前玩家ID", 
             "当前玩家索引", 
-            "当前玩家阵容表"
+            "当前玩家阵容表", 
+            "波次计数", 
+            "当前区域位置", 
+            "当前区域"
         ]
     ]
 }

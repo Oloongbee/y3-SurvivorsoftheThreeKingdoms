@@ -526,9 +526,16 @@
                         {
                             "arg_type": 100009, 
                             "args_list": [
-                                10009
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "RECTANGLE", 
+                                        "宝物生成区域", 
+                                        "local"
+                                    ]
+                                }
                             ], 
-                            "sub_type": 1
+                            "sub_type": 7
                         }
                     ], 
                     "sub_type": "RECTANGLE_RANDOM_POINT"
@@ -964,9 +971,16 @@
                                                         {
                                                             "arg_type": 100009, 
                                                             "args_list": [
-                                                                10009
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "RECTANGLE", 
+                                                                        "宝物生成区域", 
+                                                                        "local"
+                                                                    ]
+                                                                }
                                                             ], 
-                                                            "sub_type": 1
+                                                            "sub_type": 7
                                                         }
                                                     ], 
                                                     "sub_type": "RECTANGLE_RANDOM_POINT"
@@ -3093,7 +3107,7 @@
     "event": [], 
     "func_category": "t_function", 
     "func_comment": "", 
-    "func_des": "为{玩家索引}创建宝物打造事件", 
+    "func_des": "为{玩家索引}创建宝物打造事件{宝物生成区域}", 
     "func_id": "ddf6ca1a8a1d11ef9899b74c9cacabd0", 
     "func_name": "宝物打造_2_import", 
     "func_param_list": [
@@ -3101,6 +3115,13 @@
             "__tuple__": true, 
             "items": [
                 "玩家索引", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "宝物生成区域", 
                 true
             ]
         }
@@ -4687,6 +4708,9 @@
                 }
             }, 
             "PROJECTILE_ENTITY": {}, 
+            "RECTANGLE": {
+                "宝物生成区域": 0
+            }, 
             "ROUND_AREA": {
                 "落点限制": 0
             }, 
@@ -4712,6 +4736,7 @@
             "宝物方向指示计时器": 0, 
             "宝物检测计时器": 0, 
             "宝物特效保存": 0, 
+            "宝物生成区域": 0, 
             "宝物获得循环计时器": 0, 
             "宝物进度计数器": 0, 
             "当前玩家": 0, 
@@ -4741,7 +4766,8 @@
             "扇形特效", 
             "判断宝物位置", 
             "判断玩家位置", 
-            "落点限制"
+            "落点限制", 
+            "宝物生成区域"
         ]
     ]
 }
