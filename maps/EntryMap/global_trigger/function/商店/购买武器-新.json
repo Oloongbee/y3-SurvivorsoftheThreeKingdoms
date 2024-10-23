@@ -842,7 +842,7 @@
                                                                         {
                                                                             "arg_type": 100001, 
                                                                             "args_list": [
-                                                                                true
+                                                                                false
                                                                             ], 
                                                                             "sub_type": 1
                                                                         }
@@ -2778,7 +2778,7 @@
                     ], 
                     "bp": false, 
                     "element_id": 302649556884404, 
-                    "enable": true
+                    "enable": false
                 }, 
                 {
                     "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
@@ -3192,7 +3192,42 @@
                 }
             ], 
             "call_enabled": true, 
-            "condition": [], 
+            "condition": [
+                {
+                    "args_list": [
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "BOOLEAN", 
+                                        "武器是否被选择"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100035, 
+                            "args_list": [
+                                "=="
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                true
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "condition_type": "BOOL_COMPARE", 
+                    "element_id": 1494143189970977, 
+                    "enable": false
+                }
+            ], 
             "enabled": false, 
             "event": [
                 {
@@ -3310,6 +3345,12 @@
                     "element_id": 1835258064823683, 
                     "enable": true
                 }, 
+                [
+                    1776912085, 
+                    "判断产购买事件的是哪一个控件，即判断购买哪一个武器", 
+                    1835258064, 
+                    "action_type"
+                ], 
                 {
                     "action_type": "FOR_INT_DO_ACTION_NEW", 
                     "args_list": [
