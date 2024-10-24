@@ -15,19 +15,26 @@
         "1716535297": {
             "action": [
                 {
-                    "action_type": "SET_VARIABLE", 
+                    "action_type": "SET_TABLE_VALUE_ND", 
                     "args_list": [
                         {
-                            "arg_type": 100030, 
+                            "arg_type": 100011, 
                             "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "INTEGER", 
-                                        "\u5f53\u524d\u73a9\u5bb6ID", 
-                                        "local"
-                                    ]
-                                }
+                                "0b49572b-6cff-4699-9a57-e3425b37012d"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                1
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "\u94f6\u5e01"
                             ], 
                             "sub_type": 1
                         }, 
@@ -35,22 +42,79 @@
                             "arg_type": 100002, 
                             "args_list": [
                                 {
-                                    "arg_type": 100025, 
+                                    "arg_type": 100002, 
                                     "args_list": [
                                         {
-                                            "arg_type": 100006, 
-                                            "args_list": [], 
-                                            "sub_type": "ABILITY_OWNER"
+                                            "arg_type": 100011, 
+                                            "args_list": [
+                                                "0b49572b-6cff-4699-9a57-e3425b37012d"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                1
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "\u94f6\u5e01"
+                                            ], 
+                                            "sub_type": 1
                                         }
                                     ], 
-                                    "sub_type": "OWNER_PLAYER"
+                                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                }, 
+                                {
+                                    "arg_type": 100016, 
+                                    "args_list": [
+                                        "+"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        10
+                                    ], 
+                                    "sub_type": 1
                                 }
                             ], 
-                            "sub_type": "PLAYER_ID_NUMBER"
+                            "sub_type": "MATH_OPERATION"
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1716535297000003, 
+                    "element_id": 1716535297000020, 
+                    "enable": true
+                }, 
+                {
+                    "action_type": "UNIT_REMOVE_ABILITIES_IN_TYPE", 
+                    "args_list": [
+                        {
+                            "arg_type": 100006, 
+                            "args_list": [], 
+                            "sub_type": "ABILITY_OWNER"
+                        }, 
+                        {
+                            "arg_type": 100182, 
+                            "args_list": [
+                                2
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100039, 
+                            "args_list": [
+                                134233787
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1716535297000061, 
                     "enable": true
                 }
             ], 
