@@ -1,14 +1,14 @@
 {
     "action": [
-        343736557, 
-        1954349294, 
+        1639268469, 
+        397754486, 
         [
             2066422466, 
             "如果移出，那么取消放大", 
-            1803354348, 
+            2025144436, 
             "action_type"
         ], 
-        1266483439
+        129319031
     ], 
     "call_enabled": true, 
     "condition": [], 
@@ -42,736 +42,12 @@
             ]
         }
     ], 
-    "group_id": "ArKsd4+JEe+V2bPnQCcmds", 
+    "group_id": "YaUxY5WnEe+kGNE1uMKHR7", 
     "is_func": true, 
     "is_official_func": false, 
     "p_trigger_id": null, 
     "sub_trigger": {
-        "343736557": {
-            "action": [
-                {
-                    "action_type": "SET_UI_COMP_VISIBLE", 
-                    "args_list": [
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "PLAYER", 
-                                        "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                false
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100070, 
-                            "args_list": [
-                                "75f544e3-e504-46c6-99ab-249f8052cbff"
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 2040570079985657, 
-                    "enable": true
-                }, 
-                [
-                    2123122565, 
-                    "判断购买的武将", 
-                    343736557, 
-                    "action_type"
-                ], 
-                {
-                    "action_type": "SET_VARIABLE", 
-                    "args_list": [
-                        {
-                            "arg_type": 100030, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "UI_COMP", 
-                                        "当前商店武将控件", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100070, 
-                            "args_list": [], 
-                            "sub_type": "GET_UI_COMP_FROM_EVENT"
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 343736557000002, 
-                    "enable": true
-                }, 
-                {
-                    "action_type": "SET_VARIABLE", 
-                    "args_list": [
-                        {
-                            "arg_type": 100030, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "BOOLEAN", 
-                                        "武将是否被选择"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                true
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 343736557000003, 
-                    "enable": true
-                }, 
-                {
-                    "action_type": "SET_VARIABLE", 
-                    "args_list": [
-                        {
-                            "arg_type": 100030, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "BOOLEAN", 
-                                        "武将是否试图购买"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100001, 
-                            "args_list": [
-                                false
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 343736557000004, 
-                    "enable": true
-                }, 
-                [
-                    1776912085, 
-                    "判断产购买事件的是哪一个控件，即判断购买哪一个武将", 
-                    343736557, 
-                    "action_type"
-                ], 
-                {
-                    "action_type": "FOR_INT_DO_ACTION_NEW", 
-                    "args_list": [
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "INTEGER", 
-                                        "i", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 6
-                        }, 
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                1
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                3
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100022, 
-                            "args_list": [
-                                {
-                                    "action_type": "IF_THEN_ELSE", 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100021, 
-                                            "args_list": [
-                                                {
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100070, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "UI_COMP", 
-                                                                        "当前商店武将控件", 
-                                                                        "local"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": "VARIABLE"
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100035, 
-                                                            "args_list": [
-                                                                "=="
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100070, 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100011, 
-                                                                    "args_list": [
-                                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100002, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "__tuple__": true, 
-                                                                            "items": [
-                                                                                "INTEGER", 
-                                                                                "i", 
-                                                                                "local"
-                                                                            ]
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 6
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100003, 
-                                                                    "args_list": [
-                                                                        "商店武将图片控件"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }
-                                                            ], 
-                                                            "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
-                                                        }
-                                                    ], 
-                                                    "condition_type": "ANY_COMPARE", 
-                                                    "element_id": 343736557000005, 
-                                                    "enable": true
-                                                }
-                                            ], 
-                                            "sub_type": 1
-                                        }, 
-                                        {
-                                            "arg_type": 100022, 
-                                            "args_list": [
-                                                {
-                                                    "action_type": "SET_VARIABLE", 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100030, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "UNIT_NAME", 
-                                                                        "当前购买武将"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100116, 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100011, 
-                                                                    "args_list": [
-                                                                        "4da8307b-75f1-42c5-bf9e-3d16fc02b322"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100002, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "__tuple__": true, 
-                                                                            "items": [
-                                                                                "INTEGER", 
-                                                                                "幸存者_商店角色选择集合"
-                                                                            ]
-                                                                        }, 
-                                                                        {
-                                                                            "arg_type": 100002, 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100002, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "INTEGER", 
-                                                                                                "i", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 6
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100016, 
-                                                                                    "args_list": [
-                                                                                        "-"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100002, 
-                                                                                    "args_list": [
-                                                                                        1
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "sub_type": "MATH_OPERATION"
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 6
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100003, 
-                                                                    "args_list": [
-                                                                        "武将类型"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }
-                                                            ], 
-                                                            "sub_type": "GET_UNIT_NAME_TABLE_VAR_ND"
-                                                        }
-                                                    ], 
-                                                    "bp": false, 
-                                                    "element_id": 343736557000006, 
-                                                    "enable": true
-                                                }, 
-                                                {
-                                                    "action_type": "SET_VARIABLE", 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100030, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "INTEGER", 
-                                                                        "当前商店购买武将位置索引"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100002, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "INTEGER", 
-                                                                        "i", 
-                                                                        "local"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": 6
-                                                        }
-                                                    ], 
-                                                    "bp": false, 
-                                                    "element_id": 343736557000007, 
-                                                    "enable": true
-                                                }, 
-                                                {
-                                                    "action_type": "SET_UI_COMP_Z_ORDER", 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100025, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "PLAYER", 
-                                                                        "当前玩家", 
-                                                                        "local"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": "VARIABLE"
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100070, 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100011, 
-                                                                    "args_list": [
-                                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100002, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "__tuple__": true, 
-                                                                            "items": [
-                                                                                "INTEGER", 
-                                                                                "当前商店购买武将位置索引"
-                                                                            ]
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 6
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100003, 
-                                                                    "args_list": [
-                                                                        "商店武将图片控件"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }
-                                                            ], 
-                                                            "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100002, 
-                                                            "args_list": [
-                                                                99
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }
-                                                    ], 
-                                                    "bp": false, 
-                                                    "element_id": 343736557000008, 
-                                                    "enable": true
-                                                }, 
-                                                {
-                                                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100175, 
-                                                            "args_list": [
-                                                                3
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100003, 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100003, 
-                                                                    "args_list": [
-                                                                        "购买武将新：当前购买武将为"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100003, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "arg_type": 100116, 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "__tuple__": true, 
-                                                                                    "items": [
-                                                                                        "UNIT_NAME", 
-                                                                                        "当前购买武将"
-                                                                                    ]
-                                                                                }
-                                                                            ], 
-                                                                            "sub_type": 2
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": "ANY_VAR_TO_STR"
-                                                                }
-                                                            ], 
-                                                            "op_arg": [
-                                                                null, 
-                                                                null, 
-                                                                null, 
-                                                                null, 
-                                                                null, 
-                                                                null, 
-                                                                null, 
-                                                                null
-                                                            ], 
-                                                            "op_arg_enable": [
-                                                                false, 
-                                                                false, 
-                                                                false, 
-                                                                false, 
-                                                                false, 
-                                                                false, 
-                                                                false, 
-                                                                false
-                                                            ], 
-                                                            "sub_type": "STR_JOIN"
-                                                        }
-                                                    ], 
-                                                    "bp": false, 
-                                                    "element_id": 343736557000009, 
-                                                    "enable": true
-                                                }, 
-                                                {
-                                                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100175, 
-                                                            "args_list": [
-                                                                3
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100003, 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100003, 
-                                                                    "args_list": [
-                                                                        "购买武将新：界面控件为"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100003, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "arg_type": 100070, 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "__tuple__": true, 
-                                                                                    "items": [
-                                                                                        "UI_COMP", 
-                                                                                        "当前商店武将控件", 
-                                                                                        "local"
-                                                                                    ]
-                                                                                }
-                                                                            ], 
-                                                                            "sub_type": "VARIABLE"
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": "ANY_VAR_TO_STR"
-                                                                }
-                                                            ], 
-                                                            "op_arg": [
-                                                                null, 
-                                                                null, 
-                                                                null, 
-                                                                null, 
-                                                                null, 
-                                                                null, 
-                                                                null, 
-                                                                null
-                                                            ], 
-                                                            "op_arg_enable": [
-                                                                false, 
-                                                                false, 
-                                                                false, 
-                                                                false, 
-                                                                false, 
-                                                                false, 
-                                                                false, 
-                                                                false
-                                                            ], 
-                                                            "sub_type": "STR_JOIN"
-                                                        }
-                                                    ], 
-                                                    "bp": false, 
-                                                    "element_id": 343736557000010, 
-                                                    "enable": true
-                                                }, 
-                                                {
-                                                    "action_type": "SET_VARIABLE", 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100030, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "BOOLEAN", 
-                                                                        "武将是否被选择"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100001, 
-                                                            "args_list": [
-                                                                true
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }
-                                                    ], 
-                                                    "bp": false, 
-                                                    "element_id": 343736557000011, 
-                                                    "enable": true
-                                                }, 
-                                                {
-                                                    "action_type": "SET_VARIABLE", 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100030, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "UI_COMP", 
-                                                                        "当前购买武将控件"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100070, 
-                                                            "args_list": [], 
-                                                            "sub_type": "GET_UI_COMP_FROM_EVENT"
-                                                        }
-                                                    ], 
-                                                    "bp": false, 
-                                                    "element_id": 343736557000012, 
-                                                    "enable": true
-                                                }, 
-                                                {
-                                                    "action_type": "SET_UI_COMP_SCALE", 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100025, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "PLAYER", 
-                                                                        "当前玩家", 
-                                                                        "local"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": "VARIABLE"
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100070, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "UI_COMP", 
-                                                                        "当前购买武将控件"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": "VARIABLE"
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100000, 
-                                                            "args_list": [
-                                                                1.2
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100000, 
-                                                            "args_list": [
-                                                                1.2
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }
-                                                    ], 
-                                                    "bp": false, 
-                                                    "element_id": 343736557000013, 
-                                                    "enable": true
-                                                }
-                                            ], 
-                                            "sub_type": 1
-                                        }, 
-                                        {
-                                            "arg_type": 100022, 
-                                            "args_list": [], 
-                                            "sub_type": 1
-                                        }
-                                    ], 
-                                    "bp": false, 
-                                    "element_id": 343736557000014, 
-                                    "enable": true, 
-                                    "fake_op": []
-                                }
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 343736557000015, 
-                    "enable": true, 
-                    "op_arg": [
-                        null
-                    ], 
-                    "op_arg_enable": [
-                        false
-                    ]
-                }
-            ], 
-            "call_enabled": true, 
-            "condition": [], 
-            "enabled": false, 
-            "event": [
-                {
-                    "args_list": [
-                        {
-                            "arg_type": 100067, 
-                            "args_list": [
-                                "购买武将"
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "element_id": 343736557000001, 
-                    "enable": true, 
-                    "event_type": "TRIGGER_COMPONENT_EVENT"
-                }
-            ], 
-            "group_id": 0, 
-            "is_conf": true, 
-            "p_trigger_id": 1803354348, 
-            "trigger_id": 343736557, 
-            "trigger_name": "子触发器_86", 
-            "valid": true, 
-            "var_data": [
-                {}, 
-                {}, 
-                []
-            ]
-        }, 
-        "1266483439": {
+        "129319031": {
             "action": [
                 {
                     "action_type": "IF_THEN_ELSE", 
@@ -815,7 +91,7 @@
                                                         }
                                                     ], 
                                                     "condition_type": "BOOL_COMPARE", 
-                                                    "element_id": 1266483439000004, 
+                                                    "element_id": 129319031000002, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -849,7 +125,7 @@
                                                         }
                                                     ], 
                                                     "condition_type": "BOOL_COMPARE", 
-                                                    "element_id": 1266483439000005, 
+                                                    "element_id": 129319031000003, 
                                                     "enable": true
                                                 }
                                             ], 
@@ -857,7 +133,7 @@
                                         }
                                     ], 
                                     "condition_type": "AND", 
-                                    "element_id": 1266483439000006, 
+                                    "element_id": 129319031000004, 
                                     "enable": true
                                 }
                             ], 
@@ -889,13 +165,13 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1266483439000007, 
+                                    "element_id": 129319031000005, 
                                     "enable": true
                                 }, 
                                 [
-                                    1078139186, 
+                                    2058393978, 
                                     "如果存在，那么升星", 
-                                    1266483439, 
+                                    129319031, 
                                     "action_type"
                                 ], 
                                 {
@@ -995,7 +271,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "condition_type": "FLOAT_COMPARE", 
-                                                                                    "element_id": 1266483439000008, 
+                                                                                    "element_id": 129319031000006, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -1063,7 +339,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "condition_type": "ANY_COMPARE", 
-                                                                                    "element_id": 1266483439000009, 
+                                                                                    "element_id": 129319031000007, 
                                                                                     "enable": true
                                                                                 }
                                                                             ], 
@@ -1071,7 +347,7 @@
                                                                         }
                                                                     ], 
                                                                     "condition_type": "AND", 
-                                                                    "element_id": 1266483439000010, 
+                                                                    "element_id": 129319031000008, 
                                                                     "enable": true
                                                                 }
                                                             ], 
@@ -1103,7 +379,7 @@
                                                                                 {
                                                                                     "arg_type": 100011, 
                                                                                     "args_list": [
-                                                                                        "eddb8d16-1ffc-4bd6-9aba-e5a174797f0c"
+                                                                                        "d37e820c-3be0-47f4-9ae2-0e699ed49b3e"
                                                                                     ], 
                                                                                     "sub_type": 1
                                                                                 }, 
@@ -1147,7 +423,7 @@
                                                                         }
                                                                     ], 
                                                                     "bp": false, 
-                                                                    "element_id": 1266483439971672, 
+                                                                    "element_id": 129319031000009, 
                                                                     "enable": true
                                                                 }, 
                                                                 {
@@ -1173,7 +449,7 @@
                                                                         }
                                                                     ], 
                                                                     "bp": false, 
-                                                                    "element_id": 1266483439000011, 
+                                                                    "element_id": 129319031000010, 
                                                                     "enable": true
                                                                 }, 
                                                                 {
@@ -1228,7 +504,7 @@
                                                                         }
                                                                     ], 
                                                                     "bp": false, 
-                                                                    "element_id": 1266483439000012, 
+                                                                    "element_id": 129319031000011, 
                                                                     "enable": true
                                                                 }, 
                                                                 {
@@ -1295,13 +571,13 @@
                                                                         }
                                                                     ], 
                                                                     "bp": false, 
-                                                                    "element_id": 1266483439000013, 
+                                                                    "element_id": 129319031000012, 
                                                                     "enable": true
                                                                 }, 
                                                                 [
-                                                                    1162516865, 
+                                                                    1909918297, 
                                                                     "如果当前移入位置为相同类型的武将，那么升星，否则，放回原来位置", 
-                                                                    1266483439, 
+                                                                    129319031, 
                                                                     "action_type"
                                                                 ], 
                                                                 {
@@ -1379,7 +655,7 @@
                                                                                                         }
                                                                                                     ], 
                                                                                                     "condition_type": "ANY_COMPARE", 
-                                                                                                    "element_id": 1266483439954992, 
+                                                                                                    "element_id": 129319031000013, 
                                                                                                     "enable": true
                                                                                                 }
                                                                                             ], 
@@ -1387,7 +663,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "condition_type": "AND", 
-                                                                                    "element_id": 1266483439954987, 
+                                                                                    "element_id": 129319031000014, 
                                                                                     "enable": true
                                                                                 }
                                                                             ], 
@@ -1448,7 +724,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1266483439971675, 
+                                                                                    "element_id": 129319031000015, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -1538,7 +814,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1266483439000014, 
+                                                                                    "element_id": 129319031000016, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -1642,7 +918,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1969332438970938, 
+                                                                                    "element_id": 129319031000017, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -1715,7 +991,7 @@
                                                                                     ], 
                                                                                     "bp": false, 
                                                                                     "call_rt_arg_idxes": [], 
-                                                                                    "element_id": 1266483439971709, 
+                                                                                    "element_id": 129319031000018, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -1743,7 +1019,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1266483439000016, 
+                                                                                    "element_id": 129319031000019, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -1771,7 +1047,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1266483439000017, 
+                                                                                    "element_id": 129319031000020, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -1804,7 +1080,7 @@
                                                                                                 {
                                                                                                     "arg_type": 100011, 
                                                                                                     "args_list": [
-                                                                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                                                                     ], 
                                                                                                     "sub_type": 1
                                                                                                 }, 
@@ -1833,7 +1109,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1266483439971689, 
+                                                                                    "element_id": 129319031000021, 
                                                                                     "enable": true
                                                                                 }
                                                                             ], 
@@ -1843,9 +1119,9 @@
                                                                             "arg_type": 100022, 
                                                                             "args_list": [
                                                                                 [
-                                                                                    1747546877, 
+                                                                                    1998209594, 
                                                                                     "如果不是目标类型的武将，那么就放回原来位置", 
-                                                                                    1266483439, 
+                                                                                    129319031, 
                                                                                     "action_type"
                                                                                 ], 
                                                                                 {
@@ -1871,7 +1147,7 @@
                                                                                                 {
                                                                                                     "arg_type": 100011, 
                                                                                                     "args_list": [
-                                                                                                        "eddb8d16-1ffc-4bd6-9aba-e5a174797f0c"
+                                                                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                                                                     ], 
                                                                                                     "sub_type": 1
                                                                                                 }, 
@@ -1907,7 +1183,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1266483439970976, 
+                                                                                    "element_id": 129319031000022, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -1933,7 +1209,7 @@
                                                                                                 {
                                                                                                     "arg_type": 100011, 
                                                                                                     "args_list": [
-                                                                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                                                                     ], 
                                                                                                     "sub_type": 1
                                                                                                 }, 
@@ -1966,7 +1242,7 @@
                                                                                                 {
                                                                                                     "arg_type": 100011, 
                                                                                                     "args_list": [
-                                                                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                                                                     ], 
                                                                                                     "sub_type": 1
                                                                                                 }, 
@@ -1999,7 +1275,7 @@
                                                                                                 {
                                                                                                     "arg_type": 100011, 
                                                                                                     "args_list": [
-                                                                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                                                                     ], 
                                                                                                     "sub_type": 1
                                                                                                 }, 
@@ -2028,7 +1304,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1266483439970941, 
+                                                                                    "element_id": 129319031000023, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -2077,7 +1353,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1266483439970991, 
+                                                                                    "element_id": 129319031000024, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -2105,7 +1381,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1266483439971009, 
+                                                                                    "element_id": 129319031000025, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -2133,7 +1409,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1266483439971016, 
+                                                                                    "element_id": 129319031000026, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -2161,7 +1437,7 @@
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 1266483439971025, 
+                                                                                    "element_id": 129319031000027, 
                                                                                     "enable": true
                                                                                 }
                                                                             ], 
@@ -2169,7 +1445,7 @@
                                                                         }
                                                                     ], 
                                                                     "bp": false, 
-                                                                    "element_id": 1266483439954979, 
+                                                                    "element_id": 129319031000028, 
                                                                     "enable": true, 
                                                                     "fake_op": [
                                                                         2
@@ -2185,7 +1461,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000018, 
+                                                    "element_id": 129319031000029, 
                                                     "enable": true, 
                                                     "fake_op": []
                                                 }
@@ -2194,7 +1470,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1266483439000019, 
+                                    "element_id": 129319031000030, 
                                     "enable": true, 
                                     "op_arg": [
                                         null
@@ -2204,9 +1480,9 @@
                                     ]
                                 }, 
                                 [
-                                    1355439785, 
+                                    1667576901, 
                                     "如果不存在，那么购买", 
-                                    1266483439, 
+                                    129319031, 
                                     "action_type"
                                 ], 
                                 {
@@ -2251,7 +1527,7 @@
                                                                         }
                                                                     ], 
                                                                     "condition_type": "BOOL_COMPARE", 
-                                                                    "element_id": 1266483439000022, 
+                                                                    "element_id": 129319031000031, 
                                                                     "enable": true
                                                                 }, 
                                                                 {
@@ -2283,7 +1559,7 @@
                                                                         }
                                                                     ], 
                                                                     "condition_type": "BOOL_COMPARE", 
-                                                                    "element_id": 1266483439000023, 
+                                                                    "element_id": 129319031000032, 
                                                                     "enable": true
                                                                 }, 
                                                                 {
@@ -2338,7 +1614,7 @@
                                                                         }
                                                                     ], 
                                                                     "condition_type": "FLOAT_COMPARE", 
-                                                                    "element_id": 1266483439000025, 
+                                                                    "element_id": 129319031000033, 
                                                                     "enable": true
                                                                 }
                                                             ], 
@@ -2346,7 +1622,7 @@
                                                         }
                                                     ], 
                                                     "condition_type": "AND", 
-                                                    "element_id": 1266483439000024, 
+                                                    "element_id": 129319031000034, 
                                                     "enable": true
                                                 }
                                             ], 
@@ -2407,7 +1683,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000020, 
+                                                    "element_id": 129319031000035, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -2462,7 +1738,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000021, 
+                                                    "element_id": 129319031000036, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -2563,7 +1839,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439971112, 
+                                                    "element_id": 129319031000037, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -2589,7 +1865,7 @@
                                                                 {
                                                                     "arg_type": 100011, 
                                                                     "args_list": [
-                                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                                     ], 
                                                                     "sub_type": 1
                                                                 }, 
@@ -2625,7 +1901,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 302649556971109, 
+                                                    "element_id": 129319031000038, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -2680,7 +1956,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439971669, 
+                                                    "element_id": 129319031000039, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -2713,7 +1989,7 @@
                                                                 {
                                                                     "arg_type": 100011, 
                                                                     "args_list": [
-                                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                                     ], 
                                                                     "sub_type": 1
                                                                 }, 
@@ -2742,7 +2018,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000050, 
+                                                    "element_id": 129319031000040, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -2770,7 +2046,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000031, 
+                                                    "element_id": 129319031000041, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -2792,7 +2068,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000032, 
+                                                    "element_id": 129319031000042, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -2882,7 +2158,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000033, 
+                                                    "element_id": 129319031000043, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -2972,7 +2248,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1969332438000028, 
+                                                    "element_id": 129319031000044, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -3028,7 +2304,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1969332438000029, 
+                                                    "element_id": 129319031000045, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -3084,7 +2360,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1969332438823688, 
+                                                    "element_id": 129319031000046, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -3134,7 +2410,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1969332438000031, 
+                                                    "element_id": 129319031000047, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -3182,7 +2458,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1969332438823513, 
+                                                    "element_id": 129319031000048, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -3232,7 +2508,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1969332438823528, 
+                                                    "element_id": 129319031000049, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -3333,13 +2609,13 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000035, 
+                                                    "element_id": 129319031000050, 
                                                     "enable": true
                                                 }, 
                                                 [
-                                                    1549954898, 
+                                                    1314772325, 
                                                     "将商店图片控件放回原来位置并且隐藏", 
-                                                    1266483439, 
+                                                    129319031, 
                                                     "action_type"
                                                 ], 
                                                 {
@@ -3401,13 +2677,13 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000037, 
+                                                    "element_id": 129319031000051, 
                                                     "enable": false
                                                 }, 
                                                 [
-                                                    1709634332, 
+                                                    2043985402, 
                                                     "显示当前背包控件", 
-                                                    1266483439, 
+                                                    129319031, 
                                                     "action_type"
                                                 ], 
                                                 {
@@ -3433,7 +2709,7 @@
                                                                 {
                                                                     "arg_type": 100011, 
                                                                     "args_list": [
-                                                                        "eddb8d16-1ffc-4bd6-9aba-e5a174797f0c"
+                                                                        "d37e820c-3be0-47f4-9ae2-0e699ed49b3e"
                                                                     ], 
                                                                     "sub_type": 1
                                                                 }, 
@@ -3510,7 +2786,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000038, 
+                                                    "element_id": 129319031000052, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -3543,7 +2819,7 @@
                                                                 {
                                                                     "arg_type": 100011, 
                                                                     "args_list": [
-                                                                        "eddb8d16-1ffc-4bd6-9aba-e5a174797f0c"
+                                                                        "d37e820c-3be0-47f4-9ae2-0e699ed49b3e"
                                                                     ], 
                                                                     "sub_type": 1
                                                                 }, 
@@ -3572,7 +2848,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000040, 
+                                                    "element_id": 129319031000053, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -3598,7 +2874,7 @@
                                                                 {
                                                                     "arg_type": 100011, 
                                                                     "args_list": [
-                                                                        "eddb8d16-1ffc-4bd6-9aba-e5a174797f0c"
+                                                                        "d37e820c-3be0-47f4-9ae2-0e699ed49b3e"
                                                                     ], 
                                                                     "sub_type": 1
                                                                 }, 
@@ -3634,7 +2910,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439000041, 
+                                                    "element_id": 129319031000054, 
                                                     "enable": true
                                                 }
                                             ], 
@@ -3647,7 +2923,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1266483439000043, 
+                                    "element_id": 129319031000055, 
                                     "enable": true, 
                                     "fake_op": []
                                 }
@@ -3661,7 +2937,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1266483439000044, 
+                    "element_id": 129319031000056, 
                     "enable": true, 
                     "fake_op": []
                 }, 
@@ -3729,7 +3005,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1266483439000045, 
+                    "element_id": 129319031000057, 
                     "enable": true
                 }, 
                 {
@@ -3755,7 +3031,7 @@
                                 {
                                     "arg_type": 100011, 
                                     "args_list": [
-                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                     ], 
                                     "sub_type": 1
                                 }, 
@@ -3791,7 +3067,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1266483439000046, 
+                    "element_id": 129319031000058, 
                     "enable": true
                 }, 
                 {
@@ -3840,7 +3116,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1266483439000047, 
+                    "element_id": 129319031000059, 
                     "enable": true
                 }, 
                 {
@@ -3880,7 +3156,7 @@
                                         }
                                     ], 
                                     "condition_type": "BOOL_COMPARE", 
-                                    "element_id": 1266483439000048, 
+                                    "element_id": 129319031000060, 
                                     "enable": true
                                 }
                             ], 
@@ -3941,7 +3217,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1266483439000051, 
+                                    "element_id": 129319031000061, 
                                     "enable": false
                                 }, 
                                 {
@@ -3969,7 +3245,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1266483439000049, 
+                                    "element_id": 129319031000062, 
                                     "enable": true
                                 }, 
                                 {
@@ -3997,7 +3273,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1266483439971274, 
+                                    "element_id": 129319031000063, 
                                     "enable": true
                                 }, 
                                 {
@@ -4052,7 +3328,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1266483439971475, 
+                                    "element_id": 129319031000064, 
                                     "enable": true
                                 }, 
                                 {
@@ -4078,7 +3354,7 @@
                                                 {
                                                     "arg_type": 100011, 
                                                     "args_list": [
-                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                     ], 
                                                     "sub_type": 1
                                                 }, 
@@ -4111,7 +3387,7 @@
                                                 {
                                                     "arg_type": 100011, 
                                                     "args_list": [
-                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                     ], 
                                                     "sub_type": 1
                                                 }, 
@@ -4144,7 +3420,7 @@
                                                 {
                                                     "arg_type": 100011, 
                                                     "args_list": [
-                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                     ], 
                                                     "sub_type": 1
                                                 }, 
@@ -4173,7 +3449,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1266483439971241, 
+                                    "element_id": 129319031000065, 
                                     "enable": true
                                 }
                             ], 
@@ -4186,7 +3462,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1266483439000052, 
+                    "element_id": 129319031000066, 
                     "enable": true, 
                     "fake_op": []
                 }, 
@@ -4227,7 +3503,7 @@
                                         }
                                     ], 
                                     "condition_type": "BOOL_COMPARE", 
-                                    "element_id": 1266483439971285, 
+                                    "element_id": 129319031000067, 
                                     "enable": true
                                 }
                             ], 
@@ -4261,7 +3537,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1266483439971315, 
+                                    "element_id": 129319031000068, 
                                     "enable": true
                                 }, 
                                 {
@@ -4287,7 +3563,7 @@
                                                 {
                                                     "arg_type": 100011, 
                                                     "args_list": [
-                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                     ], 
                                                     "sub_type": 1
                                                 }, 
@@ -4320,7 +3596,7 @@
                                                 {
                                                     "arg_type": 100011, 
                                                     "args_list": [
-                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                     ], 
                                                     "sub_type": 1
                                                 }, 
@@ -4353,7 +3629,7 @@
                                                 {
                                                     "arg_type": 100011, 
                                                     "args_list": [
-                                                        "3da6c6bd-8cdb-458d-a9a3-d25b3b75975b"
+                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
                                                     ], 
                                                     "sub_type": 1
                                                 }, 
@@ -4382,7 +3658,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1266483439971424, 
+                                    "element_id": 129319031000069, 
                                     "enable": true
                                 }, 
                                 {
@@ -4437,7 +3713,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1266483439971397, 
+                                    "element_id": 129319031000070, 
                                     "enable": true
                                 }
                             ], 
@@ -4450,7 +3726,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1266483439971281, 
+                    "element_id": 129319031000071, 
                     "enable": true, 
                     "fake_op": []
                 }, 
@@ -4506,7 +3782,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1266483439000053, 
+                    "element_id": 129319031000072, 
                     "enable": false
                 }, 
                 {
@@ -4627,7 +3903,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1266483439000054, 
+                    "element_id": 129319031000073, 
                     "enable": false
                 }, 
                 {
@@ -4655,7 +3931,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1266483439000055, 
+                    "element_id": 129319031000074, 
                     "enable": false
                 }, 
                 {
@@ -4710,7 +3986,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1266483439000057, 
+                    "element_id": 129319031000075, 
                     "enable": false
                 }
             ], 
@@ -4728,15 +4004,15 @@
                             "sub_type": 1
                         }
                     ], 
-                    "element_id": 1266483439000001, 
+                    "element_id": 129319031000001, 
                     "enable": true, 
                     "event_type": "MOUSE_KEY_UP_EVENT"
                 }
             ], 
             "group_id": 0, 
             "is_conf": true, 
-            "p_trigger_id": 1803354348, 
-            "trigger_id": 1266483439, 
+            "p_trigger_id": 2025144436, 
+            "trigger_id": 129319031, 
             "trigger_name": "子触发器_88", 
             "valid": true, 
             "var_data": [
@@ -4745,7 +4021,7 @@
                 []
             ]
         }, 
-        "1954349294": {
+        "397754486": {
             "action": [
                 {
                     "action_type": "SET_VARIABLE", 
@@ -4772,7 +4048,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1954349294000003, 
+                    "element_id": 397754486000003, 
                     "enable": true
                 }, 
                 {
@@ -4835,7 +4111,7 @@
                                                                 {
                                                                     "arg_type": 100011, 
                                                                     "args_list": [
-                                                                        "eddb8d16-1ffc-4bd6-9aba-e5a174797f0c"
+                                                                        "d37e820c-3be0-47f4-9ae2-0e699ed49b3e"
                                                                     ], 
                                                                     "sub_type": 1
                                                                 }, 
@@ -4865,7 +4141,7 @@
                                                         }
                                                     ], 
                                                     "condition_type": "ANY_COMPARE", 
-                                                    "element_id": 1954349294000004, 
+                                                    "element_id": 397754486000004, 
                                                     "enable": true
                                                 }
                                             ], 
@@ -4906,7 +4182,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1954349294000005, 
+                                                    "element_id": 397754486000005, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -4973,7 +4249,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1954349294000006, 
+                                                    "element_id": 397754486000006, 
                                                     "enable": true
                                                 }, 
                                                 {
@@ -5040,13 +4316,13 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1954349294000007, 
+                                                    "element_id": 397754486000007, 
                                                     "enable": true
                                                 }, 
                                                 [
-                                                    1216640482, 
+                                                    1441267653, 
                                                     "如果移入的武将已经拥有，那么就放大目前的武将", 
-                                                    1954349294, 
+                                                    397754486, 
                                                     "action_type"
                                                 ]
                                             ], 
@@ -5059,7 +4335,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1954349294000008, 
+                                    "element_id": 397754486000008, 
                                     "enable": true, 
                                     "fake_op": []
                                 }, 
@@ -5133,7 +4409,7 @@
                                                         }
                                                     ], 
                                                     "condition_type": "ANY_COMPARE", 
-                                                    "element_id": 1954349294000029, 
+                                                    "element_id": 397754486000009, 
                                                     "enable": true
                                                 }
                                             ], 
@@ -5180,7 +4456,7 @@
                                                         }
                                                     ], 
                                                     "bp": false, 
-                                                    "element_id": 1266483439970991, 
+                                                    "element_id": 397754486000010, 
                                                     "enable": true
                                                 }
                                             ], 
@@ -5193,7 +4469,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 1954349294000015, 
+                                    "element_id": 397754486000011, 
                                     "enable": true, 
                                     "fake_op": []
                                 }
@@ -5202,7 +4478,7 @@
                         }
                     ], 
                     "bp": false, 
-                    "element_id": 1954349294000009, 
+                    "element_id": 397754486000012, 
                     "enable": true, 
                     "op_arg": [
                         null
@@ -5245,7 +4521,7 @@
                         }
                     ], 
                     "condition_type": "BOOL_COMPARE", 
-                    "element_id": 1954349294000002, 
+                    "element_id": 397754486000002, 
                     "enable": true
                 }
             ], 
@@ -5261,16 +4537,740 @@
                             "sub_type": 1
                         }
                     ], 
-                    "element_id": 1954349294000001, 
+                    "element_id": 397754486000001, 
                     "enable": true, 
                     "event_type": "TRIGGER_COMPONENT_EVENT"
                 }
             ], 
             "group_id": 0, 
             "is_conf": true, 
-            "p_trigger_id": 1803354348, 
-            "trigger_id": 1954349294, 
+            "p_trigger_id": 2025144436, 
+            "trigger_id": 397754486, 
             "trigger_name": "子触发器_87", 
+            "valid": true, 
+            "var_data": [
+                {}, 
+                {}, 
+                []
+            ]
+        }, 
+        "1639268469": {
+            "action": [
+                {
+                    "action_type": "SET_UI_COMP_VISIBLE", 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                false
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100070, 
+                            "args_list": [
+                                "75f544e3-e504-46c6-99ab-249f8052cbff"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1639268469000002, 
+                    "enable": true
+                }, 
+                [
+                    2123122565, 
+                    "判断购买的武将", 
+                    1639268469, 
+                    "action_type"
+                ], 
+                {
+                    "action_type": "SET_VARIABLE", 
+                    "args_list": [
+                        {
+                            "arg_type": 100030, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "UI_COMP", 
+                                        "当前商店武将控件", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100070, 
+                            "args_list": [], 
+                            "sub_type": "GET_UI_COMP_FROM_EVENT"
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1639268469000003, 
+                    "enable": true
+                }, 
+                {
+                    "action_type": "SET_VARIABLE", 
+                    "args_list": [
+                        {
+                            "arg_type": 100030, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "BOOLEAN", 
+                                        "武将是否被选择"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                true
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1639268469000004, 
+                    "enable": true
+                }, 
+                {
+                    "action_type": "SET_VARIABLE", 
+                    "args_list": [
+                        {
+                            "arg_type": 100030, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "BOOLEAN", 
+                                        "武将是否试图购买"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                false
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1639268469000005, 
+                    "enable": true
+                }, 
+                [
+                    1776912085, 
+                    "判断产购买事件的是哪一个控件，即判断购买哪一个武将", 
+                    1639268469, 
+                    "action_type"
+                ], 
+                {
+                    "action_type": "FOR_INT_DO_ACTION_NEW", 
+                    "args_list": [
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "i", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                1
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                3
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100022, 
+                            "args_list": [
+                                {
+                                    "action_type": "IF_THEN_ELSE", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100021, 
+                                            "args_list": [
+                                                {
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "UI_COMP", 
+                                                                        "当前商店武将控件", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100035, 
+                                                            "args_list": [
+                                                                "=="
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100011, 
+                                                                    "args_list": [
+                                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "i", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "商店武将图片控件"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
+                                                        }
+                                                    ], 
+                                                    "condition_type": "ANY_COMPARE", 
+                                                    "element_id": 1639268469000006, 
+                                                    "enable": true
+                                                }
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100022, 
+                                            "args_list": [
+                                                {
+                                                    "action_type": "SET_VARIABLE", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100030, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "UNIT_NAME", 
+                                                                        "当前购买武将"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100116, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100011, 
+                                                                    "args_list": [
+                                                                        "6bee38ad-1bc0-47a5-ab63-e9f80d698c83"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "幸存者_商店角色选择集合"
+                                                                            ]
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "INTEGER", 
+                                                                                                "i", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 6
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100016, 
+                                                                                    "args_list": [
+                                                                                        "-"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        1
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "MATH_OPERATION"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "武将类型"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_UNIT_NAME_TABLE_VAR_ND"
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 1639268469000007, 
+                                                    "enable": true
+                                                }, 
+                                                {
+                                                    "action_type": "SET_VARIABLE", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100030, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "当前商店购买武将位置索引"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "i", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 1639268469000008, 
+                                                    "enable": true
+                                                }, 
+                                                {
+                                                    "action_type": "SET_UI_COMP_Z_ORDER", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "PLAYER", 
+                                                                        "当前玩家", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100011, 
+                                                                    "args_list": [
+                                                                        "bafa79c0-b173-4af8-9b53-98aaf7fe1f9d"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "当前商店购买武将位置索引"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "商店武将图片控件"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                99
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 1639268469000009, 
+                                                    "enable": true
+                                                }, 
+                                                {
+                                                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100175, 
+                                                            "args_list": [
+                                                                3
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "购买武将新：当前购买武将为"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100116, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "UNIT_NAME", 
+                                                                                        "当前购买武将"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": 2
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "ANY_VAR_TO_STR"
+                                                                }
+                                                            ], 
+                                                            "op_arg": [
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null
+                                                            ], 
+                                                            "op_arg_enable": [
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false
+                                                            ], 
+                                                            "sub_type": "STR_JOIN"
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 1639268469000010, 
+                                                    "enable": true
+                                                }, 
+                                                {
+                                                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100175, 
+                                                            "args_list": [
+                                                                3
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "购买武将新：界面控件为"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100070, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "UI_COMP", 
+                                                                                        "当前商店武将控件", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "VARIABLE"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "ANY_VAR_TO_STR"
+                                                                }
+                                                            ], 
+                                                            "op_arg": [
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null
+                                                            ], 
+                                                            "op_arg_enable": [
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false
+                                                            ], 
+                                                            "sub_type": "STR_JOIN"
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 1639268469000011, 
+                                                    "enable": true
+                                                }, 
+                                                {
+                                                    "action_type": "SET_VARIABLE", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100030, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "BOOLEAN", 
+                                                                        "武将是否被选择"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100001, 
+                                                            "args_list": [
+                                                                true
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 1639268469000012, 
+                                                    "enable": true
+                                                }, 
+                                                {
+                                                    "action_type": "SET_VARIABLE", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100030, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "UI_COMP", 
+                                                                        "当前购买武将控件"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [], 
+                                                            "sub_type": "GET_UI_COMP_FROM_EVENT"
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 1639268469000013, 
+                                                    "enable": true
+                                                }, 
+                                                {
+                                                    "action_type": "SET_UI_COMP_SCALE", 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "PLAYER", 
+                                                                        "当前玩家", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "UI_COMP", 
+                                                                        "当前购买武将控件"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                1.2
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                1.2
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "bp": false, 
+                                                    "element_id": 1639268469000014, 
+                                                    "enable": true
+                                                }
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100022, 
+                                            "args_list": [], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1639268469000015, 
+                                    "enable": true, 
+                                    "fake_op": []
+                                }
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1639268469000016, 
+                    "enable": true, 
+                    "op_arg": [
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false
+                    ]
+                }
+            ], 
+            "call_enabled": true, 
+            "condition": [], 
+            "enabled": false, 
+            "event": [
+                {
+                    "args_list": [
+                        {
+                            "arg_type": 100067, 
+                            "args_list": [
+                                "购买武将"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "element_id": 1639268469000001, 
+                    "enable": true, 
+                    "event_type": "TRIGGER_COMPONENT_EVENT"
+                }
+            ], 
+            "group_id": 0, 
+            "is_conf": true, 
+            "p_trigger_id": 2025144436, 
+            "trigger_id": 1639268469, 
+            "trigger_name": "子触发器_86", 
             "valid": true, 
             "var_data": [
                 {}, 
@@ -5279,7 +5279,7 @@
             ]
         }
     }, 
-    "trigger_id": 1803354348, 
+    "trigger_id": 2025144436, 
     "trigger_name": "购买武将-新_2", 
     "valid": true, 
     "var_data": [
