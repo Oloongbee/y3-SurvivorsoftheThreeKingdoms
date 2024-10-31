@@ -186,6 +186,98 @@
                     ], 
                     "bp": false, 
                     "element_id": 961970178000004, 
+                    "enable": false
+                }, 
+                {
+                    "action_type": "SET_ABILITY_FLOAT_ATTR", 
+                    "args_list": [
+                        {
+                            "arg_type": 100014, 
+                            "args_list": [], 
+                            "sub_type": "CUR_ABILITY"
+                        }, 
+                        {
+                            "arg_type": 100078, 
+                            "args_list": [
+                                "ability_damage"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "\u6280\u80fd\u57fa\u7840\u4f24\u5bb3", 
+                                                "actor"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }, 
+                                {
+                                    "arg_type": 100017, 
+                                    "args_list": [
+                                        "+"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100006, 
+                                                    "args_list": [], 
+                                                    "sub_type": "GET_UNIT_FROM_EVENT"
+                                                }, 
+                                                {
+                                                    "arg_type": 100301, 
+                                                    "args_list": [
+                                                        "ATTR_RESULT"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100042, 
+                                                    "args_list": [
+                                                        "attack_phy"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "sub_type": "GET_UNIT_ATTR"
+                                        }, 
+                                        {
+                                            "arg_type": 100017, 
+                                            "args_list": [
+                                                "*"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                0.8
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "ARITHMETIC_OPERATION"
+                                }
+                            ], 
+                            "sub_type": "ARITHMETIC_OPERATION"
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1082318854000129, 
                     "enable": true
                 }, 
                 {
@@ -696,15 +788,19 @@
                                             "arg_type": 100000, 
                                             "args_list": [
                                                 {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "FLOAT", 
-                                                        "\u5b9e\u9645\u6280\u80fd\u4f24\u5bb3", 
-                                                        "actor"
-                                                    ]
+                                                    "arg_type": 100014, 
+                                                    "args_list": [], 
+                                                    "sub_type": "CUR_ABILITY"
+                                                }, 
+                                                {
+                                                    "arg_type": 100078, 
+                                                    "args_list": [
+                                                        "ability_damage"
+                                                    ], 
+                                                    "sub_type": 1
                                                 }
                                             ], 
-                                            "sub_type": 2
+                                            "sub_type": "GET_ABILITY_FLOAT_ATTR"
                                         }, 
                                         {
                                             "arg_type": 100001, 
@@ -1262,7 +1358,8 @@
     "trigger_version": "1.2", 
     "variable_dict": {
         "FLOAT": {
-            "\u5b9e\u9645\u6280\u80fd\u4f24\u5bb3": 0.0
+            "\u5b9e\u9645\u6280\u80fd\u4f24\u5bb3": 0.0, 
+            "\u6280\u80fd\u57fa\u7840\u4f24\u5bb3": 0.0
         }, 
         "PROJECTILE": {
             "\u86c7\u77db": 0
@@ -1282,10 +1379,18 @@
                 "\u5b9e\u9645\u6280\u80fd\u4f24\u5bb3", 
                 "\u5b9e\u9645\u6280\u80fd\u4f24\u5bb3"
             ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "\u6280\u80fd\u57fa\u7840\u4f24\u5bb3", 
+                "\u6280\u80fd\u57fa\u7840\u4f24\u5bb3"
+            ]
         }
     ], 
     "variable_length_dict": {
         "\u5b9e\u9645\u6280\u80fd\u4f24\u5bb3": 0, 
+        "\u6280\u80fd\u57fa\u7840\u4f24\u5bb3": 0, 
         "\u86c7\u77db": 0
     }
 }

@@ -585,6 +585,98 @@
                     ], 
                     "bp": false, 
                     "element_id": 1439666179000751, 
+                    "enable": false
+                }, 
+                {
+                    "action_type": "SET_ABILITY_FLOAT_ATTR", 
+                    "args_list": [
+                        {
+                            "arg_type": 100014, 
+                            "args_list": [], 
+                            "sub_type": "CUR_ABILITY"
+                        }, 
+                        {
+                            "arg_type": 100078, 
+                            "args_list": [
+                                "ability_damage"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "\u6280\u80fd\u57fa\u7840\u4f24\u5bb3", 
+                                                "actor"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }, 
+                                {
+                                    "arg_type": 100017, 
+                                    "args_list": [
+                                        "+"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100006, 
+                                                    "args_list": [], 
+                                                    "sub_type": "GET_UNIT_FROM_EVENT"
+                                                }, 
+                                                {
+                                                    "arg_type": 100301, 
+                                                    "args_list": [
+                                                        "ATTR_RESULT"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100042, 
+                                                    "args_list": [
+                                                        "attack_mag"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "sub_type": "GET_UNIT_ATTR"
+                                        }, 
+                                        {
+                                            "arg_type": 100017, 
+                                            "args_list": [
+                                                "*"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                0.8
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "ARITHMETIC_OPERATION"
+                                }
+                            ], 
+                            "sub_type": "ARITHMETIC_OPERATION"
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 1082318854000129, 
                     "enable": true
                 }
             ], 
@@ -1752,12 +1844,18 @@
                                                                             ], 
                                                                             "sub_type": 1
                                                                         }, 
-                                                                        null
+                                                                        {
+                                                                            "arg_type": 100001, 
+                                                                            "args_list": [
+                                                                                true
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
                                                                     ], 
                                                                     "op_arg_enable": [
                                                                         true, 
                                                                         true, 
-                                                                        false
+                                                                        true
                                                                     ]
                                                                 }, 
                                                                 {
@@ -2249,6 +2347,7 @@
     "variable_dict": {
         "DYNAMIC_TRIGGER_INSTANCE": {}, 
         "FLOAT": {
+            "\u6280\u80fd\u57fa\u7840\u4f24\u5bb3": 0.0, 
             "\u653b\u51fb\u8303\u56f4": 0.0
         }, 
         "INTEGER": {
@@ -2300,12 +2399,20 @@
                 "\u4f20\u5bfc\u5c42\u6570", 
                 "\u4f20\u5bfc\u5c42\u6570"
             ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "\u6280\u80fd\u57fa\u7840\u4f24\u5bb3", 
+                "\u6280\u80fd\u57fa\u7840\u4f24\u5bb3"
+            ]
         }
     ], 
     "variable_length_dict": {
         "groupTimer": 0, 
         "\u4f20\u5bfc\u5355\u4f4d\u6570": 0, 
         "\u4f20\u5bfc\u5c42\u6570": 0, 
+        "\u6280\u80fd\u57fa\u7840\u4f24\u5bb3": 0, 
         "\u653b\u51fb\u8303\u56f4": 0, 
         "\u94fe\u63a5\u7c7b\u578b": 0
     }
