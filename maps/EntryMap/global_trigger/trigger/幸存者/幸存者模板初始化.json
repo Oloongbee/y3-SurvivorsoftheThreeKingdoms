@@ -447,659 +447,6 @@
             "enable": true
         }, 
         [
-            2081948097, 
-            "设置护盾", 
-            364200146, 
-            "action_type"
-        ], 
-        {
-            "action_type": "SET_ATTR", 
-            "args_list": [
-                {
-                    "arg_type": 100006, 
-                    "args_list": [
-                        {
-                            "__tuple__": true, 
-                            "items": [
-                                "UNIT_ENTITY", 
-                                "幸存者_主控单位"
-                            ]
-                        }
-                    ], 
-                    "sub_type": 11
-                }, 
-                {
-                    "arg_type": 100300, 
-                    "args_list": [
-                        "ATTR_BASE"
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100042, 
-                    "args_list": [
-                        "a+fD5nUGEe+rw2v-u3kcWA"
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100000, 
-                    "args_list": [
-                        {
-                            "arg_type": 100006, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "UNIT_ENTITY", 
-                                        "幸存者_主控单位"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 11
-                        }, 
-                        {
-                            "arg_type": 100301, 
-                            "args_list": [
-                                "ATTR_BASE"
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100042, 
-                            "args_list": [
-                                "z53X7HVnEe+qKsmX3w1FmP"
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "sub_type": "GET_UNIT_ATTR"
-                }
-            ], 
-            "bp": false, 
-            "element_id": 364200146000014, 
-            "enable": false
-        }, 
-        {
-            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
-            "args_list": [
-                {
-                    "arg_type": 100175, 
-                    "args_list": [
-                        1
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100003, 
-                    "args_list": [
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                "‘护盾设置完成，当前护盾为’"
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                {
-                                    "arg_type": 100000, 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100006, 
-                                            "args_list": [
-                                                {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "UNIT_ENTITY", 
-                                                        "幸存者_主控单位"
-                                                    ]
-                                                }
-                                            ], 
-                                            "sub_type": 11
-                                        }, 
-                                        {
-                                            "arg_type": 100301, 
-                                            "args_list": [
-                                                "ATTR_BASE"
-                                            ], 
-                                            "sub_type": 1
-                                        }, 
-                                        {
-                                            "arg_type": 100042, 
-                                            "args_list": [
-                                                "a+fD5nUGEe+rw2v-u3kcWA"
-                                            ], 
-                                            "sub_type": 1
-                                        }
-                                    ], 
-                                    "sub_type": "GET_UNIT_ATTR"
-                                }
-                            ], 
-                            "sub_type": "ANY_VAR_TO_STR"
-                        }
-                    ], 
-                    "op_arg": [
-                        null, 
-                        null, 
-                        null, 
-                        null, 
-                        null, 
-                        null, 
-                        null, 
-                        null
-                    ], 
-                    "op_arg_enable": [
-                        false, 
-                        false, 
-                        false, 
-                        false, 
-                        false, 
-                        false, 
-                        false, 
-                        false
-                    ], 
-                    "sub_type": "STR_JOIN"
-                }
-            ], 
-            "bp": false, 
-            "element_id": 364200146000015, 
-            "enable": false
-        }, 
-        [
-            2092560227, 
-            "设置护盾回复", 
-            364200146, 
-            "action_type"
-        ], 
-        {
-            "action_type": "RUN_LOOP_TIMER_NO_SAVE", 
-            "args_list": [
-                {
-                    "arg_type": 100000, 
-                    "args_list": [
-                        1.0
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100001, 
-                    "args_list": [
-                        true
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100022, 
-                    "args_list": [
-                        {
-                            "action_type": "IF_THEN_ELSE", 
-                            "args_list": [
-                                {
-                                    "arg_type": 100021, 
-                                    "args_list": [
-                                        {
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100000, 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100006, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "UNIT_ENTITY", 
-                                                                        "幸存者_主控单位"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": 11
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100301, 
-                                                            "args_list": [
-                                                                "ATTR_RESULT"
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100042, 
-                                                            "args_list": [
-                                                                "a+fD5nUGEe+rw2v-u3kcWA"
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }
-                                                    ], 
-                                                    "sub_type": "GET_UNIT_ATTR"
-                                                }, 
-                                                {
-                                                    "arg_type": 100015, 
-                                                    "args_list": [
-                                                        "<"
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100000, 
-                                                    "args_list": [
-                                                        {
-                                                            "arg_type": 100006, 
-                                                            "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "UNIT_ENTITY", 
-                                                                        "幸存者_主控单位"
-                                                                    ]
-                                                                }
-                                                            ], 
-                                                            "sub_type": 11
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100301, 
-                                                            "args_list": [
-                                                                "ATTR_RESULT"
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100042, 
-                                                            "args_list": [
-                                                                "z53X7HVnEe+qKsmX3w1FmP"
-                                                            ], 
-                                                            "sub_type": 1
-                                                        }
-                                                    ], 
-                                                    "sub_type": "GET_UNIT_ATTR"
-                                                }
-                                            ], 
-                                            "condition_type": "FLOAT_COMPARE", 
-                                            "element_id": 364200146000016, 
-                                            "enable": true
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100022, 
-                                    "args_list": [
-                                        {
-                                            "action_type": "IF_THEN_ELSE", 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100021, 
-                                                    "args_list": [
-                                                        {
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100000, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "arg_type": 100000, 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100006, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "UNIT_ENTITY", 
-                                                                                                "幸存者_主控单位"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 11
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100301, 
-                                                                                    "args_list": [
-                                                                                        "ATTR_RESULT"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100042, 
-                                                                                    "args_list": [
-                                                                                        "a+fD5nUGEe+rw2v-u3kcWA"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "sub_type": "GET_UNIT_ATTR"
-                                                                        }, 
-                                                                        {
-                                                                            "arg_type": 100017, 
-                                                                            "args_list": [
-                                                                                "+"
-                                                                            ], 
-                                                                            "sub_type": 1
-                                                                        }, 
-                                                                        {
-                                                                            "arg_type": 100000, 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100006, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "UNIT_ENTITY", 
-                                                                                                "幸存者_主控单位"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 11
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100301, 
-                                                                                    "args_list": [
-                                                                                        "ATTR_RESULT"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100042, 
-                                                                                    "args_list": [
-                                                                                        "MqBU93UQEe+u2Gv-u3kcWH"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "sub_type": "GET_UNIT_ATTR"
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": "ARITHMETIC_OPERATION"
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100015, 
-                                                                    "args_list": [
-                                                                        "<="
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100000, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "arg_type": 100006, 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "__tuple__": true, 
-                                                                                    "items": [
-                                                                                        "UNIT_ENTITY", 
-                                                                                        "幸存者_主控单位"
-                                                                                    ]
-                                                                                }
-                                                                            ], 
-                                                                            "sub_type": 11
-                                                                        }, 
-                                                                        {
-                                                                            "arg_type": 100301, 
-                                                                            "args_list": [
-                                                                                "ATTR_RESULT"
-                                                                            ], 
-                                                                            "sub_type": 1
-                                                                        }, 
-                                                                        {
-                                                                            "arg_type": 100042, 
-                                                                            "args_list": [
-                                                                                "z53X7HVnEe+qKsmX3w1FmP"
-                                                                            ], 
-                                                                            "sub_type": 1
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": "GET_UNIT_ATTR"
-                                                                }
-                                                            ], 
-                                                            "condition_type": "FLOAT_COMPARE", 
-                                                            "element_id": 364200146000017, 
-                                                            "enable": true
-                                                        }
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100022, 
-                                                    "args_list": [
-                                                        {
-                                                            "action_type": "SET_ATTR", 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100006, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "__tuple__": true, 
-                                                                            "items": [
-                                                                                "UNIT_ENTITY", 
-                                                                                "幸存者_主控单位"
-                                                                            ]
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 11
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100300, 
-                                                                    "args_list": [
-                                                                        "ATTR_BASE"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100042, 
-                                                                    "args_list": [
-                                                                        "a+fD5nUGEe+rw2v-u3kcWA"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100000, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "arg_type": 100000, 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100006, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "UNIT_ENTITY", 
-                                                                                                "幸存者_主控单位"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 11
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100301, 
-                                                                                    "args_list": [
-                                                                                        "ATTR_RESULT"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100042, 
-                                                                                    "args_list": [
-                                                                                        "a+fD5nUGEe+rw2v-u3kcWA"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "sub_type": "GET_UNIT_ATTR"
-                                                                        }, 
-                                                                        {
-                                                                            "arg_type": 100017, 
-                                                                            "args_list": [
-                                                                                "+"
-                                                                            ], 
-                                                                            "sub_type": 1
-                                                                        }, 
-                                                                        {
-                                                                            "arg_type": 100000, 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100006, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "UNIT_ENTITY", 
-                                                                                                "幸存者_主控单位"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 11
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100301, 
-                                                                                    "args_list": [
-                                                                                        "ATTR_RESULT"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100042, 
-                                                                                    "args_list": [
-                                                                                        "MqBU93UQEe+u2Gv-u3kcWH"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "sub_type": "GET_UNIT_ATTR"
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": "ARITHMETIC_OPERATION"
-                                                                }
-                                                            ], 
-                                                            "bp": false, 
-                                                            "element_id": 364200146000018, 
-                                                            "enable": true
-                                                        }
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100022, 
-                                                    "args_list": [
-                                                        {
-                                                            "action_type": "SET_ATTR", 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100006, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "__tuple__": true, 
-                                                                            "items": [
-                                                                                "UNIT_ENTITY", 
-                                                                                "幸存者_主控单位"
-                                                                            ]
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 11
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100300, 
-                                                                    "args_list": [
-                                                                        "ATTR_BASE"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100042, 
-                                                                    "args_list": [
-                                                                        "a+fD5nUGEe+rw2v-u3kcWA"
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100000, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "arg_type": 100006, 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "__tuple__": true, 
-                                                                                    "items": [
-                                                                                        "UNIT_ENTITY", 
-                                                                                        "幸存者_主控单位"
-                                                                                    ]
-                                                                                }
-                                                                            ], 
-                                                                            "sub_type": 11
-                                                                        }, 
-                                                                        {
-                                                                            "arg_type": 100301, 
-                                                                            "args_list": [
-                                                                                "ATTR_RESULT"
-                                                                            ], 
-                                                                            "sub_type": 1
-                                                                        }, 
-                                                                        {
-                                                                            "arg_type": 100042, 
-                                                                            "args_list": [
-                                                                                "z53X7HVnEe+qKsmX3w1FmP"
-                                                                            ], 
-                                                                            "sub_type": 1
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": "GET_UNIT_ATTR"
-                                                                }
-                                                            ], 
-                                                            "bp": false, 
-                                                            "element_id": 364200146000019, 
-                                                            "enable": true
-                                                        }
-                                                    ], 
-                                                    "sub_type": 1
-                                                }
-                                            ], 
-                                            "bp": false, 
-                                            "element_id": 364200146000020, 
-                                            "enable": true, 
-                                            "fake_op": [
-                                                2
-                                            ]
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100022, 
-                                    "args_list": [], 
-                                    "sub_type": 1
-                                }
-                            ], 
-                            "bp": false, 
-                            "element_id": 364200146000021, 
-                            "enable": true, 
-                            "fake_op": [
-                                2
-                            ]
-                        }
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 364200146000022, 
-            "enable": false, 
-            "local_var": {
-                "__tuple__": true, 
-                "items": [
-                    {}, 
-                    {}
-                ]
-            }
-        }, 
-        [
-            1914097447, 
-            "", 
-            364200146, 
-            "action_type"
-        ], 
-        [
             1792279837, 
             "#######", 
             364200146, 
@@ -1140,6 +487,51 @@
             364200146, 
             "action_type"
         ], 
+        {
+            "action_type": "CALL_TRIGGER_FUNC", 
+            "args_list": [
+                {
+                    "arg_type": 100177, 
+                    "args_list": [
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "当前玩家索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100009, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "RECTANGLE", 
+                                        "当前区域", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 7
+                        }
+                    ], 
+                    "op_arg": [], 
+                    "op_arg_enable": [], 
+                    "sub_type": "ddf6ca1a8a1d11ef9899b74c9cacabd0"
+                }
+            ], 
+            "bp": false, 
+            "call_rt_arg_idxes": [], 
+            "element_id": 364200146000026, 
+            "enable": true
+        }, 
         {
             "action_type": "SET_VARIABLE", 
             "args_list": [
@@ -1213,70 +605,41 @@
         }, 
         632635603, 
         {
-            "action_type": "CALL_TRIGGER_FUNC", 
-            "args_list": [
-                {
-                    "arg_type": 100177, 
-                    "args_list": [
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "INTEGER", 
-                                        "当前玩家索引", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 6
-                        }, 
-                        {
-                            "arg_type": 100009, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "RECTANGLE", 
-                                        "当前区域", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 7
-                        }
-                    ], 
-                    "op_arg": [], 
-                    "op_arg_enable": [], 
-                    "sub_type": "ddf6ca1a8a1d11ef9899b74c9cacabd0"
-                }
-            ], 
-            "bp": false, 
-            "call_rt_arg_idxes": [], 
-            "element_id": 364200146000026, 
-            "enable": true
-        }, 
-        {
             "action_type": "RUN_LOOP_TIMER_NO_SAVE", 
             "args_list": [
                 {
                     "arg_type": 100000, 
                     "args_list": [
-                        40.0
+                        15.0
                     ], 
                     "sub_type": 1
                 }, 
                 {
                     "arg_type": 100001, 
                     "args_list": [
-                        false
+                        true
                     ], 
                     "sub_type": 1
                 }, 
                 {
                     "arg_type": 100022, 
                     "args_list": [
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "8ad3bc8896af11efac28679d34748ef8"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 364200146948200, 
+                            "enable": true
+                        }, 
                         {
                             "action_type": "SEND_CUSTOM_EVENT", 
                             "args_list": [
@@ -1289,7 +652,7 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 364200146948164, 
+                            "element_id": 364200146948201, 
                             "enable": true
                         }, 
                         {
@@ -1345,7 +708,7 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 364200146948165, 
+                            "element_id": 364200146948202, 
                             "enable": true
                         }, 
                         {
@@ -1386,7 +749,7 @@
                                                 }
                                             ], 
                                             "condition_type": "FLOAT_COMPARE", 
-                                            "element_id": 364200146948166, 
+                                            "element_id": 364200146948203, 
                                             "enable": true
                                         }
                                     ], 
@@ -1441,7 +804,7 @@
                                                 }
                                             ], 
                                             "bp": false, 
-                                            "element_id": 364200146948167, 
+                                            "element_id": 364200146948204, 
                                             "enable": true
                                         }, 
                                         {
@@ -1470,7 +833,7 @@
                                                 }
                                             ], 
                                             "bp": false, 
-                                            "element_id": 364200146948168, 
+                                            "element_id": 364200146948205, 
                                             "enable": true
                                         }
                                     ], 
@@ -1483,7 +846,7 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 364200146948169, 
+                            "element_id": 364200146948206, 
                             "enable": true, 
                             "fake_op": []
                         }
