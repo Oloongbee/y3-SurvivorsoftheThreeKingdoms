@@ -343,37 +343,6 @@
             "element_id": 364200146000010, 
             "enable": true
         }, 
-        {
-            "action_type": "CALL_TRIGGER_FUNC", 
-            "args_list": [
-                {
-                    "arg_type": 100177, 
-                    "args_list": [
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                1
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                "(1500,2000,0)"
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "op_arg": [], 
-                    "op_arg_enable": [], 
-                    "sub_type": "9e9e10d27b4411efbff7815c55ec0353"
-                }
-            ], 
-            "bp": false, 
-            "call_rt_arg_idxes": [], 
-            "element_id": 364200146000011, 
-            "enable": false
-        }, 
         [
             1252814246, 
             "生成怪物", 
@@ -396,9 +365,16 @@
                         {
                             "arg_type": 100009, 
                             "args_list": [
-                                10004
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "RECTANGLE", 
+                                        "当前区域", 
+                                        "local"
+                                    ]
+                                }
                             ], 
-                            "sub_type": 1
+                            "sub_type": 7
                         }
                     ], 
                     "op_arg": [], 
@@ -409,7 +385,127 @@
             "bp": false, 
             "call_rt_arg_idxes": [], 
             "element_id": 364200146000012, 
+            "enable": false
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "波次计数"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        0
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 364200146948332, 
             "enable": true
+        }, 
+        {
+            "action_type": "RUN_ONCE_TIMER_NO_SAVE", 
+            "args_list": [
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100011, 
+                                            "args_list": [
+                                                "e15eb94a-f6ca-4268-8489-a54749613f79"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100009, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "RECTANGLE", 
+                                                        "当前区域", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 7
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "波次计数"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }, 
+                                        {
+                                            "arg_type": 100081, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "UNIT_ENTITY", 
+                                                        "玩家1单位数组"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "71269f8e998c11ef8d05ef1c6747ff33"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 364200146948274, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 364200146948369, 
+            "enable": true, 
+            "local_var": {
+                "__tuple__": true, 
+                "items": [
+                    {}, 
+                    {}
+                ]
+            }
         }, 
         [
             1658792228, 
@@ -610,7 +706,7 @@
                 {
                     "arg_type": 100000, 
                     "args_list": [
-                        100000.0
+                        60.0
                     ], 
                     "sub_type": 1
                 }, 
@@ -637,7 +733,82 @@
                             ], 
                             "bp": false, 
                             "call_rt_arg_idxes": [], 
-                            "element_id": 364200146948264, 
+                            "element_id": 364200146948523, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "当前怪物数量"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        0
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 759722240641404, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "PICK_UNIT_DO_ACTION", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100026, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100009, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "RECTANGLE", 
+                                                        "当前区域", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 7
+                                        }
+                                    ], 
+                                    "sub_type": "AREA_UNIT_GROUP"
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "DELETE_UNIT", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100006, 
+                                                    "args_list": [], 
+                                                    "sub_type": "FOR_EACH_SELECTED_UNIT"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 364200146948524, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 364200146948525, 
                             "enable": true
                         }, 
                         {
@@ -652,7 +823,22 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 364200146948265, 
+                            "element_id": 364200146948526, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SEND_CUSTOM_EVENT", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100238, 
+                                    "args_list": [
+                                        1364902903
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 364200146948527, 
                             "enable": true
                         }, 
                         {
@@ -665,8 +851,7 @@
                                             "__tuple__": true, 
                                             "items": [
                                                 "INTEGER", 
-                                                "波次计数", 
-                                                "local"
+                                                "波次计数"
                                             ]
                                         }
                                     ], 
@@ -682,8 +867,7 @@
                                                     "__tuple__": true, 
                                                     "items": [
                                                         "INTEGER", 
-                                                        "波次计数", 
-                                                        "local"
+                                                        "波次计数"
                                                     ]
                                                 }
                                             ], 
@@ -708,7 +892,7 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 364200146948266, 
+                            "element_id": 364200146948528, 
                             "enable": true
                         }, 
                         {
@@ -726,8 +910,7 @@
                                                             "__tuple__": true, 
                                                             "items": [
                                                                 "INTEGER", 
-                                                                "波次计数", 
-                                                                "local"
+                                                                "波次计数"
                                                             ]
                                                         }
                                                     ], 
@@ -736,20 +919,20 @@
                                                 {
                                                     "arg_type": 100015, 
                                                     "args_list": [
-                                                        ">="
+                                                        "=="
                                                     ], 
                                                     "sub_type": 1
                                                 }, 
                                                 {
                                                     "arg_type": 100002, 
                                                     "args_list": [
-                                                        2
+                                                        5
                                                     ], 
                                                     "sub_type": 1
                                                 }
                                             ], 
                                             "condition_type": "FLOAT_COMPARE", 
-                                            "element_id": 364200146948267, 
+                                            "element_id": 364200146948529, 
                                             "enable": true
                                         }
                                     ], 
@@ -804,7 +987,7 @@
                                                 }
                                             ], 
                                             "bp": false, 
-                                            "element_id": 364200146948268, 
+                                            "element_id": 364200146948530, 
                                             "enable": true
                                         }, 
                                         {
@@ -833,7 +1016,7 @@
                                                 }
                                             ], 
                                             "bp": false, 
-                                            "element_id": 364200146948269, 
+                                            "element_id": 364200146948531, 
                                             "enable": true
                                         }
                                     ], 
@@ -846,7 +1029,7 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 364200146948270, 
+                            "element_id": 364200146948532, 
                             "enable": true, 
                             "fake_op": []
                         }
@@ -871,10 +1054,18 @@
     "enabled": true, 
     "event": [
         {
-            "args_list": [], 
-            "element_id": 364200146000001, 
+            "args_list": [
+                {
+                    "arg_type": 100238, 
+                    "args_list": [
+                        1328033433
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "element_id": 364200146948409, 
             "enable": true, 
-            "event_type": "INIT_FINISHED"
+            "event_type": "RECEIVE_CUSTOM_EVENT"
         }
     ], 
     "group_id": "YcoM5JWnEe+SHtE1uMKHRy", 
@@ -1050,6 +1241,70 @@
                     "bp": false, 
                     "call_rt_arg_idxes": [], 
                     "element_id": 632635603000007, 
+                    "enable": false
+                }, 
+                {
+                    "action_type": "CALL_TRIGGER_FUNC", 
+                    "args_list": [
+                        {
+                            "arg_type": 100177, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100011, 
+                                    "args_list": [
+                                        "e15eb94a-f6ca-4268-8489-a54749613f79"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100009, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "RECTANGLE", 
+                                                "当前区域", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 7
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "波次计数"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 6
+                                }, 
+                                {
+                                    "arg_type": 100081, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "UNIT_ENTITY", 
+                                                "玩家1单位数组"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "op_arg": [], 
+                            "op_arg_enable": [], 
+                            "sub_type": "71269f8e998c11ef8d05ef1c6747ff33"
+                        }
+                    ], 
+                    "bp": false, 
+                    "call_rt_arg_idxes": [], 
+                    "element_id": 364200146948274, 
                     "enable": true
                 }, 
                 {
@@ -1141,7 +1396,6 @@
                 "当前玩家ID": 0, 
                 "当前玩家索引": 0, 
                 "武将星级数组": 0, 
-                "波次计数": 0, 
                 "玩家1ID": 0, 
                 "阵容索引数组": 0
             }, 
@@ -1180,7 +1434,6 @@
             "当前玩家索引": 0, 
             "当前玩家阵容表": 0, 
             "武将星级数组": 10, 
-            "波次计数": 0, 
             "测试表": 0, 
             "玩家1ID": 0, 
             "阵容索引数组": 10
@@ -1203,7 +1456,6 @@
             "当前玩家ID", 
             "当前玩家索引", 
             "当前玩家阵容表", 
-            "波次计数", 
             "当前区域位置", 
             "当前区域"
         ]
