@@ -903,19 +903,25 @@
                                                                                             "arg_type": 100002, 
                                                                                             "args_list": [
                                                                                                 {
-                                                                                                    "arg_type": 100025, 
-                                                                                                    "args_list": [], 
-                                                                                                    "sub_type": "TRIGGER_PLAYER"
-                                                                                                }, 
-                                                                                                {
-                                                                                                    "arg_type": 100003, 
+                                                                                                    "arg_type": 100000, 
                                                                                                     "args_list": [
-                                                                                                        "银币"
+                                                                                                        {
+                                                                                                            "arg_type": 100025, 
+                                                                                                            "args_list": [], 
+                                                                                                            "sub_type": "TRIGGER_PLAYER"
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100037, 
+                                                                                                            "args_list": [
+                                                                                                                "dN8P0KjnEe+uYbvC13Uj-1"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
                                                                                                     ], 
-                                                                                                    "sub_type": 1
+                                                                                                    "sub_type": "GET_ROLE_RES"
                                                                                                 }
                                                                                             ], 
-                                                                                            "sub_type": "GET_INTEGER_KV"
+                                                                                            "sub_type": "F2I"
                                                                                         }, 
                                                                                         {
                                                                                             "arg_type": 100015, 
@@ -1068,17 +1074,19 @@
                                                                                     "enable": false
                                                                                 }, 
                                                                                 {
-                                                                                    "action_type": "SET_ENTITY_KV", 
+                                                                                    "action_type": "SET_VARIABLE", 
                                                                                     "args_list": [
                                                                                         {
-                                                                                            "arg_type": 100025, 
-                                                                                            "args_list": [], 
-                                                                                            "sub_type": "TRIGGER_PLAYER"
-                                                                                        }, 
-                                                                                        {
-                                                                                            "arg_type": 100003, 
+                                                                                            "arg_type": 100030, 
                                                                                             "args_list": [
-                                                                                                "银币"
+                                                                                                {
+                                                                                                    "__tuple__": true, 
+                                                                                                    "items": [
+                                                                                                        "INTEGER", 
+                                                                                                        "价格", 
+                                                                                                        "local"
+                                                                                                    ]
+                                                                                                }
                                                                                             ], 
                                                                                             "sub_type": 1
                                                                                         }, 
@@ -1086,29 +1094,18 @@
                                                                                             "arg_type": 100002, 
                                                                                             "args_list": [
                                                                                                 {
-                                                                                                    "arg_type": 100002, 
+                                                                                                    "arg_type": 100011, 
                                                                                                     "args_list": [
                                                                                                         {
-                                                                                                            "arg_type": 100025, 
-                                                                                                            "args_list": [], 
-                                                                                                            "sub_type": "TRIGGER_PLAYER"
-                                                                                                        }, 
-                                                                                                        {
-                                                                                                            "arg_type": 100003, 
-                                                                                                            "args_list": [
-                                                                                                                "银币"
-                                                                                                            ], 
-                                                                                                            "sub_type": 1
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "TABLE", 
+                                                                                                                "当前玩家商店道具池表", 
+                                                                                                                "local"
+                                                                                                            ]
                                                                                                         }
                                                                                                     ], 
-                                                                                                    "sub_type": "GET_INTEGER_KV"
-                                                                                                }, 
-                                                                                                {
-                                                                                                    "arg_type": 100016, 
-                                                                                                    "args_list": [
-                                                                                                        "-"
-                                                                                                    ], 
-                                                                                                    "sub_type": 1
+                                                                                                    "sub_type": "VARIABLE"
                                                                                                 }, 
                                                                                                 {
                                                                                                     "arg_type": 100002, 
@@ -1120,7 +1117,7 @@
                                                                                                                     "__tuple__": true, 
                                                                                                                     "items": [
                                                                                                                         "TABLE", 
-                                                                                                                        "当前玩家商店道具池表", 
+                                                                                                                        "当前玩家商店道具选择集合表", 
                                                                                                                         "local"
                                                                                                                     ]
                                                                                                                 }
@@ -1131,78 +1128,110 @@
                                                                                                             "arg_type": 100002, 
                                                                                                             "args_list": [
                                                                                                                 {
-                                                                                                                    "arg_type": 100011, 
-                                                                                                                    "args_list": [
-                                                                                                                        [
-                                                                                                                            "TABLE", 
-                                                                                                                            "当前玩家商店道具选择集合表", 
-                                                                                                                            "local"
-                                                                                                                        ]
-                                                                                                                    ], 
-                                                                                                                    "sub_type": "VARIABLE"
-                                                                                                                }, 
-                                                                                                                {
-                                                                                                                    "arg_type": 100002, 
-                                                                                                                    "args_list": [
-                                                                                                                        {
-                                                                                                                            "__tuple__": true, 
-                                                                                                                            "items": [
-                                                                                                                                "INTEGER", 
-                                                                                                                                "当前商店物品购买位置索引", 
-                                                                                                                                "local"
-                                                                                                                            ]
-                                                                                                                        }
-                                                                                                                    ], 
-                                                                                                                    "sub_type": 6
-                                                                                                                }, 
-                                                                                                                {
-                                                                                                                    "arg_type": 100003, 
-                                                                                                                    "args_list": [
-                                                                                                                        "索引"
-                                                                                                                    ], 
-                                                                                                                    "sub_type": 1
+                                                                                                                    "__tuple__": true, 
+                                                                                                                    "items": [
+                                                                                                                        "INTEGER", 
+                                                                                                                        "当前商店物品购买位置索引", 
+                                                                                                                        "local"
+                                                                                                                    ]
                                                                                                                 }
                                                                                                             ], 
-                                                                                                            "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                                                            "sub_type": 6
                                                                                                         }, 
                                                                                                         {
                                                                                                             "arg_type": 100003, 
                                                                                                             "args_list": [
-                                                                                                                "价格"
+                                                                                                                "索引"
                                                                                                             ], 
                                                                                                             "sub_type": 1
                                                                                                         }
                                                                                                     ], 
                                                                                                     "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100003, 
+                                                                                                    "args_list": [
+                                                                                                        "价格"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
                                                                                                 }
                                                                                             ], 
-                                                                                            "sub_type": "MATH_OPERATION"
+                                                                                            "sub_type": "GET_INTEGER_TABLE_VAR_ND"
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 464564500986992, 
+                                                                                    "element_id": 464564500987410, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
-                                                                                    "action_type": "CALL_TRIGGER_FUNC", 
+                                                                                    "action_type": "ROLE_SET_RES", 
                                                                                     "args_list": [
                                                                                         {
-                                                                                            "arg_type": 100177, 
+                                                                                            "arg_type": 100025, 
+                                                                                            "args_list": [], 
+                                                                                            "sub_type": "TRIGGER_PLAYER"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100037, 
+                                                                                            "args_list": [
+                                                                                                "dN8P0KjnEe+uYbvC13Uj-1"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100000, 
                                                                                             "args_list": [
                                                                                                 {
-                                                                                                    "arg_type": 100025, 
-                                                                                                    "args_list": [], 
-                                                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100000, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "arg_type": 100025, 
+                                                                                                                    "args_list": [], 
+                                                                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                                                                }, 
+                                                                                                                {
+                                                                                                                    "arg_type": 100037, 
+                                                                                                                    "args_list": [
+                                                                                                                        "dN8P0KjnEe+uYbvC13Uj-1"
+                                                                                                                    ], 
+                                                                                                                    "sub_type": 1
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": "GET_ROLE_RES"
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "F2I"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100017, 
+                                                                                                    "args_list": [
+                                                                                                        "-"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "INTEGER", 
+                                                                                                                "价格", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 6
                                                                                                 }
                                                                                             ], 
-                                                                                            "op_arg": [], 
-                                                                                            "op_arg_enable": [], 
-                                                                                            "sub_type": "f17a03bea8ae11ef94107f086ac73d1a"
+                                                                                            "sub_type": "ARITHMETIC_OPERATION"
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "call_rt_arg_idxes": [], 
-                                                                                    "element_id": 464564500987033, 
+                                                                                    "element_id": 464564500987347, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -6360,19 +6389,25 @@
                                                                                             "arg_type": 100002, 
                                                                                             "args_list": [
                                                                                                 {
-                                                                                                    "arg_type": 100025, 
-                                                                                                    "args_list": [], 
-                                                                                                    "sub_type": "TRIGGER_PLAYER"
-                                                                                                }, 
-                                                                                                {
-                                                                                                    "arg_type": 100003, 
+                                                                                                    "arg_type": 100000, 
                                                                                                     "args_list": [
-                                                                                                        "银币"
+                                                                                                        {
+                                                                                                            "arg_type": 100025, 
+                                                                                                            "args_list": [], 
+                                                                                                            "sub_type": "TRIGGER_PLAYER"
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100037, 
+                                                                                                            "args_list": [
+                                                                                                                "dN8P0KjnEe+uYbvC13Uj-1"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
                                                                                                     ], 
-                                                                                                    "sub_type": 1
+                                                                                                    "sub_type": "GET_ROLE_RES"
                                                                                                 }
                                                                                             ], 
-                                                                                            "sub_type": "GET_INTEGER_KV"
+                                                                                            "sub_type": "F2I"
                                                                                         }, 
                                                                                         {
                                                                                             "arg_type": 100015, 
@@ -7263,17 +7298,19 @@
                                                                                     ]
                                                                                 }, 
                                                                                 {
-                                                                                    "action_type": "SET_ENTITY_KV", 
+                                                                                    "action_type": "SET_VARIABLE", 
                                                                                     "args_list": [
                                                                                         {
-                                                                                            "arg_type": 100025, 
-                                                                                            "args_list": [], 
-                                                                                            "sub_type": "TRIGGER_PLAYER"
-                                                                                        }, 
-                                                                                        {
-                                                                                            "arg_type": 100003, 
+                                                                                            "arg_type": 100030, 
                                                                                             "args_list": [
-                                                                                                "银币"
+                                                                                                {
+                                                                                                    "__tuple__": true, 
+                                                                                                    "items": [
+                                                                                                        "INTEGER", 
+                                                                                                        "价格", 
+                                                                                                        "local"
+                                                                                                    ]
+                                                                                                }
                                                                                             ], 
                                                                                             "sub_type": 1
                                                                                         }, 
@@ -7281,29 +7318,18 @@
                                                                                             "arg_type": 100002, 
                                                                                             "args_list": [
                                                                                                 {
-                                                                                                    "arg_type": 100002, 
+                                                                                                    "arg_type": 100011, 
                                                                                                     "args_list": [
                                                                                                         {
-                                                                                                            "arg_type": 100025, 
-                                                                                                            "args_list": [], 
-                                                                                                            "sub_type": "TRIGGER_PLAYER"
-                                                                                                        }, 
-                                                                                                        {
-                                                                                                            "arg_type": 100003, 
-                                                                                                            "args_list": [
-                                                                                                                "银币"
-                                                                                                            ], 
-                                                                                                            "sub_type": 1
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "TABLE", 
+                                                                                                                "当前玩家商店道具池表", 
+                                                                                                                "local"
+                                                                                                            ]
                                                                                                         }
                                                                                                     ], 
-                                                                                                    "sub_type": "GET_INTEGER_KV"
-                                                                                                }, 
-                                                                                                {
-                                                                                                    "arg_type": 100016, 
-                                                                                                    "args_list": [
-                                                                                                        "-"
-                                                                                                    ], 
-                                                                                                    "sub_type": 1
+                                                                                                    "sub_type": "VARIABLE"
                                                                                                 }, 
                                                                                                 {
                                                                                                     "arg_type": 100002, 
@@ -7315,7 +7341,7 @@
                                                                                                                     "__tuple__": true, 
                                                                                                                     "items": [
                                                                                                                         "TABLE", 
-                                                                                                                        "当前玩家商店道具池表", 
+                                                                                                                        "当前玩家商店道具选择集合表", 
                                                                                                                         "local"
                                                                                                                     ]
                                                                                                                 }
@@ -7326,78 +7352,110 @@
                                                                                                             "arg_type": 100002, 
                                                                                                             "args_list": [
                                                                                                                 {
-                                                                                                                    "arg_type": 100011, 
-                                                                                                                    "args_list": [
-                                                                                                                        [
-                                                                                                                            "TABLE", 
-                                                                                                                            "当前玩家商店道具选择集合表", 
-                                                                                                                            "local"
-                                                                                                                        ]
-                                                                                                                    ], 
-                                                                                                                    "sub_type": "VARIABLE"
-                                                                                                                }, 
-                                                                                                                {
-                                                                                                                    "arg_type": 100002, 
-                                                                                                                    "args_list": [
-                                                                                                                        {
-                                                                                                                            "__tuple__": true, 
-                                                                                                                            "items": [
-                                                                                                                                "INTEGER", 
-                                                                                                                                "当前商店物品购买位置索引", 
-                                                                                                                                "local"
-                                                                                                                            ]
-                                                                                                                        }
-                                                                                                                    ], 
-                                                                                                                    "sub_type": 6
-                                                                                                                }, 
-                                                                                                                {
-                                                                                                                    "arg_type": 100003, 
-                                                                                                                    "args_list": [
-                                                                                                                        "索引"
-                                                                                                                    ], 
-                                                                                                                    "sub_type": 1
+                                                                                                                    "__tuple__": true, 
+                                                                                                                    "items": [
+                                                                                                                        "INTEGER", 
+                                                                                                                        "当前商店物品购买位置索引", 
+                                                                                                                        "local"
+                                                                                                                    ]
                                                                                                                 }
                                                                                                             ], 
-                                                                                                            "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                                                            "sub_type": 6
                                                                                                         }, 
                                                                                                         {
                                                                                                             "arg_type": 100003, 
                                                                                                             "args_list": [
-                                                                                                                "价格"
+                                                                                                                "索引"
                                                                                                             ], 
                                                                                                             "sub_type": 1
                                                                                                         }
                                                                                                     ], 
                                                                                                     "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100003, 
+                                                                                                    "args_list": [
+                                                                                                        "价格"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
                                                                                                 }
                                                                                             ], 
-                                                                                            "sub_type": "MATH_OPERATION"
+                                                                                            "sub_type": "GET_INTEGER_TABLE_VAR_ND"
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "element_id": 464564500987299, 
+                                                                                    "element_id": 464564500987441, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
-                                                                                    "action_type": "CALL_TRIGGER_FUNC", 
+                                                                                    "action_type": "ROLE_SET_RES", 
                                                                                     "args_list": [
                                                                                         {
-                                                                                            "arg_type": 100177, 
+                                                                                            "arg_type": 100025, 
+                                                                                            "args_list": [], 
+                                                                                            "sub_type": "TRIGGER_PLAYER"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100037, 
+                                                                                            "args_list": [
+                                                                                                "dN8P0KjnEe+uYbvC13Uj-1"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100000, 
                                                                                             "args_list": [
                                                                                                 {
-                                                                                                    "arg_type": 100025, 
-                                                                                                    "args_list": [], 
-                                                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100000, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "arg_type": 100025, 
+                                                                                                                    "args_list": [], 
+                                                                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                                                                }, 
+                                                                                                                {
+                                                                                                                    "arg_type": 100037, 
+                                                                                                                    "args_list": [
+                                                                                                                        "dN8P0KjnEe+uYbvC13Uj-1"
+                                                                                                                    ], 
+                                                                                                                    "sub_type": 1
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": "GET_ROLE_RES"
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "F2I"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100017, 
+                                                                                                    "args_list": [
+                                                                                                        "-"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "INTEGER", 
+                                                                                                                "价格", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 6
                                                                                                 }
                                                                                             ], 
-                                                                                            "op_arg": [], 
-                                                                                            "op_arg_enable": [], 
-                                                                                            "sub_type": "f17a03bea8ae11ef94107f086ac73d1a"
+                                                                                            "sub_type": "ARITHMETIC_OPERATION"
                                                                                         }
                                                                                     ], 
                                                                                     "bp": false, 
-                                                                                    "call_rt_arg_idxes": [], 
-                                                                                    "element_id": 464564500987331, 
+                                                                                    "element_id": 464564500987460, 
                                                                                     "enable": true
                                                                                 }, 
                                                                                 {
@@ -7939,6 +7997,7 @@
             "INTEGER": {
                 "i": 0, 
                 "k": 0, 
+                "价格": 0, 
                 "升星武器池索引": 0, 
                 "升星武器背包索引": 0, 
                 "升级前等级": 0, 
@@ -7966,6 +8025,7 @@
         {
             "i": 0, 
             "k": 0, 
+            "价格": 0, 
             "升星武器池索引": 0, 
             "升星武器背包索引": 0, 
             "升级前等级": 0, 
@@ -8009,7 +8069,8 @@
             "重复宝物索引", 
             "当前玩家商店道具池表", 
             "拥有武将数量", 
-            "拥有宝物数量"
+            "拥有宝物数量", 
+            "价格"
         ]
     ]
 }
