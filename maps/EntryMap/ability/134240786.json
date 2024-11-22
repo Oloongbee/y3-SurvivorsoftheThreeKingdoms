@@ -17,7 +17,7 @@
                     "i": 0, 
                     "j": 0, 
                     "k": 0, 
-                    "\u6cbb\u7597": 0
+                    "\u6cbb\u7597": 1
                 }
             }, 
             "variable_length_dict": {
@@ -61,6 +61,85 @@
                     "bp": false, 
                     "element_id": 33079297000004, 
                     "enable": false
+                }, 
+                {
+                    "action_type": "SET_VARIABLE", 
+                    "args_list": [
+                        {
+                            "arg_type": 100030, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "\u5b9e\u9645\u6cbb\u7597\u91cf", 
+                                        "actor"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                30.0
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 687398914000057, 
+                    "enable": true
+                }, 
+                {
+                    "action_type": "UNIT_RELEASE_COMMAND", 
+                    "args_list": [
+                        {
+                            "arg_type": 100006, 
+                            "args_list": [], 
+                            "sub_type": "GET_UNIT_FROM_EVENT"
+                        }, 
+                        {
+                            "arg_type": 100216, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100014, 
+                                    "args_list": [], 
+                                    "sub_type": "DAMAGE_ABILITY"
+                                }
+                            ], 
+                            "op_arg": [
+                                null, 
+                                null, 
+                                null, 
+                                null, 
+                                null
+                            ], 
+                            "op_arg_enable": [
+                                false, 
+                                false, 
+                                false, 
+                                false, 
+                                false
+                            ], 
+                            "sub_type": "UNIT_COMMAND_USE_SKILL"
+                        }
+                    ], 
+                    "bp": false, 
+                    "element_id": 33079297000062, 
+                    "enable": true, 
+                    "op_arg": [
+                        {
+                            "arg_type": 100001, 
+                            "args_list": [
+                                true
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "op_arg_enable": [
+                        false
+                    ]
                 }
             ], 
             "call_enabled": true, 
@@ -219,9 +298,13 @@
                                 {
                                     "arg_type": 100025, 
                                     "args_list": [
-                                        1
+                                        {
+                                            "arg_type": 100006, 
+                                            "args_list": [], 
+                                            "sub_type": "ABILITY_OWNER"
+                                        }
                                     ], 
-                                    "sub_type": 1
+                                    "sub_type": "OWNER_PLAYER"
                                 }, 
                                 null, 
                                 null, 
@@ -304,7 +387,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 469295107000226, 
+                                    "element_id": 469295107000562, 
                                     "enable": true
                                 }, 
                                 {
@@ -339,7 +422,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 469295107000250, 
+                                    "element_id": 469295107000563, 
                                     "enable": false
                                 }, 
                                 {
@@ -395,7 +478,7 @@
                                         }
                                     ], 
                                     "bp": false, 
-                                    "element_id": 469295107000240, 
+                                    "element_id": 469295107000564, 
                                     "enable": true
                                 }
                             ], 
@@ -662,14 +745,11 @@
                                                                         {
                                                                             "arg_type": 100030, 
                                                                             "args_list": [
-                                                                                {
-                                                                                    "__tuple__": true, 
-                                                                                    "items": [
-                                                                                        "INTEGER", 
-                                                                                        "\u6cbb\u7597", 
-                                                                                        "local"
-                                                                                    ]
-                                                                                }
+                                                                                [
+                                                                                    "INTEGER", 
+                                                                                    "\u6cbb\u7597", 
+                                                                                    "local"
+                                                                                ]
                                                                             ], 
                                                                             "sub_type": 1
                                                                         }, 
@@ -985,14 +1065,11 @@
                                                         {
                                                             "arg_type": 100002, 
                                                             "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "INTEGER", 
-                                                                        "\u6cbb\u7597", 
-                                                                        "local"
-                                                                    ]
-                                                                }
+                                                                [
+                                                                    "INTEGER", 
+                                                                    "\u6cbb\u7597", 
+                                                                    "local"
+                                                                ]
                                                             ], 
                                                             "sub_type": 6
                                                         }
@@ -1051,14 +1128,11 @@
                                                 {
                                                     "arg_type": 100002, 
                                                     "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "INTEGER", 
-                                                                "\u6cbb\u7597", 
-                                                                "local"
-                                                            ]
-                                                        }
+                                                        [
+                                                            "INTEGER", 
+                                                            "\u6cbb\u7597", 
+                                                            "local"
+                                                        ]
                                                     ], 
                                                     "sub_type": 6
                                                 }
@@ -1131,14 +1205,11 @@
                                                         {
                                                             "arg_type": 100002, 
                                                             "args_list": [
-                                                                {
-                                                                    "__tuple__": true, 
-                                                                    "items": [
-                                                                        "INTEGER", 
-                                                                        "\u6cbb\u7597", 
-                                                                        "local"
-                                                                    ]
-                                                                }
+                                                                [
+                                                                    "INTEGER", 
+                                                                    "\u6cbb\u7597", 
+                                                                    "local"
+                                                                ]
                                                             ], 
                                                             "sub_type": 6
                                                         }
@@ -1183,7 +1254,7 @@
                                     ], 
                                     "bp": false, 
                                     "element_id": 469295107000486, 
-                                    "enable": false
+                                    "enable": true
                                 }, 
                                 {
                                     "action_type": "REMOVE_LIST_VAR_ITEM", 
@@ -1205,14 +1276,11 @@
                                         {
                                             "arg_type": 100002, 
                                             "args_list": [
-                                                {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "INTEGER", 
-                                                        "\u6cbb\u7597", 
-                                                        "local"
-                                                    ]
-                                                }
+                                                [
+                                                    "INTEGER", 
+                                                    "\u6cbb\u7597", 
+                                                    "local"
+                                                ]
                                             ], 
                                             "sub_type": 6
                                         }
@@ -1273,7 +1341,7 @@
                         "i": 0, 
                         "j": 0, 
                         "k": 0, 
-                        "\u6cbb\u7597": 0
+                        "\u6cbb\u7597": 1
                     }
                 }, 
                 {
@@ -1440,7 +1508,7 @@
                                 {
                                     "arg_type": 100000, 
                                     "args_list": [
-                                        195.0
+                                        200.0
                                     ], 
                                     "sub_type": 1
                                 }

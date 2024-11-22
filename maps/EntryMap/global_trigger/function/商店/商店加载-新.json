@@ -36,6 +36,28 @@
             "enable": false
         }, 
         {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "打开商店：加载商店"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1706377456890333, 
+            "enable": false
+        }, 
+        {
             "action_type": "SET_VARIABLE", 
             "args_list": [
                 {
@@ -78,654 +100,193 @@
             "enable": true
         }, 
         {
-            "action_type": "LIST_LOOP", 
+            "action_type": "SET_VARIABLE", 
             "args_list": [
                 {
-                    "arg_type": 100081, 
+                    "arg_type": 100030, 
                     "args_list": [
-                        {
-                            "__tuple__": true, 
-                            "items": [
-                                "INTEGER", 
-                                "玩家ID数组"
-                            ]
-                        }
+                        [
+                            "TABLE", 
+                            "当前玩家阵容表", 
+                            "local"
+                        ]
                     ], 
                     "sub_type": 1
                 }, 
                 {
-                    "arg_type": 100022, 
+                    "arg_type": 100011, 
                     "args_list": [
                         {
-                            "action_type": "IF_THEN_ELSE", 
+                            "arg_type": 100025, 
                             "args_list": [
                                 {
-                                    "arg_type": 100021, 
-                                    "args_list": [
-                                        {
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "INTEGER", 
-                                                                "当前玩家ID", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 6
-                                                }, 
-                                                {
-                                                    "arg_type": 100015, 
-                                                    "args_list": [
-                                                        "=="
-                                                    ], 
-                                                    "sub_type": 1
-                                                }, 
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "INTEGER", 
-                                                                "玩家ID数组"
-                                                            ]
-                                                        }, 
-                                                        {
-                                                            "arg_type": 100002, 
-                                                            "args_list": [], 
-                                                            "sub_type": "GET_LOOP_LIST_INDEX"
-                                                        }
-                                                    ], 
-                                                    "sub_type": 6
-                                                }
-                                            ], 
-                                            "condition_type": "FLOAT_COMPARE", 
-                                            "element_id": 867516527000003, 
-                                            "enable": true
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100022, 
-                                    "args_list": [
-                                        {
-                                            "action_type": "SWITCH", 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [], 
-                                                    "sub_type": "GET_LOOP_LIST_INDEX"
-                                                }, 
-                                                {
-                                                    "arg_type": 100022, 
-                                                    "args_list": [
-                                                        {
-                                                            "action_type": "CASE", 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100002, 
-                                                                    "args_list": [
-                                                                        0
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100022, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        [
-                                                                                            "TABLE", 
-                                                                                            "当前玩家阵容表", 
-                                                                                            "local"
-                                                                                        ]
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "c521cb5f-f1ad-4502-9405-262d5f82b2c3"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000004, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "INTEGER", 
-                                                                                                "当前玩家索引", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100002, 
-                                                                                    "args_list": [
-                                                                                        0
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000005, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100175, 
-                                                                                    "args_list": [
-                                                                                        3
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100003, 
-                                                                                    "args_list": [
-                                                                                        "商店加载。当前为玩家1"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000006, 
-                                                                            "enable": false
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "DUMP_TABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "TABLE", 
-                                                                                                "当前玩家阵容表", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": "VARIABLE"
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000007, 
-                                                                            "enable": false
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "TABLE", 
-                                                                                                "当前玩家武器表", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "21b2fe29-2b5e-4bb6-8d27-f3586e8c3ff0"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000044, 
-                                                                            "enable": true
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }
-                                                            ], 
-                                                            "bp": false, 
-                                                            "element_id": 867516527000008, 
-                                                            "enable": true
-                                                        }, 
-                                                        {
-                                                            "action_type": "CASE", 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100002, 
-                                                                    "args_list": [
-                                                                        1
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100022, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        [
-                                                                                            "TABLE", 
-                                                                                            "当前玩家阵容表", 
-                                                                                            "local"
-                                                                                        ]
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "e9e37280-70ba-43e7-b227-49f765db0733"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000009, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "INTEGER", 
-                                                                                                "当前玩家索引", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100002, 
-                                                                                    "args_list": [
-                                                                                        1
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000010, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "TABLE", 
-                                                                                                "当前玩家武器表", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "82d73c63-02bf-4348-bbdd-8f85a0e2e846"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000037, 
-                                                                            "enable": true
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }
-                                                            ], 
-                                                            "bp": false, 
-                                                            "element_id": 867516527000011, 
-                                                            "enable": true
-                                                        }, 
-                                                        {
-                                                            "action_type": "CASE", 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100002, 
-                                                                    "args_list": [
-                                                                        2
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100022, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        [
-                                                                                            "TABLE", 
-                                                                                            "当前玩家阵容表", 
-                                                                                            "local"
-                                                                                        ]
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "526c28fd-45e8-4b12-b0a4-821b34961bea"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000012, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "INTEGER", 
-                                                                                                "当前玩家索引", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100002, 
-                                                                                    "args_list": [
-                                                                                        2
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000013, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "TABLE", 
-                                                                                                "当前玩家武器表", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "a3194e2a-8d75-4b07-a591-19e4294c8759"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000054, 
-                                                                            "enable": true
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }
-                                                            ], 
-                                                            "bp": false, 
-                                                            "element_id": 867516527000014, 
-                                                            "enable": true
-                                                        }, 
-                                                        {
-                                                            "action_type": "CASE", 
-                                                            "args_list": [
-                                                                {
-                                                                    "arg_type": 100002, 
-                                                                    "args_list": [
-                                                                        3
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }, 
-                                                                {
-                                                                    "arg_type": 100022, 
-                                                                    "args_list": [
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        [
-                                                                                            "TABLE", 
-                                                                                            "当前玩家阵容表", 
-                                                                                            "local"
-                                                                                        ]
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "388df803-c715-4826-93fe-c0122f1f3ba7"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000015, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "INTEGER", 
-                                                                                                "当前玩家索引", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100002, 
-                                                                                    "args_list": [
-                                                                                        3
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000016, 
-                                                                            "enable": true
-                                                                        }, 
-                                                                        {
-                                                                            "action_type": "SET_VARIABLE", 
-                                                                            "args_list": [
-                                                                                {
-                                                                                    "arg_type": 100030, 
-                                                                                    "args_list": [
-                                                                                        {
-                                                                                            "__tuple__": true, 
-                                                                                            "items": [
-                                                                                                "TABLE", 
-                                                                                                "当前玩家武器表", 
-                                                                                                "local"
-                                                                                            ]
-                                                                                        }
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }, 
-                                                                                {
-                                                                                    "arg_type": 100011, 
-                                                                                    "args_list": [
-                                                                                        "b5e4c793-24cd-49b2-922c-96beab3dfb40"
-                                                                                    ], 
-                                                                                    "sub_type": 1
-                                                                                }
-                                                                            ], 
-                                                                            "bp": false, 
-                                                                            "element_id": 867516527000063, 
-                                                                            "enable": true
-                                                                        }
-                                                                    ], 
-                                                                    "sub_type": 1
-                                                                }
-                                                            ], 
-                                                            "bp": false, 
-                                                            "element_id": 867516527000017, 
-                                                            "enable": true
-                                                        }
-                                                    ], 
-                                                    "sub_type": 1
-                                                }
-                                            ], 
-                                            "bp": false, 
-                                            "element_id": 867516527000018, 
-                                            "enable": true
-                                        }
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100022, 
-                                    "args_list": [], 
-                                    "sub_type": 1
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
                                 }
                             ], 
-                            "bp": false, 
-                            "element_id": 867516527000019, 
-                            "enable": true, 
-                            "fake_op": []
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "阵容表"
+                            ], 
+                            "sub_type": 1
                         }
                     ], 
-                    "sub_type": 1
+                    "sub_type": "GET_TABLE_KV"
                 }
             ], 
             "bp": false, 
-            "element_id": 867516527000020, 
+            "element_id": 867516527985539, 
             "enable": true
         }, 
         {
-            "action_type": "SET_UI_COMP_TEXT", 
+            "action_type": "SET_VARIABLE", 
             "args_list": [
                 {
-                    "arg_type": 100025, 
+                    "arg_type": 100030, 
                     "args_list": [
                         {
                             "__tuple__": true, 
                             "items": [
-                                "PLAYER", 
-                                "当前玩家", 
+                                "TABLE", 
+                                "当前玩家武器表", 
                                 "local"
                             ]
                         }
                     ], 
-                    "sub_type": "VARIABLE"
+                    "sub_type": 1
                 }, 
                 {
-                    "arg_type": 100070, 
+                    "arg_type": 100011, 
                     "args_list": [
-                        "d7ebc9b2-b0d5-48ce-8f93-67a90e2d1406"
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "武器表"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_TABLE_KV"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 867516527985543, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        [
+                            "TABLE", 
+                            "当前玩家宝物表", 
+                            "local"
+                        ]
                     ], 
                     "sub_type": 1
                 }, 
                 {
-                    "arg_type": 100003, 
+                    "arg_type": 100011, 
                     "args_list": [
                         {
-                            "arg_type": 100002, 
+                            "arg_type": 100025, 
                             "args_list": [
                                 {
-                                    "arg_type": 100011, 
-                                    "args_list": [
-                                        "0b49572b-6cff-4699-9a57-e3425b37012d"
-                                    ], 
-                                    "sub_type": 1
-                                }, 
-                                {
-                                    "arg_type": 100002, 
-                                    "args_list": [
-                                        {
-                                            "__tuple__": true, 
-                                            "items": [
-                                                "INTEGER", 
-                                                "当前玩家索引", 
-                                                "local"
-                                            ]
-                                        }
-                                    ], 
-                                    "sub_type": 6
-                                }, 
-                                {
-                                    "arg_type": 100003, 
-                                    "args_list": [
-                                        "银币"
-                                    ], 
-                                    "sub_type": 1
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
                                 }
                             ], 
-                            "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "宝物表"
+                            ], 
+                            "sub_type": 1
                         }
                     ], 
-                    "sub_type": "ANY_VAR_TO_STR"
+                    "sub_type": "GET_TABLE_KV"
                 }
             ], 
             "bp": false, 
-            "element_id": 129319031985412, 
+            "element_id": 867516527985544, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "TABLE", 
+                                "当前玩家商店道具集合表", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "商店道具集合表"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_TABLE_KV"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 867516527985589, 
             "enable": true
         }, 
         {
@@ -747,29 +308,68 @@
                                 }
                             ], 
                             "sub_type": "VARIABLE"
-                        }, 
+                        }
+                    ], 
+                    "op_arg": [], 
+                    "op_arg_enable": [], 
+                    "sub_type": "f17a03bea8ae11ef94107f086ac73d1a"
+                }
+            ], 
+            "bp": false, 
+            "call_rt_arg_idxes": [], 
+            "element_id": 867516527985648, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_VISIBLE", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
                         {
-                            "arg_type": 100002, 
+                            "__tuple__": true, 
+                            "items": [
+                                "PLAYER", 
+                                "当前玩家", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "b3e82565-7c71-4538-8214-8b2dde7da0bd"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 867516527985527, 
+            "enable": true
+        }, 
+        {
+            "action_type": "CALL_TRIGGER_FUNC", 
+            "args_list": [
+                {
+                    "arg_type": 100177, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
                             "args_list": [
                                 {
                                     "__tuple__": true, 
                                     "items": [
-                                        "INTEGER", 
-                                        "当前玩家索引", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 6
-                        }, 
-                        {
-                            "arg_type": 100011, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "TABLE", 
-                                        "当前玩家阵容表", 
+                                        "PLAYER", 
+                                        "当前玩家", 
                                         "local"
                                     ]
                                 }
@@ -794,20 +394,6 @@
                     "arg_type": 100177, 
                     "args_list": [
                         {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "INTEGER", 
-                                        "当前玩家索引", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 6
-                        }, 
-                        {
                             "arg_type": 100025, 
                             "args_list": [
                                 {
@@ -815,197 +401,6 @@
                                     "items": [
                                         "PLAYER", 
                                         "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100011, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "TABLE", 
-                                        "当前玩家阵容表", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }
-                    ], 
-                    "op_arg": [], 
-                    "op_arg_enable": [], 
-                    "sub_type": "a4b196bc8f8911efb739b3e740272676"
-                }
-            ], 
-            "bp": false, 
-            "call_rt_arg_idxes": [], 
-            "element_id": 867516527000023, 
-            "enable": true
-        }, 
-        {
-            "action_type": "CALL_TRIGGER_FUNC", 
-            "args_list": [
-                {
-                    "arg_type": 100177, 
-                    "args_list": [
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "INTEGER", 
-                                        "当前玩家索引", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 6
-                        }, 
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "PLAYER", 
-                                        "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100011, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "TABLE", 
-                                        "当前玩家阵容表", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100011, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "TABLE", 
-                                        "当前玩家武器表", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }
-                    ], 
-                    "op_arg": [], 
-                    "op_arg_enable": [], 
-                    "sub_type": "d0ada114966511efa5d6b39d952ea0b6"
-                }
-            ], 
-            "bp": false, 
-            "call_rt_arg_idxes": [], 
-            "element_id": 867516527000034, 
-            "enable": true
-        }, 
-        {
-            "action_type": "CALL_TRIGGER_FUNC", 
-            "args_list": [
-                {
-                    "arg_type": 100177, 
-                    "args_list": [
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "INTEGER", 
-                                        "当前玩家索引", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 6
-                        }, 
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "PLAYER", 
-                                        "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100011, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "TABLE", 
-                                        "当前玩家阵容表", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }
-                    ], 
-                    "op_arg": [], 
-                    "op_arg_enable": [], 
-                    "sub_type": "0facd279896d11ef8b426f92ef519bc6"
-                }
-            ], 
-            "bp": false, 
-            "call_rt_arg_idxes": [], 
-            "element_id": 867516527000024, 
-            "enable": false
-        }, 
-        {
-            "action_type": "CALL_TRIGGER_FUNC", 
-            "args_list": [
-                {
-                    "arg_type": 100177, 
-                    "args_list": [
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "PLAYER", 
-                                        "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100011, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "TABLE", 
-                                        "当前玩家阵容表", 
                                         "local"
                                     ]
                                 }
@@ -1028,207 +423,15 @@
             "args_list": [
                 {
                     "arg_type": 100177, 
-                    "args_list": [
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "PLAYER", 
-                                        "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100011, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "TABLE", 
-                                        "当前玩家阵容表", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }
-                    ], 
+                    "args_list": [], 
                     "op_arg": [], 
                     "op_arg_enable": [], 
-                    "sub_type": "b5ffddec895011efa590d992ce504adc"
+                    "sub_type": "d0ada114966511efa5d6b39d952ea0b6"
                 }
             ], 
             "bp": false, 
             "call_rt_arg_idxes": [], 
-            "element_id": 867516527000026, 
-            "enable": true
-        }, 
-        {
-            "action_type": "CALL_TRIGGER_FUNC", 
-            "args_list": [
-                {
-                    "arg_type": 100177, 
-                    "args_list": [
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "INTEGER", 
-                                        "当前玩家索引", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 6
-                        }, 
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "PLAYER", 
-                                        "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100011, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "TABLE", 
-                                        "当前玩家阵容表", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }
-                    ], 
-                    "op_arg": [], 
-                    "op_arg_enable": [], 
-                    "sub_type": "cde869508b7111efa20d47f4a98a9c63"
-                }
-            ], 
-            "bp": false, 
-            "call_rt_arg_idxes": [], 
-            "element_id": 867516527000027, 
-            "enable": true
-        }, 
-        {
-            "action_type": "CALL_TRIGGER_FUNC", 
-            "args_list": [
-                {
-                    "arg_type": 100177, 
-                    "args_list": [
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "INTEGER", 
-                                        "当前玩家索引", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 6
-                        }, 
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "PLAYER", 
-                                        "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }
-                    ], 
-                    "op_arg": [], 
-                    "op_arg_enable": [], 
-                    "sub_type": "8a0d4939912b11ef983f61f2139011f2"
-                }
-            ], 
-            "bp": false, 
-            "call_rt_arg_idxes": [], 
-            "element_id": 867516527000028, 
-            "enable": true
-        }, 
-        {
-            "action_type": "CALL_TRIGGER_FUNC", 
-            "args_list": [
-                {
-                    "arg_type": 100177, 
-                    "args_list": [
-                        {
-                            "arg_type": 100002, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "INTEGER", 
-                                        "当前玩家索引", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 6
-                        }, 
-                        {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "PLAYER", 
-                                        "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100011, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "TABLE", 
-                                        "当前玩家阵容表", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }
-                    ], 
-                    "op_arg": [], 
-                    "op_arg_enable": [], 
-                    "sub_type": "cee2b028914411ef89290b2024003700"
-                }
-            ], 
-            "bp": false, 
-            "call_rt_arg_idxes": [], 
-            "element_id": 867516527000029, 
+            "element_id": 867516527000034, 
             "enable": true
         }, 
         {
@@ -1381,7 +584,7 @@
     "event": [], 
     "func_category": "t_function", 
     "func_comment": "", 
-    "func_des": "函数描述{当前玩家}", 
+    "func_des": "为玩家{当前玩家}加载商店", 
     "func_id": "7fab52f0894f11ef95aad992ce504adc", 
     "func_name": "商店加载-新", 
     "func_param_list": [
@@ -1402,15 +605,19 @@
     "valid": true, 
     "var_data": [
         {
+            "DYNAMIC_TRIGGER_INSTANCE": {
+                "取消显示消息触发器": 0
+            }, 
             "INTEGER": {
                 "i": 0, 
-                "当前玩家ID": 0, 
-                "当前玩家索引": 0
+                "当前玩家ID": 0
             }, 
             "PLAYER": {
                 "当前玩家": 0
             }, 
             "TABLE": {
+                "当前玩家商店道具集合表": null, 
+                "当前玩家宝物表": null, 
                 "当前玩家武器表": null, 
                 "当前玩家阵容表": null
             }, 
@@ -1421,10 +628,12 @@
         }, 
         {
             "i": 0, 
+            "取消显示消息触发器": 0, 
             "当前玩家": 0, 
             "当前玩家ID": 0, 
+            "当前玩家商店道具集合表": 0, 
+            "当前玩家宝物表": 0, 
             "当前玩家武器表": 0, 
-            "当前玩家索引": 0, 
             "当前玩家阵容表": 0, 
             "待购买武将图片": 10
         }, 
@@ -1433,9 +642,11 @@
             "当前玩家阵容表", 
             "i", 
             "当前玩家ID", 
-            "当前玩家索引", 
             "待购买武将图片", 
-            "当前玩家武器表"
+            "取消显示消息触发器", 
+            "当前玩家宝物表", 
+            "当前玩家武器表", 
+            "当前玩家商店道具集合表"
         ]
     ]
 }
