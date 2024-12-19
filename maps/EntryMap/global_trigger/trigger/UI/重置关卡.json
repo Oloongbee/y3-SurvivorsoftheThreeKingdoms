@@ -1,0 +1,1643 @@
+{
+    "action": [
+        [
+            1612819659, 
+            "处理波次相关内容", 
+            1679900875, 
+            "action_type"
+        ], 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "波次计数"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        0
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1679900875987281, 
+            "enable": true
+        }, 
+        {
+            "action_type": "DELETE_TIMER", 
+            "args_list": [
+                {
+                    "arg_type": 100181, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "NEW_TIMER", 
+                                "波次计时器"
+                            ]
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1679900875987284, 
+            "enable": true
+        }, 
+        {
+            "action_type": "PICK_PLAYER_DO_ACTION", 
+            "args_list": [
+                {
+                    "arg_type": 100027, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "PLAYER_GROUP", 
+                                "正在游戏中的玩家"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 14
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "IF_THEN_ELSE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100021, 
+                                    "args_list": [
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100035, 
+                                                    "args_list": [
+                                                        "=="
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [
+                                                        1
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "condition_type": "PLAYER_COMPARE", 
+                                            "element_id": 1679900875000020, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        [
+                                            1029836027, 
+                                            "设置主页的难度UI隐藏", 
+                                            1679900875, 
+                                            "action_type"
+                                        ], 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "29405308-de31-4a08-b456-4bfe3f4e66c8"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000032, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "ebe044bc-cd07-42c9-9d33-aaded275d425"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000050, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "f0880ce4-d726-49ab-979a-83ee5d94e1c1"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000060, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "bb20cc39-edb2-4332-9854-3e302dc46468"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000071, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "6348263a-b32c-4837-8ee8-8dbc7ca9358f"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000117, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "CLEAR_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "阵容表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000144, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "CLEAR_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "宝物表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000153, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "CLEAR_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "武器表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000164, 
+                                            "enable": true
+                                        }, 
+                                        [
+                                            1234060054, 
+                                            "#######", 
+                                            1679900875, 
+                                            "action_type"
+                                        ], 
+                                        {
+                                            "action_type": "CLEAR_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "武器"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875987269, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "CLEAR_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "商店道具选择集合表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000189, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_ENTITY_KV", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "拥有武将数量"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 464564500987110, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_ENTITY_KV", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "拥有宝物数量"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 464564500987265, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "CALL_TRIGGER_FUNC", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100177, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }
+                                                    ], 
+                                                    "op_arg": [], 
+                                                    "op_arg_enable": [], 
+                                                    "sub_type": "8fc12ac4acb811efa16163990748b9ea"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "call_rt_arg_idxes": [], 
+                                            "element_id": 1679900875000416, 
+                                            "enable": true
+                                        }, 
+                                        [
+                                            1303291522, 
+                                            "处理主界面下方UI相关", 
+                                            1679900875, 
+                                            "action_type"
+                                        ], 
+                                        {
+                                            "action_type": "FOR_INT_DO_ACTION_NEW", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "i", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        1
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        5
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "PICKED_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100001, 
+                                                                    "args_list": [
+                                                                        false
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100025, 
+                                                                            "args_list": [], 
+                                                                            "sub_type": "PICKED_PLAYER"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100070, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [], 
+                                                                                    "sub_type": "PICKED_PLAYER"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100070, 
+                                                                                    "args_list": [
+                                                                                        "c0abfd5b-a22e-4cde-b259-3c97e0d3fbd7"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "主界面头像"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "INTEGER", 
+                                                                                                                "i", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 6
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                                                        }
+                                                                                    ], 
+                                                                                    "op_arg": [
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null
+                                                                                    ], 
+                                                                                    "op_arg_enable": [
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false
+                                                                                    ], 
+                                                                                    "sub_type": "STR_JOIN"
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "GET_UI_COMP_BY_PATH"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100003, 
+                                                                            "args_list": [
+                                                                                "血条"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_UI_COMP_BY_PATH"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 1679900875987367, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_IMAGE_NEW", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "PICKED_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100025, 
+                                                                            "args_list": [], 
+                                                                            "sub_type": "PICKED_PLAYER"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100070, 
+                                                                            "args_list": [
+                                                                                "c0abfd5b-a22e-4cde-b259-3c97e0d3fbd7"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100003, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        "主界面头像"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100002, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "__tuple__": true, 
+                                                                                                    "items": [
+                                                                                                        "INTEGER", 
+                                                                                                        "i", 
+                                                                                                        "local"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": 6
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "ANY_VAR_TO_STR"
+                                                                                }
+                                                                            ], 
+                                                                            "op_arg": [
+                                                                                null, 
+                                                                                null, 
+                                                                                null, 
+                                                                                null, 
+                                                                                null, 
+                                                                                null, 
+                                                                                null, 
+                                                                                null
+                                                                            ], 
+                                                                            "op_arg_enable": [
+                                                                                false, 
+                                                                                false, 
+                                                                                false, 
+                                                                                false, 
+                                                                                false, 
+                                                                                false, 
+                                                                                false, 
+                                                                                false
+                                                                            ], 
+                                                                            "sub_type": "STR_JOIN"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_UI_COMP_BY_PATH"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100115, 
+                                                                    "args_list": [
+                                                                        134234250
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 1679900875987287, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875987290, 
+                                            "enable": true, 
+                                            "op_arg": [
+                                                null
+                                            ], 
+                                            "op_arg_enable": [
+                                                false
+                                            ]
+                                        }, 
+                                        [
+                                            1644713398, 
+                                            "处理玩家等级以及经验", 
+                                            1679900875, 
+                                            "action_type"
+                                        ], 
+                                        {
+                                            "action_type": "CALL_TRIGGER_FUNC", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100177, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }
+                                                    ], 
+                                                    "op_arg": [], 
+                                                    "op_arg_enable": [], 
+                                                    "sub_type": "42e09043b50c11efb1619184d6cf1668"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "call_rt_arg_idxes": [], 
+                                            "element_id": 1679900875987356, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "29405308-de31-4a08-b456-4bfe3f4e66c8"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000041, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "ebe044bc-cd07-42c9-9d33-aaded275d425"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000083, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "f0880ce4-d726-49ab-979a-83ee5d94e1c1"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000092, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "bb20cc39-edb2-4332-9854-3e302dc46468"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000101, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "6348263a-b32c-4837-8ee8-8dbc7ca9358f"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000128, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "CLEAR_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "阵容表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000202, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "CLEAR_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "宝物表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000211, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "CLEAR_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "武器表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000220, 
+                                            "enable": true
+                                        }, 
+                                        [
+                                            1249815766, 
+                                            "#######", 
+                                            1679900875, 
+                                            "action_type"
+                                        ], 
+                                        {
+                                            "action_type": "CLEAR_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "武器"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000229, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "CLEAR_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "商店道具选择集合表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000238, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_ENTITY_KV", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "拥有武将数量"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000275, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_ENTITY_KV", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "拥有宝物数量"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875000305, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "CALL_TRIGGER_FUNC", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100177, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }
+                                                    ], 
+                                                    "op_arg": [], 
+                                                    "op_arg_enable": [], 
+                                                    "sub_type": "8fc12ac4acb811efa16163990748b9ea"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "call_rt_arg_idxes": [], 
+                                            "element_id": 1679900875000409, 
+                                            "enable": true
+                                        }, 
+                                        [
+                                            1376435131, 
+                                            "处理主界面下方UI相关", 
+                                            1679900875, 
+                                            "action_type"
+                                        ], 
+                                        {
+                                            "action_type": "FOR_INT_DO_ACTION_NEW", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "i", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        1
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        5
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "PICKED_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100001, 
+                                                                    "args_list": [
+                                                                        false
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100025, 
+                                                                            "args_list": [], 
+                                                                            "sub_type": "PICKED_PLAYER"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100070, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [], 
+                                                                                    "sub_type": "PICKED_PLAYER"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100070, 
+                                                                                    "args_list": [
+                                                                                        "c0abfd5b-a22e-4cde-b259-3c97e0d3fbd7"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "主界面头像"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "INTEGER", 
+                                                                                                                "i", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 6
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                                                        }
+                                                                                    ], 
+                                                                                    "op_arg": [
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null
+                                                                                    ], 
+                                                                                    "op_arg_enable": [
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false
+                                                                                    ], 
+                                                                                    "sub_type": "STR_JOIN"
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "GET_UI_COMP_BY_PATH"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100003, 
+                                                                            "args_list": [
+                                                                                "血条"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_UI_COMP_BY_PATH"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 1679900875987394, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_IMAGE_NEW", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "PICKED_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100025, 
+                                                                            "args_list": [], 
+                                                                            "sub_type": "PICKED_PLAYER"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100070, 
+                                                                            "args_list": [
+                                                                                "c0abfd5b-a22e-4cde-b259-3c97e0d3fbd7"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100003, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        "主界面头像"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100002, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "__tuple__": true, 
+                                                                                                    "items": [
+                                                                                                        "INTEGER", 
+                                                                                                        "i", 
+                                                                                                        "local"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": 6
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "ANY_VAR_TO_STR"
+                                                                                }
+                                                                            ], 
+                                                                            "op_arg": [
+                                                                                null, 
+                                                                                null, 
+                                                                                null, 
+                                                                                null, 
+                                                                                null, 
+                                                                                null, 
+                                                                                null, 
+                                                                                null
+                                                                            ], 
+                                                                            "op_arg_enable": [
+                                                                                false, 
+                                                                                false, 
+                                                                                false, 
+                                                                                false, 
+                                                                                false, 
+                                                                                false, 
+                                                                                false, 
+                                                                                false
+                                                                            ], 
+                                                                            "sub_type": "STR_JOIN"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_UI_COMP_BY_PATH"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100115, 
+                                                                    "args_list": [
+                                                                        134234250
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 1679900875987333, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875987323, 
+                                            "enable": true, 
+                                            "op_arg": [
+                                                null
+                                            ], 
+                                            "op_arg_enable": [
+                                                false
+                                            ]
+                                        }, 
+                                        [
+                                            1522752231, 
+                                            "处理玩家等级以及经验", 
+                                            1679900875, 
+                                            "action_type"
+                                        ], 
+                                        {
+                                            "action_type": "CALL_TRIGGER_FUNC", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100177, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }
+                                                    ], 
+                                                    "op_arg": [], 
+                                                    "op_arg_enable": [], 
+                                                    "sub_type": "42e09043b50c11efb1619184d6cf1668"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "call_rt_arg_idxes": [], 
+                                            "element_id": 1679900875987363, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1679900875000011, 
+                            "enable": true, 
+                            "fake_op": [
+                                2
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1679900875000003, 
+            "enable": true
+        }, 
+        [
+            1920888996, 
+            "初始化表格部分", 
+            1679900875, 
+            "action_type"
+        ], 
+        [
+            1260196770, 
+            "          初始化锁定表", 
+            1679900875, 
+            "action_type"
+        ], 
+        {
+            "action_type": "PICK_PLAYER_DO_ACTION", 
+            "args_list": [
+                {
+                    "arg_type": 100027, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "PLAYER_GROUP", 
+                                "正在游戏中的玩家"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 14
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "TRAVERSE_TABLE_NEW", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100011, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "PICKED_PLAYER"
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "道具商店道具选择控件表"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_TABLE_KV"
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_TABLE_VALUE_ND", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "道具商店道具选择控件表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [], 
+                                                    "sub_type": "ITER_TABLE_KEY_INT"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "是否锁定"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875987422, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_TABLE_VALUE_ND", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "PICKED_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "道具商店道具选择控件表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [], 
+                                                    "sub_type": "ITER_TABLE_KEY_INT"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "锁定格子对应索引"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1679900875987433, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1679900875987409, 
+                            "enable": true, 
+                            "op_arg": [
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        true
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "op_arg_enable": [
+                                false
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1679900875987401, 
+            "enable": true
+        }, 
+        [
+            1512269228, 
+            "调试部分", 
+            1679900875, 
+            "action_type"
+        ], 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "重置关卡：重置关卡"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1679900875000317, 
+            "enable": false
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [
+        {
+            "args_list": [
+                {
+                    "arg_type": 100238, 
+                    "args_list": [
+                        1219341862
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "element_id": 1679900875000109, 
+            "enable": true, 
+            "event_type": "RECEIVE_CUSTOM_EVENT"
+        }
+    ], 
+    "group_id": "mwYa66ytEe+ExmOZB0i56q", 
+    "p_trigger_id": null, 
+    "trigger_id": 1679900875, 
+    "trigger_name": "重置关卡", 
+    "valid": true, 
+    "var_data": [
+        {
+            "INTEGER": {
+                "i": 0
+            }
+        }, 
+        {
+            "i": 0
+        }, 
+        [
+            "i"
+        ]
+    ]
+}

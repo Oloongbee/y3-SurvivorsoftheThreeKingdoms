@@ -1,0 +1,1358 @@
+{
+    "action": [
+        {
+            "action_type": "IF_THEN_ELSE", 
+            "args_list": [
+                {
+                    "arg_type": 100021, 
+                    "args_list": [
+                        {
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [], 
+                                    "sub_type": "TRIGGER_PLAYER"
+                                }, 
+                                {
+                                    "arg_type": 100035, 
+                                    "args_list": [
+                                        "=="
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [
+                                        1
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "condition_type": "PLAYER_COMPARE", 
+                            "element_id": 315232450000002, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "SET_UI_COMP_VISIBLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [
+                                        1
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        false
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100070, 
+                                    "args_list": [
+                                        "bb20cc39-edb2-4332-9854-3e302dc46468"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 315232450000003, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SET_UI_COMP_VISIBLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [
+                                        1
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        true
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100070, 
+                                    "args_list": [
+                                        "f0880ce4-d726-49ab-979a-83ee5d94e1c1"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 315232450000004, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "准备玩家数量"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "准备玩家数量"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }, 
+                                        {
+                                            "arg_type": 100016, 
+                                            "args_list": [
+                                                "+"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                1
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "MATH_OPERATION"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 315232450000005, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SET_TABLE_VALUE_ND", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100011, 
+                                    "args_list": [
+                                        "34cf1c55-3c1e-45b7-9a5e-3a763110b1d2"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [
+                                                1
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "PLAYER_ID_NUMBER"
+                                }, 
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "是否准备"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        true
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 315232450000006, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "PICK_PLAYER_DO_ACTION", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100027, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "PLAYER_GROUP", 
+                                                "正在游戏中的玩家"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 14
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "IF_THEN_ELSE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100021, 
+                                                    "args_list": [
+                                                        {
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "PICKED_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100035, 
+                                                                    "args_list": [
+                                                                        "!="
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        1
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "condition_type": "ANY_COMPARE", 
+                                                            "element_id": 315232450000007, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "PICKED_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100001, 
+                                                                    "args_list": [
+                                                                        true
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "6348263a-b32c-4837-8ee8-8dbc7ca9358f"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 315232450000008, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "PICKED_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100001, 
+                                                                    "args_list": [
+                                                                        true
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "ebe044bc-cd07-42c9-9d33-aaded275d425"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 315232450000009, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000010, 
+                                            "enable": true, 
+                                            "fake_op": []
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 315232450000011, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "IF_THEN_ELSE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100021, 
+                                    "args_list": [
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "准备玩家数量"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100015, 
+                                                    "args_list": [
+                                                        ">="
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100027, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER_GROUP", 
+                                                                                "正在游戏中的玩家"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 14
+                                                                }
+                                                            ], 
+                                                            "sub_type": "PLAYER_T"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100016, 
+                                                            "args_list": [
+                                                                "-"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                1
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "MATH_OPERATION"
+                                                }
+                                            ], 
+                                            "condition_type": "FLOAT_COMPARE", 
+                                            "element_id": 315232450000012, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [
+                                                        1
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "37d3acd1-33b8-45ed-8d74-000f4e9b265a"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000013, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "PICK_PLAYER_DO_ACTION", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100027, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "PLAYER_GROUP", 
+                                                                "正在游戏中的玩家"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 14
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "PICKED_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100001, 
+                                                                    "args_list": [
+                                                                        false
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "37d3acd1-33b8-45ed-8d74-000f4e9b265a"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 315232450000014, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000015, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SEND_CUSTOM_EVENT", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100238, 
+                                                    "args_list": [
+                                                        1219341862
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000049, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SEND_CUSTOM_EVENT", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100238, 
+                                                    "args_list": [
+                                                        1227245424
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000016, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [
+                                                        1
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        true
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "0f4902c6-4139-4168-af87-512096d994e5"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000017, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "RUN_ONCE_TIMER_NO_SAVE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        1.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        1
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100001, 
+                                                                    "args_list": [
+                                                                        false
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "0f4902c6-4139-4168-af87-512096d994e5"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 315232450000018, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000019, 
+                                            "enable": true, 
+                                            "local_var": {
+                                                "__tuple__": true, 
+                                                "items": [
+                                                    {}, 
+                                                    {}
+                                                ]
+                                            }
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 315232450000020, 
+                            "enable": true, 
+                            "fake_op": [
+                                2
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "IF_THEN_ELSE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100021, 
+                                    "args_list": [
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100011, 
+                                                            "args_list": [
+                                                                "34cf1c55-3c1e-45b7-9a5e-3a763110b1d2"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                }
+                                                            ], 
+                                                            "sub_type": "PLAYER_ID_NUMBER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "是否准备"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_BOOLEAN_TABLE_VAR_ND"
+                                                }, 
+                                                {
+                                                    "arg_type": 100035, 
+                                                    "args_list": [
+                                                        "=="
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "condition_type": "BOOL_COMPARE", 
+                                            "element_id": 315232450000021, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_TABLE_VALUE_ND", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        "34cf1c55-3c1e-45b7-9a5e-3a763110b1d2"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "TRIGGER_PLAYER"
+                                                        }
+                                                    ], 
+                                                    "sub_type": "PLAYER_ID_NUMBER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "是否准备"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        true
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000022, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "准备玩家数量"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "准备玩家数量"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100016, 
+                                                            "args_list": [
+                                                                "+"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                1
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "MATH_OPERATION"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000023, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100175, 
+                                                    "args_list": [
+                                                        3
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "选择关卡：当前准备玩家计数为"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "准备玩家数量"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }
+                                                            ], 
+                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                        }
+                                                    ], 
+                                                    "op_arg": [
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null
+                                                    ], 
+                                                    "op_arg_enable": [
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false
+                                                    ], 
+                                                    "sub_type": "STR_JOIN"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000024, 
+                                            "enable": false
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "ebe044bc-cd07-42c9-9d33-aaded275d425"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000025, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        true
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "f0880ce4-d726-49ab-979a-83ee5d94e1c1"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000026, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "IF_THEN_ELSE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100021, 
+                                                    "args_list": [
+                                                        {
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "准备玩家数量"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100015, 
+                                                                    "args_list": [
+                                                                        ">="
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100027, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "PLAYER_GROUP", 
+                                                                                                "正在游戏中的玩家"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 14
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "PLAYER_T"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100016, 
+                                                                            "args_list": [
+                                                                                "-"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                0
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "MATH_OPERATION"
+                                                                }
+                                                            ], 
+                                                            "condition_type": "FLOAT_COMPARE", 
+                                                            "element_id": 315232450000027, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        1
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100001, 
+                                                                    "args_list": [
+                                                                        false
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "37d3acd1-33b8-45ed-8d74-000f4e9b265a"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 315232450000028, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "PICK_PLAYER_DO_ACTION", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100027, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER_GROUP", 
+                                                                                "正在游戏中的玩家"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 14
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [], 
+                                                                                    "sub_type": "PICKED_PLAYER"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100001, 
+                                                                                    "args_list": [
+                                                                                        false
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100070, 
+                                                                                    "args_list": [
+                                                                                        "37d3acd1-33b8-45ed-8d74-000f4e9b265a"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 315232450000029, 
+                                                                            "enable": true
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 315232450000030, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SEND_CUSTOM_EVENT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100238, 
+                                                                    "args_list": [
+                                                                        1219341862
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 315232450000044, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SEND_CUSTOM_EVENT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100238, 
+                                                                    "args_list": [
+                                                                        1227245424
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 315232450000031, 
+                                                            "enable": true
+                                                        }, 
+                                                        [
+                                                            1515675781, 
+                                                            "将所有界面初始化为原本界面", 
+                                                            315232450, 
+                                                            "action_type"
+                                                        ]
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        1
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100001, 
+                                                                    "args_list": [
+                                                                        true
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "181e00a1-ccf9-4a19-a5cd-bd7133bb8255"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 315232450000032, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000035, 
+                                            "enable": true, 
+                                            "fake_op": [
+                                                2
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_TABLE_VALUE_ND", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        "34cf1c55-3c1e-45b7-9a5e-3a763110b1d2"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "TRIGGER_PLAYER"
+                                                        }
+                                                    ], 
+                                                    "sub_type": "PLAYER_ID_NUMBER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "是否准备"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000036, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "准备玩家数量"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "准备玩家数量"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100016, 
+                                                            "args_list": [
+                                                                "-"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                1
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "MATH_OPERATION"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000037, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "f0880ce4-d726-49ab-979a-83ee5d94e1c1"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000038, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        true
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        "ebe044bc-cd07-42c9-9d33-aaded275d425"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 315232450000039, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 315232450000040, 
+                            "enable": true, 
+                            "fake_op": [
+                                2
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 315232450000041, 
+            "enable": true, 
+            "fake_op": [
+                2
+            ]
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [
+        {
+            "args_list": [
+                {
+                    "arg_type": 100067, 
+                    "args_list": [
+                        "开始游戏"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "element_id": 315232450000001, 
+            "enable": true, 
+            "event_type": "TRIGGER_COMPONENT_EVENT"
+        }
+    ], 
+    "group_id": "qN+RxqviEe+3Agc9sN3XRG", 
+    "p_trigger_id": null, 
+    "trigger_id": 315232450, 
+    "trigger_name": "准备开始（游戏开始) 12.2-lwx", 
+    "valid": true, 
+    "var_data": [
+        {
+            "INTEGER": {}
+        }, 
+        {}, 
+        []
+    ]
+}

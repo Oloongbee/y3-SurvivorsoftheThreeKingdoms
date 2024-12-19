@@ -1,0 +1,855 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+	<Sub />
+	<Entity type="ParticleSystem">
+		<Name />
+		<Emitters count="3" ordered="true">
+			<Element index="0">
+				<Root>
+					<Sub />
+					<Entity type="ParticleEmitter">
+						<Name>Gole001</Name>
+						<Enable>false</Enable>
+						<Elements count="15" ordered="true">
+							<Element index="0">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementResistance">
+										<Name />
+										<Enable>true</Enable>
+										<ResistanceConstant>4</ResistanceConstant>
+										<ResistanceLinear>0.200000003</ResistanceLinear>
+										<ResistanceQuadratic>0</ResistanceQuadratic>
+										<DelayApply>0</DelayApply>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="1">
+								<Root>
+									<Sub />
+									<Entity type="TwParticleElementForce">
+										<Name />
+										<Enable>true</Enable>
+										<Force>(0, -50, 0)</Force>
+										<DelayApply>0.0</DelayApply>
+										<AlwaysLocal>true</AlwaysLocal>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="2">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementSize3DByLife">
+										<Name />
+										<Enable>true</Enable>
+										<SizeCurveX>
+											<Nodes count="2" ordered="true">
+												<Element index="0">
+													<Time>0.0</Time>
+													<Value>0.160000026</Value>
+												</Element>
+												<Element index="1">
+													<Time>1.0</Time>
+													<Value>0.160000026</Value>
+												</Element>
+											</Nodes>
+										</SizeCurveX>
+										<CurveGuid>00000000-0000-0000-0000-000000000000</CurveGuid>
+										<SizeCurveY>
+											<Nodes count="2" ordered="true">
+												<Element index="0">
+													<Time>0.0</Time>
+													<Value>0.160000026</Value>
+												</Element>
+												<Element index="1">
+													<Time>1.0</Time>
+													<Value>0.160000026</Value>
+												</Element>
+											</Nodes>
+										</SizeCurveY>
+										<SizeCurveZ>
+											<Nodes count="2" ordered="true">
+												<Element index="0">
+													<Time>0.0</Time>
+													<Value>0.160000026</Value>
+												</Element>
+												<Element index="1">
+													<Time>1.0</Time>
+													<Value>0.160000026</Value>
+												</Element>
+											</Nodes>
+										</SizeCurveZ>
+										<CoupledMode>true</CoupledMode>
+										<Constraint>None</Constraint>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="3">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementColorByLife">
+										<Name />
+										<Enable>true</Enable>
+										<ColorCurve>
+											<Nodes count="1" ordered="true">
+												<Element index="0">
+													<Time>0.0</Time>
+													<Value>(1, 0.672443151473999, 0.35153263807296753, 1)</Value>
+												</Element>
+											</Nodes>
+										</ColorCurve>
+										<CurveGuid>00000000-0000-0000-0000-000000000000</CurveGuid>
+										<CoupledMode>false</CoupledMode>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="4">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementAlphaByLife">
+										<Name />
+										<Enable>true</Enable>
+										<AlphaCurve>
+											<Nodes count="2" ordered="true">
+												<Element index="0">
+													<Time>0.0</Time>
+													<Value>1.0</Value>
+												</Element>
+												<Element index="1">
+													<Time>0.99272728</Time>
+													<Value>0.0</Value>
+												</Element>
+											</Nodes>
+										</AlphaCurve>
+										<CurveGuid>00000000-0000-0000-0000-000000000000</CurveGuid>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="5">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitVelocity">
+										<Name />
+										<Enable>true</Enable>
+										<VelocityDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionCylinder">
+													<Center>(0.20000000298023224, 30, 0.5)</Center>
+													<Axis>(0, 0, 0)</Axis>
+													<MinRadius>0.0</MinRadius>
+													<MaxRadius>1.0</MaxRadius>
+													<Name />
+												</Entity>
+											</Root>
+										</VelocityDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="6">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitSpinRate">
+										<Name />
+										<Enable>true</Enable>
+										<SpinRateDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionUniformVector3">
+													<Name />
+													<MinValue>(-5, -20, 3)</MinValue>
+													<MaxValue>(5, 10, -3)</MaxValue>
+												</Entity>
+											</Root>
+										</SpinRateDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="7">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitSpin">
+										<Name />
+										<Enable>true</Enable>
+										<SpinDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionUniformVector3">
+													<Name />
+													<MinValue>(2.094395160675049, -1.3962634801864624, 3.1415927410125732)</MinValue>
+													<MaxValue>(-2.094395160675049, 1.3962634801864624, -3.1415927410125732)</MaxValue>
+												</Entity>
+											</Root>
+										</SpinDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="8">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitSize">
+										<Name />
+										<Enable>true</Enable>
+										<SizeDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionUniformFloat">
+													<Name />
+													<MinValue>0.100000001</MinValue>
+													<MaxValue>0.25</MaxValue>
+												</Entity>
+											</Root>
+										</SizeDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="9">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitPosition">
+										<Name />
+										<Enable>true</Enable>
+										<PositionDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionCylinder">
+													<Center>(0, 0, 0)</Center>
+													<Axis>(0, 1, 0)</Axis>
+													<MinRadius>0.200000003</MinRadius>
+													<MaxRadius>1.5</MaxRadius>
+													<Name />
+												</Entity>
+											</Root>
+										</PositionDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="10">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitLife">
+										<Name />
+										<Enable>true</Enable>
+										<LifeDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionUniformFloat">
+													<Name />
+													<MinValue>2.0</MinValue>
+													<MaxValue>3.0</MaxValue>
+												</Entity>
+											</Root>
+										</LifeDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="11">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitEmission">
+										<Name />
+										<Enable>true</Enable>
+										<EmissionDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionUniformFloat">
+													<Name />
+													<MinValue>0.0</MinValue>
+													<MaxValue>0.0</MaxValue>
+												</Entity>
+											</Root>
+										</EmissionDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="12">
+								<Root>
+									<Sub />
+									<Entity type="TwParticleElementSource">
+										<Name />
+										<Enable>true</Enable>
+										<EmissionRate>30.0</EmissionRate>
+										<EmissionDuration>0.300000012</EmissionDuration>
+										<EmissionDelay>0.0</EmissionDelay>
+										<EmissionBurst>1</EmissionBurst>
+										<TimeTriggered>true</TimeTriggered>
+										<ActiveDuration>1.0</ActiveDuration>
+										<SleepDuration>0.0</SleepDuration>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="13">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementProperty">
+										<Name />
+										<Enable>true</Enable>
+										<Local>true</Local>
+										<MaxParticles>64</MaxParticles>
+										<DepthTest>true</DepthTest>
+										<LODGroup>Low</LODGroup>
+										<DepthWrite>false</DepthWrite>
+										<SortMode>ByDistance</SortMode>
+										<Scale>(1, 1, 1)</Scale>
+										<Rotation>(0, 0, 0)</Rotation>
+										<Translation>(0, 0, 0)</Translation>
+										<FadeDistance>0.0</FadeDistance>
+										<DepthOffset>0.0</DepthOffset>
+										<DelayTime>0.0</DelayTime>
+										<DelayTimeRandom>0.0</DelayTimeRandom>
+										<WarmUpTime>0.0</WarmUpTime>
+										<RandomSeed>0</RandomSeed>
+										<MaterialInfo>
+											<Flags>32</Flags>
+											<Shader>Effect/Basic</Shader>
+											<Parameters>
+												<Item key="ModulateColor">(1, 1, 1, 1)</Item>
+												<Item key="Local">true</Item>
+												<Item key="Distortion">false</Item>
+												<Item key="Soft">false</Item>
+												<Item key="invFadeDistance">0</Item>
+											</Parameters>
+											<Textures>
+												<Item key="DiffuseTexture">33bd8e8e-9a92-4bbe-a455-750a38d9c0d9</Item>
+											</Textures>
+											<BaseMaterial>00000000-0000-0000-0000-000000000000</BaseMaterial>
+											<InactiveParameters />
+										</MaterialInfo>
+										<Distortion>false</Distortion>
+										<LowRate>0.200000003</LowRate>
+										<MediumRate>0.5</MediumRate>
+										<HightRate>1</HightRate>
+										<LogicalScale>1</LogicalScale>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="14">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementTypeDataMesh">
+										<Name />
+										<Enable>true</Enable>
+										<CenterOffset>(0, 0, 0)</CenterOffset>
+										<Effect>Basic</Effect>
+										<Solid>false</Solid>
+										<DoubleSided>false</DoubleSided>
+										<PostBlend>false</PostBlend>
+										<FaceCamera>false</FaceCamera>
+										<FixedRotation>true</FixedRotation>
+										<YAxisLocked>true</YAxisLocked>
+										<RepeatU>0</RepeatU>
+										<RepeatV>0</RepeatV>
+										<MeshPath>0f4e9472-2182-436d-a345-53318e730e99</MeshPath>
+									</Entity>
+								</Root>
+							</Element>
+						</Elements>
+					</Entity>
+				</Root>
+			</Element>
+			<Element index="1">
+				<Root>
+					<Sub />
+					<Entity type="ParticleEmitter">
+						<Name>spark01</Name>
+						<Enable>false</Enable>
+						<Elements count="12" ordered="true">
+							<Element index="0">
+								<Root>
+									<Sub />
+									<Entity type="TwParticleElementForce">
+										<Name />
+										<Enable>true</Enable>
+										<Force>(0, -50, 0)</Force>
+										<DelayApply>0.0</DelayApply>
+										<AlwaysLocal>true</AlwaysLocal>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="1">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementSizeByLife">
+										<Name />
+										<Enable>true</Enable>
+										<SizeCurve>
+											<Nodes count="30" ordered="true">
+												<Element index="0">
+													<Time>0.0</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="1">
+													<Time>0.0472727269</Time>
+													<Value>0.272000015</Value>
+												</Element>
+												<Element index="2">
+													<Time>0.0654545426</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="3">
+													<Time>0.105454542</Time>
+													<Value>0.299199998</Value>
+												</Element>
+												<Element index="4">
+													<Time>0.13454546</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="5">
+													<Time>0.181818187</Time>
+													<Value>0.299199998</Value>
+												</Element>
+												<Element index="6">
+													<Time>0.210909083</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="7">
+													<Time>0.25454545</Time>
+													<Value>0.163200006</Value>
+												</Element>
+												<Element index="8">
+													<Time>0.283636361</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="9">
+													<Time>0.316363633</Time>
+													<Value>0.244800001</Value>
+												</Element>
+												<Element index="10">
+													<Time>0.352727264</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="11">
+													<Time>0.385454535</Time>
+													<Value>0.0816000029</Value>
+												</Element>
+												<Element index="12">
+													<Time>0.421818167</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="13">
+													<Time>0.458181828</Time>
+													<Value>0.190400004</Value>
+												</Element>
+												<Element index="14">
+													<Time>0.476363629</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="15">
+													<Time>0.49818182</Time>
+													<Value>0.190400004</Value>
+												</Element>
+												<Element index="16">
+													<Time>0.549090922</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="17">
+													<Time>0.574545443</Time>
+													<Value>0.326400012</Value>
+												</Element>
+												<Element index="18">
+													<Time>0.603636384</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="19">
+													<Time>0.625454545</Time>
+													<Value>0.0</Value>
+												</Element>
+												<Element index="20">
+													<Time>0.665454566</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="21">
+													<Time>0.683636367</Time>
+													<Value>0.217600003</Value>
+												</Element>
+												<Element index="22">
+													<Time>0.720000029</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="23">
+													<Time>0.75272727</Time>
+													<Value>0.136000007</Value>
+												</Element>
+												<Element index="24">
+													<Time>0.792727292</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="25">
+													<Time>0.839999974</Time>
+													<Value>0.217600003</Value>
+												</Element>
+												<Element index="26">
+													<Time>0.879999995</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="27">
+													<Time>0.916363657</Time>
+													<Value>0.326400012</Value>
+												</Element>
+												<Element index="28">
+													<Time>0.945454538</Time>
+													<Value>1.36000001</Value>
+												</Element>
+												<Element index="29">
+													<Time>1.0</Time>
+													<Value>0.0</Value>
+												</Element>
+											</Nodes>
+										</SizeCurve>
+										<CurveGuid>00000000-0000-0000-0000-000000000000</CurveGuid>
+										<CoupledMode>true</CoupledMode>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="2">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementColorByLife">
+										<Name />
+										<Enable>true</Enable>
+										<ColorCurve>
+											<Nodes count="2" ordered="true">
+												<Element index="0">
+													<Time>0.0</Time>
+													<Value>(1, 0.28314876556396484, 0, 1)</Value>
+												</Element>
+												<Element index="1">
+													<Time>1.0</Time>
+													<Value>(1, 0.30054381489753723, 0.0003035269910469651, 0)</Value>
+												</Element>
+											</Nodes>
+										</ColorCurve>
+										<CurveGuid>00000000-0000-0000-0000-000000000000</CurveGuid>
+										<CoupledMode>false</CoupledMode>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="3">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitVelocity">
+										<Name />
+										<Enable>true</Enable>
+										<VelocityDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionCylinder">
+													<Center>(0, 30, 0)</Center>
+													<Axis>(0, 0, 0)</Axis>
+													<MinRadius>0.5</MinRadius>
+													<MaxRadius>1.0</MaxRadius>
+													<Name />
+												</Entity>
+											</Root>
+										</VelocityDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="4">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitSize">
+										<Name />
+										<Enable>true</Enable>
+										<SizeDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionUniformFloat">
+													<Name />
+													<MinValue>0.0500000007</MinValue>
+													<MaxValue>0.400000006</MaxValue>
+												</Entity>
+											</Root>
+										</SizeDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="5">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitRotation">
+										<Name />
+										<Enable>true</Enable>
+										<RotationDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionUniformFloat">
+													<Name />
+													<MinValue>-3.14159274</MinValue>
+													<MaxValue>3.14159274</MaxValue>
+												</Entity>
+											</Root>
+										</RotationDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="6">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitPosition">
+										<Name />
+										<Enable>true</Enable>
+										<PositionDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionCylinder">
+													<Center>(0, 0, 0)</Center>
+													<Axis>(0, 0, 0)</Axis>
+													<MinRadius>0.800000012</MinRadius>
+													<MaxRadius>1.60000002</MaxRadius>
+													<Name />
+												</Entity>
+											</Root>
+										</PositionDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="7">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitLife">
+										<Name />
+										<Enable>true</Enable>
+										<LifeDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionUniformFloat">
+													<Name />
+													<MinValue>2.0</MinValue>
+													<MaxValue>3.0</MaxValue>
+												</Entity>
+											</Root>
+										</LifeDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="8">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitEmission">
+										<Name />
+										<Enable>true</Enable>
+										<EmissionDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionUniformFloat">
+													<Name />
+													<MinValue>1.0</MinValue>
+													<MaxValue>1.0</MaxValue>
+												</Entity>
+											</Root>
+										</EmissionDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="9">
+								<Root>
+									<Sub />
+									<Entity type="TwParticleElementSource">
+										<Name />
+										<Enable>true</Enable>
+										<EmissionRate>22.0</EmissionRate>
+										<EmissionDuration>0.400000006</EmissionDuration>
+										<EmissionDelay>0.0</EmissionDelay>
+										<EmissionBurst>1</EmissionBurst>
+										<TimeTriggered>true</TimeTriggered>
+										<ActiveDuration>1.0</ActiveDuration>
+										<SleepDuration>0.0</SleepDuration>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="10">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementProperty">
+										<Name />
+										<Enable>true</Enable>
+										<Local>true</Local>
+										<MaxParticles>64</MaxParticles>
+										<DepthTest>true</DepthTest>
+										<LODGroup>Low</LODGroup>
+										<DepthWrite>false</DepthWrite>
+										<SortMode>ByDistance</SortMode>
+										<Scale>(1, 1, 1)</Scale>
+										<Rotation>(0, 0, 0)</Rotation>
+										<Translation>(0, 0, 0)</Translation>
+										<FadeDistance>0.0</FadeDistance>
+										<DepthOffset>0.0</DepthOffset>
+										<DelayTime>0.0</DelayTime>
+										<DelayTimeRandom>0.0</DelayTimeRandom>
+										<WarmUpTime>0.0</WarmUpTime>
+										<RandomSeed>0</RandomSeed>
+										<MaterialInfo>
+											<Flags>1048608</Flags>
+											<Shader>Particle</Shader>
+											<Parameters>
+												<Item key="InvFadeDistance">0</Item>
+												<Item key="ModulateColor">(10, 10, 10, 1)</Item>
+												<Item key="UVScale">(1, 1)</Item>
+												<Item key="Local">1</Item>
+											</Parameters>
+											<Textures>
+												<Item key="DiffuseTexture">f9b3b560-1db4-4cb7-83d6-3d653a876ab1</Item>
+											</Textures>
+											<BaseMaterial>00000000-0000-0000-0000-000000000000</BaseMaterial>
+											<InactiveParameters />
+										</MaterialInfo>
+										<Distortion>false</Distortion>
+										<LowRate>0.200000003</LowRate>
+										<MediumRate>0.5</MediumRate>
+										<HightRate>1</HightRate>
+										<LogicalScale>1</LogicalScale>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="11">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementTypeDataSprite">
+										<Name />
+										<Enable>true</Enable>
+										<RepeatU>1</RepeatU>
+										<RepeatV>1</RepeatV>
+										<Scale>(1, 1)</Scale>
+										<Pivot>(0, 0)</Pivot>
+										<Patch count="4" ordered="true">
+											<Element index="0">(-0.8125, 0.8125, 0.09375, 0.09375)</Element>
+											<Element index="1">(0.8125, 0.8125, 0.90625, 0.09375)</Element>
+											<Element index="2">(0.8125, -0.8125, 0.90625, 0.90625)</Element>
+											<Element index="3">(-0.8125, -0.8125, 0.09375, 0.90625)</Element>
+										</Patch>
+										<Facing>Camera</Facing>
+									</Entity>
+								</Root>
+							</Element>
+						</Elements>
+					</Entity>
+				</Root>
+			</Element>
+			<Element index="2">
+				<Root>
+					<Sub />
+					<Entity type="ParticleEmitter">
+						<Name>Heji</Name>
+						<Enable>true</Enable>
+						<Elements count="4" ordered="true">
+							<Element index="0">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementInitSize">
+										<Name />
+										<Enable>true</Enable>
+										<SizeDistribution>
+											<Root>
+												<Sub />
+												<Entity type="DistributionUniformFloat">
+													<Name />
+													<MinValue>0.5</MinValue>
+													<MaxValue>0.5</MaxValue>
+												</Entity>
+											</Root>
+										</SizeDistribution>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="1">
+								<Root>
+									<Sub />
+									<Entity type="TwParticleElementSource">
+										<Name />
+										<Enable>true</Enable>
+										<EmissionRate>1</EmissionRate>
+										<EmissionDuration>-1.0</EmissionDuration>
+										<EmissionDelay>0</EmissionDelay>
+										<EmissionBurst>1</EmissionBurst>
+										<TimeTriggered>true</TimeTriggered>
+										<ActiveDuration>1</ActiveDuration>
+										<SleepDuration>0</SleepDuration>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="2">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementProperty">
+										<Name />
+										<Enable>true</Enable>
+										<Local>true</Local>
+										<MaxParticles>64</MaxParticles>
+										<DepthTest>true</DepthTest>
+										<LODGroup>Low</LODGroup>
+										<DepthWrite>false</DepthWrite>
+										<SortMode>ByDistance</SortMode>
+										<Scale>(1, 1, 1)</Scale>
+										<Rotation>(0, 0, 0)</Rotation>
+										<Translation>(0, 0, 0)</Translation>
+										<FadeDistance>0.0</FadeDistance>
+										<DepthOffset>0.0</DepthOffset>
+										<DelayTime>0.0</DelayTime>
+										<DelayTimeRandom>0.0</DelayTimeRandom>
+										<WarmUpTime>0.0</WarmUpTime>
+										<RandomSeed>0</RandomSeed>
+										<MaterialInfo>
+											<Flags>1048608</Flags>
+											<Shader>Particle</Shader>
+											<Parameters>
+												<Item key="InvFadeDistance">0</Item>
+												<Item key="ModulateColor">(1, 1, 1, 1)</Item>
+												<Item key="UVScale">(1, 1)</Item>
+												<Item key="Local">1</Item>
+											</Parameters>
+											<Textures>
+												<Item key="DiffuseTexture">ffffffff-0100-0000-0100-000047000000</Item>
+											</Textures>
+											<BaseMaterial>00000000-0000-0000-0000-000000000000</BaseMaterial>
+											<InactiveParameters />
+										</MaterialInfo>
+										<Distortion>false</Distortion>
+										<LowRate>0.200000003</LowRate>
+										<MediumRate>0.5</MediumRate>
+										<HightRate>1</HightRate>
+										<LogicalScale>1</LogicalScale>
+									</Entity>
+								</Root>
+							</Element>
+							<Element index="3">
+								<Root>
+									<Sub />
+									<Entity type="ParticleElementTypeDataCombo">
+										<Name />
+										<Enable>true</Enable>
+										<SubEmitters count="2" ordered="true">
+											<Element index="0">Gole001</Element>
+											<Element index="1">spark01</Element>
+										</SubEmitters>
+										<LifeMode>Clamp</LifeMode>
+									</Entity>
+								</Root>
+							</Element>
+						</Elements>
+					</Entity>
+				</Root>
+			</Element>
+		</Emitters>
+		<Property>
+			<Enable>true</Enable>
+			<Events count="0" ordered="true" />
+			<Switches count="0" ordered="true" />
+			<Bias>(0, 0, 0)</Bias>
+			<FollowEntity>false</FollowEntity>
+			<StopEnd>true</StopEnd>
+			<ForcePrinciple>false</ForcePrinciple>
+			<InheritVisibility>false</InheritVisibility>
+			<StopImmediately>false</StopImmediately>
+			<PreviewRotation>(0, 0, 0)</PreviewRotation>
+			<PreviewTranslation>(0, 0, 0)</PreviewTranslation>
+			<PreviewLODGroup>High</PreviewLODGroup>
+			<PreviewCameraAttaching>None</PreviewCameraAttaching>
+			<PreviewLight>true</PreviewLight>
+			<EventParam />
+			<DelayTime>0</DelayTime>
+			<FadeOutTime>0</FadeOutTime>
+			<FadeOutType>Linear</FadeOutType>
+		</Property>
+	</Entity>
+</Root>

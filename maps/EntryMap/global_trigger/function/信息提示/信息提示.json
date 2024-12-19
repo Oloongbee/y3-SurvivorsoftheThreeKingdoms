@@ -1,0 +1,1573 @@
+{
+    "action": [
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "开始信息提示"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 2031001742000120, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SWITCH", 
+            "args_list": [
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "STRING", 
+                                "种类", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "商店提示"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "IF_THEN_ELSE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100021, 
+                                                    "args_list": [
+                                                        {
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "信息条数"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100015, 
+                                                                    "args_list": [
+                                                                        ">"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        6
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "condition_type": "FLOAT_COMPARE", 
+                                                            "element_id": 2031001742000579, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100175, 
+                                                                    "args_list": [
+                                                                        3
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "等待其余信息提示结束"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000626, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "RUN_LOOP_TIMER_NO_SAVE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        3
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100001, 
+                                                                    "args_list": [
+                                                                        true
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "IF_THEN_ELSE", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100021, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "INTEGER", 
+                                                                                                                "信息条数"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 6
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100015, 
+                                                                                                    "args_list": [
+                                                                                                        "<="
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        6
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "condition_type": "FLOAT_COMPARE", 
+                                                                                            "element_id": 2031001742000601, 
+                                                                                            "enable": true
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100022, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100175, 
+                                                                                                    "args_list": [
+                                                                                                        3
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100003, 
+                                                                                                    "args_list": [
+                                                                                                        "正式开始提示信息"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000635, 
+                                                                                            "enable": false
+                                                                                        }, 
+                                                                                        {
+                                                                                            "action_type": "DELETE_TIMER", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100181, 
+                                                                                                    "args_list": [], 
+                                                                                                    "sub_type": "CURRENT_EXPIRED_TIMER"
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000611, 
+                                                                                            "enable": true
+                                                                                        }, 
+                                                                                        {
+                                                                                            "action_type": "SET_VARIABLE", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100030, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "INTEGER", 
+                                                                                                                "信息条数"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100002, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "__tuple__": true, 
+                                                                                                                    "items": [
+                                                                                                                        "INTEGER", 
+                                                                                                                        "信息条数"
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": 6
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100016, 
+                                                                                                            "args_list": [
+                                                                                                                "+"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100002, 
+                                                                                                            "args_list": [
+                                                                                                                1
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "MATH_OPERATION"
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000445, 
+                                                                                            "enable": true
+                                                                                        }, 
+                                                                                        {
+                                                                                            "action_type": "SET_VARIABLE", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100030, 
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "INTEGER", 
+                                                                                                            "信息总条数"
+                                                                                                        ]
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100002, 
+                                                                                                            "args_list": [
+                                                                                                                [
+                                                                                                                    "INTEGER", 
+                                                                                                                    "信息总条数"
+                                                                                                                ]
+                                                                                                            ], 
+                                                                                                            "sub_type": 6
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100016, 
+                                                                                                            "args_list": [
+                                                                                                                "+"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100002, 
+                                                                                                            "args_list": [
+                                                                                                                1
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "MATH_OPERATION"
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000037, 
+                                                                                            "enable": true
+                                                                                        }, 
+                                                                                        {
+                                                                                            "action_type": "SET_VARIABLE", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100030, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "INTEGER", 
+                                                                                                                "当前信息标识", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "INTEGER", 
+                                                                                                                "信息总条数"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 6
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000806, 
+                                                                                            "enable": true
+                                                                                        }, 
+                                                                                        {
+                                                                                            "action_type": "SET_VARIABLE", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 1001558, 
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "UI_PREFAB_INSTANCE", 
+                                                                                                            "信息元件"
+                                                                                                        ], 
+                                                                                                        {
+                                                                                                            "arg_type": 100002, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "__tuple__": true, 
+                                                                                                                    "items": [
+                                                                                                                        "INTEGER", 
+                                                                                                                        "当前信息标识", 
+                                                                                                                        "local"
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": 6
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 1001558, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100025, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "__tuple__": true, 
+                                                                                                                    "items": [
+                                                                                                                        "PLAYER", 
+                                                                                                                        "玩家", 
+                                                                                                                        "local"
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": "VARIABLE"
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 1001556, 
+                                                                                                            "args_list": [
+                                                                                                                "659b02fa-42fc-47eb-acd4-2ff8ec6e9607"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100070, 
+                                                                                                            "args_list": [
+                                                                                                                "c2455536-109f-41d2-9d5c-e0978b97d141"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "CREATE_UI_PREFAB_INSTANCE"
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000021, 
+                                                                                            "enable": true
+                                                                                        }, 
+                                                                                        {
+                                                                                            "action_type": "SET_VARIABLE", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100030, 
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "UI_COMP", 
+                                                                                                            "信息标题文本控件", 
+                                                                                                            "local"
+                                                                                                        ]
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100070, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 1001558, 
+                                                                                                            "args_list": [
+                                                                                                                [
+                                                                                                                    "UI_PREFAB_INSTANCE", 
+                                                                                                                    "信息元件"
+                                                                                                                ], 
+                                                                                                                {
+                                                                                                                    "arg_type": 100002, 
+                                                                                                                    "args_list": [
+                                                                                                                        {
+                                                                                                                            "__tuple__": true, 
+                                                                                                                            "items": [
+                                                                                                                                "INTEGER", 
+                                                                                                                                "当前信息标识", 
+                                                                                                                                "local"
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ], 
+                                                                                                                    "sub_type": 6
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": "VARIABLE"
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "信息标题"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_UI_PREFAB_CHILD_BY_PATH"
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000144, 
+                                                                                            "enable": true
+                                                                                        }, 
+                                                                                        {
+                                                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100025, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "PLAYER", 
+                                                                                                                "玩家", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100070, 
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "UI_COMP", 
+                                                                                                            "信息标题文本控件", 
+                                                                                                            "local"
+                                                                                                        ]
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100003, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "STRING", 
+                                                                                                                "信息标题", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 2
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000094, 
+                                                                                            "enable": true
+                                                                                        }, 
+                                                                                        {
+                                                                                            "action_type": "SET_VARIABLE", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100030, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "UI_COMP", 
+                                                                                                                "信息详情文本控件", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100070, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 1001558, 
+                                                                                                            "args_list": [
+                                                                                                                [
+                                                                                                                    "UI_PREFAB_INSTANCE", 
+                                                                                                                    "信息元件"
+                                                                                                                ], 
+                                                                                                                {
+                                                                                                                    "arg_type": 100002, 
+                                                                                                                    "args_list": [
+                                                                                                                        {
+                                                                                                                            "__tuple__": true, 
+                                                                                                                            "items": [
+                                                                                                                                "INTEGER", 
+                                                                                                                                "当前信息标识", 
+                                                                                                                                "local"
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ], 
+                                                                                                                    "sub_type": 6
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": "VARIABLE"
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "信息详情"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_UI_PREFAB_CHILD_BY_PATH"
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000281, 
+                                                                                            "enable": true
+                                                                                        }, 
+                                                                                        {
+                                                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100025, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "PLAYER", 
+                                                                                                                "玩家", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100070, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "UI_COMP", 
+                                                                                                                "信息详情文本控件", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100003, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "STRING", 
+                                                                                                                "信息详情", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 2
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000298, 
+                                                                                            "enable": true
+                                                                                        }, 
+                                                                                        {
+                                                                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100175, 
+                                                                                                    "args_list": [
+                                                                                                        3
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100003, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "信息提示：当前控件"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "arg_type": 100070, 
+                                                                                                                    "args_list": [
+                                                                                                                        [
+                                                                                                                            "UI_COMP", 
+                                                                                                                            "信息标题文本控件", 
+                                                                                                                            "local"
+                                                                                                                        ]
+                                                                                                                    ], 
+                                                                                                                    "sub_type": "VARIABLE"
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "op_arg": [
+                                                                                                        null, 
+                                                                                                        null, 
+                                                                                                        null, 
+                                                                                                        null, 
+                                                                                                        null, 
+                                                                                                        null, 
+                                                                                                        null, 
+                                                                                                        null
+                                                                                                    ], 
+                                                                                                    "op_arg_enable": [
+                                                                                                        false, 
+                                                                                                        false, 
+                                                                                                        false, 
+                                                                                                        false, 
+                                                                                                        false, 
+                                                                                                        false, 
+                                                                                                        false, 
+                                                                                                        false
+                                                                                                    ], 
+                                                                                                    "sub_type": "STR_JOIN"
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000188, 
+                                                                                            "enable": false
+                                                                                        }, 
+                                                                                        {
+                                                                                            "action_type": "RUN_ONCE_TIMER_NO_SAVE", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "INTEGER", 
+                                                                                                                "提示时间", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 6
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100022, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "action_type": "DEL_UI_PREFAB_INS", 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "arg_type": 1001558, 
+                                                                                                                    "args_list": [
+                                                                                                                        [
+                                                                                                                            "UI_PREFAB_INSTANCE", 
+                                                                                                                            "信息元件"
+                                                                                                                        ], 
+                                                                                                                        {
+                                                                                                                            "arg_type": 100002, 
+                                                                                                                            "args_list": [
+                                                                                                                                {
+                                                                                                                                    "__tuple__": true, 
+                                                                                                                                    "items": [
+                                                                                                                                        "INTEGER", 
+                                                                                                                                        "当前信息标识", 
+                                                                                                                                        "local"
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ], 
+                                                                                                                            "sub_type": 6
+                                                                                                                        }
+                                                                                                                    ], 
+                                                                                                                    "sub_type": "VARIABLE"
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "bp": false, 
+                                                                                                            "element_id": 2031001742000089, 
+                                                                                                            "enable": true
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "action_type": "SET_VARIABLE", 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "arg_type": 100030, 
+                                                                                                                    "args_list": [
+                                                                                                                        {
+                                                                                                                            "__tuple__": true, 
+                                                                                                                            "items": [
+                                                                                                                                "INTEGER", 
+                                                                                                                                "信息条数"
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ], 
+                                                                                                                    "sub_type": 1
+                                                                                                                }, 
+                                                                                                                {
+                                                                                                                    "arg_type": 100002, 
+                                                                                                                    "args_list": [
+                                                                                                                        {
+                                                                                                                            "arg_type": 100002, 
+                                                                                                                            "args_list": [
+                                                                                                                                {
+                                                                                                                                    "__tuple__": true, 
+                                                                                                                                    "items": [
+                                                                                                                                        "INTEGER", 
+                                                                                                                                        "信息条数"
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ], 
+                                                                                                                            "sub_type": 6
+                                                                                                                        }, 
+                                                                                                                        {
+                                                                                                                            "arg_type": 100016, 
+                                                                                                                            "args_list": [
+                                                                                                                                "-"
+                                                                                                                            ], 
+                                                                                                                            "sub_type": 1
+                                                                                                                        }, 
+                                                                                                                        {
+                                                                                                                            "arg_type": 100002, 
+                                                                                                                            "args_list": [
+                                                                                                                                1
+                                                                                                                            ], 
+                                                                                                                            "sub_type": 1
+                                                                                                                        }
+                                                                                                                    ], 
+                                                                                                                    "sub_type": "MATH_OPERATION"
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "bp": false, 
+                                                                                                            "element_id": 2031001742000452, 
+                                                                                                            "enable": true
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "action_type": "DELETE_TIMER", 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "arg_type": 100181, 
+                                                                                                                    "args_list": [], 
+                                                                                                                    "sub_type": "CURRENT_EXPIRED_TIMER"
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "bp": false, 
+                                                                                                            "element_id": 2031001742000307, 
+                                                                                                            "enable": true
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 2031001742000048, 
+                                                                                            "enable": true, 
+                                                                                            "local_var": {
+                                                                                                "__tuple__": true, 
+                                                                                                "items": [
+                                                                                                    {}, 
+                                                                                                    {}
+                                                                                                ]
+                                                                                            }
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100022, 
+                                                                                    "args_list": [], 
+                                                                                    "sub_type": 1
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 2031001742000597, 
+                                                                            "enable": true, 
+                                                                            "fake_op": []
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000589, 
+                                                            "enable": true, 
+                                                            "local_var": {
+                                                                "__tuple__": true, 
+                                                                "items": [
+                                                                    {}, 
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100175, 
+                                                                    "args_list": [
+                                                                        3
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "正式开始提示信息"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000645, 
+                                                            "enable": false
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_VARIABLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100030, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "信息条数"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "INTEGER", 
+                                                                                        "信息条数"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": 6
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100016, 
+                                                                            "args_list": [
+                                                                                "+"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                1
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "MATH_OPERATION"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000652, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_VARIABLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100030, 
+                                                                    "args_list": [
+                                                                        [
+                                                                            "INTEGER", 
+                                                                            "信息总条数"
+                                                                        ]
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                [
+                                                                                    "INTEGER", 
+                                                                                    "信息总条数"
+                                                                                ]
+                                                                            ], 
+                                                                            "sub_type": 6
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100016, 
+                                                                            "args_list": [
+                                                                                "+"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                1
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "MATH_OPERATION"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000665, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_VARIABLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100030, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "当前信息标识", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "信息总条数"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000817, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_VARIABLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 1001558, 
+                                                                    "args_list": [
+                                                                        [
+                                                                            "UI_PREFAB_INSTANCE", 
+                                                                            "信息元件"
+                                                                        ], 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "INTEGER", 
+                                                                                        "当前信息标识", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": 6
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 1001558, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100025, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "PLAYER", 
+                                                                                        "玩家", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "VARIABLE"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 1001556, 
+                                                                            "args_list": [
+                                                                                "659b02fa-42fc-47eb-acd4-2ff8ec6e9607"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100070, 
+                                                                            "args_list": [
+                                                                                "c2455536-109f-41d2-9d5c-e0978b97d141"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "CREATE_UI_PREFAB_INSTANCE"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000678, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_VARIABLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100030, 
+                                                                    "args_list": [
+                                                                        [
+                                                                            "UI_COMP", 
+                                                                            "信息标题文本控件", 
+                                                                            "local"
+                                                                        ]
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 1001558, 
+                                                                            "args_list": [
+                                                                                [
+                                                                                    "UI_PREFAB_INSTANCE", 
+                                                                                    "信息元件"
+                                                                                ], 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "INTEGER", 
+                                                                                                "当前信息标识", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 6
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "VARIABLE"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100003, 
+                                                                            "args_list": [
+                                                                                "信息标题"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_UI_PREFAB_CHILD_BY_PATH"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000693, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        [
+                                                                            "UI_COMP", 
+                                                                            "信息标题文本控件", 
+                                                                            "local"
+                                                                        ]
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "STRING", 
+                                                                                "信息标题", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 2
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000719, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_VARIABLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100030, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "UI_COMP", 
+                                                                                "信息详情文本控件", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 1001558, 
+                                                                            "args_list": [
+                                                                                [
+                                                                                    "UI_PREFAB_INSTANCE", 
+                                                                                    "信息元件"
+                                                                                ], 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "INTEGER", 
+                                                                                                "当前信息标识", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 6
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "VARIABLE"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100003, 
+                                                                            "args_list": [
+                                                                                "信息详情"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_UI_PREFAB_CHILD_BY_PATH"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000728, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "UI_COMP", 
+                                                                                "信息详情文本控件", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "STRING", 
+                                                                                "信息详情", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 2
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000741, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "RUN_ONCE_TIMER_NO_SAVE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "提示时间", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "DEL_UI_PREFAB_INS", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 1001558, 
+                                                                                    "args_list": [
+                                                                                        [
+                                                                                            "UI_PREFAB_INSTANCE", 
+                                                                                            "信息元件"
+                                                                                        ], 
+                                                                                        {
+                                                                                            "arg_type": 100002, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "__tuple__": true, 
+                                                                                                    "items": [
+                                                                                                        "INTEGER", 
+                                                                                                        "当前信息标识", 
+                                                                                                        "local"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": 6
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "VARIABLE"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 2031001742000756, 
+                                                                            "enable": true
+                                                                        }, 
+                                                                        {
+                                                                            "action_type": "SET_VARIABLE", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100030, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "INTEGER", 
+                                                                                                "信息条数"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100002, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "__tuple__": true, 
+                                                                                                    "items": [
+                                                                                                        "INTEGER", 
+                                                                                                        "信息条数"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": 6
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100016, 
+                                                                                            "args_list": [
+                                                                                                "-"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100002, 
+                                                                                            "args_list": [
+                                                                                                1
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "MATH_OPERATION"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 2031001742000762, 
+                                                                            "enable": true
+                                                                        }, 
+                                                                        {
+                                                                            "action_type": "DELETE_TIMER", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100181, 
+                                                                                    "args_list": [], 
+                                                                                    "sub_type": "CURRENT_EXPIRED_TIMER"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 2031001742000774, 
+                                                                            "enable": true
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 2031001742000750, 
+                                                            "enable": true, 
+                                                            "local_var": {
+                                                                "__tuple__": true, 
+                                                                "items": [
+                                                                    {}, 
+                                                                    {}
+                                                                ]
+                                                            }
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 2031001742000575, 
+                                            "enable": true, 
+                                            "fake_op": [
+                                                2
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 2031001742000014, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 2031001742000008, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "向{玩家}提示{种类}类，其中信息标题为{信息标题}，详细信息内容{信息详情}", 
+    "func_id": "93ffc7fbb82711efa4c481ea1beb156a", 
+    "func_name": "信息提示", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "玩家", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "种类", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "信息标题", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "信息详情", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "提示时间", 
+                false
+            ]
+        }
+    ], 
+    "group_id": "i-9DIrgnEe+LzYHqG+sVaq", 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 2031001742, 
+    "trigger_name": "信息提示", 
+    "valid": true, 
+    "var_data": [
+        {
+            "FLOAT": {}, 
+            "INTEGER": {
+                "当前信息标识": 0, 
+                "提示时间": 3
+            }, 
+            "PLAYER": {
+                "玩家": 0
+            }, 
+            "STRING": {
+                "信息标题": "", 
+                "信息详情": "", 
+                "种类": ""
+            }, 
+            "UI_COMP": {
+                "信息标题文本控件": "", 
+                "信息详情文本控件": "", 
+                "界面控件": ""
+            }, 
+            "UI_PREFAB_INSTANCE": {}
+        }, 
+        {
+            "信息标题": 0, 
+            "信息标题文本控件": 0, 
+            "信息详情": 0, 
+            "信息详情文本控件": 0, 
+            "当前信息标识": 0, 
+            "提示时间": 0, 
+            "玩家": 0, 
+            "界面控件": 10, 
+            "种类": 0
+        }, 
+        [
+            "信息标题文本控件", 
+            "玩家", 
+            "种类", 
+            "信息标题", 
+            "信息详情", 
+            "提示时间", 
+            "界面控件", 
+            "信息详情文本控件", 
+            "当前信息标识"
+        ]
+    ]
+}

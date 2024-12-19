@@ -1,0 +1,1617 @@
+{
+    "action": [
+        {
+            "action_type": "TRAVERSE_TABLE_NEW", 
+            "args_list": [
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        "35e71a39-17b4-4925-992a-600a1ebb3bdd"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "IF_THEN_ELSE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100021, 
+                                    "args_list": [
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [], 
+                                                    "sub_type": "GET_UI_COMP_FROM_EVENT"
+                                                }, 
+                                                {
+                                                    "arg_type": 100035, 
+                                                    "args_list": [
+                                                        "=="
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "TRIGGER_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100011, 
+                                                                    "args_list": [
+                                                                        "35e71a39-17b4-4925-992a-600a1ebb3bdd"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "ITER_TABLE_KEY_INT"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "经验升级控件"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "选择按钮"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_UI_COMP_BY_PATH"
+                                                }
+                                            ], 
+                                            "condition_type": "ANY_COMPARE", 
+                                            "element_id": 336326867000024, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前控件索引", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [], 
+                                                    "sub_type": "ITER_TABLE_KEY_INT"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867000049, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100175, 
+                                                    "args_list": [
+                                                        3
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "触发选择经验选项触发控件索引"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "当前控件索引", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }
+                                                            ], 
+                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                        }
+                                                    ], 
+                                                    "op_arg": [
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null
+                                                    ], 
+                                                    "op_arg_enable": [
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false
+                                                    ], 
+                                                    "sub_type": "STR_JOIN"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867611842, 
+                                            "enable": false
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867000015, 
+                            "enable": true, 
+                            "fake_op": []
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 336326867000007, 
+            "enable": true, 
+            "op_arg": [
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "op_arg_enable": [
+                false
+            ]
+        }, 
+        {
+            "action_type": "SET_UI_COMP_VISIBLE", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        false
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "35e71a39-17b4-4925-992a-600a1ebb3bdd"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "当前控件索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "经验升级控件"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 336326867611819, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "当前加成属性值", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [], 
+                                    "sub_type": "TRIGGER_PLAYER"
+                                }, 
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "经验升级选项表"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": "GET_TABLE_KV"
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100011, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "TRIGGER_PLAYER"
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "经验升级选项集合表"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_TABLE_KV"
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "当前控件索引", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 6
+                                }, 
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "索引"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "加成数值"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 336326867000072, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "STRING", 
+                                "当前加成属性", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100011, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "TRIGGER_PLAYER"
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "经验升级选项表"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_TABLE_KV"
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100011, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "经验升级选项集合表"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "sub_type": "GET_TABLE_KV"
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "当前控件索引", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "索引"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                }, 
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "描述"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": "GET_STRING_TABLE_VAR_ND"
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                0
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                2
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "EXTRACT_STR"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 336326867000102, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SWITCH", 
+            "args_list": [
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "STRING", 
+                                "当前加成属性", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "攻击"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100175, 
+                                                    "args_list": [
+                                                        3
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "选择经验升级选项："
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100000, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100025, 
+                                                                            "args_list": [], 
+                                                                            "sub_type": "TRIGGER_PLAYER"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100037, 
+                                                                            "args_list": [
+                                                                                "OwQev6jnEe+bXLvC13Uj-0"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_ROLE_RES"
+                                                                }
+                                                            ], 
+                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                        }
+                                                    ], 
+                                                    "op_arg": [
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null
+                                                    ], 
+                                                    "op_arg_enable": [
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false
+                                                    ], 
+                                                    "sub_type": "STR_JOIN"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867000385, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "ROLE_CHANGE_RES", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100037, 
+                                                    "args_list": [
+                                                        "OwQev6jnEe+bXLvC13Uj-0"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前加成属性值", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867000205, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100175, 
+                                                    "args_list": [
+                                                        3
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "选择经验升级选项："
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100000, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100025, 
+                                                                            "args_list": [], 
+                                                                            "sub_type": "TRIGGER_PLAYER"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100037, 
+                                                                            "args_list": [
+                                                                                "OwQev6jnEe+bXLvC13Uj-0"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_ROLE_RES"
+                                                                }
+                                                            ], 
+                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                        }
+                                                    ], 
+                                                    "op_arg": [
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null
+                                                    ], 
+                                                    "op_arg_enable": [
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false
+                                                    ], 
+                                                    "sub_type": "STR_JOIN"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867611802, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867000197, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "谋略"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "ROLE_CHANGE_RES", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100037, 
+                                                    "args_list": [
+                                                        "OyAQZajnEe+q1rvC13Uj-w"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前加成属性值", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867000341, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867000214, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "生命"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "ROLE_CHANGE_RES", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100037, 
+                                                    "args_list": [
+                                                        "official_res_1"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前加成属性值", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867000347, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867000230, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "远程"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "ROLE_CHANGE_RES", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100037, 
+                                                    "args_list": [
+                                                        "Ozlos6jnEe+kbbvC13Uj-2"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前加成属性值", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867000353, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867000246, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "治疗"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "ROLE_CHANGE_RES", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100037, 
+                                                    "args_list": [
+                                                        "O1MZ+qjnEe+IqrvC13Uj-2"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前加成属性值", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867000359, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867000262, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "暴击"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "ROLE_CHANGE_RES", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100037, 
+                                                    "args_list": [
+                                                        "U5YOuqjnEe+TKLvC13Uj-x"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前加成属性值", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867000365, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867000278, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "爆伤"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "ROLE_CHANGE_RES", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100037, 
+                                                    "args_list": [
+                                                        "VIS1t6jnEe+xZrvC13Uj-1"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前加成属性值", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867000371, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867000294, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "移速"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "ROLE_CHANGE_RES", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100037, 
+                                                    "args_list": [
+                                                        "XnWCaqjnEe+x77vC13Uj-0"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前加成属性值", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867000378, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867000310, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "利息"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "ROLE_CHANGE_RES", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100037, 
+                                                    "args_list": [
+                                                        "bjR3fKjnEe+qJbvC13Uj-2"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前加成属性值", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867611996, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867611981, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "拾取"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "ROLE_CHANGE_RES", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100037, 
+                                                    "args_list": [
+                                                        "-uPeH7lPEe+yGuMfcpenz6"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前加成属性值", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 336326867612018, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867612003, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 336326867000191, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100028, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "升级次数"
+                            ]
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [], 
+                                    "sub_type": "TRIGGER_PLAYER"
+                                }
+                            ], 
+                            "sub_type": "PLAYER_ID_NUMBER"
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "升级次数"
+                                    ]
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "TRIGGER_PLAYER"
+                                        }
+                                    ], 
+                                    "sub_type": "PLAYER_ID_NUMBER"
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100016, 
+                            "args_list": [
+                                "-"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                1
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "MATH_OPERATION"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 336326867611978, 
+            "enable": true
+        }, 
+        {
+            "action_type": "IF_THEN_ELSE", 
+            "args_list": [
+                {
+                    "arg_type": 100021, 
+                    "args_list": [
+                        {
+                            "args_list": [
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "升级次数"
+                                            ]
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }
+                                            ], 
+                                            "sub_type": "PLAYER_ID_NUMBER"
+                                        }
+                                    ], 
+                                    "sub_type": 6
+                                }, 
+                                {
+                                    "arg_type": 100015, 
+                                    "args_list": [
+                                        ">="
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        1
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "condition_type": "FLOAT_COMPARE", 
+                            "element_id": 336326867611915, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "TRIGGER_PLAYER"
+                                        }
+                                    ], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "2c508354aef511efbf4be536bfc8eddb"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 336326867611927, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "SET_UI_COMP_VISIBLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [], 
+                                    "sub_type": "TRIGGER_PLAYER"
+                                }, 
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        false
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100070, 
+                                    "args_list": [
+                                        "c9787322-5d90-4aa1-a8fc-b86633511056"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867611942, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SEND_CUSTOM_EVENT", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100238, 
+                                    "args_list": [
+                                        1245773182
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 336326867611951, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 336326867611906, 
+            "enable": true, 
+            "fake_op": [
+                2
+            ]
+        }, 
+        [
+            2081012850, 
+            "#######", 
+            336326867, 
+            "action_type"
+        ], 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "触发选择经验选项"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "触发"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 336326867000058, 
+            "enable": false
+        }, 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "触发选择经验选项：剩余升级次数为"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "升级次数"
+                                            ]
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }
+                                            ], 
+                                            "sub_type": "PLAYER_ID_NUMBER"
+                                        }
+                                    ], 
+                                    "sub_type": 6
+                                }
+                            ], 
+                            "sub_type": "ANY_VAR_TO_STR"
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 336326867611956, 
+            "enable": false
+        }, 
+        [
+            1888611768, 
+            "#######", 
+            336326867, 
+            "action_type"
+        ]
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [
+        {
+            "args_list": [
+                {
+                    "arg_type": 100067, 
+                    "args_list": [
+                        "选择经验选项"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "element_id": 336326867000002, 
+            "enable": true, 
+            "event_type": "TRIGGER_COMPONENT_EVENT"
+        }
+    ], 
+    "group_id": "wqpDIa+SEe+z5s0wQprEYZ", 
+    "p_trigger_id": null, 
+    "trigger_id": 336326867, 
+    "trigger_name": "选择经验选项", 
+    "valid": true, 
+    "var_data": [
+        {
+            "INTEGER": {
+                "当前加成属性值": 0, 
+                "当前控件索引": 0
+            }, 
+            "STRING": {
+                "当前加成属性": ""
+            }, 
+            "UI_COMP": {}
+        }, 
+        {
+            "当前加成属性": 0, 
+            "当前加成属性值": 0, 
+            "当前控件索引": 0
+        }, 
+        [
+            "当前控件索引", 
+            "当前加成属性值", 
+            "当前加成属性"
+        ]
+    ]
+}

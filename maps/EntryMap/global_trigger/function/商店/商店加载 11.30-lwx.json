@@ -1,0 +1,624 @@
+{
+    "action": [
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        1
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }
+                    ], 
+                    "sub_type": "ANY_VAR_TO_STR"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1139769540000001, 
+            "enable": false
+        }, 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "打开商店：加载商店"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1139769540000002, 
+            "enable": false
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "当前玩家ID", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }
+                    ], 
+                    "sub_type": "PLAYER_ID_NUMBER"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1139769540000003, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        [
+                            "TABLE", 
+                            "当前玩家阵容表", 
+                            "local"
+                        ]
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "阵容表"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_TABLE_KV"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1139769540000004, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "TABLE", 
+                                "当前玩家武器表", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "武器表"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_TABLE_KV"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1139769540000005, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        [
+                            "TABLE", 
+                            "当前玩家宝物表", 
+                            "local"
+                        ]
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "宝物表"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_TABLE_KV"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1139769540000006, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "TABLE", 
+                                "当前玩家商店道具集合表", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "商店道具集合表"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_TABLE_KV"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1139769540000007, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_VISIBLE", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "PLAYER", 
+                                "当前玩家", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "b3e82565-7c71-4538-8214-8b2dde7da0bd"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1139769540000009, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_TEXT", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "PLAYER", 
+                                "当前玩家", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "82e8a89c-fb10-4d0e-8258-2d9ae9cb9abe"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "波次计数"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 6
+                                }
+                            ], 
+                            "sub_type": "ANY_VAR_TO_STR"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "/20回合"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1139769540000010, 
+            "enable": true
+        }, 
+        {
+            "action_type": "CALL_TRIGGER_FUNC", 
+            "args_list": [
+                {
+                    "arg_type": 100177, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }
+                    ], 
+                    "op_arg": [], 
+                    "op_arg_enable": [], 
+                    "sub_type": "c32df80a894f11efa927d992ce504adc"
+                }
+            ], 
+            "bp": false, 
+            "call_rt_arg_idxes": [], 
+            "element_id": 1139769540000021, 
+            "enable": true
+        }, 
+        {
+            "action_type": "CALL_TRIGGER_FUNC", 
+            "args_list": [
+                {
+                    "arg_type": 100177, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }
+                    ], 
+                    "op_arg": [], 
+                    "op_arg_enable": [], 
+                    "sub_type": "005caed0894f11ef927ad992ce504adc"
+                }
+            ], 
+            "bp": false, 
+            "call_rt_arg_idxes": [], 
+            "element_id": 1139769540000020, 
+            "enable": true
+        }, 
+        {
+            "action_type": "CALL_TRIGGER_FUNC", 
+            "args_list": [
+                {
+                    "arg_type": 100177, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "TABLE", 
+                                        "当前玩家宝物表", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "PLAYER", 
+                                                "当前玩家", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": "VARIABLE"
+                                }
+                            ], 
+                            "sub_type": "PLAYER_ID_NUMBER"
+                        }
+                    ], 
+                    "op_arg": [], 
+                    "op_arg_enable": [], 
+                    "sub_type": "01d2c5f4b08911efb364e78b2d6b79ec"
+                }
+            ], 
+            "bp": false, 
+            "call_rt_arg_idxes": [], 
+            "element_id": 867516527000038, 
+            "enable": true
+        }, 
+        {
+            "action_type": "CALL_TRIGGER_FUNC", 
+            "args_list": [
+                {
+                    "arg_type": 100177, 
+                    "args_list": [], 
+                    "op_arg": [], 
+                    "op_arg_enable": [], 
+                    "sub_type": "4c93a024a9bd11efb0242db7dd5817f9"
+                }
+            ], 
+            "bp": false, 
+            "call_rt_arg_idxes": [], 
+            "element_id": 867516527000032, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "为玩家{当前玩家}加载商店", 
+    "func_id": "7fab52f0894f11ef95aad992ce504adc", 
+    "func_name": "商店加载 11.30-lwx", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "当前玩家", 
+                true
+            ]
+        }
+    ], 
+    "group_id": "YaUxY5WnEe+kGNE1uMKHR7", 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 867516527, 
+    "trigger_name": "商店加载 11.30-lwx", 
+    "valid": true, 
+    "var_data": [
+        {
+            "DYNAMIC_TRIGGER_INSTANCE": {
+                "取消显示消息触发器": 0
+            }, 
+            "INTEGER": {
+                "i": 0, 
+                "当前玩家ID": 0
+            }, 
+            "PLAYER": {
+                "当前玩家": 0
+            }, 
+            "TABLE": {
+                "当前玩家商店道具集合表": null, 
+                "当前玩家宝物表": null, 
+                "当前玩家武器表": null, 
+                "当前玩家阵容表": null
+            }, 
+            "UI_COMP": {
+                "待购买武将图片": ""
+            }, 
+            "UNIT_ENTITY": {}
+        }, 
+        {
+            "i": 0, 
+            "取消显示消息触发器": 0, 
+            "当前玩家": 0, 
+            "当前玩家ID": 0, 
+            "当前玩家商店道具集合表": 0, 
+            "当前玩家宝物表": 0, 
+            "当前玩家武器表": 0, 
+            "当前玩家阵容表": 0, 
+            "待购买武将图片": 10
+        }, 
+        [
+            "当前玩家", 
+            "当前玩家阵容表", 
+            "i", 
+            "当前玩家ID", 
+            "待购买武将图片", 
+            "取消显示消息触发器", 
+            "当前玩家宝物表", 
+            "当前玩家武器表", 
+            "当前玩家商店道具集合表"
+        ]
+    ]
+}

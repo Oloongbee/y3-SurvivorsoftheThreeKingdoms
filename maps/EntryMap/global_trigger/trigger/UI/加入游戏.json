@@ -1,6 +1,362 @@
 {
     "action": [
         {
+            "action_type": "SET_SAVE_DATA", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100233, 
+                    "args_list": [
+                        1
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1593577677952907, 
+            "enable": true
+        }, 
+        [
+            1344183285, 
+            "为新玩家创建通关表", 
+            1593577677, 
+            "action_type"
+        ], 
+        {
+            "action_type": "IF_THEN_ELSE", 
+            "args_list": [
+                {
+                    "arg_type": 100021, 
+                    "args_list": [
+                        {
+                            "args_list": [
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "TRIGGER_PLAYER"
+                                        }, 
+                                        {
+                                            "arg_type": 100233, 
+                                            "args_list": [
+                                                1
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_PLAYER_SAVE_DATA_BOOL_VALUE"
+                                }, 
+                                {
+                                    "arg_type": 100035, 
+                                    "args_list": [
+                                        "=="
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        true
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "condition_type": "BOOL_COMPARE", 
+                            "element_id": 1593577677952542, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "SET_SAVE_DATA", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [], 
+                                    "sub_type": "TRIGGER_PLAYER"
+                                }, 
+                                {
+                                    "arg_type": 100233, 
+                                    "args_list": [
+                                        1
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        false
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1593577677952853, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "TRIGGER_PLAYER"
+                                        }
+                                    ], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "271f92d5ac8e11efb35a05f32e85c087"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 1593577677952979, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "TRIGGER_PLAYER"
+                                        }
+                                    ], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "73abc05cb54311ef950b63312ceba1e3"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 1593577677953027, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "TRIGGER_PLAYER"
+                                        }
+                                    ], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "caf5d88aac8e11ef88a105f32e85c087"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 1593577677952991, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "TRIGGER_PLAYER"
+                                        }
+                                    ], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "17ea1e25ac9011ef91d605f32e85c087"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 1593577677953018, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "TRIGGER_PLAYER"
+                                        }
+                                    ], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "f5761639b5e911ef88ea112a35ce4791"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 1593577677953021, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100175, 
+                                    "args_list": [
+                                        3
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "读取存档：踏上征程"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "TRIGGER_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100247, 
+                                                            "args_list": [
+                                                                4
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "踏上征程"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "op_arg": [
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "是否完成"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "黄巾之战"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "op_arg_enable": [
+                                                        true, 
+                                                        false
+                                                    ], 
+                                                    "sub_type": "GET_PLAYER_SAVE_TABLE_VALUE_BOOLEAN"
+                                                }
+                                            ], 
+                                            "sub_type": "ANY_VAR_TO_STR"
+                                        }
+                                    ], 
+                                    "op_arg": [
+                                        null, 
+                                        null, 
+                                        null, 
+                                        null, 
+                                        null, 
+                                        null, 
+                                        null, 
+                                        null
+                                    ], 
+                                    "op_arg_enable": [
+                                        false, 
+                                        false, 
+                                        false, 
+                                        false, 
+                                        false, 
+                                        false, 
+                                        false, 
+                                        false
+                                    ], 
+                                    "sub_type": "STR_JOIN"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 633999553000023, 
+                            "enable": false
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1593577677952533, 
+            "enable": true, 
+            "fake_op": []
+        }, 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "加入游戏：调用函数"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 18649278000032, 
+            "enable": false
+        }, 
+        {
             "action_type": "IF_THEN_ELSE", 
             "args_list": [
                 {
@@ -88,7 +444,7 @@
                                 {
                                     "arg_type": 100000, 
                                     "args_list": [
-                                        180.0
+                                        900.0
                                     ], 
                                     "sub_type": 1
                                 }

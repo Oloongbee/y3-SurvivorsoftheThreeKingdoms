@@ -16,7 +16,7 @@
                 }
             ], 
             "bp": false, 
-            "element_id": 1085620292000001, 
+            "element_id": 851689677000001, 
             "enable": true
         }, 
         {
@@ -80,81 +80,356 @@
                     "arg_type": 100022, 
                     "args_list": [
                         {
-                            "action_type": "SET_VARIABLE", 
+                            "action_type": "IF_THEN_ELSE", 
                             "args_list": [
                                 {
-                                    "arg_type": 100028, 
+                                    "arg_type": 100021, 
                                     "args_list": [
-                                        [
-                                            "INTEGER", 
-                                            "道具表索引集合", 
-                                            "local"
-                                        ], 
                                         {
-                                            "arg_type": 100002, 
                                             "args_list": [
                                                 {
-                                                    "arg_type": 100002, 
+                                                    "arg_type": 100003, 
                                                     "args_list": [
                                                         {
-                                                            "arg_type": 100081, 
+                                                            "arg_type": 100011, 
                                                             "args_list": [
-                                                                [
-                                                                    "INTEGER", 
-                                                                    "道具表索引集合", 
-                                                                    "local"
-                                                                ]
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "商店道具池表"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_TABLE_KV"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "i", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "标签"
                                                             ], 
                                                             "sub_type": 1
                                                         }
                                                     ], 
-                                                    "sub_type": "LEN_OF_VAR"
+                                                    "sub_type": "GET_STRING_TABLE_VAR_ND"
                                                 }, 
                                                 {
-                                                    "arg_type": 100016, 
+                                                    "arg_type": 100035, 
                                                     "args_list": [
-                                                        "+"
+                                                        "=="
                                                     ], 
                                                     "sub_type": 1
                                                 }, 
                                                 {
-                                                    "arg_type": 100002, 
+                                                    "arg_type": 100003, 
                                                     "args_list": [
-                                                        1
+                                                        "道具"
                                                     ], 
                                                     "sub_type": 1
                                                 }
                                             ], 
-                                            "sub_type": "MATH_OPERATION"
+                                            "condition_type": "STRING_COMPARE", 
+                                            "element_id": 851689677000002, 
+                                            "enable": true
                                         }
                                     ], 
                                     "sub_type": 1
                                 }, 
                                 {
-                                    "arg_type": 100002, 
+                                    "arg_type": 100022, 
                                     "args_list": [
                                         {
-                                            "__tuple__": true, 
-                                            "items": [
-                                                "INTEGER", 
-                                                "i", 
-                                                "local"
-                                            ]
+                                            "action_type": "IF_THEN_ELSE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100021, 
+                                                    "args_list": [
+                                                        {
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100011, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "PLAYER", 
+                                                                                                "玩家", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "VARIABLE"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        "商店道具池表"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "GET_TABLE_KV"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "INTEGER", 
+                                                                                        "i", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": 6
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100003, 
+                                                                            "args_list": [
+                                                                                "宝物剩余数量"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100015, 
+                                                                    "args_list": [
+                                                                        ">"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        0
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "condition_type": "FLOAT_COMPARE", 
+                                                            "element_id": 851689677000003, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "SET_VARIABLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100028, 
+                                                                    "args_list": [
+                                                                        [
+                                                                            "INTEGER", 
+                                                                            "道具表索引集合", 
+                                                                            "local"
+                                                                        ], 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100081, 
+                                                                                            "args_list": [
+                                                                                                [
+                                                                                                    "INTEGER", 
+                                                                                                    "道具表索引集合", 
+                                                                                                    "local"
+                                                                                                ]
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "LEN_OF_VAR"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100016, 
+                                                                                    "args_list": [
+                                                                                        "+"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        1
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "MATH_OPERATION"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "i", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 851689677000004, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 851689677000005, 
+                                            "enable": true, 
+                                            "fake_op": []
                                         }
                                     ], 
-                                    "sub_type": 6
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100028, 
+                                                    "args_list": [
+                                                        [
+                                                            "INTEGER", 
+                                                            "道具表索引集合", 
+                                                            "local"
+                                                        ], 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100081, 
+                                                                            "args_list": [
+                                                                                [
+                                                                                    "INTEGER", 
+                                                                                    "道具表索引集合", 
+                                                                                    "local"
+                                                                                ]
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "LEN_OF_VAR"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100016, 
+                                                                    "args_list": [
+                                                                        "+"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        1
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "MATH_OPERATION"
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "i", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 851689677000006, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 1085620292178367, 
-                            "enable": true
+                            "element_id": 851689677000007, 
+                            "enable": true, 
+                            "fake_op": [
+                                2
+                            ]
                         }
                     ], 
                     "sub_type": 1
                 }
             ], 
             "bp": false, 
-            "element_id": 1085620292000012, 
+            "element_id": 851689677000008, 
             "enable": true
         }, 
         {
@@ -176,7 +451,7 @@
                 }
             ], 
             "bp": false, 
-            "element_id": 1085620292177970, 
+            "element_id": 851689677000009, 
             "enable": false
         }, 
         {
@@ -212,7 +487,7 @@
                 }
             ], 
             "bp": false, 
-            "element_id": 1085620292177971, 
+            "element_id": 851689677000010, 
             "enable": true
         }, 
         {
@@ -296,7 +571,7 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 1085620292178222, 
+                            "element_id": 851689677000011, 
                             "enable": true
                         }
                     ], 
@@ -304,11 +579,11 @@
                 }
             ], 
             "bp": false, 
-            "element_id": 1085620292177983, 
+            "element_id": 851689677000012, 
             "enable": true
         }
     ], 
-    "call_enabled": true, 
+    "call_enabled": false, 
     "condition": [], 
     "enabled": true, 
     "event": [], 

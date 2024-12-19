@@ -1,0 +1,272 @@
+{
+    "action": [
+        {
+            "action_type": "TRAVERSE_TABLE_NEW", 
+            "args_list": [
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        "35e71a39-17b4-4925-992a-600a1ebb3bdd"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "SET_UI_COMP_VISIBLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [], 
+                                    "sub_type": "TRIGGER_PLAYER"
+                                }, 
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        true
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100070, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100011, 
+                                            "args_list": [
+                                                "35e71a39-17b4-4925-992a-600a1ebb3bdd"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [], 
+                                            "sub_type": "ITER_TABLE_KEY_INT"
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "经验升级控件"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1006682322000039, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1006682322000031, 
+            "enable": true, 
+            "op_arg": [
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "op_arg_enable": [
+                false
+            ]
+        }, 
+        {
+            "action_type": "ROLE_SET_RES", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100037, 
+                    "args_list": [
+                        "dN8P0KjnEe+uYbvC13Uj-1"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [], 
+                                    "sub_type": "TRIGGER_PLAYER"
+                                }, 
+                                {
+                                    "arg_type": 100037, 
+                                    "args_list": [
+                                        "dN8P0KjnEe+uYbvC13Uj-1"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": "GET_ROLE_RES"
+                        }, 
+                        {
+                            "arg_type": 100017, 
+                            "args_list": [
+                                "-"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "当前经验商店刷新所需金币"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }
+                    ], 
+                    "sub_type": "ARITHMETIC_OPERATION"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1001734391985727, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "当前经验商店刷新所需金币"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "当前经验商店刷新所需金币"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 6
+                                }, 
+                                {
+                                    "arg_type": 100017, 
+                                    "args_list": [
+                                        "*"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "刷新所需金币增加倍率"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }
+                            ], 
+                            "sub_type": "ARITHMETIC_OPERATION"
+                        }
+                    ], 
+                    "sub_type": "F2I"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1001734391985733, 
+            "enable": true
+        }, 
+        {
+            "action_type": "CALL_TRIGGER_FUNC", 
+            "args_list": [
+                {
+                    "arg_type": 100177, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [], 
+                            "sub_type": "TRIGGER_PLAYER"
+                        }
+                    ], 
+                    "op_arg": [], 
+                    "op_arg_enable": [], 
+                    "sub_type": "2c508354aef511efbf4be536bfc8eddb"
+                }
+            ], 
+            "bp": false, 
+            "call_rt_arg_idxes": [], 
+            "element_id": 1006682322000012, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [
+        {
+            "args_list": [
+                {
+                    "arg_type": 100067, 
+                    "args_list": [
+                        "刷新经验商店"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "element_id": 1006682322000003, 
+            "enable": true, 
+            "event_type": "TRIGGER_COMPONENT_EVENT"
+        }
+    ], 
+    "group_id": "wqpDIa+SEe+z5s0wQprEYZ", 
+    "p_trigger_id": null, 
+    "trigger_id": 1006682322, 
+    "trigger_name": "刷新经验商店", 
+    "valid": true, 
+    "var_data": [
+        {
+            "FLOAT": {}, 
+            "INTEGER": {
+                "刷新所需金币": 0
+            }
+        }, 
+        {
+            "刷新所需金币": 0
+        }, 
+        [
+            "刷新所需金币"
+        ]
+    ]
+}

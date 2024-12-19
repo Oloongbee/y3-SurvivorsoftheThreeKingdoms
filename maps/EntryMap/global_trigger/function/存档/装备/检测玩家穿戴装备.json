@@ -1,0 +1,1156 @@
+{
+    "action": [
+        {
+            "action_type": "DUMP_TABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100247, 
+                            "args_list": [
+                                5
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_PLAYER_SAVE_DATA_TABLE_VALUE"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 734371960000494, 
+            "enable": true
+        }, 
+        {
+            "action_type": "FOR_INT_DO_ACTION_NEW", 
+            "args_list": [
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "i", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 6
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        1
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        4
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "TRAVERSE_TABLE_NEW", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100011, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "PLAYER", 
+                                                        "当前玩家", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": "VARIABLE"
+                                        }, 
+                                        {
+                                            "arg_type": 100247, 
+                                            "args_list": [
+                                                5
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_PLAYER_SAVE_DATA_TABLE_VALUE"
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SWITCH", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100011, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "当前玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100247, 
+                                                                    "args_list": [
+                                                                        5
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_PLAYER_SAVE_DATA_TABLE_VALUE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [], 
+                                                            "sub_type": "ITER_TABLE_KEY_STR"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "词条"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [], 
+                                                                            "sub_type": "ITER_INT"
+                                                                        }
+                                                                    ], 
+                                                                    "op_arg": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                0
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "op_arg_enable": [
+                                                                        false
+                                                                    ], 
+                                                                    "sub_type": "INT_TO_STR"
+                                                                }
+                                                            ], 
+                                                            "op_arg": [
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null, 
+                                                                null
+                                                            ], 
+                                                            "op_arg_enable": [
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false, 
+                                                                false
+                                                            ], 
+                                                            "sub_type": "STR_JOIN"
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_STRING_TABLE_VAR_ND"
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "CASE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "近战属性增加2%"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "ROLE_SET_RES", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "PLAYER", 
+                                                                                                "当前玩家", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "VARIABLE"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100037, 
+                                                                                    "args_list": [
+                                                                                        "OwQev6jnEe+bXLvC13Uj-0"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100000, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100025, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "PLAYER", 
+                                                                                                                "当前玩家", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100037, 
+                                                                                                    "args_list": [
+                                                                                                        "OwQev6jnEe+bXLvC13Uj-0"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "GET_ROLE_RES"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100017, 
+                                                                                            "args_list": [
+                                                                                                "+"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100000, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100011, 
+                                                                                                            "args_list": [
+                                                                                                                "606a7577-8d90-4ff6-8fba-8d653f9d0571"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "近战"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "属性"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100017, 
+                                                                                                    "args_list": [
+                                                                                                        "*"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100000, 
+                                                                                                    "args_list": [
+                                                                                                        0.02
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ARITHMETIC_OPERATION"
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 734371960000437, 
+                                                                            "enable": true
+                                                                        }, 
+                                                                        {
+                                                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100175, 
+                                                                                    "args_list": [
+                                                                                        3
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "当前玩家攻击属性"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100000, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100025, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "__tuple__": true, 
+                                                                                                                    "items": [
+                                                                                                                        "PLAYER", 
+                                                                                                                        "当前玩家", 
+                                                                                                                        "local"
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": "VARIABLE"
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100037, 
+                                                                                                            "args_list": [
+                                                                                                                "OwQev6jnEe+bXLvC13Uj-0"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_ROLE_RES"
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                                                        }
+                                                                                    ], 
+                                                                                    "op_arg": [
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null
+                                                                                    ], 
+                                                                                    "op_arg_enable": [
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false
+                                                                                    ], 
+                                                                                    "sub_type": "STR_JOIN"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 734371960000438, 
+                                                                            "enable": true
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 734371960000439, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "CASE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "远程属性增加2%"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "ROLE_SET_RES", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "PLAYER", 
+                                                                                                "当前玩家", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "VARIABLE"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100037, 
+                                                                                    "args_list": [
+                                                                                        "Ozlos6jnEe+kbbvC13Uj-2"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100000, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100025, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "PLAYER", 
+                                                                                                                "当前玩家", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100037, 
+                                                                                                    "args_list": [
+                                                                                                        "Ozlos6jnEe+kbbvC13Uj-2"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "GET_ROLE_RES"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100017, 
+                                                                                            "args_list": [
+                                                                                                "+"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100000, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100011, 
+                                                                                                            "args_list": [
+                                                                                                                "606a7577-8d90-4ff6-8fba-8d653f9d0571"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "远程"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "属性"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100017, 
+                                                                                                    "args_list": [
+                                                                                                        "*"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100000, 
+                                                                                                    "args_list": [
+                                                                                                        0.02
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ARITHMETIC_OPERATION"
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 734371960000440, 
+                                                                            "enable": true
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 734371960000441, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "CASE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "治疗属性增加2%"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "ROLE_SET_RES", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "PLAYER", 
+                                                                                                "当前玩家", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "VARIABLE"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100037, 
+                                                                                    "args_list": [
+                                                                                        "O1MZ+qjnEe+IqrvC13Uj-2"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100000, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100025, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "PLAYER", 
+                                                                                                                "当前玩家", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100037, 
+                                                                                                    "args_list": [
+                                                                                                        "O1MZ+qjnEe+IqrvC13Uj-2"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "GET_ROLE_RES"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100017, 
+                                                                                            "args_list": [
+                                                                                                "+"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100000, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100011, 
+                                                                                                            "args_list": [
+                                                                                                                "606a7577-8d90-4ff6-8fba-8d653f9d0571"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "治疗"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "属性"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100017, 
+                                                                                                    "args_list": [
+                                                                                                        "*"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100000, 
+                                                                                                    "args_list": [
+                                                                                                        0.02
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ARITHMETIC_OPERATION"
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 734371960000442, 
+                                                                            "enable": true
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 734371960000443, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "CASE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "最大生命值增加2%"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "ROLE_SET_RES", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "PLAYER", 
+                                                                                                "当前玩家", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "VARIABLE"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100037, 
+                                                                                    "args_list": [
+                                                                                        "official_res_1"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100000, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100025, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "PLAYER", 
+                                                                                                                "当前玩家", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100037, 
+                                                                                                    "args_list": [
+                                                                                                        "official_res_1"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "GET_ROLE_RES"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100017, 
+                                                                                            "args_list": [
+                                                                                                "+"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100000, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100011, 
+                                                                                                            "args_list": [
+                                                                                                                "606a7577-8d90-4ff6-8fba-8d653f9d0571"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "生命"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "属性"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100017, 
+                                                                                                    "args_list": [
+                                                                                                        "*"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100000, 
+                                                                                                    "args_list": [
+                                                                                                        0.02
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ARITHMETIC_OPERATION"
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 734371960000444, 
+                                                                            "enable": true
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 734371960000445, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "CASE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "谋略属性增加2%"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "ROLE_SET_RES", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "PLAYER", 
+                                                                                                "当前玩家", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "VARIABLE"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100037, 
+                                                                                    "args_list": [
+                                                                                        "OyAQZajnEe+q1rvC13Uj-w"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100000, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100025, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "PLAYER", 
+                                                                                                                "当前玩家", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100037, 
+                                                                                                    "args_list": [
+                                                                                                        "OyAQZajnEe+q1rvC13Uj-w"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "GET_ROLE_RES"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100017, 
+                                                                                            "args_list": [
+                                                                                                "+"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100000, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100011, 
+                                                                                                            "args_list": [
+                                                                                                                "606a7577-8d90-4ff6-8fba-8d653f9d0571"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "谋略"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "属性"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100017, 
+                                                                                                    "args_list": [
+                                                                                                        "*"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100000, 
+                                                                                                    "args_list": [
+                                                                                                        0.02
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ARITHMETIC_OPERATION"
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 734371960000446, 
+                                                                            "enable": true
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 734371960000447, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "CASE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "初始金币增加30"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "ROLE_SET_RES", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "PLAYER", 
+                                                                                                "当前玩家", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "VARIABLE"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100037, 
+                                                                                    "args_list": [
+                                                                                        "dN8P0KjnEe+uYbvC13Uj-1"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100000, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100025, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "PLAYER", 
+                                                                                                                "当前玩家", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100037, 
+                                                                                                    "args_list": [
+                                                                                                        "dN8P0KjnEe+uYbvC13Uj-1"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "GET_ROLE_RES"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100017, 
+                                                                                            "args_list": [
+                                                                                                "+"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100000, 
+                                                                                            "args_list": [
+                                                                                                30.0
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 734371960000448, 
+                                                                            "enable": true
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 734371960000449, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 734371960000420, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 734371960000014, 
+                            "enable": true, 
+                            "op_arg": [
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        true
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "op_arg_enable": [
+                                false
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 734371960000015, 
+            "enable": true, 
+            "op_arg": [
+                null
+            ], 
+            "op_arg_enable": [
+                false
+            ]
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "函数描述{当前玩家}", 
+    "func_id": "332d2b23b54211ef836a63312ceba1e3", 
+    "func_name": "检测玩家穿戴装备", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "当前玩家", 
+                true
+            ]
+        }
+    ], 
+    "group_id": "Zg2pw7YFEe+n2esxGtgUre", 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 734371960, 
+    "trigger_name": "检测玩家穿戴装备", 
+    "valid": true, 
+    "var_data": [
+        {
+            "INTEGER": {
+                "i": 0
+            }, 
+            "ITEM_NAME": {}, 
+            "PLAYER": {
+                "当前玩家": 0
+            }, 
+            "STRING": {}
+        }, 
+        {
+            "i": 0, 
+            "当前玩家": 0
+        }, 
+        [
+            "当前玩家", 
+            "i"
+        ]
+    ]
+}

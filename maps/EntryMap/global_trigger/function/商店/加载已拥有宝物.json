@@ -3,14 +3,14 @@
         [
             2085298047, 
             "商店获取当前已拥有武将的头像", 
-            1999417514, 
+            604131509, 
             "action_type"
         ], 
         {
-            "action_type": "FOR_INT_DO_ACTION_NEW", 
+            "action_type": "SET_VARIABLE", 
             "args_list": [
                 {
-                    "arg_type": 100002, 
+                    "arg_type": 100030, 
                     "args_list": [
                         {
                             "__tuple__": true, 
@@ -21,7 +21,7 @@
                             ]
                         }
                     ], 
-                    "sub_type": 6
+                    "sub_type": 1
                 }, 
                 {
                     "arg_type": 100002, 
@@ -29,33 +29,28 @@
                         1
                     ], 
                     "sub_type": 1
-                }, 
+                }
+            ], 
+            "bp": false, 
+            "element_id": 604131509000001, 
+            "enable": true
+        }, 
+        {
+            "action_type": "TRAVERSE_TABLE_NEW", 
+            "args_list": [
                 {
-                    "arg_type": 100002, 
+                    "arg_type": 100011, 
                     "args_list": [
                         {
-                            "arg_type": 100025, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "PLAYER", 
-                                        "当前玩家", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": "VARIABLE"
-                        }, 
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                "拥有宝物数量"
-                            ], 
-                            "sub_type": 1
+                            "__tuple__": true, 
+                            "items": [
+                                "TABLE", 
+                                "当前玩家宝物表", 
+                                "local"
+                            ]
                         }
                     ], 
-                    "sub_type": "GET_INTEGER_KV"
+                    "sub_type": "VARIABLE"
                 }, 
                 {
                     "arg_type": 100022, 
@@ -130,7 +125,7 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 1999417514298077, 
+                            "element_id": 604131509000002, 
                             "enable": true
                         }, 
                         {
@@ -173,7 +168,7 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 1999417514298078, 
+                            "element_id": 604131509000003, 
                             "enable": true
                         }, 
                         {
@@ -302,7 +297,7 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 1999417514298079, 
+                            "element_id": 604131509000004, 
                             "enable": true
                         }, 
                         {
@@ -345,7 +340,7 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 1999417514298080, 
+                            "element_id": 604131509000005, 
                             "enable": true
                         }, 
                         {
@@ -424,18 +419,9 @@
                                                     "sub_type": "VARIABLE"
                                                 }, 
                                                 {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "INTEGER", 
-                                                                "i", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 6
+                                                    "arg_type": 100003, 
+                                                    "args_list": [], 
+                                                    "sub_type": "ITER_TABLE_KEY_STR"
                                                 }, 
                                                 {
                                                     "arg_type": 100003, 
@@ -452,7 +438,7 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 1999417514298081, 
+                            "element_id": 604131509000006, 
                             "enable": true
                         }, 
                         {
@@ -721,18 +707,9 @@
                                                     "sub_type": "VARIABLE"
                                                 }, 
                                                 {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "INTEGER", 
-                                                                "i", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 6
+                                                    "arg_type": 100003, 
+                                                    "args_list": [], 
+                                                    "sub_type": "ITER_TABLE_KEY_STR"
                                                 }, 
                                                 {
                                                     "arg_type": 100003, 
@@ -749,7 +726,63 @@
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 1999417514298082, 
+                            "element_id": 604131509000007, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "i", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "i", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }, 
+                                        {
+                                            "arg_type": 100016, 
+                                            "args_list": [
+                                                "+"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                1
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "MATH_OPERATION"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 604131509000008, 
                             "enable": true
                         }
                     ], 
@@ -757,13 +790,19 @@
                 }
             ], 
             "bp": false, 
-            "element_id": 1999417514000007, 
+            "element_id": 604131509000009, 
             "enable": true, 
             "op_arg": [
-                null
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
             ], 
             "op_arg_enable": [
-                false
+                true
             ]
         }
     ], 
@@ -774,7 +813,7 @@
     "func_category": "t_function", 
     "func_comment": "", 
     "func_des": "函数描述{当前玩家}当前玩家宝物表：{当前玩家宝物表}当前玩家索引：{当前玩家索引}", 
-    "func_id": "a6a4739ca75211ef84e6f774937485c6", 
+    "func_id": "4c95406ca9bd11ef96552db7dd5817f9", 
     "func_name": "加载已拥有宝物", 
     "func_param_list": [
         {
@@ -799,11 +838,11 @@
             ]
         }
     ], 
-    "group_id": "9dSUaqevEe+w5B2yvFc-QN", 
+    "group_id": "nbHBhamrEe+4ai233VgX+X", 
     "is_func": true, 
     "is_official_func": false, 
     "p_trigger_id": null, 
-    "trigger_id": 1999417514, 
+    "trigger_id": 604131509, 
     "trigger_name": "加载已拥有宝物", 
     "valid": true, 
     "var_data": [

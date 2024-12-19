@@ -1,0 +1,2555 @@
+{
+    "action": [
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "盾兵：怪物索引"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "敌人在波次怪物属性表的索引", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 6
+                                }
+                            ], 
+                            "op_arg": [
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        0
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "op_arg_enable": [
+                                false
+                            ], 
+                            "sub_type": "INT_TO_STR"
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710567, 
+            "enable": false
+        }, 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "盾兵：难度索引"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "难度表索引", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 6
+                                }
+                            ], 
+                            "op_arg": [
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        0
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "op_arg_enable": [
+                                false
+                            ], 
+                            "sub_type": "INT_TO_STR"
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710592, 
+            "enable": false
+        }, 
+        [
+            1064710172, 
+            "根据波次怪物属性表设置敌人信息", 
+            113262778, 
+            "action_type"
+        ], 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "初始生命", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "初始生命"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000003, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "波次生命成长", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "波次生命成长"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000026, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "初始攻击", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "初始攻击"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000039, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "波次攻击成长", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "波次攻击成长"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000052, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "初始移速", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "初始移速"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000077, 
+            "enable": true
+        }, 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "盾兵：表移速设置"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100011, 
+                                            "args_list": [
+                                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "敌人在波次怪物属性表的索引", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "初始移速"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                                }
+                            ], 
+                            "sub_type": "ANY_VAR_TO_STR"
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710547, 
+            "enable": false
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "掉落金币", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "掉落金币"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000173, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "波次掉落金币成长", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "波次掉落金币成长"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000103, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "护甲", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "护甲"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000116, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "攻击距离", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "攻击距离"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000142, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "物品掉落概率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "物品掉落概率"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000202, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "回血道具掉落概率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "回血道具掉落概率"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000215, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "每多少波属性增加", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "每多少波属性增加"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710175, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "金币每多少波增长", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "6bd0c928-6826-4f15-9405-a8e12ed25894"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "敌人在波次怪物属性表的索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "金币每多少波属性增加"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710595, 
+            "enable": true
+        }, 
+        [
+            1207152006, 
+            "根据难度属性表设置难度比例", 
+            113262778, 
+            "action_type"
+        ], 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "生命难度加成比例", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "dbded70f-4847-4c24-832a-fcff821ca695"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "难度表索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "生命难度加成比例"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000236, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "攻击难度加成比例", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "dbded70f-4847-4c24-832a-fcff821ca695"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "难度表索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "攻击难度加成比例"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000253, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "掉落金币难度加成比例", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "dbded70f-4847-4c24-832a-fcff821ca695"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "难度表索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "掉落金币难度加成比例"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000274, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "物品难度加成比例", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "dbded70f-4847-4c24-832a-fcff821ca695"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "难度表索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "物品难度加成比例"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000287, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "回血道具难度加成比例", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100011, 
+                            "args_list": [
+                                "dbded70f-4847-4c24-832a-fcff821ca695"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "INTEGER", 
+                                        "难度表索引", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 6
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "回血道具难度加成比例"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_FLOAT_TABLE_VAR_ND"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000300, 
+            "enable": true
+        }, 
+        [
+            1008534258, 
+            "设置波次增长倍率", 
+            113262778, 
+            "action_type"
+        ], 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "属性成长倍率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "波次计数"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }, 
+                                        {
+                                            "arg_type": 100017, 
+                                            "args_list": [
+                                                "/"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "每多少波属性增加", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }
+                                    ], 
+                                    "sub_type": "ARITHMETIC_OPERATION"
+                                }, 
+                                {
+                                    "arg_type": 100017, 
+                                    "args_list": [
+                                        "*"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        1.0
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": "ARITHMETIC_OPERATION"
+                        }
+                    ], 
+                    "sub_type": "F2I"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778000325, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "金币属性成长倍率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "波次计数"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }, 
+                                        {
+                                            "arg_type": 100017, 
+                                            "args_list": [
+                                                "/"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "金币每多少波增长", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }
+                                    ], 
+                                    "sub_type": "ARITHMETIC_OPERATION"
+                                }, 
+                                {
+                                    "arg_type": 100017, 
+                                    "args_list": [
+                                        "*"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        1.0
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "sub_type": "ARITHMETIC_OPERATION"
+                        }
+                    ], 
+                    "sub_type": "F2I"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710613, 
+            "enable": true
+        }, 
+        [
+            1621507269, 
+            "设置怪物属性", 
+            113262778, 
+            "action_type"
+        ], 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "怪物生命", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "初始生命", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }, 
+                                {
+                                    "arg_type": 100017, 
+                                    "args_list": [
+                                        "+"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "FLOAT", 
+                                                        "波次生命成长", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 2
+                                        }, 
+                                        {
+                                            "arg_type": 100017, 
+                                            "args_list": [
+                                                "*"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                1
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "ARITHMETIC_OPERATION"
+                                }
+                            ], 
+                            "sub_type": "ARITHMETIC_OPERATION"
+                        }, 
+                        {
+                            "arg_type": 100017, 
+                            "args_list": [
+                                "*"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "生命难度加成比例", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "ARITHMETIC_OPERATION"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710208, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "怪物攻击", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "初始攻击", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }, 
+                                {
+                                    "arg_type": 100017, 
+                                    "args_list": [
+                                        "+"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "FLOAT", 
+                                                        "波次攻击成长", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 2
+                                        }, 
+                                        {
+                                            "arg_type": 100017, 
+                                            "args_list": [
+                                                "*"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "属性成长倍率", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }
+                                    ], 
+                                    "sub_type": "ARITHMETIC_OPERATION"
+                                }
+                            ], 
+                            "sub_type": "ARITHMETIC_OPERATION"
+                        }, 
+                        {
+                            "arg_type": 100017, 
+                            "args_list": [
+                                "*"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "攻击难度加成比例", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "ARITHMETIC_OPERATION"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710241, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "金币", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "掉落金币", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 6
+                                }, 
+                                {
+                                    "arg_type": 100016, 
+                                    "args_list": [
+                                        "+"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "波次掉落金币成长", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }, 
+                                        {
+                                            "arg_type": 100016, 
+                                            "args_list": [
+                                                "*"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "金币属性成长倍率", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }
+                                    ], 
+                                    "sub_type": "MATH_OPERATION"
+                                }
+                            ], 
+                            "sub_type": "MATH_OPERATION"
+                        }, 
+                        {
+                            "arg_type": 100016, 
+                            "args_list": [
+                                "*"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100002, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "掉落金币难度加成比例", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }
+                            ], 
+                            "sub_type": "F2I"
+                        }
+                    ], 
+                    "sub_type": "MATH_OPERATION"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710266, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "实际物品掉落率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "物品掉落概率", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }, 
+                        {
+                            "arg_type": 100017, 
+                            "args_list": [
+                                "*"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "物品难度加成比例", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "ARITHMETIC_OPERATION"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710291, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "实际回血道具掉落率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "回血道具掉落概率", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }, 
+                        {
+                            "arg_type": 100017, 
+                            "args_list": [
+                                "*"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "回血道具难度加成比例", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "ARITHMETIC_OPERATION"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710385, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "移动速度", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "初始移速", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }, 
+                        {
+                            "arg_type": 100017, 
+                            "args_list": [
+                                "*"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                1.0
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "ARITHMETIC_OPERATION"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710426, 
+            "enable": true
+        }, 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "盾兵：初始移速设置"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "初始移速", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }
+                            ], 
+                            "sub_type": "ANY_VAR_TO_STR"
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710529, 
+            "enable": false
+        }, 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "盾兵：移速设置"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "移动速度", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }
+                            ], 
+                            "sub_type": "ANY_VAR_TO_STR"
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 544051202000136, 
+            "enable": false
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "实际护甲", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "护甲", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }, 
+                        {
+                            "arg_type": 100017, 
+                            "args_list": [
+                                "*"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                1.0
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "ARITHMETIC_OPERATION"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710439, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "实际攻击距离", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "攻击距离", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }, 
+                        {
+                            "arg_type": 100017, 
+                            "args_list": [
+                                "*"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                1.0
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "ARITHMETIC_OPERATION"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710466, 
+            "enable": true
+        }, 
+        {
+            "action_type": 400342, 
+            "args_list": [
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "怪物生命", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "怪物攻击", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "金币", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 6
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "实际物品掉落率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "实际回血道具掉落率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "移动速度", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "实际护甲", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "实际攻击距离", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }
+            ], 
+            "bp": false, 
+            "element_id": 113262778710402, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "当前难度索引{难度表索引}当前敌人在怪物属性表的索引{敌人在波次怪物属性表的索引}", 
+    "func_id": "8bf9e24dab0811ef9c7d834e35f3bb14", 
+    "func_name": "设置敌人信息", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "难度表索引", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "敌人在波次怪物属性表的索引", 
+                true
+            ]
+        }
+    ], 
+    "func_return": true, 
+    "func_rtv_name_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "怪物生命", 
+                "FLOAT"
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "怪物攻击", 
+                "FLOAT"
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "金币", 
+                "INTEGER"
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "物品掉落率", 
+                "FLOAT"
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "回血道具掉落率", 
+                "FLOAT"
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "移动速度", 
+                "FLOAT"
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "护甲", 
+                "FLOAT"
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "攻击距离", 
+                "FLOAT"
+            ]
+        }
+    ], 
+    "group_id": "GQV8IasBEe+bu4NONfO7FA", 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 113262778, 
+    "trigger_name": "设置敌人信息", 
+    "valid": true, 
+    "var_data": [
+        {
+            "FLOAT": {
+                "初始攻击": 0.0, 
+                "初始生命": 0.0, 
+                "初始移速": 0.0, 
+                "回血道具掉落概率": 0.0, 
+                "回血道具难度加成比例": 0.0, 
+                "实际回血道具掉落率": 0.0, 
+                "实际护甲": 0.0, 
+                "实际攻击距离": 0.0, 
+                "实际物品掉落率": 0.0, 
+                "怪物攻击": 0.0, 
+                "怪物生命": 0.0, 
+                "护甲": 0.0, 
+                "掉落金币难度加成比例": 0.0, 
+                "攻击距离": 0.0, 
+                "攻击难度加成比例": 0.0, 
+                "波次攻击成长": 0.0, 
+                "波次生命成长": 0.0, 
+                "物品掉落概率": 0.0, 
+                "物品难度加成比例": 0.0, 
+                "生命难度加成比例": 0.0, 
+                "移动速度": 0.0
+            }, 
+            "INTEGER": {
+                "属性成长倍率": 0, 
+                "掉落金币": 0, 
+                "敌人在波次怪物属性表的索引": 0, 
+                "每多少波属性增加": 0, 
+                "波次掉落金币成长": 0, 
+                "金币": 0, 
+                "金币属性成长倍率": 0, 
+                "金币每多少波增长": 0, 
+                "难度表索引": 0
+            }, 
+            "NEW_TIMER": {}, 
+            "STRING": {}
+        }, 
+        {
+            "初始攻击": 0, 
+            "初始生命": 0, 
+            "初始移速": 0, 
+            "回血道具掉落概率": 0, 
+            "回血道具难度加成比例": 0, 
+            "实际回血道具掉落率": 0, 
+            "实际护甲": 0, 
+            "实际攻击距离": 0, 
+            "实际物品掉落率": 0, 
+            "属性成长倍率": 0, 
+            "怪物攻击": 0, 
+            "怪物生命": 0, 
+            "护甲": 0, 
+            "掉落金币": 0, 
+            "掉落金币难度加成比例": 0, 
+            "攻击距离": 0, 
+            "攻击难度加成比例": 0, 
+            "敌人在波次怪物属性表的索引": 0, 
+            "每多少波属性增加": 0, 
+            "波次掉落金币成长": 0, 
+            "波次攻击成长": 0, 
+            "波次生命成长": 0, 
+            "物品掉落概率": 0, 
+            "物品难度加成比例": 0, 
+            "生命难度加成比例": 0, 
+            "移动速度": 0, 
+            "金币": 0, 
+            "金币属性成长倍率": 0, 
+            "金币每多少波增长": 0, 
+            "难度表索引": 0
+        }, 
+        [
+            "难度表索引", 
+            "敌人在波次怪物属性表的索引", 
+            "初始生命", 
+            "波次生命成长", 
+            "初始攻击", 
+            "掉落金币", 
+            "波次攻击成长", 
+            "初始移速", 
+            "攻击距离", 
+            "波次掉落金币成长", 
+            "护甲", 
+            "物品掉落概率", 
+            "回血道具掉落概率", 
+            "生命难度加成比例", 
+            "攻击难度加成比例", 
+            "掉落金币难度加成比例", 
+            "物品难度加成比例", 
+            "回血道具难度加成比例", 
+            "每多少波属性增加", 
+            "属性成长倍率", 
+            "怪物生命", 
+            "怪物攻击", 
+            "金币", 
+            "实际物品掉落率", 
+            "实际回血道具掉落率", 
+            "移动速度", 
+            "实际护甲", 
+            "实际攻击距离", 
+            "金币每多少波增长", 
+            "金币属性成长倍率"
+        ]
+    ]
+}

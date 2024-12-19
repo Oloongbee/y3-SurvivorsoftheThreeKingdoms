@@ -119,9 +119,11 @@
                                 true
                             ], 
                             "sub_type": 1
-                        }
+                        }, 
+                        null
                     ], 
                     "op_arg_enable": [
+                        false, 
                         false
                     ]
                 }, 
@@ -178,7 +180,19 @@
                     ], 
                     "bp": false, 
                     "element_id": 1907503106001649, 
-                    "enable": true
+                    "enable": true, 
+                    "op_arg": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                -1.0
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "op_arg_enable": [
+                        false
+                    ]
                 }, 
                 {
                     "action_type": "RUN_ONCE_TIMER_NO_SAVE", 
@@ -246,7 +260,19 @@
                                     ], 
                                     "bp": false, 
                                     "element_id": 1907503106001431, 
-                                    "enable": true
+                                    "enable": true, 
+                                    "op_arg": [
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                -1.0
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "op_arg_enable": [
+                                        false
+                                    ]
                                 }, 
                                 {
                                     "action_type": "RUN_ONCE_TIMER_NO_SAVE", 
@@ -314,7 +340,19 @@
                                                     ], 
                                                     "bp": false, 
                                                     "element_id": 1907503106001706, 
-                                                    "enable": true
+                                                    "enable": true, 
+                                                    "op_arg": [
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                -1.0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "op_arg_enable": [
+                                                        false
+                                                    ]
                                                 }
                                             ], 
                                             "sub_type": 1
@@ -769,13 +807,15 @@
                                                                                                         true
                                                                                                     ], 
                                                                                                     "sub_type": 1
-                                                                                                }
+                                                                                                }, 
+                                                                                                null
                                                                                             ], 
                                                                                             "op_arg_enable": [
                                                                                                 false, 
                                                                                                 false, 
                                                                                                 false, 
                                                                                                 true, 
+                                                                                                false, 
                                                                                                 false, 
                                                                                                 false
                                                                                             ], 
@@ -1268,6 +1308,7 @@
                                                                                         null, 
                                                                                         null, 
                                                                                         null, 
+                                                                                        null, 
                                                                                         null
                                                                                     ], 
                                                                                     "op_arg_enable": [
@@ -1281,6 +1322,7 @@
                                                                                         false, 
                                                                                         true, 
                                                                                         true, 
+                                                                                        false, 
                                                                                         false, 
                                                                                         false, 
                                                                                         false, 
@@ -1712,9 +1754,11 @@
                                                 true
                                             ], 
                                             "sub_type": 1
-                                        }
+                                        }, 
+                                        null
                                     ], 
                                     "op_arg_enable": [
+                                        false, 
                                         false
                                     ]
                                 }
@@ -2001,20 +2045,9 @@
                                 {
                                     "arg_type": 100000, 
                                     "args_list": [
-                                        {
-                                            "arg_type": 100014, 
-                                            "args_list": [], 
-                                            "sub_type": "CUR_ABILITY"
-                                        }, 
-                                        {
-                                            "arg_type": 100078, 
-                                            "args_list": [
-                                                "ability_damage"
-                                            ], 
-                                            "sub_type": 1
-                                        }
+                                        0.0
                                     ], 
-                                    "sub_type": "GET_ABILITY_FLOAT_ATTR"
+                                    "sub_type": 1
                                 }, 
                                 {
                                     "arg_type": 100017, 
@@ -2024,42 +2057,29 @@
                                     "sub_type": 1
                                 }, 
                                 {
-                                    "arg_type": 100002, 
+                                    "arg_type": 100000, 
                                     "args_list": [
                                         {
-                                            "arg_type": 100002, 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100014, 
-                                                    "args_list": [], 
-                                                    "sub_type": "CUR_ABILITY"
-                                                }, 
-                                                {
-                                                    "arg_type": 100079, 
-                                                    "args_list": [
-                                                        "ability_level"
-                                                    ], 
-                                                    "sub_type": 1
-                                                }
-                                            ], 
-                                            "sub_type": "GET_ABILITY_INT_ATTR"
+                                            "arg_type": 100006, 
+                                            "args_list": [], 
+                                            "sub_type": "GET_UNIT_FROM_EVENT"
                                         }, 
                                         {
-                                            "arg_type": 100016, 
+                                            "arg_type": 100301, 
                                             "args_list": [
-                                                "*"
+                                                "ATTR_BASE"
                                             ], 
                                             "sub_type": 1
                                         }, 
                                         {
-                                            "arg_type": 100002, 
+                                            "arg_type": 100042, 
                                             "args_list": [
-                                                10
+                                                "attack_mag"
                                             ], 
                                             "sub_type": 1
                                         }
                                     ], 
-                                    "sub_type": "MATH_OPERATION"
+                                    "sub_type": "GET_UNIT_ATTR"
                                 }
                             ], 
                             "sub_type": "ARITHMETIC_OPERATION"

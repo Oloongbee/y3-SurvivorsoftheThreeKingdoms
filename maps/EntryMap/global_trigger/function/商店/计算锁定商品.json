@@ -1,0 +1,371 @@
+{
+    "action": [
+        {
+            "action_type": "TRAVERSE_TABLE_NEW", 
+            "args_list": [
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "道具商店道具选择控件表"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_TABLE_KV"
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "IF_THEN_ELSE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100021, 
+                                    "args_list": [
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100011, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "道具商店道具选择控件表"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_TABLE_KV"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [], 
+                                                            "sub_type": "ITER_TABLE_KEY_INT"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "是否锁定"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_BOOLEAN_TABLE_VAR_ND"
+                                                }, 
+                                                {
+                                                    "arg_type": 100035, 
+                                                    "args_list": [
+                                                        "=="
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        true
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "condition_type": "BOOL_COMPARE", 
+                                            "element_id": 1260351601000026, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "DUMP_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "PLAYER", 
+                                                                        "玩家", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "商店道具选择集合表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1260351601000077, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_TABLE_VALUE_ND", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "PLAYER", 
+                                                                        "玩家", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "商店道具选择集合表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [], 
+                                                    "sub_type": "ITER_TABLE_KEY_INT"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "索引"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100011, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "道具商店道具选择控件表"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_TABLE_KV"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [], 
+                                                            "sub_type": "ITER_TABLE_KEY_INT"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "锁定格子对应索引"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1260351601000045, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100175, 
+                                                    "args_list": [
+                                                        3
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "触发锁定"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1260351601000074, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "DUMP_TABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "PLAYER", 
+                                                                        "玩家", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "商店道具选择集合表"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_TABLE_KV"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1260351601000087, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1260351601000016, 
+                            "enable": true, 
+                            "fake_op": []
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1260351601000002, 
+            "enable": true, 
+            "op_arg": [
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "op_arg_enable": [
+                false
+            ]
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "函数描述{玩家}", 
+    "func_id": "30fff9ceb57011efbd6993743e2d66af", 
+    "func_name": "计算锁定商品", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "玩家", 
+                true
+            ]
+        }
+    ], 
+    "group_id": "D+zpmLVbEe+s9JN0Pi1mrx", 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 1260351601, 
+    "trigger_name": "计算锁定商品", 
+    "valid": true, 
+    "var_data": [
+        {
+            "PLAYER": {
+                "玩家": 0
+            }
+        }, 
+        {
+            "玩家": 0
+        }, 
+        [
+            "玩家"
+        ]
+    ]
+}

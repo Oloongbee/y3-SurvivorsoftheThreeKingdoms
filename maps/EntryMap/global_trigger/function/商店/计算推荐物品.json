@@ -1,0 +1,1310 @@
+{
+    "action": [
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "TABLE", 
+                                "当前玩家道具池表", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "商店道具池表"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_TABLE_KV"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1260482679000001, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "TABLE", 
+                                "当前玩家道具选择集合表", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "商店道具选择集合表"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_TABLE_KV"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1260482679000002, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "TABLE", 
+                                "当前玩家阵容表", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "阵容表"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_TABLE_KV"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1260482679000003, 
+            "enable": true
+        }, 
+        {
+            "action_type": "TRAVERSE_TABLE_NEW", 
+            "args_list": [
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "TABLE", 
+                                "当前玩家道具选择集合表", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100175, 
+                                    "args_list": [
+                                        3
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "计算推荐物品"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "遍历道具集合表"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "op_arg": [
+                                        null, 
+                                        null, 
+                                        null, 
+                                        null, 
+                                        null, 
+                                        null, 
+                                        null, 
+                                        null
+                                    ], 
+                                    "op_arg_enable": [
+                                        false, 
+                                        false, 
+                                        false, 
+                                        false, 
+                                        false, 
+                                        false, 
+                                        false, 
+                                        false
+                                    ], 
+                                    "sub_type": "STR_JOIN"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1260482679000004, 
+                            "enable": false
+                        }, 
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        [
+                                            "INTEGER", 
+                                            "道具集合表索引", 
+                                            "local"
+                                        ]
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [], 
+                                    "sub_type": "ITER_TABLE_KEY_INT"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1260482679000005, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        [
+                                            "INTEGER", 
+                                            "道具池表索引", 
+                                            "local"
+                                        ]
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100011, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "TABLE", 
+                                                        "当前玩家道具选择集合表", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": "VARIABLE"
+                                        }, 
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [], 
+                                            "sub_type": "ITER_TABLE_KEY_INT"
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "索引"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1260482679000006, 
+                            "enable": true
+                        }, 
+                        [
+                            1683074536, 
+                            "如果物品类型为武器", 
+                            1260482679, 
+                            "action_type"
+                        ], 
+                        {
+                            "action_type": "IF_THEN_ELSE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100021, 
+                                    "args_list": [
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100011, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "TABLE", 
+                                                                        "当前玩家道具池表", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": "VARIABLE"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                [
+                                                                    "INTEGER", 
+                                                                    "道具池表索引", 
+                                                                    "local"
+                                                                ]
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "标签"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_STRING_TABLE_VAR_ND"
+                                                }, 
+                                                {
+                                                    "arg_type": 100035, 
+                                                    "args_list": [
+                                                        "=="
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "武器"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "condition_type": "ANY_COMPARE", 
+                                            "element_id": 1260482679000007, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100175, 
+                                                    "args_list": [
+                                                        3
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "计算推荐物品"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "当前标签为武器"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "op_arg": [
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null, 
+                                                        null
+                                                    ], 
+                                                    "op_arg_enable": [
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false, 
+                                                        false
+                                                    ], 
+                                                    "sub_type": "STR_JOIN"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1260482679000008, 
+                                            "enable": false
+                                        }, 
+                                        {
+                                            "action_type": "TRAVERSE_TABLE_NEW", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "TABLE", 
+                                                                "当前玩家阵容表", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": "VARIABLE"
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "IF_THEN_ELSE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100021, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100039, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100011, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "__tuple__": true, 
+                                                                                                    "items": [
+                                                                                                        "TABLE", 
+                                                                                                        "当前玩家道具池表", 
+                                                                                                        "local"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "VARIABLE"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100002, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "__tuple__": true, 
+                                                                                                    "items": [
+                                                                                                        "INTEGER", 
+                                                                                                        "道具池表索引", 
+                                                                                                        "local"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": 6
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "道具"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "GET_ABILITY_NAME_TABLE_VAR_ND"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100035, 
+                                                                                    "args_list": [
+                                                                                        "=="
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100039, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100011, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "__tuple__": true, 
+                                                                                                    "items": [
+                                                                                                        "TABLE", 
+                                                                                                        "当前玩家阵容表", 
+                                                                                                        "local"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "VARIABLE"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100002, 
+                                                                                            "args_list": [], 
+                                                                                            "sub_type": "ITER_TABLE_KEY_INT"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "武器"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "GET_ABILITY_NAME_TABLE_VAR_ND"
+                                                                                }
+                                                                            ], 
+                                                                            "condition_type": "ANY_COMPARE", 
+                                                                            "element_id": 1260482679000009, 
+                                                                            "enable": true
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100175, 
+                                                                                    "args_list": [
+                                                                                        3
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "计算推荐物品"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "设置推荐文本"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "op_arg": [
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null
+                                                                                    ], 
+                                                                                    "op_arg_enable": [
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false
+                                                                                    ], 
+                                                                                    "sub_type": "STR_JOIN"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 1260482679000010, 
+                                                                            "enable": false
+                                                                        }, 
+                                                                        {
+                                                                            "action_type": "SET_VARIABLE", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100030, 
+                                                                                    "args_list": [
+                                                                                        [
+                                                                                            "INTEGER", 
+                                                                                            "当前推荐武将阵容位置索引", 
+                                                                                            "local"
+                                                                                        ]
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [], 
+                                                                                    "sub_type": "ITER_TABLE_KEY_INT"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 1260482679000011, 
+                                                                            "enable": true
+                                                                        }, 
+                                                                        {
+                                                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100175, 
+                                                                                    "args_list": [
+                                                                                        3
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "计算推荐物品:"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "当前设置推荐等级位置为"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "op_arg": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "INTEGER", 
+                                                                                                            "当前推荐武将阵容位置索引", 
+                                                                                                            "local"
+                                                                                                        ]
+                                                                                                    ], 
+                                                                                                    "sub_type": 6
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                                                        }, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null
+                                                                                    ], 
+                                                                                    "op_arg_enable": [
+                                                                                        true, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false
+                                                                                    ], 
+                                                                                    "sub_type": "STR_JOIN"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 1260482679000012, 
+                                                                            "enable": false
+                                                                        }, 
+                                                                        [
+                                                                            1237217571, 
+                                                                            "如果相同，那么显示推荐框以及显示文本", 
+                                                                            1260482679, 
+                                                                            "action_type"
+                                                                        ], 
+                                                                        {
+                                                                            "action_type": "SET_VARIABLE", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100030, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "UI_COMP", 
+                                                                                                "当前等级文本控件", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100070, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100025, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "__tuple__": true, 
+                                                                                                    "items": [
+                                                                                                        "PLAYER", 
+                                                                                                        "玩家", 
+                                                                                                        "local"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "VARIABLE"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100070, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100025, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "PLAYER", 
+                                                                                                                "玩家", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100070, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100011, 
+                                                                                                            "args_list": [
+                                                                                                                "d2c27d6b-91ad-477b-8275-06cce7875206"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100002, 
+                                                                                                            "args_list": [
+                                                                                                                [
+                                                                                                                    "INTEGER", 
+                                                                                                                    "当前推荐武将阵容位置索引", 
+                                                                                                                    "local"
+                                                                                                                ]
+                                                                                                            ], 
+                                                                                                            "sub_type": 6
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "道具商店武将显示控件"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100003, 
+                                                                                                    "args_list": [
+                                                                                                        "等级栏"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "GET_UI_COMP_BY_PATH"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "文本-等级"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "GET_UI_COMP_BY_PATH"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 1260482679000013, 
+                                                                            "enable": true
+                                                                        }, 
+                                                                        {
+                                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "PLAYER", 
+                                                                                                "玩家", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "VARIABLE"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100070, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "UI_COMP", 
+                                                                                                "当前等级文本控件", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "VARIABLE"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "Lv"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100011, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "arg_type": 100025, 
+                                                                                                                    "args_list": [
+                                                                                                                        {
+                                                                                                                            "__tuple__": true, 
+                                                                                                                            "items": [
+                                                                                                                                "PLAYER", 
+                                                                                                                                "玩家", 
+                                                                                                                                "local"
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ], 
+                                                                                                                    "sub_type": "VARIABLE"
+                                                                                                                }, 
+                                                                                                                {
+                                                                                                                    "arg_type": 100003, 
+                                                                                                                    "args_list": [
+                                                                                                                        "阵容表"
+                                                                                                                    ], 
+                                                                                                                    "sub_type": 1
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": "GET_TABLE_KV"
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100002, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "__tuple__": true, 
+                                                                                                                    "items": [
+                                                                                                                        "INTEGER", 
+                                                                                                                        "当前推荐武将阵容位置索引", 
+                                                                                                                        "local"
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": 6
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "等级"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                                                        }
+                                                                                    ], 
+                                                                                    "op_arg": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "+"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100011, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "__tuple__": true, 
+                                                                                                                    "items": [
+                                                                                                                        "TABLE", 
+                                                                                                                        "当前玩家道具池表", 
+                                                                                                                        "local"
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": "VARIABLE"
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100002, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "__tuple__": true, 
+                                                                                                                    "items": [
+                                                                                                                        "INTEGER", 
+                                                                                                                        "道具池表索引", 
+                                                                                                                        "local"
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": 6
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "等级"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                                                        }, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null
+                                                                                    ], 
+                                                                                    "op_arg_enable": [
+                                                                                        true, 
+                                                                                        true, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false
+                                                                                    ], 
+                                                                                    "sub_type": "STR_JOIN"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 1260482679000014, 
+                                                                            "enable": true
+                                                                        }, 
+                                                                        {
+                                                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "PLAYER", 
+                                                                                                "玩家", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "VARIABLE"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100001, 
+                                                                                    "args_list": [
+                                                                                        true
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100070, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100025, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "__tuple__": true, 
+                                                                                                    "items": [
+                                                                                                        "PLAYER", 
+                                                                                                        "玩家", 
+                                                                                                        "local"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "VARIABLE"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100070, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100011, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "arg_type": 100025, 
+                                                                                                            "args_list": [
+                                                                                                                {
+                                                                                                                    "__tuple__": true, 
+                                                                                                                    "items": [
+                                                                                                                        "PLAYER", 
+                                                                                                                        "玩家", 
+                                                                                                                        "local"
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ], 
+                                                                                                            "sub_type": "VARIABLE"
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100003, 
+                                                                                                            "args_list": [
+                                                                                                                "道具商店道具选择控件表"
+                                                                                                            ], 
+                                                                                                            "sub_type": 1
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "GET_TABLE_KV"
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "INTEGER", 
+                                                                                                                "道具集合表索引", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 6
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100003, 
+                                                                                                    "args_list": [
+                                                                                                        "道具商店道具选择控件"
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "推荐文本"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "GET_UI_COMP_BY_PATH"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 1260482679000015, 
+                                                                            "enable": true
+                                                                        }, 
+                                                                        {
+                                                                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100175, 
+                                                                                    "args_list": [
+                                                                                        3
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "计算推荐物品:"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "当前设置推荐文本位置为"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "op_arg": [
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100002, 
+                                                                                                    "args_list": [
+                                                                                                        [
+                                                                                                            "INTEGER", 
+                                                                                                            "道具集合表索引", 
+                                                                                                            "local"
+                                                                                                        ]
+                                                                                                    ], 
+                                                                                                    "sub_type": 6
+                                                                                                }
+                                                                                            ], 
+                                                                                            "sub_type": "ANY_VAR_TO_STR"
+                                                                                        }, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null, 
+                                                                                        null
+                                                                                    ], 
+                                                                                    "op_arg_enable": [
+                                                                                        true, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false, 
+                                                                                        false
+                                                                                    ], 
+                                                                                    "sub_type": "STR_JOIN"
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 1260482679000016, 
+                                                                            "enable": false
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 1260482679000017, 
+                                                            "enable": true, 
+                                                            "fake_op": []
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1260482679000018, 
+                                            "enable": true, 
+                                            "op_arg": [
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        true
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "op_arg_enable": [
+                                                true
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1260482679000019, 
+                            "enable": true, 
+                            "fake_op": []
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1260482679000020, 
+            "enable": true, 
+            "op_arg": [
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "op_arg_enable": [
+                false
+            ]
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "函数描述{玩家}", 
+    "func_id": "0dbf5b3db5ff11efbeb6095ebc470b51", 
+    "func_name": "计算推荐物品", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "玩家", 
+                true
+            ]
+        }
+    ], 
+    "group_id": "Pygik7YREe+ZcHksdKRzrf", 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 1260482679, 
+    "trigger_name": "计算推荐物品", 
+    "valid": true, 
+    "var_data": [
+        {
+            "INTEGER": {
+                "当前推荐武将阵容位置索引": 0, 
+                "道具池表索引": 0, 
+                "道具集合表索引": 0
+            }, 
+            "PLAYER": {
+                "玩家": 0
+            }, 
+            "TABLE": {
+                "当前玩家道具池表": null, 
+                "当前玩家道具选择集合表": null, 
+                "当前玩家阵容表": null
+            }, 
+            "UI_COMP": {
+                "当前等级文本控件": ""
+            }
+        }, 
+        {
+            "当前推荐武将阵容位置索引": 0, 
+            "当前玩家道具池表": 0, 
+            "当前玩家道具选择集合表": 0, 
+            "当前玩家阵容表": 0, 
+            "当前等级文本控件": 0, 
+            "玩家": 0, 
+            "道具池表索引": 0, 
+            "道具集合表索引": 0
+        }, 
+        [
+            "道具池表索引", 
+            "玩家", 
+            "当前玩家道具池表", 
+            "当前玩家道具选择集合表", 
+            "当前推荐武将阵容位置索引", 
+            "当前玩家阵容表", 
+            "当前等级文本控件", 
+            "道具集合表索引"
+        ]
+    ]
+}

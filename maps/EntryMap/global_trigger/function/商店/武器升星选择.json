@@ -1,28 +1,6 @@
 {
     "action": [
         {
-            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
-            "args_list": [
-                {
-                    "arg_type": 100175, 
-                    "args_list": [
-                        3
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100003, 
-                    "args_list": [
-                        "武器升星选择：调用函数"
-                    ], 
-                    "sub_type": 1
-                }
-            ], 
-            "bp": false, 
-            "element_id": 577372400000001, 
-            "enable": false
-        }, 
-        {
             "action_type": "IF_THEN_ELSE", 
             "args_list": [
                 {
@@ -31,36 +9,36 @@
                         {
                             "args_list": [
                                 {
-                                    "arg_type": 100001, 
+                                    "arg_type": 100002, 
                                     "args_list": [
                                         {
                                             "__tuple__": true, 
                                             "items": [
-                                                "BOOLEAN", 
-                                                "选择是否已经打开", 
+                                                "INTEGER", 
+                                                "调用次数", 
                                                 "local"
                                             ]
                                         }
                                     ], 
-                                    "sub_type": "VARIABLE"
+                                    "sub_type": 6
                                 }, 
                                 {
-                                    "arg_type": 100035, 
+                                    "arg_type": 100015, 
                                     "args_list": [
-                                        "=="
+                                        ">"
                                     ], 
                                     "sub_type": 1
                                 }, 
                                 {
-                                    "arg_type": 100001, 
+                                    "arg_type": 100002, 
                                     "args_list": [
-                                        false
+                                        0
                                     ], 
                                     "sub_type": 1
                                 }
                             ], 
-                            "condition_type": "BOOL_COMPARE", 
-                            "element_id": 577372400000875, 
+                            "condition_type": "FLOAT_COMPARE", 
+                            "element_id": 577372400000864, 
                             "enable": true
                         }
                     ], 
@@ -70,33 +48,26 @@
                     "arg_type": 100022, 
                     "args_list": [
                         {
-                            "action_type": "SET_VARIABLE", 
+                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
                             "args_list": [
                                 {
-                                    "arg_type": 100030, 
+                                    "arg_type": 100175, 
                                     "args_list": [
-                                        {
-                                            "__tuple__": true, 
-                                            "items": [
-                                                "BOOLEAN", 
-                                                "选择是否已经打开", 
-                                                "local"
-                                            ]
-                                        }
+                                        3
                                     ], 
                                     "sub_type": 1
                                 }, 
                                 {
-                                    "arg_type": 100001, 
+                                    "arg_type": 100003, 
                                     "args_list": [
-                                        true
+                                        "武器升星选择：调用函数"
                                     ], 
                                     "sub_type": 1
                                 }
                             ], 
                             "bp": false, 
-                            "element_id": 157942002000025, 
-                            "enable": true
+                            "element_id": 577372400000001, 
+                            "enable": false
                         }, 
                         {
                             "action_type": "SWITCH", 
@@ -286,7 +257,7 @@
                                                             ], 
                                                             "bp": false, 
                                                             "element_id": 577372400000192, 
-                                                            "enable": true
+                                                            "enable": false
                                                         }, 
                                                         {
                                                             "action_type": "TRAVERSE_TABLE_NEW", 
@@ -694,7 +665,7 @@
                                                                                             ], 
                                                                                             "bp": false, 
                                                                                             "element_id": 577372400000195, 
-                                                                                            "enable": true
+                                                                                            "enable": false
                                                                                         }, 
                                                                                         {
                                                                                             "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
@@ -792,7 +763,7 @@
                                                                                             ], 
                                                                                             "bp": false, 
                                                                                             "element_id": 577372400000196, 
-                                                                                            "enable": true
+                                                                                            "enable": false
                                                                                         }, 
                                                                                         {
                                                                                             "action_type": "SET_VARIABLE", 
@@ -1276,7 +1247,7 @@
                                                                                                                             ], 
                                                                                                                             "bp": false, 
                                                                                                                             "element_id": 577372400000199, 
-                                                                                                                            "enable": true
+                                                                                                                            "enable": false
                                                                                                                         }, 
                                                                                                                         {
                                                                                                                             "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
@@ -1628,7 +1599,7 @@
                                                                                                                             ], 
                                                                                                                             "bp": false, 
                                                                                                                             "element_id": 577372400000200, 
-                                                                                                                            "enable": true
+                                                                                                                            "enable": false
                                                                                                                         }, 
                                                                                                                         {
                                                                                                                             "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
@@ -2424,7 +2395,7 @@
                                                                                             ], 
                                                                                             "bp": false, 
                                                                                             "element_id": 577372400000207, 
-                                                                                            "enable": true
+                                                                                            "enable": false
                                                                                         }, 
                                                                                         {
                                                                                             "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
@@ -2593,7 +2564,7 @@
                                                                                             ], 
                                                                                             "bp": false, 
                                                                                             "element_id": 577372400000208, 
-                                                                                            "enable": true
+                                                                                            "enable": false
                                                                                         }
                                                                                     ], 
                                                                                     "sub_type": 1
@@ -3250,7 +3221,7 @@
                                                                                                                             ], 
                                                                                                                             "bp": false, 
                                                                                                                             "element_id": 577372400000380, 
-                                                                                                                            "enable": true
+                                                                                                                            "enable": false
                                                                                                                         }, 
                                                                                                                         {
                                                                                                                             "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
@@ -3602,7 +3573,7 @@
                                                                                                                             ], 
                                                                                                                             "bp": false, 
                                                                                                                             "element_id": 577372400000391, 
-                                                                                                                            "enable": true
+                                                                                                                            "enable": false
                                                                                                                         }, 
                                                                                                                         {
                                                                                                                             "action_type": "SET_VARIABLE", 
@@ -4053,7 +4024,7 @@
                                                                                             ], 
                                                                                             "bp": false, 
                                                                                             "element_id": 577372400000350, 
-                                                                                            "enable": true
+                                                                                            "enable": false
                                                                                         }, 
                                                                                         {
                                                                                             "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
@@ -4222,7 +4193,7 @@
                                                                                             ], 
                                                                                             "bp": false, 
                                                                                             "element_id": 577372400000361, 
-                                                                                            "enable": true
+                                                                                            "enable": false
                                                                                         }
                                                                                     ], 
                                                                                     "sub_type": 1
@@ -8293,18 +8264,14 @@
                 }, 
                 {
                     "arg_type": 100022, 
-                    "args_list": [
-                        1895149737
-                    ], 
+                    "args_list": [], 
                     "sub_type": 1
                 }
             ], 
             "bp": false, 
-            "element_id": 577372400000866, 
+            "element_id": 577372400000855, 
             "enable": true, 
-            "fake_op": [
-                2
-            ]
+            "fake_op": []
         }
     ], 
     "call_enabled": true, 
@@ -8313,7 +8280,7 @@
     "event": [], 
     "func_category": "t_function", 
     "func_comment": "", 
-    "func_des": "为索引为{当前玩家索引}的玩家{当前玩家}升星，升星武器索引为{升星武器索引}", 
+    "func_des": "为索引为{当前玩家索引}的玩家{当前玩家}升星，升星武器索引为{升星武器索引}{调用次数}", 
     "func_id": "aac2ad86938111efa77681961ad4289d", 
     "func_name": "武器升星选择", 
     "func_param_list": [
@@ -8335,6 +8302,13 @@
             "__tuple__": true, 
             "items": [
                 "升星武器索引", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "调用次数", 
                 true
             ]
         }
@@ -8392,6 +8366,61 @@
                             "arg_type": 100022, 
                             "args_list": [
                                 {
+                                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100175, 
+                                            "args_list": [
+                                                3
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "武器升星选择："
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "触发子触发器"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "op_arg": [
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null
+                                            ], 
+                                            "op_arg_enable": [
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false
+                                            ], 
+                                            "sub_type": "STR_JOIN"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1969881329000133, 
+                                    "enable": false
+                                }, 
+                                {
                                     "action_type": "SET_VARIABLE", 
                                     "args_list": [
                                         {
@@ -8400,8 +8429,8 @@
                                                 {
                                                     "__tuple__": true, 
                                                     "items": [
-                                                        "BOOLEAN", 
-                                                        "选择是否已经打开", 
+                                                        "INTEGER", 
+                                                        "调用次数", 
                                                         "local"
                                                     ]
                                                 }
@@ -8409,11 +8438,38 @@
                                             "sub_type": 1
                                         }, 
                                         {
-                                            "arg_type": 100001, 
+                                            "arg_type": 100002, 
                                             "args_list": [
-                                                false
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "调用次数", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100016, 
+                                                    "args_list": [
+                                                        "-"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        1
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
                                             ], 
-                                            "sub_type": 1
+                                            "sub_type": "MATH_OPERATION"
                                         }
                                     ], 
                                     "bp": false, 
@@ -8670,6 +8726,93 @@
                                                 {
                                                     "arg_type": 100003, 
                                                     "args_list": [
+                                                        "武器升星选择：当前升级项为"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "武器升级选择", 
+                                                                        "local"
+                                                                    ]
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        2
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }
+                                                    ], 
+                                                    "op_arg": [
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "op_arg_enable": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": "INT_TO_STR"
+                                                }
+                                            ], 
+                                            "op_arg": [
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null
+                                            ], 
+                                            "op_arg_enable": [
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false
+                                            ], 
+                                            "sub_type": "STR_JOIN"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 392823027000116, 
+                                    "enable": false
+                                }, 
+                                {
+                                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100175, 
+                                            "args_list": [
+                                                3
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
                                                         "武器升星选择：升级后的等级为"
                                                     ], 
                                                     "sub_type": 1
@@ -8824,7 +8967,7 @@
                                     ], 
                                     "bp": false, 
                                     "element_id": 157942002000003, 
-                                    "enable": true
+                                    "enable": false
                                 }, 
                                 {
                                     "action_type": "CLEAR_LIST_VAR", 
@@ -8970,6 +9113,92 @@
                                     "bp": false, 
                                     "element_id": 157942002000007, 
                                     "enable": true
+                                }, 
+                                {
+                                    "action_type": "CALL_TRIGGER_FUNC", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100177, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前玩家索引", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "PLAYER", 
+                                                                "当前玩家", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": "VARIABLE"
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "升星武器索引", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "调用次数", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "op_arg": [], 
+                                            "op_arg_enable": [], 
+                                            "sub_type": "aac2ad86938111efa77681961ad4289d"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "call_rt_arg_idxes": [], 
+                                    "element_id": 1969881329000096, 
+                                    "enable": true
+                                }, 
+                                {
+                                    "action_type": "UNREG_TRIGGER", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100178, 
+                                            "args_list": [], 
+                                            "sub_type": "CURRENT_DYNAMIC_TRIGGER_INSTANCE"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1969881329000157, 
+                                    "enable": true
                                 }
                             ], 
                             "sub_type": 1
@@ -9018,6 +9247,41 @@
             "group_id": 0, 
             "is_conf": true, 
             "p_trigger_id": 577372400, 
+            "sub_trigger_owner_set_var_action": {
+                "action_type": "SET_VARIABLE", 
+                "args_list": [
+                    {
+                        "arg_type": 100178, 
+                        "args_list": [
+                            {
+                                "__tuple__": true, 
+                                "items": [
+                                    "DYNAMIC_TRIGGER_INSTANCE", 
+                                    "触发器3", 
+                                    "local"
+                                ]
+                            }
+                        ], 
+                        "sub_type": "VARIABLE"
+                    }, 
+                    {
+                        "arg_type": 100178, 
+                        "args_list": [
+                            {
+                                "arg_type": 100019, 
+                                "args_list": [
+                                    157942002
+                                ], 
+                                "sub_type": 1
+                            }
+                        ], 
+                        "sub_type": "REG_TRIGGER"
+                    }
+                ], 
+                "bp": false, 
+                "element_id": 157942002000146, 
+                "enable": true
+            }, 
             "trigger_id": 157942002, 
             "trigger_name": "子触发器_102", 
             "valid": true, 
@@ -9075,6 +9339,61 @@
                             "arg_type": 100022, 
                             "args_list": [
                                 {
+                                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100175, 
+                                            "args_list": [
+                                                3
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "武器升星选择："
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "触发子触发器"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "op_arg": [
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null
+                                            ], 
+                                            "op_arg_enable": [
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false
+                                            ], 
+                                            "sub_type": "STR_JOIN"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1969881329000133, 
+                                    "enable": false
+                                }, 
+                                {
                                     "action_type": "SET_VARIABLE", 
                                     "args_list": [
                                         {
@@ -9083,8 +9402,8 @@
                                                 {
                                                     "__tuple__": true, 
                                                     "items": [
-                                                        "BOOLEAN", 
-                                                        "选择是否已经打开", 
+                                                        "INTEGER", 
+                                                        "调用次数", 
                                                         "local"
                                                     ]
                                                 }
@@ -9092,11 +9411,38 @@
                                             "sub_type": 1
                                         }, 
                                         {
-                                            "arg_type": 100001, 
+                                            "arg_type": 100002, 
                                             "args_list": [
-                                                false
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "调用次数", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100016, 
+                                                    "args_list": [
+                                                        "-"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        1
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
                                             ], 
-                                            "sub_type": 1
+                                            "sub_type": "MATH_OPERATION"
                                         }
                                     ], 
                                     "bp": false, 
@@ -9353,6 +9699,93 @@
                                                 {
                                                     "arg_type": 100003, 
                                                     "args_list": [
+                                                        "武器升星选择：当前升级项为"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "武器升级选择", 
+                                                                        "local"
+                                                                    ]
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        2
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }
+                                                    ], 
+                                                    "op_arg": [
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "op_arg_enable": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": "INT_TO_STR"
+                                                }
+                                            ], 
+                                            "op_arg": [
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null
+                                            ], 
+                                            "op_arg_enable": [
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false
+                                            ], 
+                                            "sub_type": "STR_JOIN"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 392823027000116, 
+                                    "enable": false
+                                }, 
+                                {
+                                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100175, 
+                                            "args_list": [
+                                                3
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
                                                         "武器升星选择：升级后的等级为"
                                                     ], 
                                                     "sub_type": 1
@@ -9507,7 +9940,7 @@
                                     ], 
                                     "bp": false, 
                                     "element_id": 392823027000003, 
-                                    "enable": true
+                                    "enable": false
                                 }, 
                                 {
                                     "action_type": "CLEAR_LIST_VAR", 
@@ -9653,6 +10086,92 @@
                                     "bp": false, 
                                     "element_id": 392823027000007, 
                                     "enable": true
+                                }, 
+                                {
+                                    "action_type": "CALL_TRIGGER_FUNC", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100177, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前玩家索引", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "PLAYER", 
+                                                                "当前玩家", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": "VARIABLE"
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "升星武器索引", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "调用次数", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "op_arg": [], 
+                                            "op_arg_enable": [], 
+                                            "sub_type": "aac2ad86938111efa77681961ad4289d"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "call_rt_arg_idxes": [], 
+                                    "element_id": 1969881329000096, 
+                                    "enable": true
+                                }, 
+                                {
+                                    "action_type": "UNREG_TRIGGER", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100178, 
+                                            "args_list": [], 
+                                            "sub_type": "CURRENT_DYNAMIC_TRIGGER_INSTANCE"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1969881329000157, 
+                                    "enable": true
                                 }
                             ], 
                             "sub_type": 1
@@ -9701,198 +10220,43 @@
             "group_id": 0, 
             "is_conf": true, 
             "p_trigger_id": 577372400, 
+            "sub_trigger_owner_set_var_action": {
+                "action_type": "SET_VARIABLE", 
+                "args_list": [
+                    {
+                        "arg_type": 100178, 
+                        "args_list": [
+                            {
+                                "__tuple__": true, 
+                                "items": [
+                                    "DYNAMIC_TRIGGER_INSTANCE", 
+                                    "触发器2", 
+                                    "local"
+                                ]
+                            }
+                        ], 
+                        "sub_type": "VARIABLE"
+                    }, 
+                    {
+                        "arg_type": 100178, 
+                        "args_list": [
+                            {
+                                "arg_type": 100019, 
+                                "args_list": [
+                                    392823027
+                                ], 
+                                "sub_type": 1
+                            }
+                        ], 
+                        "sub_type": "REG_TRIGGER"
+                    }
+                ], 
+                "bp": false, 
+                "element_id": 392823027000158, 
+                "enable": true
+            }, 
             "trigger_id": 392823027, 
             "trigger_name": "子触发器_103", 
-            "valid": true, 
-            "var_data": [
-                {}, 
-                {}, 
-                []
-            ]
-        }, 
-        "1895149737": {
-            "action": [
-                {
-                    "action_type": "IF_THEN_ELSE", 
-                    "args_list": [
-                        {
-                            "arg_type": 100021, 
-                            "args_list": [
-                                {
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100025, 
-                                            "args_list": [
-                                                {
-                                                    "__tuple__": true, 
-                                                    "items": [
-                                                        "PLAYER", 
-                                                        "当前玩家", 
-                                                        "local"
-                                                    ]
-                                                }
-                                            ], 
-                                            "sub_type": "VARIABLE"
-                                        }, 
-                                        {
-                                            "arg_type": 100035, 
-                                            "args_list": [
-                                                "=="
-                                            ], 
-                                            "sub_type": 1
-                                        }, 
-                                        {
-                                            "arg_type": 100025, 
-                                            "args_list": [], 
-                                            "sub_type": "TRIGGER_PLAYER"
-                                        }
-                                    ], 
-                                    "condition_type": "PLAYER_COMPARE", 
-                                    "element_id": 1969881329000083, 
-                                    "enable": true
-                                }
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100022, 
-                            "args_list": [
-                                {
-                                    "action_type": "CALL_TRIGGER_FUNC", 
-                                    "args_list": [
-                                        {
-                                            "arg_type": 100177, 
-                                            "args_list": [
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "INTEGER", 
-                                                                "当前玩家索引", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 6
-                                                }, 
-                                                {
-                                                    "arg_type": 100025, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "PLAYER", 
-                                                                "当前玩家", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": "VARIABLE"
-                                                }, 
-                                                {
-                                                    "arg_type": 100002, 
-                                                    "args_list": [
-                                                        {
-                                                            "__tuple__": true, 
-                                                            "items": [
-                                                                "INTEGER", 
-                                                                "升星武器索引", 
-                                                                "local"
-                                                            ]
-                                                        }
-                                                    ], 
-                                                    "sub_type": 6
-                                                }
-                                            ], 
-                                            "op_arg": [], 
-                                            "op_arg_enable": [], 
-                                            "sub_type": "aac2ad86938111efa77681961ad4289d"
-                                        }
-                                    ], 
-                                    "bp": false, 
-                                    "call_rt_arg_idxes": [], 
-                                    "element_id": 1895149737000129, 
-                                    "enable": true
-                                }
-                            ], 
-                            "sub_type": 1
-                        }, 
-                        {
-                            "arg_type": 100022, 
-                            "args_list": [
-                                {
-                                    "action_type": "RETURN", 
-                                    "args_list": [], 
-                                    "bp": false, 
-                                    "element_id": 1969881329000091, 
-                                    "enable": true
-                                }
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "bp": false, 
-                    "element_id": 392823027000011, 
-                    "enable": true, 
-                    "fake_op": [
-                        2
-                    ]
-                }
-            ], 
-            "call_enabled": true, 
-            "condition": [], 
-            "enabled": false, 
-            "event": [
-                {
-                    "args_list": [
-                        {
-                            "arg_type": 100067, 
-                            "args_list": [
-                                "升级选择mid"
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "element_id": 1895149737000002, 
-                    "enable": true, 
-                    "event_type": "TRIGGER_COMPONENT_EVENT"
-                }, 
-                {
-                    "args_list": [
-                        {
-                            "arg_type": 100067, 
-                            "args_list": [
-                                "升级选择right"
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "element_id": 1895149737000005, 
-                    "enable": true, 
-                    "event_type": "TRIGGER_COMPONENT_EVENT"
-                }, 
-                {
-                    "args_list": [
-                        {
-                            "arg_type": 100067, 
-                            "args_list": [
-                                "升级选项选择left"
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "element_id": 1895149737000008, 
-                    "enable": true, 
-                    "event_type": "TRIGGER_COMPONENT_EVENT"
-                }
-            ], 
-            "group_id": 0, 
-            "is_conf": true, 
-            "p_trigger_id": 577372400, 
-            "trigger_id": 1895149737, 
-            "trigger_name": "子触发器", 
             "valid": true, 
             "var_data": [
                 {}, 
@@ -9968,7 +10332,7 @@
                     ], 
                     "bp": false, 
                     "element_id": 1969881329000011, 
-                    "enable": true
+                    "enable": false
                 }, 
                 {
                     "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
@@ -10027,7 +10391,7 @@
                     ], 
                     "bp": false, 
                     "element_id": 1969881329000038, 
-                    "enable": true
+                    "enable": false
                 }, 
                 {
                     "action_type": "IF_THEN_ELSE", 
@@ -10075,6 +10439,61 @@
                             "arg_type": 100022, 
                             "args_list": [
                                 {
+                                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100175, 
+                                            "args_list": [
+                                                3
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "武器升星选择："
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "触发子触发器"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "op_arg": [
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null
+                                            ], 
+                                            "op_arg_enable": [
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false
+                                            ], 
+                                            "sub_type": "STR_JOIN"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1969881329000133, 
+                                    "enable": false
+                                }, 
+                                {
                                     "action_type": "SET_VARIABLE", 
                                     "args_list": [
                                         {
@@ -10083,8 +10502,8 @@
                                                 {
                                                     "__tuple__": true, 
                                                     "items": [
-                                                        "BOOLEAN", 
-                                                        "选择是否已经打开", 
+                                                        "INTEGER", 
+                                                        "调用次数", 
                                                         "local"
                                                     ]
                                                 }
@@ -10092,11 +10511,38 @@
                                             "sub_type": 1
                                         }, 
                                         {
-                                            "arg_type": 100001, 
+                                            "arg_type": 100002, 
                                             "args_list": [
-                                                false
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "调用次数", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100016, 
+                                                    "args_list": [
+                                                        "-"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        1
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
                                             ], 
-                                            "sub_type": 1
+                                            "sub_type": "MATH_OPERATION"
                                         }
                                     ], 
                                     "bp": false, 
@@ -10353,6 +10799,93 @@
                                                 {
                                                     "arg_type": 100003, 
                                                     "args_list": [
+                                                        "武器升星选择：当前升级项为"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "武器升级选择", 
+                                                                        "local"
+                                                                    ]
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        2
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }
+                                                    ], 
+                                                    "op_arg": [
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "op_arg_enable": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": "INT_TO_STR"
+                                                }
+                                            ], 
+                                            "op_arg": [
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null, 
+                                                null
+                                            ], 
+                                            "op_arg_enable": [
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false, 
+                                                false
+                                            ], 
+                                            "sub_type": "STR_JOIN"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 392823027000116, 
+                                    "enable": false
+                                }, 
+                                {
+                                    "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100175, 
+                                            "args_list": [
+                                                3
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
                                                         "武器升星选择：升级后的等级为"
                                                     ], 
                                                     "sub_type": 1
@@ -10507,7 +11040,7 @@
                                     ], 
                                     "bp": false, 
                                     "element_id": 1969881329000003, 
-                                    "enable": true
+                                    "enable": false
                                 }, 
                                 {
                                     "action_type": "CLEAR_LIST_VAR", 
@@ -10653,6 +11186,92 @@
                                     "bp": false, 
                                     "element_id": 1969881329000007, 
                                     "enable": true
+                                }, 
+                                {
+                                    "action_type": "CALL_TRIGGER_FUNC", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100177, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前玩家索引", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "PLAYER", 
+                                                                "当前玩家", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": "VARIABLE"
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "升星武器索引", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "调用次数", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 6
+                                                }
+                                            ], 
+                                            "op_arg": [], 
+                                            "op_arg_enable": [], 
+                                            "sub_type": "aac2ad86938111efa77681961ad4289d"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "call_rt_arg_idxes": [], 
+                                    "element_id": 1969881329000096, 
+                                    "enable": true
+                                }, 
+                                {
+                                    "action_type": "UNREG_TRIGGER", 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100178, 
+                                            "args_list": [], 
+                                            "sub_type": "CURRENT_DYNAMIC_TRIGGER_INSTANCE"
+                                        }
+                                    ], 
+                                    "bp": false, 
+                                    "element_id": 1969881329000157, 
+                                    "enable": true
                                 }
                             ], 
                             "sub_type": 1
@@ -10701,6 +11320,41 @@
             "group_id": 0, 
             "is_conf": true, 
             "p_trigger_id": 577372400, 
+            "sub_trigger_owner_set_var_action": {
+                "action_type": "SET_VARIABLE", 
+                "args_list": [
+                    {
+                        "arg_type": 100178, 
+                        "args_list": [
+                            {
+                                "__tuple__": true, 
+                                "items": [
+                                    "DYNAMIC_TRIGGER_INSTANCE", 
+                                    "触发器1", 
+                                    "local"
+                                ]
+                            }
+                        ], 
+                        "sub_type": "VARIABLE"
+                    }, 
+                    {
+                        "arg_type": 100178, 
+                        "args_list": [
+                            {
+                                "arg_type": 100019, 
+                                "args_list": [
+                                    1969881329
+                                ], 
+                                "sub_type": 1
+                            }
+                        ], 
+                        "sub_type": "REG_TRIGGER"
+                    }
+                ], 
+                "bp": false, 
+                "element_id": 1969881329000153, 
+                "enable": true
+            }, 
             "trigger_id": 1969881329, 
             "trigger_name": "子触发器_101", 
             "valid": true, 
@@ -10716,8 +11370,11 @@
     "valid": true, 
     "var_data": [
         {
-            "BOOLEAN": {
-                "选择是否已经打开": false
+            "BOOLEAN": {}, 
+            "DYNAMIC_TRIGGER_INSTANCE": {
+                "触发器1": 0, 
+                "触发器2": 0, 
+                "触发器3": 0
             }, 
             "INTEGER": {
                 "i": 0, 
@@ -10726,7 +11383,8 @@
                 "升级的武器": 0, 
                 "可以升级的武器": 0, 
                 "当前玩家索引": 0, 
-                "武器升级选择": 0
+                "武器升级选择": 0, 
+                "调用次数": 0
             }, 
             "PLAYER": {
                 "当前玩家": 0
@@ -10745,7 +11403,10 @@
             "当前玩家武器表": 0, 
             "当前玩家索引": 0, 
             "武器升级选择": 10, 
-            "选择是否已经打开": 0
+            "触发器1": 0, 
+            "触发器2": 0, 
+            "触发器3": 0, 
+            "调用次数": 0
         }, 
         [
             "可以升级的武器", 
@@ -10757,7 +11418,10 @@
             "升级的武器", 
             "当前玩家武器表", 
             "升星武器索引", 
-            "选择是否已经打开"
+            "调用次数", 
+            "触发器1", 
+            "触发器2", 
+            "触发器3"
         ]
     ]
 }

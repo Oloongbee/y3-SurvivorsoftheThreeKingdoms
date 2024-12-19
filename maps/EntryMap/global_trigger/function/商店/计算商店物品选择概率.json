@@ -1,0 +1,2039 @@
+{
+    "action": [
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "白概率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        0.0
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253000001, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "蓝概率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        0.0
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253000002, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "紫概率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        0.0
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253000003, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "红概率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        0.0
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253000004, 
+            "enable": true
+        }, 
+        [
+            1030883961, 
+            "根据玩家的等级来计算这些不同的概率", 
+            1253638253, 
+            "action_type"
+        ], 
+        {
+            "action_type": "IF_THEN_ELSE", 
+            "args_list": [
+                {
+                    "arg_type": 100021, 
+                    "args_list": [
+                        {
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "PLAYER", 
+                                                        "玩家", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": "VARIABLE"
+                                        }, 
+                                        {
+                                            "arg_type": 100037, 
+                                            "args_list": [
+                                                "6qkcxK8BEe+hwuU2v8jt28"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_ROLE_RES"
+                                }, 
+                                {
+                                    "arg_type": 100015, 
+                                    "args_list": [
+                                        ">="
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        3.0
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "condition_type": "FLOAT_COMPARE", 
+                            "element_id": 1253638253884077, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "蓝概率", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100037, 
+                                                                    "args_list": [
+                                                                        "6qkcxK8BEe+hwuU2v8jt28"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_ROLE_RES"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100017, 
+                                                            "args_list": [
+                                                                "-"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                1.0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                }, 
+                                                {
+                                                    "arg_type": 100017, 
+                                                    "args_list": [
+                                                        "*"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        6.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "sub_type": "ARITHMETIC_OPERATION"
+                                        }, 
+                                        {
+                                            "arg_type": 100017, 
+                                            "args_list": [
+                                                "*"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        1.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100017, 
+                                                    "args_list": [
+                                                        "+"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100037, 
+                                                                    "args_list": [
+                                                                        "bl0j2ajnEe+Vl7vC13Uj-5"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_ROLE_RES"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100017, 
+                                                            "args_list": [
+                                                                "/"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                100.0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                }
+                                            ], 
+                                            "sub_type": "ARITHMETIC_OPERATION"
+                                        }
+                                    ], 
+                                    "sub_type": "ARITHMETIC_OPERATION"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1253638253884091, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "IF_THEN_ELSE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100021, 
+                                    "args_list": [
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "FLOAT", 
+                                                                "蓝概率", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 2
+                                                }, 
+                                                {
+                                                    "arg_type": 100015, 
+                                                    "args_list": [
+                                                        ">"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        60.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "condition_type": "FLOAT_COMPARE", 
+                                            "element_id": 1253638253884117, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "FLOAT", 
+                                                                "蓝概率", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        60.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1253638253884127, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1253638253884113, 
+                            "enable": true, 
+                            "fake_op": []
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "蓝概率", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        0.0
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1253638253884137, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253884073, 
+            "enable": true, 
+            "fake_op": [
+                2
+            ]
+        }, 
+        {
+            "action_type": "IF_THEN_ELSE", 
+            "args_list": [
+                {
+                    "arg_type": 100021, 
+                    "args_list": [
+                        {
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "PLAYER", 
+                                                        "玩家", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": "VARIABLE"
+                                        }, 
+                                        {
+                                            "arg_type": 100037, 
+                                            "args_list": [
+                                                "6qkcxK8BEe+hwuU2v8jt28"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_ROLE_RES"
+                                }, 
+                                {
+                                    "arg_type": 100015, 
+                                    "args_list": [
+                                        ">="
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        4.0
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "condition_type": "FLOAT_COMPARE", 
+                            "element_id": 1253638253884173, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "紫概率", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100037, 
+                                                                    "args_list": [
+                                                                        "6qkcxK8BEe+hwuU2v8jt28"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_ROLE_RES"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100017, 
+                                                            "args_list": [
+                                                                "-"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                3.0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                }, 
+                                                {
+                                                    "arg_type": 100017, 
+                                                    "args_list": [
+                                                        "*"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        2.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "sub_type": "ARITHMETIC_OPERATION"
+                                        }, 
+                                        {
+                                            "arg_type": 100017, 
+                                            "args_list": [
+                                                "*"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        1.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100017, 
+                                                    "args_list": [
+                                                        "+"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100037, 
+                                                                    "args_list": [
+                                                                        "bl0j2ajnEe+Vl7vC13Uj-5"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_ROLE_RES"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100017, 
+                                                            "args_list": [
+                                                                "/"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                100.0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                }
+                                            ], 
+                                            "sub_type": "ARITHMETIC_OPERATION"
+                                        }
+                                    ], 
+                                    "sub_type": "ARITHMETIC_OPERATION"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1253638253884187, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "IF_THEN_ELSE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100021, 
+                                    "args_list": [
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "FLOAT", 
+                                                                "紫概率", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 2
+                                                }, 
+                                                {
+                                                    "arg_type": 100015, 
+                                                    "args_list": [
+                                                        ">"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        25.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "condition_type": "FLOAT_COMPARE", 
+                                            "element_id": 1253638253884213, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "FLOAT", 
+                                                                "紫概率", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        25.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1253638253884223, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1253638253884209, 
+                            "enable": true, 
+                            "fake_op": []
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "紫概率", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        0.0
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1253638253884233, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253884169, 
+            "enable": true, 
+            "fake_op": [
+                2
+            ]
+        }, 
+        {
+            "action_type": "IF_THEN_ELSE", 
+            "args_list": [
+                {
+                    "arg_type": 100021, 
+                    "args_list": [
+                        {
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "PLAYER", 
+                                                        "玩家", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": "VARIABLE"
+                                        }, 
+                                        {
+                                            "arg_type": 100037, 
+                                            "args_list": [
+                                                "6qkcxK8BEe+hwuU2v8jt28"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_ROLE_RES"
+                                }, 
+                                {
+                                    "arg_type": 100015, 
+                                    "args_list": [
+                                        ">="
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        7.0
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "condition_type": "FLOAT_COMPARE", 
+                            "element_id": 1253638253884028, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "红概率", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100037, 
+                                                                    "args_list": [
+                                                                        "6qkcxK8BEe+hwuU2v8jt28"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_ROLE_RES"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100017, 
+                                                            "args_list": [
+                                                                "-"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                6.0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                }, 
+                                                {
+                                                    "arg_type": 100017, 
+                                                    "args_list": [
+                                                        "*"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        0.23
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "sub_type": "ARITHMETIC_OPERATION"
+                                        }, 
+                                        {
+                                            "arg_type": 100017, 
+                                            "args_list": [
+                                                "*"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        1.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100017, 
+                                                    "args_list": [
+                                                        "+"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "PLAYER", 
+                                                                                "玩家", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "VARIABLE"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100037, 
+                                                                    "args_list": [
+                                                                        "bl0j2ajnEe+Vl7vC13Uj-5"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_ROLE_RES"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100017, 
+                                                            "args_list": [
+                                                                "/"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100000, 
+                                                            "args_list": [
+                                                                100.0
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "ARITHMETIC_OPERATION"
+                                                }
+                                            ], 
+                                            "sub_type": "ARITHMETIC_OPERATION"
+                                        }
+                                    ], 
+                                    "sub_type": "ARITHMETIC_OPERATION"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1253638253000013, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "IF_THEN_ELSE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100021, 
+                                    "args_list": [
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "FLOAT", 
+                                                                "红概率", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 2
+                                                }, 
+                                                {
+                                                    "arg_type": 100015, 
+                                                    "args_list": [
+                                                        ">"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        8.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "condition_type": "FLOAT_COMPARE", 
+                                            "element_id": 1253638253000014, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "FLOAT", 
+                                                                "红概率", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        8.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1253638253000015, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1253638253000016, 
+                            "enable": true, 
+                            "fake_op": []
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "红概率", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        0.0
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1253638253884044, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253884019, 
+            "enable": true, 
+            "fake_op": [
+                2
+            ]
+        }, 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "白概率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                100.0
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100017, 
+                            "args_list": [
+                                "-"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "蓝概率", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }, 
+                                {
+                                    "arg_type": 100017, 
+                                    "args_list": [
+                                        "+"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "FLOAT", 
+                                                        "紫概率", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 2
+                                        }, 
+                                        {
+                                            "arg_type": 100017, 
+                                            "args_list": [
+                                                "+"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "FLOAT", 
+                                                        "红概率", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 2
+                                        }
+                                    ], 
+                                    "sub_type": "ARITHMETIC_OPERATION"
+                                }
+                            ], 
+                            "sub_type": "ARITHMETIC_OPERATION"
+                        }
+                    ], 
+                    "sub_type": "ARITHMETIC_OPERATION"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253000017, 
+            "enable": true
+        }, 
+        [
+            1522989750, 
+            "调试", 
+            1253638253, 
+            "action_type"
+        ], 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "当前玩家等级"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "PLAYER", 
+                                                        "玩家", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": "VARIABLE"
+                                        }, 
+                                        {
+                                            "arg_type": 100037, 
+                                            "args_list": [
+                                                "6qkcxK8BEe+hwuU2v8jt28"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_ROLE_RES"
+                                }
+                            ], 
+                            "sub_type": "ANY_VAR_TO_STR"
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253884267, 
+            "enable": false
+        }, 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "白概率"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "白概率", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }
+                            ], 
+                            "sub_type": "ANY_VAR_TO_STR"
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253883964, 
+            "enable": false
+        }, 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "蓝概率"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "蓝概率", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }
+                            ], 
+                            "sub_type": "ANY_VAR_TO_STR"
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253883973, 
+            "enable": false
+        }, 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "紫概率"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "紫概率", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }
+                            ], 
+                            "sub_type": "ANY_VAR_TO_STR"
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253883986, 
+            "enable": false
+        }, 
+        {
+            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+            "args_list": [
+                {
+                    "arg_type": 100175, 
+                    "args_list": [
+                        3
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "红概率"
+                            ], 
+                            "sub_type": 1
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "FLOAT", 
+                                                "红概率", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 2
+                                }
+                            ], 
+                            "sub_type": "ANY_VAR_TO_STR"
+                        }
+                    ], 
+                    "op_arg": [
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null, 
+                        null
+                    ], 
+                    "op_arg_enable": [
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false, 
+                        false
+                    ], 
+                    "sub_type": "STR_JOIN"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253883999, 
+            "enable": false
+        }, 
+        [
+            1382098846, 
+            "#######", 
+            1253638253, 
+            "action_type"
+        ], 
+        {
+            "action_type": "SET_UI_COMP_TEXT", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "PLAYER", 
+                                "玩家", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "4f6b0907-6534-4153-9863-2e730be0052c"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "白概率", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "ANY_VAR_TO_STR"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253989754, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_TEXT", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "PLAYER", 
+                                "玩家", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "9326e366-a728-41a0-9eda-89f9e14fdf84"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "蓝概率", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "ANY_VAR_TO_STR"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253989811, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_TEXT", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "PLAYER", 
+                                "玩家", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "5d00576a-33a8-4a4c-8f35-0b2ed0b578a7"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "紫概率", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "ANY_VAR_TO_STR"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253989822, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_TEXT", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "PLAYER", 
+                                "玩家", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "d405016c-c822-4c0c-8134-db9c9c1ea8b4"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100000, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "FLOAT", 
+                                        "红概率", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "ANY_VAR_TO_STR"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253989833, 
+            "enable": true
+        }, 
+        {
+            "action_type": 400342, 
+            "args_list": [
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "白概率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "紫概率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "紫概率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "FLOAT", 
+                                "红概率", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1253638253000018, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "函数描述{玩家}", 
+    "func_id": "d79c0516b56211efbeeb93743e2d66af", 
+    "func_name": "计算商店物品选择概率", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "玩家", 
+                true
+            ]
+        }
+    ], 
+    "func_return": true, 
+    "func_rtv_name_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "白概率", 
+                "FLOAT"
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "蓝概率", 
+                "FLOAT"
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "紫概率", 
+                "FLOAT"
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "红概率", 
+                "FLOAT"
+            ]
+        }
+    ], 
+    "group_id": "D+zpmLVbEe+s9JN0Pi1mrx", 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 1253638253, 
+    "trigger_name": "计算商店物品选择概率", 
+    "valid": true, 
+    "var_data": [
+        {
+            "FLOAT": {
+                "白概率": 0.0, 
+                "紫概率": 0.0, 
+                "红概率": 0.0, 
+                "蓝概率": 0.0
+            }, 
+            "PLAYER": {
+                "玩家": 0
+            }
+        }, 
+        {
+            "玩家": 0, 
+            "白概率": 0, 
+            "紫概率": 0, 
+            "红概率": 0, 
+            "蓝概率": 0
+        }, 
+        [
+            "玩家", 
+            "白概率", 
+            "蓝概率", 
+            "紫概率", 
+            "红概率"
+        ]
+    ]
+}

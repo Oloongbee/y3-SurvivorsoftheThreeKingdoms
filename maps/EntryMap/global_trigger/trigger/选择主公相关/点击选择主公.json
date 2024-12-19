@@ -1,0 +1,679 @@
+{
+    "action": [
+        {
+            "action_type": "TRAVERSE_TABLE_NEW", 
+            "args_list": [
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        "d87aba7b-fffa-4e03-8930-fe1ea76d41bd"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "IF_THEN_ELSE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100021, 
+                                    "args_list": [
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [], 
+                                                    "sub_type": "GET_UI_COMP_FROM_EVENT"
+                                                }, 
+                                                {
+                                                    "arg_type": 100035, 
+                                                    "args_list": [
+                                                        "=="
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100011, 
+                                                            "args_list": [
+                                                                "d87aba7b-fffa-4e03-8930-fe1ea76d41bd"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [], 
+                                                            "sub_type": "ITER_TABLE_KEY_INT"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "主公头像界面控件"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
+                                                }
+                                            ], 
+                                            "condition_type": "ANY_COMPARE", 
+                                            "element_id": 2056229078746675, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "当前点击索引", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [], 
+                                                    "sub_type": "ITER_TABLE_KEY_INT"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 2056229078746676, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "ITEM_NAME", 
+                                                                "当前点击主公", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100032, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100011, 
+                                                            "args_list": [
+                                                                "fd342ad8-3826-42e9-80e7-1905240334c7"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100011, 
+                                                                    "args_list": [
+                                                                        "d87aba7b-fffa-4e03-8930-fe1ea76d41bd"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "当前点击索引", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 6
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "主公名称"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "sub_type": "GET_STRING_TABLE_VAR_ND"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "绑定物品"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_ITEM_NAME_TABLE_VAR_ND"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 2056229078746677, 
+                                            "enable": true
+                                        }, 
+                                        [
+                                            1680491795, 
+                                            "为了防止前面表未遍历完成就继续进一步行动", 
+                                            2056229078, 
+                                            "action_type"
+                                        ]
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 2056229078746678, 
+                            "enable": true, 
+                            "fake_op": []
+                        }, 
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "INTEGER", 
+                                                "i", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100002, 
+                                    "args_list": [
+                                        1
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 2056229078746679, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "TRAVERSE_TABLE_NEW", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100011, 
+                                    "args_list": [
+                                        "d87aba7b-fffa-4e03-8930-fe1ea76d41bd"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100001, 
+                                                    "args_list": [
+                                                        false
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100070, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100025, 
+                                                            "args_list": [], 
+                                                            "sub_type": "TRIGGER_PLAYER"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100070, 
+                                                            "args_list": [], 
+                                                            "sub_type": "GET_UI_COMP_FROM_EVENT"
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100003, 
+                                                            "args_list": [
+                                                                "选中边框"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "GET_UI_COMP_BY_PATH"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 2056229078746702, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_VARIABLE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100030, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "INTEGER", 
+                                                                "i", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100002, 
+                                                    "args_list": [
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                {
+                                                                    "__tuple__": true, 
+                                                                    "items": [
+                                                                        "INTEGER", 
+                                                                        "i", 
+                                                                        "local"
+                                                                    ]
+                                                                }
+                                                            ], 
+                                                            "sub_type": 6
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100016, 
+                                                            "args_list": [
+                                                                "+"
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }, 
+                                                        {
+                                                            "arg_type": 100002, 
+                                                            "args_list": [
+                                                                1
+                                                            ], 
+                                                            "sub_type": 1
+                                                        }
+                                                    ], 
+                                                    "sub_type": "MATH_OPERATION"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 2056229078746703, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 2056229078746682, 
+                            "enable": true, 
+                            "op_arg": [
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        true
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "op_arg_enable": [
+                                false
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 2056229078000010, 
+            "enable": true, 
+            "op_arg": [
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "op_arg_enable": [
+                false
+            ]
+        }, 
+        [
+            1077340174, 
+            "设置信息", 
+            2056229078, 
+            "action_type"
+        ], 
+        {
+            "action_type": "SET_UI_COMP_IMAGE_NEW", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "f3c90a32-13ef-4146-b2b8-fee492a718ea"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100115, 
+                    "args_list": [
+                        {
+                            "arg_type": 100032, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "ITEM_NAME", 
+                                        "当前点击主公", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "GET_ICON_BY_ITEM_TYPE"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 2056229078000011, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_TEXT", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "be350e0c-f8af-4409-86ed-bd4296fdb03a"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100032, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "ITEM_NAME", 
+                                        "当前点击主公", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "GET_ITEM_CONF_NAME"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 2056229078000012, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_TEXT", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "5680fc36-e588-4953-a1f0-12fdd100f314"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100032, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "ITEM_NAME", 
+                                        "当前点击主公", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "GET_DES_ID_BY_ITEM_TYPE"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 2056229078000013, 
+            "enable": true
+        }, 
+        {
+            "action_type": "ROLE_SET_RES", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100037, 
+                    "args_list": [
+                        "Hczr-7UQEe++gvvim7GOBk"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100000, 
+                    "args_list": [
+                        1.35
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 2056229078746717, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_VISIBLE", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [], 
+                            "sub_type": "TRIGGER_PLAYER"
+                        }, 
+                        {
+                            "arg_type": 100070, 
+                            "args_list": [], 
+                            "sub_type": "GET_UI_COMP_FROM_EVENT"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "选中边框"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_UI_COMP_BY_PATH"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 2056229078000014, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_VISIBLE", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "f1e7a5f7-4726-4ad0-b02e-aa42a874f74b"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 2056229078746709, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_ENTITY_KV", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "主公"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100032, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "ITEM_NAME", 
+                                "当前点击主公", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }
+            ], 
+            "bp": false, 
+            "element_id": 2056229078000015, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [
+        {
+            "args_list": [
+                {
+                    "arg_type": 100067, 
+                    "args_list": [
+                        "点击主公头像"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "element_id": 2056229078000001, 
+            "enable": true, 
+            "event_type": "TRIGGER_COMPONENT_EVENT"
+        }
+    ], 
+    "group_id": "JzLOjrBaEe+C2x1TH6eMlr", 
+    "p_trigger_id": null, 
+    "trigger_id": 2056229078, 
+    "trigger_name": "点击选择主公", 
+    "valid": true, 
+    "var_data": [
+        {
+            "INTEGER": {
+                "i": 0, 
+                "当前点击索引": 0
+            }, 
+            "ITEM_NAME": {
+                "当前点击主公": 0
+            }
+        }, 
+        {
+            "i": 0, 
+            "当前点击主公": 0, 
+            "当前点击索引": 0
+        }, 
+        [
+            "i", 
+            "当前点击索引", 
+            "当前点击主公"
+        ]
+    ]
+}

@@ -1,0 +1,448 @@
+{
+    "action": [
+        {
+            "action_type": "SEND_CUSTOM_EVENT", 
+            "args_list": [
+                {
+                    "arg_type": 100238, 
+                    "args_list": [
+                        1364902903
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 364200146948892, 
+            "enable": true
+        }, 
+        {
+            "action_type": "PICK_PLAYER_DO_ACTION", 
+            "args_list": [
+                {
+                    "arg_type": 100027, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "PLAYER_GROUP", 
+                                "正在游戏中的玩家"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 14
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "PICKED_PLAYER"
+                                        }
+                                    ], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "c685d7dfb3b311ef843cad90de23c233"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 1094418636948973, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "当前难度索引"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }, 
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "PICKED_PLAYER"
+                                        }
+                                    ], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "95cf26b7ac9d11ef9eafd5d79be11696"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 1094418636948970, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "PICKED_PLAYER"
+                                        }
+                                    ], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "b9a7d8deb44511efa6e54bd7fd5a5c6d"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 1094418636948976, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "ADD_SAVE_DATA_FIXED_VALUE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [], 
+                                    "sub_type": "PICKED_PLAYER"
+                                }, 
+                                {
+                                    "arg_type": 100232, 
+                                    "args_list": [
+                                        7
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100000, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100002, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "INTEGER", 
+                                                        "波次计数"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": 6
+                                        }, 
+                                        {
+                                            "arg_type": 100017, 
+                                            "args_list": [
+                                                "*"
+                                            ], 
+                                            "sub_type": 1
+                                        }, 
+                                        {
+                                            "arg_type": 100000, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        10.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100017, 
+                                                    "args_list": [
+                                                        "*"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "FLOAT", 
+                                                                "加点积分倍率"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 2
+                                                }
+                                            ], 
+                                            "sub_type": "ARITHMETIC_OPERATION"
+                                        }
+                                    ], 
+                                    "sub_type": "ARITHMETIC_OPERATION"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1094418636949003, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "PICK_UNIT_DO_ACTION", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100026, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100009, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "小怪区域"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "sub_type": "GET_RECTANGLE_KV"
+                                        }
+                                    ], 
+                                    "sub_type": "AREA_UNIT_GROUP"
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "DELETE_UNIT", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100006, 
+                                                    "args_list": [], 
+                                                    "sub_type": "FOR_EACH_SELECTED_UNIT"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 860131330948939, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 364200146948890, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "PICK_UNIT_DO_ACTION", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100026, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100009, 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "PICKED_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "boss区域"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "sub_type": "GET_RECTANGLE_KV"
+                                        }
+                                    ], 
+                                    "sub_type": "AREA_UNIT_GROUP"
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "DELETE_UNIT", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100006, 
+                                                    "args_list": [], 
+                                                    "sub_type": "FOR_EACH_SELECTED_UNIT"
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 860131330948963, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 860131330948944, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "CALL_TRIGGER_FUNC", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100177, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100025, 
+                                            "args_list": [], 
+                                            "sub_type": "PICKED_PLAYER"
+                                        }
+                                    ], 
+                                    "op_arg": [], 
+                                    "op_arg_enable": [], 
+                                    "sub_type": "941559f37bca11efb4aac38c4d73765e"
+                                }
+                            ], 
+                            "bp": false, 
+                            "call_rt_arg_idxes": [], 
+                            "element_id": 860131330948925, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SET_UI_COMP_VISIBLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [], 
+                                    "sub_type": "PICKED_PLAYER"
+                                }, 
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        true
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100070, 
+                                    "args_list": [
+                                        "d4c01f64-7413-4c8e-b0e5-4297d4a59c7a"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 860131330948921, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SET_UI_COMP_VISIBLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100025, 
+                                    "args_list": [], 
+                                    "sub_type": "PICKED_PLAYER"
+                                }, 
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        false
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100070, 
+                                    "args_list": [
+                                        "12e35bcb-2883-4727-a7ae-5b05773ae8eb"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1648525313000524, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SEND_CUSTOM_EVENT", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100238, 
+                                    "args_list": [
+                                        1219341862
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1094418636000076, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "PRINT_MESSAGE_ACTION_TO_DIALOG", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100175, 
+                                    "args_list": [
+                                        3
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "重置关卡：胜利结束关卡"
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1094418636000081, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 860131330948917, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [
+        {
+            "args_list": [
+                {
+                    "arg_type": 100238, 
+                    "args_list": [
+                        1394380236
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "element_id": 1094418636000001, 
+            "enable": true, 
+            "event_type": "RECEIVE_CUSTOM_EVENT"
+        }
+    ], 
+    "group_id": "mwa4FaytEe+GOmOZB0i56v", 
+    "p_trigger_id": null, 
+    "trigger_id": 1094418636, 
+    "trigger_name": "胜利 12.8", 
+    "valid": true, 
+    "var_data": [
+        {}, 
+        {}, 
+        []
+    ]
+}

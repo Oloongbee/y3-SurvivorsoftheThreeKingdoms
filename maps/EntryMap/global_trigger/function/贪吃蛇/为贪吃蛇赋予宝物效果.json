@@ -1,0 +1,462 @@
+{
+    "action": [
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "TABLE", 
+                                "当前玩家宝物表", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "PLAYER", 
+                                        "当前玩家", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": "VARIABLE"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "宝物表"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_TABLE_KV"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1254342864000001, 
+            "enable": true
+        }, 
+        {
+            "action_type": "TRAVERSE_TABLE_NEW", 
+            "args_list": [
+                {
+                    "arg_type": 100011, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "TABLE", 
+                                "当前玩家宝物表", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": "VARIABLE"
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "ABILITY_NAME", 
+                                                "当前宝物", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100039, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100011, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "TABLE", 
+                                                        "当前玩家宝物表", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": "VARIABLE"
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [], 
+                                            "sub_type": "ITER_TABLE_KEY_STR"
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "宝物"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_ABILITY_NAME_TABLE_VAR_ND"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1254342864000002, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "SET_VARIABLE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100030, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "STRING", 
+                                                "宝物作用类型", 
+                                                "local"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        {
+                                            "arg_type": 100011, 
+                                            "args_list": [
+                                                {
+                                                    "__tuple__": true, 
+                                                    "items": [
+                                                        "TABLE", 
+                                                        "当前玩家宝物表", 
+                                                        "local"
+                                                    ]
+                                                }
+                                            ], 
+                                            "sub_type": "VARIABLE"
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [], 
+                                            "sub_type": "ITER_TABLE_KEY_STR"
+                                        }, 
+                                        {
+                                            "arg_type": 100003, 
+                                            "args_list": [
+                                                "宝物作用类型"
+                                            ], 
+                                            "sub_type": 1
+                                        }
+                                    ], 
+                                    "sub_type": "GET_STRING_TABLE_VAR_ND"
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1254342864000003, 
+                            "enable": true
+                        }, 
+                        {
+                            "action_type": "IF_THEN_ELSE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100021, 
+                                    "args_list": [
+                                        {
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "STRING", 
+                                                                "宝物作用类型", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 2
+                                                }, 
+                                                {
+                                                    "arg_type": 100035, 
+                                                    "args_list": [
+                                                        "=="
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "每个单位"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "condition_type": "STRING_COMPARE", 
+                                            "element_id": 1254342864000004, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "SWITCH", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        {
+                                                            "__tuple__": true, 
+                                                            "items": [
+                                                                "STRING", 
+                                                                "宝物作用类型", 
+                                                                "local"
+                                                            ]
+                                                        }
+                                                    ], 
+                                                    "sub_type": 2
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "CASE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        "每个单位"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100022, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "action_type": "LIST_LOOP", 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100081, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "UNIT_ENTITY", 
+                                                                                                "当前玩家单位数组", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100022, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "action_type": "UNIT_ADD_ABILITY", 
+                                                                                            "args_list": [
+                                                                                                {
+                                                                                                    "arg_type": 100006, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "UNIT_ENTITY", 
+                                                                                                                "当前玩家单位数组", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }, 
+                                                                                                        {
+                                                                                                            "arg_type": 100002, 
+                                                                                                            "args_list": [], 
+                                                                                                            "sub_type": "GET_LOOP_LIST_INDEX"
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": 11
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100182, 
+                                                                                                    "args_list": [
+                                                                                                        2
+                                                                                                    ], 
+                                                                                                    "sub_type": 1
+                                                                                                }, 
+                                                                                                {
+                                                                                                    "arg_type": 100039, 
+                                                                                                    "args_list": [
+                                                                                                        {
+                                                                                                            "__tuple__": true, 
+                                                                                                            "items": [
+                                                                                                                "ABILITY_NAME", 
+                                                                                                                "当前宝物", 
+                                                                                                                "local"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ], 
+                                                                                                    "sub_type": "VARIABLE"
+                                                                                                }
+                                                                                            ], 
+                                                                                            "bp": false, 
+                                                                                            "element_id": 1254342864000005, 
+                                                                                            "enable": true, 
+                                                                                            "op_arg": [
+                                                                                                null, 
+                                                                                                null, 
+                                                                                                null
+                                                                                            ], 
+                                                                                            "op_arg_enable": [
+                                                                                                false, 
+                                                                                                false, 
+                                                                                                false
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }
+                                                                            ], 
+                                                                            "bp": false, 
+                                                                            "element_id": 1254342864000006, 
+                                                                            "enable": true
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 1254342864000007, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1254342864000008, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1254342864000009, 
+                            "enable": true, 
+                            "fake_op": []
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1254342864000010, 
+            "enable": true, 
+            "op_arg": [
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "op_arg_enable": [
+                true
+            ]
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "函数描述{当前玩家}{当前玩家单位数组}", 
+    "func_id": "1810897ea9a511efb3da7b892cddfa79", 
+    "func_name": "为贪吃蛇赋予宝物效果", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "当前玩家", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "当前玩家单位数组", 
+                true
+            ]
+        }
+    ], 
+    "group_id": "nbTTkKmrEe+62S233VgX+Z", 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 604131510, 
+    "trigger_name": "为贪吃蛇赋予宝物效果", 
+    "valid": true, 
+    "var_data": [
+        {
+            "ABILITY_NAME": {
+                "当前宝物": 0
+            }, 
+            "PLAYER": {
+                "当前玩家": 0
+            }, 
+            "STRING": {
+                "宝物作用类型": ""
+            }, 
+            "TABLE": {
+                "当前玩家宝物表": null
+            }, 
+            "UNIT_ENTITY": {
+                "当前玩家单位数组": 0
+            }
+        }, 
+        {
+            "宝物作用类型": 0, 
+            "当前宝物": 0, 
+            "当前玩家": 0, 
+            "当前玩家单位数组": 10, 
+            "当前玩家宝物表": 0
+        }, 
+        [
+            "当前玩家", 
+            "当前玩家宝物表", 
+            "当前玩家单位数组", 
+            "宝物作用类型", 
+            "当前宝物"
+        ]
+    ]
+}

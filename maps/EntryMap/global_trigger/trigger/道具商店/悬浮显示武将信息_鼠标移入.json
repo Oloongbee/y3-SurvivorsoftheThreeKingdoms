@@ -1,0 +1,939 @@
+{
+    "action": [
+        {
+            "action_type": "IF_THEN_ELSE", 
+            "args_list": [
+                {
+                    "arg_type": 100021, 
+                    "args_list": [
+                        {
+                            "args_list": [
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        {
+                                            "__tuple__": true, 
+                                            "items": [
+                                                "BOOLEAN", 
+                                                "武将信息是否锁定"
+                                            ]
+                                        }
+                                    ], 
+                                    "sub_type": "VARIABLE"
+                                }, 
+                                {
+                                    "arg_type": 100035, 
+                                    "args_list": [
+                                        "=="
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        false
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "condition_type": "BOOL_COMPARE", 
+                            "element_id": 62910600000291, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "TRAVERSE_TABLE_NEW", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100011, 
+                                    "args_list": [
+                                        "d2c27d6b-91ad-477b-8275-06cce7875206"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "IF_THEN_ELSE", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100021, 
+                                                    "args_list": [
+                                                        {
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "GET_UI_COMP_FROM_EVENT"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100035, 
+                                                                    "args_list": [
+                                                                        "=="
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100011, 
+                                                                            "args_list": [
+                                                                                "d2c27d6b-91ad-477b-8275-06cce7875206"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [], 
+                                                                            "sub_type": "ITER_TABLE_KEY_INT"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100003, 
+                                                                            "args_list": [
+                                                                                "道具商店武将显示控件"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_UI_COMP_TABLE_VAR_ND"
+                                                                }
+                                                            ], 
+                                                            "condition_type": "ANY_COMPARE", 
+                                                            "element_id": 62910600000024, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [
+                                                        {
+                                                            "action_type": "SET_VARIABLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100030, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "INTEGER", 
+                                                                                "悬浮显示武将信息索引", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100002, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "ITER_TABLE_KEY_INT"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000040, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_VARIABLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100030, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "ABILITY_NAME", 
+                                                                                "当前武将", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100039, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100011, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100025, 
+                                                                                    "args_list": [], 
+                                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        "阵容表"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "GET_TABLE_KV"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "INTEGER", 
+                                                                                        "悬浮显示武将信息索引", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": 6
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100003, 
+                                                                            "args_list": [
+                                                                                "武器"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_ABILITY_NAME_TABLE_VAR_ND"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000084, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "CALL_TRIGGER_FUNC", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100177, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100025, 
+                                                                            "args_list": [], 
+                                                                            "sub_type": "TRIGGER_PLAYER"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100011, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100025, 
+                                                                                            "args_list": [], 
+                                                                                            "sub_type": "TRIGGER_PLAYER"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "阵容表"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "GET_TABLE_KV"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "INTEGER", 
+                                                                                                "悬浮显示武将信息索引", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 6
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        "等级"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100039, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "ABILITY_NAME", 
+                                                                                        "当前武将", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "VARIABLE"
+                                                                        }
+                                                                    ], 
+                                                                    "op_arg": [], 
+                                                                    "op_arg_enable": [], 
+                                                                    "sub_type": "d570fde4b62e11efa332e3c7e191901e"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100000, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "FLOAT", 
+                                                                                "技能范围", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 2
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100000, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "FLOAT", 
+                                                                                "冷却时间", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 2
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100000, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "FLOAT", 
+                                                                                "暴击率", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 2
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100000, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "FLOAT", 
+                                                                                "暴击伤害", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 2
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100000, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "__tuple__": true, 
+                                                                            "items": [
+                                                                                "FLOAT", 
+                                                                                "技能伤害", 
+                                                                                "local"
+                                                                            ]
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": 2
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "call_rt_arg_idxes": [
+                                                                0, 
+                                                                1, 
+                                                                2, 
+                                                                3, 
+                                                                4
+                                                            ], 
+                                                            "element_id": 62910600000279, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_IMAGE_NEW", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "914defc9-aeb9-47db-99b8-19841cae828e"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100115, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100039, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "ABILITY_NAME", 
+                                                                                        "当前武将", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "VARIABLE"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_ICON_BY_ABILITY_TYPE"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000142, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "9d6c4a69-c389-46f8-a3bc-27685bcc2c49"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100039, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "ABILITY_NAME", 
+                                                                                        "当前武将", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "VARIABLE"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100221, 
+                                                                            "args_list": [
+                                                                                "name"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_ABILITY_CONF_STR_ATTR"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000079, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "780a6109-dd72-43f2-95b3-f31124979e8e"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100011, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "arg_type": 100025, 
+                                                                                            "args_list": [], 
+                                                                                            "sub_type": "TRIGGER_PLAYER"
+                                                                                        }, 
+                                                                                        {
+                                                                                            "arg_type": 100003, 
+                                                                                            "args_list": [
+                                                                                                "阵容表"
+                                                                                            ], 
+                                                                                            "sub_type": 1
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": "GET_TABLE_KV"
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100002, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "INTEGER", 
+                                                                                                "悬浮显示武将信息索引", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 6
+                                                                                }, 
+                                                                                {
+                                                                                    "arg_type": 100003, 
+                                                                                    "args_list": [
+                                                                                        "等级"
+                                                                                    ], 
+                                                                                    "sub_type": 1
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "GET_INTEGER_TABLE_VAR_ND"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "ANY_VAR_TO_STR"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000099, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "835c1346-9230-4f99-b125-ac1c5cded237"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100000, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "FLOAT", 
+                                                                                                "技能伤害", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 2
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "F2I"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "ANY_VAR_TO_STR"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000149, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "936ddd9f-f77e-4f80-bc06-2bb994fd67e9"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100000, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "FLOAT", 
+                                                                                                "技能范围", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 2
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "F2I"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "ANY_VAR_TO_STR"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000179, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "60109912-6590-4c85-b5d5-9e1fb9eaf6a5"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100000, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "FLOAT", 
+                                                                                                "冷却时间", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 2
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "F2I"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "ANY_VAR_TO_STR"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000198, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "43faa594-7279-4df1-93f5-e8248ff25264"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100000, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "FLOAT", 
+                                                                                                "暴击率", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 2
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "F2I"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "ANY_VAR_TO_STR"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000215, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "5766dfaf-4c6a-44bc-997f-7c3cdcef3df2"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100002, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "arg_type": 100000, 
+                                                                                    "args_list": [
+                                                                                        {
+                                                                                            "__tuple__": true, 
+                                                                                            "items": [
+                                                                                                "FLOAT", 
+                                                                                                "暴击伤害", 
+                                                                                                "local"
+                                                                                            ]
+                                                                                        }
+                                                                                    ], 
+                                                                                    "sub_type": 2
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "F2I"
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "ANY_VAR_TO_STR"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000237, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_TEXT", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "57e3e31c-b0f8-4444-87d4-60391a3bf4e8"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100003, 
+                                                                    "args_list": [
+                                                                        {
+                                                                            "arg_type": 100039, 
+                                                                            "args_list": [
+                                                                                {
+                                                                                    "__tuple__": true, 
+                                                                                    "items": [
+                                                                                        "ABILITY_NAME", 
+                                                                                        "当前武将", 
+                                                                                        "local"
+                                                                                    ]
+                                                                                }
+                                                                            ], 
+                                                                            "sub_type": "VARIABLE"
+                                                                        }, 
+                                                                        {
+                                                                            "arg_type": 100221, 
+                                                                            "args_list": [
+                                                                                "description"
+                                                                            ], 
+                                                                            "sub_type": 1
+                                                                        }
+                                                                    ], 
+                                                                    "sub_type": "GET_ABILITY_CONF_STR_ATTR"
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000254, 
+                                                            "enable": true
+                                                        }, 
+                                                        {
+                                                            "action_type": "SET_UI_COMP_VISIBLE", 
+                                                            "args_list": [
+                                                                {
+                                                                    "arg_type": 100025, 
+                                                                    "args_list": [], 
+                                                                    "sub_type": "TRIGGER_PLAYER"
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100001, 
+                                                                    "args_list": [
+                                                                        true
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }, 
+                                                                {
+                                                                    "arg_type": 100070, 
+                                                                    "args_list": [
+                                                                        "ed1f5085-3792-48da-83b7-61cf39021828"
+                                                                    ], 
+                                                                    "sub_type": 1
+                                                                }
+                                                            ], 
+                                                            "bp": false, 
+                                                            "element_id": 62910600000275, 
+                                                            "enable": true
+                                                        }
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100022, 
+                                                    "args_list": [], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 62910600000015, 
+                                            "enable": true, 
+                                            "fake_op": []
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 62910600000008, 
+                            "enable": true, 
+                            "op_arg": [
+                                {
+                                    "arg_type": 100001, 
+                                    "args_list": [
+                                        true
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "op_arg_enable": [
+                                false
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 62910600000282, 
+            "enable": true, 
+            "fake_op": []
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [
+        {
+            "args_list": [
+                {
+                    "arg_type": 100067, 
+                    "args_list": [
+                        "鼠标移入_武将格子"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "element_id": 62910600000002, 
+            "enable": true, 
+            "event_type": "TRIGGER_COMPONENT_EVENT"
+        }
+    ], 
+    "group_id": "NbDz0LYrEe+AyclKm7gK9L", 
+    "p_trigger_id": null, 
+    "trigger_id": 62910600, 
+    "trigger_name": "悬浮显示武将信息_鼠标移入", 
+    "valid": true, 
+    "var_data": [
+        {
+            "ABILITY_NAME": {
+                "当前武将": 0
+            }, 
+            "FLOAT": {
+                "冷却时间": 0.0, 
+                "技能伤害": 0.0, 
+                "技能范围": 0.0, 
+                "暴击伤害": 0.0, 
+                "暴击率": 0.0
+            }, 
+            "INTEGER": {
+                "悬浮显示武将信息索引": 0
+            }
+        }, 
+        {
+            "冷却时间": 0, 
+            "当前武将": 0, 
+            "悬浮显示武将信息索引": 0, 
+            "技能伤害": 0, 
+            "技能范围": 0, 
+            "暴击伤害": 0, 
+            "暴击率": 0
+        }, 
+        [
+            "悬浮显示武将信息索引", 
+            "冷却时间", 
+            "暴击率", 
+            "暴击伤害", 
+            "技能伤害", 
+            "当前武将", 
+            "技能范围"
+        ]
+    ]
+}

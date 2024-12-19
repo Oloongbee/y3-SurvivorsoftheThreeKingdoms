@@ -1,0 +1,283 @@
+{
+    "action": [
+        [
+            1433922536, 
+            "判断当前主公", 
+            1941237975, 
+            "action_type"
+        ], 
+        {
+            "action_type": "SET_VARIABLE", 
+            "args_list": [
+                {
+                    "arg_type": 100030, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "ITEM_NAME", 
+                                "当前主公", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100032, 
+                    "args_list": [
+                        {
+                            "arg_type": 100025, 
+                            "args_list": [], 
+                            "sub_type": "TRIGGER_PLAYER"
+                        }, 
+                        {
+                            "arg_type": 100003, 
+                            "args_list": [
+                                "主公"
+                            ], 
+                            "sub_type": 1
+                        }
+                    ], 
+                    "sub_type": "GET_ITEM_NAME_KV"
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1941237975000050, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SWITCH", 
+            "args_list": [
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "arg_type": 100032, 
+                            "args_list": [
+                                {
+                                    "__tuple__": true, 
+                                    "items": [
+                                        "ITEM_NAME", 
+                                        "当前主公", 
+                                        "local"
+                                    ]
+                                }
+                            ], 
+                            "sub_type": 2
+                        }
+                    ], 
+                    "sub_type": "GET_ITEM_CONF_NAME"
+                }, 
+                {
+                    "arg_type": 100022, 
+                    "args_list": [
+                        {
+                            "action_type": "CASE", 
+                            "args_list": [
+                                {
+                                    "arg_type": 100003, 
+                                    "args_list": [
+                                        "孙权"
+                                    ], 
+                                    "sub_type": 1
+                                }, 
+                                {
+                                    "arg_type": 100022, 
+                                    "args_list": [
+                                        {
+                                            "action_type": "ROLE_CHANGE_RES", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100037, 
+                                                    "args_list": [
+                                                        "OyAQZajnEe+q1rvC13Uj-w"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100000, 
+                                                    "args_list": [
+                                                        50.0
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1941237975000071, 
+                                            "enable": true
+                                        }, 
+                                        {
+                                            "action_type": "SET_ENTITY_KV", 
+                                            "args_list": [
+                                                {
+                                                    "arg_type": 100025, 
+                                                    "args_list": [], 
+                                                    "sub_type": "TRIGGER_PLAYER"
+                                                }, 
+                                                {
+                                                    "arg_type": 100003, 
+                                                    "args_list": [
+                                                        "主公对应初始武将表"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }, 
+                                                {
+                                                    "arg_type": 100011, 
+                                                    "args_list": [
+                                                        "bf7a5caf-69c5-4b2e-afaa-dce16e5f3139"
+                                                    ], 
+                                                    "sub_type": 1
+                                                }
+                                            ], 
+                                            "bp": false, 
+                                            "element_id": 1941237975000083, 
+                                            "enable": true
+                                        }
+                                    ], 
+                                    "sub_type": 1
+                                }
+                            ], 
+                            "bp": false, 
+                            "element_id": 1941237975000064, 
+                            "enable": true
+                        }
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1941237975000045, 
+            "enable": true
+        }, 
+        [
+            1559840449, 
+            "#######", 
+            1941237975, 
+            "action_type"
+        ], 
+        {
+            "action_type": "SET_UI_COMP_VISIBLE", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        false
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "5e90ddf3-377f-41d5-8738-88f92f1f7322"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1941237975000009, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_UI_COMP_VISIBLE", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100001, 
+                    "args_list": [
+                        true
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100070, 
+                    "args_list": [
+                        "b72530f1-4157-4f74-8913-b514031b8c0b"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1941237975000012, 
+            "enable": true
+        }, 
+        {
+            "action_type": "SET_ENTITY_KV", 
+            "args_list": [
+                {
+                    "arg_type": 100025, 
+                    "args_list": [], 
+                    "sub_type": "TRIGGER_PLAYER"
+                }, 
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "初始武将"
+                    ], 
+                    "sub_type": 1
+                }, 
+                {
+                    "arg_type": 100039, 
+                    "args_list": [
+                        134230263
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1941237975000036, 
+            "enable": true
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [
+        {
+            "args_list": [
+                {
+                    "arg_type": 100067, 
+                    "args_list": [
+                        "点击选择初始武将"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "element_id": 1941237975000002, 
+            "enable": true, 
+            "event_type": "TRIGGER_COMPONENT_EVENT"
+        }
+    ], 
+    "group_id": "q3vxvrBaEe+uQGs-pc3yJN", 
+    "p_trigger_id": null, 
+    "trigger_id": 1941237975, 
+    "trigger_name": "点击选择初始武将", 
+    "valid": true, 
+    "var_data": [
+        {
+            "ITEM_NAME": {
+                "当前主公": 0
+            }
+        }, 
+        {
+            "当前主公": 0
+        }, 
+        [
+            "当前主公"
+        ]
+    ]
+}
